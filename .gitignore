@@ -5,3 +5,10 @@ Thumbs.db
 .env.*
 ~$
 .cursor/plans/
+
+node_modules/
+.next/
+out/
+.vercel/
+*.tsbuildinfo
+next-env.d.ts
