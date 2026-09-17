@@ -32,7 +32,7 @@ export default function HomePage() {
             alt="Keith Byne, short white hair, black turtleneck, looking slightly off camera"
           />
           <figcaption className="caption">
-            Director, Universal English S.L. · Fine Art, 1st Class
+            Director, Universal English S.L. · Educational management software developer · Online teacher training in educational technology · Fine Art · Sculpture · Serigraphy · Computer graphic design
           </figcaption>
         </figure>
       </section>

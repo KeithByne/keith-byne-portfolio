@@ -1,32 +1,51 @@
 export default function AboutPage() {
+  const shots = [
+    {
+      src: "/portraits/turtleneck.png",
+      alt: "Keith Byne, black turtleneck, looking slightly off camera",
+    },
+    {
+      src: "/portraits/studio.png",
+      alt: "Keith Byne standing in a studio, grey jacket",
+    },
+    {
+      src: "/portraits/using-cursor.png",
+      alt: "Keith Byne using Cursor to write software",
+    },
+    {
+      src: "/portraits/lecture-theatre.png",
+      alt: "Lecture theatre seen from the back row, Keith Byne teaching at the front",
+      className: "from-back",
+    },
+  ];
+
   return (
     <main className="about-grid">
       <div>
         <p className="eyebrow">About</p>
         <h1>Programme lead with a designer&apos;s eye.</h1>
-        <figure className="portrait">
-          <img
-            src="/portraits/desk.png"
-            alt="Keith Byne at a desk, short white hair, looking toward the camera"
-          />
-        </figure>
+        <div className="photo-grid">
+          {shots.map((shot) => (
+            <img key={shot.src} src={shot.src} alt={shot.alt} className={shot.className} />
+          ))}
+        </div>
       </div>
       <div className="prose">
         <p>
           Based in Espartinas, Seville. Director and Director of Studies of
           Universal English S.L. since 2015: curriculum, budgets, teams, and
-          hybrid/online delivery. Open to EU remote employment or a Spanish
+          hybrid/online delivery, including online teacher training in educational technology. Open to EU remote employment or a Spanish
           B2B / autónomo contract.
         </p>
         <p>
-          Before the academy: eleven years writing digital materials for
+          Before the academy: eleven years contributing to digital materials for
           Teachertrainingvideos.com, including New Standard English (China)
           and the BBC&apos;s Get into Spanish; ESP/EAP in Paris for enterprise
           accounts; and twelve years as a graphic designer, including CAD-CAM
           and brand work.
         </p>
         <p>
-          Visual training is a BA (Hons) Fine Art, 1st Class, Norwich School of
+          Visual training is a BA (Hons) Fine Art, Norwich School of
           Art. Adult-learning credentials: Cambridge CELTA and Trinity TESOL.
         </p>
         <ul className="roles">

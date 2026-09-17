@@ -12,7 +12,7 @@ I am applying for the [Role title] role at [Company]. I am based in Espartinas, 
 
 I have spent 30 years designing adult learning and the systems around it. As Director and Director of Studies of Universal English S.L. since 2015 I own curriculum, budgets, teams, and hybrid/online delivery. Before that I spent 11 years developing digital materials for Teachertrainingvideos.com (including New Standard English for China and the BBC’s Get into Spanish), and two years in Paris delivering ESP/EAP for enterprise accounts such as Microsoft, Usinor, Eurosport, and Sorecom. I also design and ship educational software, including the iPALABRA learning sites and Report-O-Matic.
 
-My visual training is a 1st Class Fine Art degree and 12 years as a graphic designer (CAD-CAM, illustration, and brand work including Microsoft and Virgin Airlines). I am now building a public e-learning portfolio on the authoring tools your industry hires on. [TO CONFIRM: one sentence with a live artefact URL, only when that module is published.]
+My visual training is a Fine Art degree and 12 years as a graphic designer (CAD-CAM, illustration, and brand work including Microsoft and Virgin Airlines). I am now building a public e-learning portfolio on the authoring tools your industry hires on. [TO CONFIRM: one sentence with a live artefact URL, only when that module is published.]
 
 I would welcome a conversation about how this mix of programme leadership, instructional design, and visual production would support [Company]’s capability goals.
 

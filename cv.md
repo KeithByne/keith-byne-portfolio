@@ -10,7 +10,7 @@ keith.byne@hotmail.co.uk | [TO CONFIRM: phone] | [TO CONFIRM: portfolio URL]
 
 ## Professional profile
 
-Programme director, instructional designer, and educational software builder with 30 years designing adult learning, corporate language programmes, and digital training systems. Combines visual communication (Fine Art, 1st Class; professional graphic design for enterprise brands) with course architecture, teacher-as-trainer delivery, and hands-on web/SaaS product development. Since 2015, Director of Universal English S.L., running curriculum, budgets, teams, and hybrid/online delivery. Open to EU remote employment or a Spanish B2B / autónomo contract.
+Programme director, instructional designer, and educational software builder with 30 years designing adult learning, corporate language programmes, and digital training systems. Combines visual communication (Fine Art; professional graphic design for enterprise brands) with course architecture, teacher-as-trainer delivery, and hands-on web/SaaS product development. Since 2015, Director of Universal English S.L., running curriculum, budgets, teams, and hybrid/online delivery. Open to EU remote employment or a Spanish B2B / autónomo contract.
 
 ---
 
@@ -22,7 +22,7 @@ Programme director, instructional designer, and educational software builder wit
 - Hybrid and fully online learning design; web-based learning paths
 
 **Visual communication**
-- BA (Hons) Fine Art, 1st Class
+- BA (Hons) Fine Art
 - Graphic design, illustration, and CAD-CAM production (1984–1996), including work for Microsoft and Virgin Airlines
 
 **Programme operations**
@@ -90,7 +90,7 @@ UK · 1984–1996
 
 ## Education and credentials
 
-- BA (Hons) Fine Art, 1st Class — Norwich School of Art, Norfolk, UK (1993–1996)
+- BA (Hons) Fine Art — Norwich School of Art, Norfolk, UK (1993–1996)
 - Foundation in Art & Design — Thurrock Technical College, Essex, UK
 - Cambridge CELTA — International House Seville, Spain
 - Cert. TESOL — Trinity College London, UK

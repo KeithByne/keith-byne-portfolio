@@ -122,6 +122,22 @@ h1 em {
   filter: saturate(0.92) contrast(1.04);
 }
 
+.photo-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.45rem;
+  margin-top: 1.75rem;
+}
+
+.photo-grid img.from-back { object-position: center 20%; }
+
+.photo-grid img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  filter: saturate(0.92) contrast(1.04);
+}
+
 .caption {
   margin-top: 0.7rem;
   color: var(--mute);
