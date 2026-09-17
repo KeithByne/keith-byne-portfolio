@@ -1,12 +1,12 @@
 import type { Metadata } from "next";
-import { Fraunces, Outfit } from "next/font/google";
+import { Outfit, Syne } from "next/font/google";
 import "./globals.css";
 import { Header } from "./components/Header";
 import { Footer } from "./components/Footer";
 
-const serif = Fraunces({
+const display = Syne({
   subsets: ["latin"],
-  variable: "--font-serif",
+  variable: "--font-display",
 });
 
 const sans = Outfit({
@@ -25,7 +25,7 @@ export default function RootLayout({
 }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en">
-      <body className={`${serif.variable} ${sans.variable}`}>
+      <body className={`${display.variable} ${sans.variable}`}>
         <div className="wrap">
           <Header />
           {children}
