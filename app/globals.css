@@ -391,8 +391,19 @@ h1 em {
 }
 
 .case-shots-phones {
-  grid-template-columns: 1fr 1fr 1fr;
-  max-width: 38rem;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1.5rem;
+  width: 100%;
+  max-width: none;
+}
+
+.case-shots-phones .case-shot {
+  flex: 1 1 0;
+  min-width: 0;
+  max-width: 13.5rem;
 }
 
 .case-shots-phones .case-shot-hit {
@@ -533,9 +544,17 @@ h1 em {
   .contact-grid,
   .work-item,
   .studio-grid,
-  .case-shots,
-  .case-shots-phones {
+  .case-shots {
     grid-template-columns: 1fr;
+  }
+  .case-shots-phones {
+    flex-direction: column;
+    align-items: center;
+  }
+  .case-shots-phones .case-shot {
+    width: min(14rem, 100%);
+    max-width: 14rem;
+    flex: none;
   }
   .site-header { flex-wrap: wrap; }
   .hero { padding-top: 2.5rem; }
