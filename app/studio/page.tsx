@@ -52,11 +52,12 @@ export default function StudioPage() {
       <p className="eyebrow">Studio</p>
       <h1>Visual craft, still in practice.</h1>
       <p className="lede">
-        Visual training is a BA (Hons) Fine Art, Norwich School of Art, then
-        twelve years as a graphic designer. The current studio practice is silk
-        screen: hand-pulled editions of ten, on machines of his own design.
-        That is visual judgement under constraint — the same muscle learning
-        design uses. This page is a short selection, not a shop.
+        Visual training is a BA (Hons) Fine Art, Norwich School of Art,
+        preceded by twelve years as a graphic designer. The current studio
+        practice is silk screen: hand-pulled editions of ten, on machines of
+        his own design. That is visual judgement under constraint — the same
+        muscle learning design uses. This page is a short selection, not a
+        shop.
       </p>
       <p className="lede">
         Full studio and originals:{" "}
