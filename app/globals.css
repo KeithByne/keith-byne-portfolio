@@ -248,9 +248,41 @@ h1 em {
 
 .case-row h2 {
   margin: 0;
+  flex: 1;
+  min-width: 0;
   font-size: inherit;
   font-weight: inherit;
   letter-spacing: inherit;
+}
+
+.case-head {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.case-logo {
+  flex: 0 0 4rem;
+  width: 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.3rem;
+  color: var(--mute);
+  font-size: 0.7rem;
+  text-align: center;
+  border-bottom: 0;
+}
+
+.case-logo img {
+  width: 4rem;
+  height: 4rem;
+  object-fit: contain;
+  background: rgba(232, 236, 255, 0.06);
+}
+
+.case-logo:hover {
+  color: var(--accent);
 }
 
 .fold {

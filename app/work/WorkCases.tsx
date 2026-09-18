@@ -75,6 +75,7 @@ const cases: {
   id: string;
   title: string;
   subtitle: string;
+  logo?: { src: string; href: string; alt: string };
   body: ReactNode;
 }[] = [
   {
@@ -158,6 +159,11 @@ const cases: {
     title: "Report-O-Matic",
     subtitle:
       "Student handling environment · multi-level access · a series of operational problems, solved in a live product",
+    logo: {
+      src: "/work/report-o-matic/logo.png",
+      href: "https://www.report-o-matic.online/landing.html",
+      alt: "Report-O-Matic",
+    },
     body: (
       <>
         <h3>The whole operation, not one form</h3>
@@ -258,6 +264,11 @@ const cases: {
     title: "FireList-O-Matic",
     subtitle:
       "Phone-first residential accountability · Night Log and FIRE · a series of operational problems, solved in a live product",
+    logo: {
+      src: "/work/fire-list-o-matic/logo.png",
+      href: "https://fire-list-o-matic.vercel.app/login",
+      alt: "FireList-O-Matic",
+    },
     body: (
       <>
         <h3>The whole operation, not a paper list</h3>
@@ -390,6 +401,19 @@ export function WorkCases() {
               key={item.id}
               id={`case-${item.id}`}
             >
+            <div className="case-head">
+              {item.logo ? (
+                <a
+                  className="case-logo"
+                  href={item.logo.href}
+                  rel="noreferrer"
+                  target="_blank"
+                  aria-label={`Open the live ${item.logo.alt} sign-in page`}
+                >
+                  <img src={item.logo.src} alt="" />
+                  <span>Live sign in</span>
+                </a>
+              ) : null}
               <h2>
                 <button
                   type="button"
@@ -404,6 +428,7 @@ export function WorkCases() {
                   <span className="case-toggle-sub">{item.subtitle}</span>
                 </button>
               </h2>
+            </div>
               <div
                 className="fold"
                 id={`case-panel-${item.id}`}
