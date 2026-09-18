@@ -186,6 +186,12 @@ const cases: {
           life of the document: write it, store it, and be able to reference
           it later — including a branded PDF that can leave the building.
         </p>
+        <h3>The language the family reads</h3>
+        <p>
+          The interface and the parent-facing report can each run in 13
+          languages. A teacher can work in one language and still send the
+          PDF in the student&apos;s own language, so parents can read it.
+        </p>
         <h3>Time, rooms, and people</h3>
         <p>
           Registers only work if the timetable is real. The fourth problem
@@ -223,6 +229,13 @@ const cases: {
             <span>Generation, storage, reference, and PDF export</span>
           </li>
           <li>
+            Languages
+            <span>
+              13-language UI and 13-language report output, so the PDF can
+              go home in the language the family reads
+            </span>
+          </li>
+          <li>
             Operations
             <span>Registers, timetable development, resource allocation, and relocation</span>
           </li>
@@ -247,8 +260,8 @@ const cases: {
           />
           <Shot
             src="/work/report-o-matic/report.png"
-            alt="Report-O-Matic generated parent comment and teacher preview for Alex Martinez"
-            caption="Report comments"
+            alt="Report-O-Matic parent comment in English and teacher preview in Spanish for David Alan Byne García"
+            caption="Parent comment and teacher preview"
           />
           <Shot
             src="/work/report-o-matic/export.png"

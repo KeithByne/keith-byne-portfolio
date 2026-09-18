@@ -6,7 +6,7 @@ When you are happy with it, say so and it can be copied onto the site and pushed
 Screenshots (in `public/work/report-o-matic/`):
 
 - `students.png` — class roster (add / move / place)
-- `report.png` — generated parent comment and teacher preview
+- `report.png` — parent comment (EN) and teacher preview (ES) for David Alan Byne García
 - `export.png` — first page of the Universal English export (bottom cropped so the three stills match)
 - `david-alan-byne-garcia.pdf` — full branded PDF; open from the filename on the Work case
 
@@ -32,6 +32,10 @@ Owners, department heads, and teachers do not need the same desk. The second pro
 
 Generation is only half of reporting. The third problem was the life of the document: write it, store it, and be able to reference it later — including a branded PDF that can leave the building.
 
+## The language the family reads
+
+The interface and the parent-facing report can each run in 13 languages. A teacher can work in one language and still send the PDF in the student's own language, so parents can read it.
+
 ## Time, rooms, and people
 
 Registers only work if the timetable is real. The fourth problem was timetable development and resource allocation: who is where, with what, and whether they were present.
@@ -49,5 +53,6 @@ Specified, designed, and developed a complete student-handling environment as mu
 - **Live product** — [report-o-matic.online](https://www.report-o-matic.online)
 - **Access** — Multi-level access for owners, department heads, and teachers
 - **Reports** — Generation, storage, reference, and PDF export
+- **Languages** — 13-language UI and 13-language report output, so the PDF can go home in the language the family reads
 - **Operations** — Registers, timetable development, resource allocation, and relocation
 - **Demo School** — Class list, a written report, and the PDF export · 18 Sep 2026
