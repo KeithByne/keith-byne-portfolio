@@ -54,6 +54,10 @@ export default function AboutPage() {
             <span>Tomares, Spain · 2015–present</span>
           </li>
           <li>
+            Ardmore Summer School — Centre administrator
+            <span>Hertfordshire, UK · seasonal, up to 400 participants</span>
+          </li>
+          <li>
             Teachertrainingvideos.com — Materials developer
             <span>UK · 2002–2013</span>
           </li>

@@ -7,6 +7,15 @@ Keith Byne is translating 30+ years in adult learning, programme leadership, LMS
 
 This folder is **not** Report-O-Matic. That product lives in `C:\dev\Report-O-Matic`. Its marketing enquiry lives in `C:\Users\keith\Report-O-Matic-Marketing`.
 
+## How to advise on new ideas
+
+When Keith suggests adding something (a video, an avatar, a page, a skill line, a photo, a tool), **do not build it first**. Say:
+
+1. **The best option** — what he should actually do, even if it is not his suggestion.
+2. **How a hiring manager will read it** — the probable interpretation from the target audience: remote European instructional design, e-learning, LXD, and L&D people scanning a portfolio in a few minutes.
+
+Be blunt. If an idea will look like a gimmick, ESL classroom residue, unearned tool claim, or overselling, say that. Then wait for him to choose.
+
 ## How to use this folder
 
 | File | What it is |

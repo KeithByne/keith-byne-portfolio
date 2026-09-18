@@ -147,6 +147,30 @@ h1 em {
 .band {
   padding: 3rem 0 4rem;
 }
+.case {
+  margin: 2.5rem 0 3rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--line);
+}
+
+.case h2, .subhead {
+  font-family: var(--font-display), var(--font-sans), sans-serif;
+  font-size: 1.7rem;
+  font-weight: 600;
+  letter-spacing: -0.04em;
+  margin: 0 0 0.4rem;
+}
+
+.subhead { margin-top: 2.5rem; }
+
+.case-meta {
+  color: var(--mute);
+  font-size: 0.85rem;
+  margin: 0 0 1.1rem;
+}
+
+.case p { color: var(--mute); line-height: 1.65; max-width: 40rem; }
+
 
 .work-item {
   display: grid;

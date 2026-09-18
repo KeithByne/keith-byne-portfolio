@@ -10,3 +10,5 @@ Do not invent tools, employers, clients, salaries, or results. Missing facts go 
 `cv.md` is the sendable CV. Add a skill only after the matching row in `cv-skills-log.md` is done and a live artefact exists.
 
 Outreach must stay legal and human. Do not claim B2B removes tax or compliance work.
+
+When Keith suggests adding anything to the site, CV, or portfolio: state the **best option** first, then how a remote European ID / LXD / L&D hiring manager would probably interpret it. Do not build the idea until he chooses.

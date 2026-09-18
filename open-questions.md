@@ -12,6 +12,7 @@ Source of truth: [cv-source-original.md](cv-source-original.md) (2026 Word CV).
 
 ## Dates still missing
 
+- [x] Extra Ardmore duties (confirmed 18 Sep 2026): large team, supporting management across departments, B2B contact with visiting institutions
 - [ ] Ardmore Summer School year(s) — original only says “most recently”
 - [ ] REPORT-O-MATIC LTD dates on the CV (Companies House: incorporated 24 May 2026)
 

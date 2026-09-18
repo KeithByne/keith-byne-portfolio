@@ -53,7 +53,9 @@ Tomares, Spain · 2015–present
 ### Ardmore Summer School — Centre administrator / acting centre management
 Hertfordshire, UK · [TO CONFIRM: year(s); seasonal, alongside Universal English]
 
-- Shared centre-manager and administrator duties for intensive programmes of up to 400 participants.
+- Worked in a large operational team on intensive programmes of up to 400 participants at a time.
+- Shared administrator and centre-management duties; supported management across departments.
+- Handled B2B contact with visiting institutions.
 - Supported the Director of Studies with digital recording systems and staff support; first aid and safeguarding.
 
 ### English Connection — Teacher and recruitment interviewer
@@ -64,7 +66,7 @@ Bormujos, Spain · 2013–2015
 ### Teachertrainingvideos.com — Materials developer and web-based instructor
 UK (remote) · 2002–2013
 
-- Wrote and developed digital learning content to brief, including **New Standard English** (China) and the BBC’s **Get into Spanish**.
+- Contributed to digital learning content to brief, including **New Standard English** (China) and the BBC’s **Get into Spanish**.
 - Designed web-based learning using tools such as Wix for ESL, EAP, and ESP.
 - Delivered live online instruction via Skype.
 

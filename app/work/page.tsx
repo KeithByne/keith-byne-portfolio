@@ -32,9 +32,46 @@ export default function WorkPage() {
     <main className="band">
       <h1>Work</h1>
       <p className="lede">
-        Case studies go up when there is a live artefact. Nothing here is
-        dressed as finished client work until it is.
+        Lived operations sit here now. E-learning modules go up when there
+        is a live artefact.
       </p>
+
+      <article className="case">
+        <p className="eyebrow">Lived operations</p>
+        <h2>Ardmore Summer School, Hertfordshire</h2>
+        <p className="case-meta">Seasonal · centre administrator, sharing centre-management duties</p>
+        <p>
+          Intensive residential programmes with up to 400 participants at a
+          time. The work was not classroom delivery. It was keeping a large
+          operation moving: a big staff team, support to management across
+          departments, and the B2B relationship with visiting institutions.
+        </p>
+        <p>
+          That is stakeholder management, scale, and calm under volume — the
+          same muscles a corporate L&amp;D or enablement role uses, without
+          dressing the summer school up as something it was not.
+        </p>
+        <ul className="roles">
+          <li>
+            Scale
+            <span>Up to 400 concurrent participants; large operational team</span>
+          </li>
+          <li>
+            Support to management
+            <span>Shared centre-manager duties; helped all departments keep the programme running</span>
+          </li>
+          <li>
+            B2B
+            <span>Contact with visiting institutions sending groups to the centre</span>
+          </li>
+          <li>
+            Learning operations
+            <span>Digital recording support for the Director of Studies; staff support; first aid and safeguarding</span>
+          </li>
+        </ul>
+      </article>
+
+      <h2 className="subhead">Modules in build</h2>
       <div className="work-list">
         {pieces.map((piece) => (
           <article className="work-item" key={piece.n}>
@@ -48,8 +85,8 @@ export default function WorkPage() {
         ))}
       </div>
       <p className="lede" style={{ marginTop: "2.5rem" }}>
-        Selected history sits on the{" "}
-        <Link href="/about">About</Link> page until the modules are public.
+        Role history is also on the{" "}
+        <Link href="/about">About</Link> page.
       </p>
     </main>
   );
