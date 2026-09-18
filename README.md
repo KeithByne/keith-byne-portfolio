@@ -30,14 +30,14 @@ Be blunt. If an idea will look like a gimmick, ESL classroom residue, unearned t
 
 ## Portfolio site (Vercel)
 
-The public site is a Next.js app at the repo root (`app/`, `public/portraits/`).
+The public site is a Next.js app at the repo root (`app/`, `public/portraits/`, `public/studio/`).
 
 ```bash
 npm install
 npm run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000). Pages: Home, [Work](/work), [About](/about), [Contact](/contact).
+Open [http://localhost:3000](http://localhost:3000). Pages: Home, [Work](/work), [Studio](/studio), [About](/about), [Contact](/contact).
 
 To put it on Vercel: import this GitHub repo, leave the root directory as `.`, framework Next.js. After the first deploy, put the live URL on the CV where it says `[TO CONFIRM: portfolio URL]`.
 

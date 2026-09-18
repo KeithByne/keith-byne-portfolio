@@ -29,6 +29,11 @@ Source of truth: [cv-source-original.md](cv-source-original.md) (2026 Word CV).
 
 - [ ] Salary bands — need a named source (Spain L&D Manager; remote Northern Europe ID)
 
+## Studio page (kbyne.com selection)
+
+- [TO CONFIRM] Years of the current silk-screen practice (prints shown include dated 2022 and 2023 editions)
+- [x] Modal map not on `/studio` (Keith, 18 Sep 2026)
+
 ## Time
 
 - [ ] Hours per week for this course vs Report-O-Matic marketing

@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function AboutPage() {
   const shots = [
     {
@@ -46,7 +48,13 @@ export default function AboutPage() {
         </p>
         <p>
           Visual training is a BA (Hons) Fine Art, Norwich School of
-          Art. Adult-learning credentials: Cambridge CELTA and Trinity TESOL.
+          Art. A short selection of prints and process is on the{" "}
+          <Link href="/studio">Studio</Link> page; originals and the full
+          catalogue stay at{" "}
+          <a href="https://kbyne.com" rel="noreferrer">
+            kbyne.com
+          </a>
+          . Adult-learning credentials: Cambridge CELTA and Trinity TESOL.
         </p>
         <ul className="roles">
           <li>
