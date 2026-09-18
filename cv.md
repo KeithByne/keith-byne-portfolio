@@ -28,7 +28,7 @@ Programme director, instructional designer, and educational software builder wit
 **Programme operations**
 - Director and Director of Studies, Universal English S.L. (2015–present): budgets, teams, marketing, resource management
 - Staff interviewing and onboarding
-- High-volume centre operations (Ardmore, up to 400 participants)
+- High-volume centre operations (Ardmore; management team built for 200, flexed to 400+ at peak)
 
 **Learning technology**
 - Educational SaaS and new product design
@@ -48,14 +48,15 @@ Tomares, Spain · 2015–present
 - Own curriculum, course development, staffing, budgets, marketing, and web content for an adult training organisation.
 - Designed and run international online technology training for teachers (Zoom), plus face-to-face trainer programmes; ongoing content work with Teachertrainingvideos.com / Russell Stannard.
 - Introduced online classes, then hybrid classes, ahead of local competitors; built iPALABRA free learning websites and wrote content for private ESL platforms.
-- Specified and developed educational SaaS products and new digital learning tools, including Report-O-Matic (REPORT-O-MATIC LTD), a school reporting workflow product.
+- Specified and developed educational SaaS products and new digital learning tools, including Report-O-Matic (REPORT-O-MATIC LTD): a student-handling environment with multi-level access, report generation/storage/reference, registers, timetable development, resource allocation, and relocation.
 
 ### Ardmore Summer School — Centre administrator / acting centre management
 Hertfordshire, UK · [TO CONFIRM: year(s); seasonal, alongside Universal English]
 
-- Worked in a large operational team on intensive programmes of up to 400 participants at a time.
-- Shared administrator and centre-management duties; supported management across departments.
-- Handled B2B contact with visiting institutions.
+- During Covid-19, researched, created, and deployed educational content for language learners on ArdmoreX, the organisation’s new remote learning platform.
+- Worked in a large operational team on intensive programmes; the management team was built for 200 students and flexed up to more than 400 at peak after another company at the same university collapsed, following geopolitical unrest in the Middle East.
+- Open brief as Administrator under the Centre Manager during the volume flex: supported Rooming, Activity, Academic, and Centre Management while holding administration, whose task definitions changed during the employment period.
+- Day-to-day contact with visiting-institution agents and representatives sending groups to the centre.
 - Supported the Director of Studies with digital recording systems and staff support; first aid and safeguarding.
 
 ### English Connection — Teacher and recruitment interviewer

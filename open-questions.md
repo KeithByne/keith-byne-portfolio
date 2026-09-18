@@ -12,9 +12,11 @@ Source of truth: [cv-source-original.md](cv-source-original.md) (2026 Word CV).
 
 ## Dates still missing
 
-- [x] Extra Ardmore duties (confirmed 18 Sep 2026): large team, supporting management across departments, B2B contact with visiting institutions
+- [x] Extra Ardmore duties (confirmed 18 Sep 2026): large team, supporting management across departments, B2B contact with visiting institutions; open Administrator brief under the Centre Manager covering Rooming, Activity, Academic, Centre Management, and shifting administration tasks during the 200-to-400+ flex
+- [x] Ardmore relationship began in Covid-19 with ArdmoreX content (research, create, deploy for language learners) (confirmed 18 Sep 2026)
+- [x] Ardmore management team built for 200 students; centre flexed to more than 400 at peak after another company at the same university collapsed, following geopolitical unrest in the Middle East (confirmed 18 Sep 2026)
 - [ ] Ardmore Summer School year(s) — original only says “most recently”
-- [ ] REPORT-O-MATIC LTD dates on the CV (Companies House: incorporated 24 May 2026)
+- [x] Report-O-Matic Demo School (18 Sep 2026): class, report, and PDF URLs exist but require sign-in (PDF 401). Portfolio case uses public site + screenshots instead of those links.
 
 ## Claims now taken from the original CV (do not re-ask unless Keith corrects them)
 

@@ -63,7 +63,7 @@ export default function AboutPage() {
           </li>
           <li>
             Ardmore Summer School — Centre administrator
-            <span>Hertfordshire, UK · seasonal, up to 400 participants</span>
+            <span>Hertfordshire, UK · seasonal · 200-capacity team, 400+ at peak</span>
           </li>
           <li>
             Teachertrainingvideos.com — Materials developer
