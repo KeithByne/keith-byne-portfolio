@@ -5,6 +5,8 @@
   --line: rgba(232, 236, 255, 0.14);
   --accent: #8b9cff;
   --max: 1080px;
+  --fold-duration: 0.9s;
+  --fold-ease: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 * { box-sizing: border-box; }
@@ -251,6 +253,34 @@ h1 em {
   letter-spacing: inherit;
 }
 
+.fold {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows var(--fold-duration) var(--fold-ease);
+}
+
+.is-open > .fold {
+  grid-template-rows: 1fr;
+}
+
+.fold-inner {
+  overflow: hidden;
+  min-height: 0;
+}
+
+.fold-body {
+  opacity: 0;
+  transform: translateY(-0.55rem);
+  transition:
+    opacity 0.7s ease 0.08s,
+    transform var(--fold-duration) var(--fold-ease);
+}
+
+.is-open > .fold .fold-body {
+  opacity: 1;
+  transform: none;
+}
+
 .case-toggle {
   display: block;
   width: 100%;
@@ -262,6 +292,7 @@ h1 em {
   font: inherit;
   text-align: left;
   cursor: pointer;
+  transition: padding-bottom var(--fold-duration) var(--fold-ease);
 }
 
 .case-toggle:hover .case-toggle-title,
@@ -327,11 +358,71 @@ h1 em {
   margin-top: 1.25rem;
 }
 
+.case-shots-phones {
+  grid-template-columns: 1fr 1fr;
+  max-width: 28rem;
+}
+
+.case-shot {
+  margin: 0;
+  min-width: 0;
+}
+
+.case-shot-hit {
+  display: block;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: none;
+  cursor: zoom-in;
+  color: inherit;
+}
+
+.case-shots:not(.case-shots-phones) .case-shot-hit {
+  aspect-ratio: 16 / 10;
+  overflow: hidden;
+}
+
 .case-shot img {
   width: 100%;
-  aspect-ratio: 4 / 3;
-  object-fit: cover;
+  height: auto;
+  object-fit: contain;
+  object-position: center;
   background: rgba(232, 236, 255, 0.04);
+}
+
+.case-shots:not(.case-shots-phones) .case-shot-hit img {
+  height: 100%;
+  object-fit: cover;
+  object-position: top center;
+}
+
+.case-shot-zoom {
+  position: fixed;
+  inset: 0;
+  z-index: 80;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+  background: rgba(11, 16, 36, 0.45);
+  animation: case-zoom-in 0.35s var(--fold-ease);
+}
+
+@keyframes case-zoom-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.case-shot-zoom img {
+  width: 50vw;
+  max-width: 50vw;
+  max-height: 90vh;
+  height: auto;
+  object-fit: contain;
+  background: #fff;
+  box-shadow: 0 1.25rem 3.5rem rgba(0, 0, 0, 0.45);
 }
 
 .case-shot figcaption {
@@ -395,10 +486,22 @@ h1 em {
   .contact-grid,
   .work-item,
   .studio-grid,
-  .case-shots {
+  .case-shots,
+  .case-shots-phones {
     grid-template-columns: 1fr;
   }
   .site-header { flex-wrap: wrap; }
   .hero { padding-top: 2.5rem; }
   .studio-process img { aspect-ratio: 16 / 9; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .fold,
+  .fold-body,
+  .case-toggle {
+    transition: none;
+  }
+  .case-shot-zoom {
+    animation: none;
+  }
 }

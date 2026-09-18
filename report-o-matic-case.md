@@ -7,7 +7,8 @@ Screenshots (in `public/work/report-o-matic/`):
 
 - `students.png` — class roster (add / move / place)
 - `report.png` — generated parent comment and teacher preview
-- `alex-martinez.pdf` — exported report PDF
+- `export.png` — first page of the Universal English export (bottom cropped so the three stills match)
+- `david-alan-byne-garcia.pdf` — full branded PDF; open from the filename on the Work case
 
 ---
 

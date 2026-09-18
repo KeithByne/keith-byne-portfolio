@@ -12,3 +12,5 @@ Do not invent tools, employers, clients, salaries, or results. Missing facts go 
 Outreach must stay legal and human. Do not claim B2B removes tax or compliance work.
 
 When Keith suggests adding anything to the site, CV, or portfolio: state the **best option** first, then how a remote European ID / LXD / L&D hiring manager would probably interpret it. Do not build the idea until he chooses.
+
+Site motion: follow **Site motion preset** in `README.md`. Accordions and similar expand/collapse must slide (~0.9s). Do not jump-open or scroll-snap the title.

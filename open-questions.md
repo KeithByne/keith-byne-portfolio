@@ -17,6 +17,8 @@ Source of truth: [cv-source-original.md](cv-source-original.md) (2026 Word CV).
 - [x] Ardmore management team built for 200 students; centre flexed to more than 400 at peak after another company at the same university collapsed, following geopolitical unrest in the Middle East (confirmed 18 Sep 2026)
 - [ ] Ardmore Summer School year(s) — original only says “most recently”
 - [x] Report-O-Matic Demo School (18 Sep 2026): class, report, and PDF URLs exist but require sign-in (PDF 401). Portfolio case uses public site + screenshots instead of those links.
+- [x] FireList-O-Matic live URL (confirmed 18 Sep 2026): https://fire-list-o-matic.vercel.app/ — public Night Log/FIRE preview used as stills; signed-in dashboard is login-walled. Administrator QR onboarding currently closed for testing.
+- [ ] FireList-O-Matic company / LTD name — not claimed on CV or Work (Report-O-Matic has REPORT-O-MATIC LTD)
 
 ## Claims now taken from the original CV (do not re-ask unless Keith corrects them)
 

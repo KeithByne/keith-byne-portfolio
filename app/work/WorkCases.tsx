@@ -1,7 +1,8 @@
 "use client";
 
 import Link from "next/link";
-import { useEffect, useRef, useState, type ReactNode } from "react";
+import { useState, type ReactNode } from "react";
+import { createPortal } from "react-dom";
 
 function Shot({
   src,
@@ -13,11 +14,32 @@ function Shot({
   caption: string;
 }) {
   const [ok, setOk] = useState(true);
+  const [enlarged, setEnlarged] = useState(false);
   if (!ok) return null;
   return (
-    <figure className="case-shot">
-      <img src={src} alt={alt} onError={() => setOk(false)} />
+    <figure
+      className="case-shot"
+      onMouseEnter={() => setEnlarged(true)}
+      onMouseLeave={() => setEnlarged(false)}
+    >
+      <button
+        type="button"
+        className="case-shot-hit"
+        aria-label={`${caption}. Hover or focus to enlarge.`}
+        onFocus={() => setEnlarged(true)}
+        onBlur={() => setEnlarged(false)}
+      >
+        <img src={src} alt={alt} onError={() => setOk(false)} />
+      </button>
       <figcaption>{caption}</figcaption>
+      {enlarged
+        ? createPortal(
+            <div className="case-shot-zoom" aria-hidden="true">
+              <img src={src} alt="" />
+            </div>,
+            document.body,
+          )
+        : null}
     </figure>
   );
 }
@@ -205,8 +227,8 @@ const cases: {
           <li>
             Sample PDF
             <span>
-              <a href="/work/report-o-matic/alex-martinez.pdf">
-                Alex Martinez — First Term
+              <a href="/work/report-o-matic/david-alan-byne-garcia.pdf">
+                DAVID-ALAN-BYNE-GARCIA.pdf
               </a>
             </span>
           </li>
@@ -221,6 +243,107 @@ const cases: {
             src="/work/report-o-matic/report.png"
             alt="Report-O-Matic generated parent comment and teacher preview for Alex Martinez"
             caption="Report comments"
+          />
+          <Shot
+            src="/work/report-o-matic/export.png"
+            alt="Universal English branded Report-O-Matic PDF for David Alan Byne García"
+            caption="Exported report"
+          />
+        </div>
+      </>
+    ),
+  },
+  {
+    id: "fire-list-o-matic",
+    title: "FireList-O-Matic",
+    subtitle:
+      "Phone-first residential accountability · Night Log and FIRE · a series of operational problems, solved in a live product",
+    body: (
+      <>
+        <h3>The whole operation, not a paper list</h3>
+        <p>
+          A residential centre does not only keep a fire clipboard. It has a
+          Centre Manager, Group Leaders, Home Staff, and visiting student
+          groups that change through the season. The first problem was
+          treating that as one accountability environment.
+        </p>
+        <h3>Who is allowed to do what</h3>
+        <p>
+          Those roles do not need the same phone. The second problem was
+          multi-level access: who can declare FIRE, who reports Night Log
+          presence, and who only scans a visitor QR.
+        </p>
+        <h3>Onboarding has to happen at the gate</h3>
+        <p>
+          Staff do not sit at a desktop to join. The third problem was QR
+          onboarding: issue a Group Leader QR and a Home Staff QR from a
+          phone, then let group leaders and students scan the same visitor
+          QR.
+        </p>
+        <h3>Night is not the same as FIRE</h3>
+        <p>
+          Who is on campus tonight is a different job from a live muster.
+          The fourth problem was two modes: Night Log for campus presence,
+          and FIRE for live muster — still in rooms, not accounted, or at
+          fire points.
+        </p>
+        <h3>The map has to be real</h3>
+        <p>
+          A muster is useless if the zones are guessed. The fifth problem
+          was drawing the site: campus, assembly, accommodation, buildings,
+          and fire safety on a large screen, then running the same map from
+          a phone.
+        </p>
+        <h3>What shipped</h3>
+        <p>
+          Specified, designed, and developed a phone-first emergency
+          accountability product as multi-tenant SaaS. Live at
+          fire-list-o-matic.vercel.app. Signed-in dashboards need a login,
+          so the stills here are the public Night Log and FIRE preview from
+          the live site.
+        </p>
+        <ul className="roles">
+          <li>
+            Live product
+            <span>
+              <a href="https://fire-list-o-matic.vercel.app/" rel="noreferrer">
+                fire-list-o-matic.vercel.app
+              </a>
+            </span>
+          </li>
+          <li>
+            Access
+            <span>
+              Centre Manager, Group Leader, Home Staff, and student visitor
+              QRs
+            </span>
+          </li>
+          <li>
+            Night Log
+            <span>Who is on campus tonight</span>
+          </li>
+          <li>
+            FIRE
+            <span>Live muster: in rooms, not accounted, fire points</span>
+          </li>
+          <li>
+            Zones
+            <span>
+              Draw campus, assembly, accommodation, buildings, and fire
+              safety on desktop; run from the phone
+            </span>
+          </li>
+        </ul>
+        <div className="case-shots case-shots-phones">
+          <Shot
+            src="/work/fire-list-o-matic/night-log.png"
+            alt="FireList-O-Matic phone preview in Night Log mode, showing campus zones and on-campus count"
+            caption="Night Log"
+          />
+          <Shot
+            src="/work/fire-list-o-matic/fire.png"
+            alt="FireList-O-Matic phone preview in FIRE mode, showing campus zones and mustered count"
+            caption="FIRE"
           />
         </div>
       </>
@@ -249,19 +372,6 @@ const cases: {
 
 export function WorkCases() {
   const [openId, setOpenId] = useState<string | null>("ardmore");
-  const skipScroll = useRef(true);
-
-  useEffect(() => {
-    if (skipScroll.current) {
-      skipScroll.current = false;
-      return;
-    }
-    if (!openId) return;
-    const node = document.getElementById(`case-${openId}`);
-    requestAnimationFrame(() => {
-      node?.scrollIntoView({ behavior: "smooth", block: "start" });
-    });
-  }, [openId]);
 
   return (
     <main className="band">
@@ -294,15 +404,17 @@ export function WorkCases() {
                   <span className="case-toggle-sub">{item.subtitle}</span>
                 </button>
               </h2>
-              {open ? (
-                <div
-                  className="case-panel"
-                  id={`case-panel-${item.id}`}
-                  role="region"
-                >
-                  {item.body}
+              <div
+                className="fold"
+                id={`case-panel-${item.id}`}
+                role="region"
+                aria-hidden={!open}
+                inert={!open || undefined}
+              >
+                <div className="fold-inner">
+                  <div className="fold-body case-panel">{item.body}</div>
                 </div>
-              ) : null}
+              </div>
             </article>
           );
         })}
