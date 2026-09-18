@@ -46,11 +46,6 @@ export default function WorkPage() {
           operation moving: a big staff team, support to management across
           departments, and the B2B relationship with visiting institutions.
         </p>
-        <p>
-          That is stakeholder management, scale, and calm under volume — the
-          same muscles a corporate L&amp;D or enablement role uses, without
-          dressing the summer school up as something it was not.
-        </p>
         <ul className="roles">
           <li>
             Scale
