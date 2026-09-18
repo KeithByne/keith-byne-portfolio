@@ -7,8 +7,9 @@ Screenshots (in `public/work/fire-list-o-matic/`):
 
 - `night-log.png` — public phone preview, Night Log
 - `fire.png` — public phone preview, FIRE
+- `map-zones.mp4` — looping signed-in Map & zones capture in a phone frame (Screenpresso end-card trimmed)
 
-These are stills from the live landing, not signed-in dashboards.
+Night Log and FIRE are stills from the live landing. Map & zones is a signed-in phone capture.
 
 ---
 
@@ -42,7 +43,7 @@ A muster is useless if the zones are guessed. The fifth problem was drawing the 
 
 ## What shipped
 
-Specified, designed, and developed a phone-first emergency accountability product as multi-tenant SaaS. Live at fire-list-o-matic.vercel.app. Signed-in dashboards need a login, so the stills here are the public Night Log and FIRE preview from the live site.
+Specified, designed, and developed a phone-first emergency accountability product as multi-tenant SaaS. Live at fire-list-o-matic.vercel.app. Night Log and FIRE are the public phone preview; Map & zones is a looping capture from the signed-in phone view.
 
 ## List
 

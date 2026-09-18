@@ -1,21 +1,79 @@
 "use client";
 
 import Link from "next/link";
-import { useState, type ReactNode } from "react";
+import { useEffect, useRef, useState, type ReactNode } from "react";
 import { createPortal } from "react-dom";
+
+function PhoneLoop({
+  src,
+  poster,
+  alt,
+}: {
+  src: string;
+  poster?: string;
+  alt: string;
+}) {
+  const ref = useRef<HTMLVideoElement>(null);
+
+  useEffect(() => {
+    const el = ref.current;
+    if (!el) return;
+    const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    if (reduce) {
+      el.pause();
+      return;
+    }
+    const io = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) void el.play();
+        else el.pause();
+      },
+      { threshold: 0.35 },
+    );
+    io.observe(el);
+    return () => io.disconnect();
+  }, [src]);
+
+  return (
+    <span className="phone-shell">
+      <span className="phone-shell-bezel">
+        <span className="phone-shell-notch" aria-hidden="true" />
+        <video
+          ref={ref}
+          src={src}
+          poster={poster}
+          muted
+          loop
+          playsInline
+          preload="metadata"
+          aria-label={alt}
+        />
+      </span>
+    </span>
+  );
+}
 
 function Shot({
   src,
   alt,
   caption,
+  video,
+  poster,
 }: {
   src: string;
   alt: string;
   caption: string;
+  video?: boolean;
+  poster?: string;
 }) {
   const [ok, setOk] = useState(true);
   const [enlarged, setEnlarged] = useState(false);
   if (!ok) return null;
+  const media = video ? (
+    <PhoneLoop src={src} poster={poster} alt={alt} />
+  ) : (
+    <img src={src} alt={alt} onError={() => setOk(false)} />
+  );
   return (
     <figure
       className="case-shot"
@@ -29,13 +87,17 @@ function Shot({
         onFocus={() => setEnlarged(true)}
         onBlur={() => setEnlarged(false)}
       >
-        <img src={src} alt={alt} onError={() => setOk(false)} />
+        {media}
       </button>
       <figcaption>{caption}</figcaption>
       {enlarged
         ? createPortal(
             <div className="case-shot-zoom" aria-hidden="true">
-              <img src={src} alt="" />
+              {video ? (
+                <PhoneLoop src={src} poster={poster} alt="" />
+              ) : (
+                <img src={src} alt="" />
+              )}
             </div>,
             document.body,
           )
@@ -160,7 +222,7 @@ const cases: {
     subtitle:
       "Student handling environment · multi-level access · a series of operational problems, solved in a live product",
     logo: {
-      src: "/work/report-o-matic/logo.png",
+      src: "/work/report-o-matic/logo-night.png",
       href: "https://www.report-o-matic.online/landing.html",
       alt: "Report-O-Matic",
     },
@@ -322,9 +384,9 @@ const cases: {
         <p>
           Specified, designed, and developed a phone-first emergency
           accountability product as multi-tenant SaaS. Live at
-          fire-list-o-matic.vercel.app. Signed-in dashboards need a login,
-          so the stills here are the public Night Log and FIRE preview from
-          the live site.
+          fire-list-o-matic.vercel.app. Night Log and FIRE are the public
+          phone preview; Map & zones is a looping capture from the signed-in
+          phone view.
         </p>
         <ul className="roles">
           <li>
@@ -368,6 +430,13 @@ const cases: {
             src="/work/fire-list-o-matic/fire.png"
             alt="FireList-O-Matic phone preview in FIRE mode, showing campus zones and mustered count"
             caption="FIRE"
+          />
+          <Shot
+            src="/work/fire-list-o-matic/map-zones.mp4"
+            poster="/work/fire-list-o-matic/map-zones-poster.png"
+            alt="FireList-O-Matic Map and zones on a phone, with drawn campus polygons on a live map"
+            caption="Map & zones"
+            video
           />
         </div>
       </>
