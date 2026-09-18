@@ -35,21 +35,16 @@ function PhoneLoop({
   }, [src]);
 
   return (
-    <span className="phone-shell">
-      <span className="phone-shell-bezel">
-        <span className="phone-shell-notch" aria-hidden="true" />
-        <video
-          ref={ref}
-          src={src}
-          poster={poster}
-          muted
-          loop
-          playsInline
-          preload="metadata"
-          aria-label={alt}
-        />
-      </span>
-    </span>
+    <video
+      ref={ref}
+      src={src}
+      poster={poster}
+      muted
+      loop
+      playsInline
+      preload="metadata"
+      aria-label={alt}
+    />
   );
 }
 
@@ -432,7 +427,7 @@ const cases: {
             caption="FIRE"
           />
           <Shot
-            src="/work/fire-list-o-matic/map-zones.mp4"
+            src="/work/fire-list-o-matic/map-zones.mp4?v=frame"
             poster="/work/fire-list-o-matic/map-zones-poster.png"
             alt="FireList-O-Matic Map and zones on a phone, with drawn campus polygons on a live map"
             caption="Map & zones"
