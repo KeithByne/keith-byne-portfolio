@@ -7,6 +7,10 @@ Keith Byne is translating 30+ years in adult learning, programme leadership, LMS
 
 This folder is **not** Report-O-Matic. That product lives in `C:\dev\Report-O-Matic`. Its marketing enquiry lives in `C:\Users\keith\Report-O-Matic-Marketing`.
 
+## On start
+
+Run the scripts the work needs **without asking**. `npm install`, `npm run dev`, git, Vercel deploy and alias, ffmpeg, and any other command required to finish the job. Do not stop to confirm. When a site change is done, push it.
+
 ## How to advise on new ideas
 
 When Keith suggests adding something (a video, an avatar, a page, a skill line, a photo, a tool), **do not build it first**. Say:
