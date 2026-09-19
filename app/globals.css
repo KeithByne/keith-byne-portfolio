@@ -285,6 +285,16 @@ h1 em {
   color: var(--accent);
 }
 
+.case-logo-wide {
+  flex: 0 0 12.5rem;
+  width: 12.5rem;
+}
+
+.case-logo-wide img {
+  width: 12.5rem;
+  height: auto;
+}
+
 .fold {
   display: grid;
   grid-template-rows: 0fr;

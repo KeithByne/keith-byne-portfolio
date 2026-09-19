@@ -26,6 +26,7 @@ Be blunt. If an idea will look like a gimmick, ESL classroom residue, unearned t
 | [platforms.md](platforms.md) | Tools to learn, in hiring order, free vs trial vs skip. |
 | [three-month-course.md](three-month-course.md) | 12-week skills course. Homework is the portfolio. |
 | [open-questions.md](open-questions.md) | Facts still needed (dates, phone, LMS name). |
+| [universal-english-case.md](universal-english-case.md) | Draft copy for the Universal English Work case. |
 | [ardmore-case.md](ardmore-case.md) | Draft copy for the Ardmore Work case. Edit here, then put it on the site. |
 | [report-o-matic-case.md](report-o-matic-case.md) | Draft copy for the Report-O-Matic Work case. |
 | [fire-list-o-matic-case.md](fire-list-o-matic-case.md) | Draft copy for the FireList-O-Matic Work case. |
