@@ -132,7 +132,7 @@ const cases: {
   id: string;
   title: string;
   subtitle: string;
-  logo?: { src: string; href: string; alt: string; cta?: string; wide?: boolean };
+  logo?: { src: string; href?: string; alt: string; cta?: string };
   body: ReactNode;
 }[] = [
   {
@@ -145,7 +145,6 @@ const cases: {
       href: "https://www.universal-english.com/",
       alt: "Universal English",
       cta: "Live site",
-      wide: true,
     },
     body: (
       <>
@@ -228,6 +227,10 @@ const cases: {
     title: "Ardmore Summer School, Hertfordshire",
     subtitle:
       "Covid-19 remote content, then seasonal centre operations · sharing centre-management duties",
+    logo: {
+      src: "/work/ardmore/logo.png",
+      alt: "Ardmore",
+    },
     body: (
       <>
         <h3>First Contact</h3>
@@ -568,8 +571,9 @@ export function WorkCases() {
             >
             <div className="case-head">
               {item.logo ? (
+                item.logo.href ? (
                 <a
-                  className={item.logo.wide ? "case-logo case-logo-wide" : "case-logo"}
+                  className="case-logo"
                   href={item.logo.href}
                   rel="noreferrer"
                   target="_blank"
@@ -582,6 +586,11 @@ export function WorkCases() {
                   <img src={item.logo.src} alt="" />
                   <span>{item.logo.cta ?? "Live sign in"}</span>
                 </a>
+                ) : (
+                <div className="case-logo">
+                  <img src={item.logo.src} alt={item.logo.alt} />
+                </div>
+                )
               ) : null}
               <h2>
                 <button
