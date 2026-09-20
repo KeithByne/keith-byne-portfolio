@@ -9,6 +9,8 @@ This folder is **not** Report-O-Matic. That product lives in `C:\dev\Report-O-Ma
 
 ## On start
 
+Keith is building the **most employable version of himself** for remote European ID / LXD / e-learning / L&D roles. Flag any request that drifts off that path — wrong tools, gimmicks, unearned skill claims, side projects hiring managers will not credit — even when he is enthusiastic. Then wait for him to choose.
+
 Run the scripts the work needs **without asking**. `npm install`, `npm run dev`, git, Vercel deploy and alias, ffmpeg, and any other command required to finish the job. Do not stop to confirm. When a site change is done, push it.
 
 ## How to advise on new ideas
