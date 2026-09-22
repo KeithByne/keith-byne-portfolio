@@ -8,7 +8,11 @@ Source of truth: [cv-source-original.md](cv-source-original.md) (2026 Word CV).
 - [ ] Phone number for CV and letter
 - [ ] Portfolio URL (Wix, once live)
 - [ ] LinkedIn URL
-- [ ] Which LMS product Keith already runs in production (Moodle, custom, other)
+- [x] LMS — locked 22 Sep 2026:
+  - **Academy ops:** Edmodo from 2015 until Edmodo closed; **Google Classroom** from then to present.
+  - **Live online:** Zoom from 2019 (chosen so teachers and adult learners could be trained quickly). On Covid-19 closure, teaching staff were trained in 3 hours; all classes continued with no missed session.
+  - **Portfolio / SCORM demo:** **SCORM Cloud** (Keith researching; do not open the account until Week 5). Free trial is not time-limited (3 courses, 10 resettable registrations). Not on `cv.md` until an upload exists.
+  - **Not using:** Moodle (no account). MoodleCloud has no permanent free plan.
 
 ## Dates still missing
 
@@ -16,6 +20,7 @@ Source of truth: [cv-source-original.md](cv-source-original.md) (2026 Word CV).
 - [x] Ardmore relationship began in Covid-19 with ArdmoreX content (research, create, deploy for language learners) (confirmed 18 Sep 2026)
 - [x] Ardmore management team built for 200 students; centre flexed to more than 400 at peak after another company at the same university collapsed, following geopolitical unrest in the Middle East (confirmed 18 Sep 2026)
 - [ ] Ardmore Summer School year(s) — original only says “most recently”
+- [x] Ardmore Hertfordshire public location URL (confirmed 21 Sep 2026): https://theardmoregroup.com/locations/university-of-hertfordshire/ — school location page, not a product login; Work logo uses “Live site”. Do not claim Keith is named on that page.
 - [x] Report-O-Matic Demo School (18 Sep 2026): class, report, and PDF URLs exist but require sign-in (PDF 401). Portfolio case uses public site + screenshots instead of those links.
 - [x] FireList-O-Matic live URL (confirmed 18 Sep 2026): https://fire-list-o-matic.vercel.app/ — public Night Log/FIRE preview used as stills; signed-in dashboard is login-walled. Administrator QR onboarding currently closed for testing.
 - [ ] FireList-O-Matic company / LTD name — not claimed on CV or Work (Report-O-Matic has REPORT-O-MATIC LTD)

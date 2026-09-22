@@ -29,13 +29,15 @@ Be blunt. If an idea will look like a gimmick, ESL classroom residue, unearned t
 | [cv.md](cv.md) | Industry-format CV. Send this. Skills grow only via the log. |
 | [cover-letter.md](cover-letter.md) | Introduction letter. Swap the tokens per application. |
 | [cv-skills-log.md](cv-skills-log.md) | Which course module unlocks which CV line. |
+| [portfolio-plan.md](portfolio-plan.md) | Overview, glossary, and staged build order. Read this first. |
 | [platforms.md](platforms.md) | Tools to learn, in hiring order, free vs trial vs skip. |
-| [three-month-course.md](three-month-course.md) | 12-week skills course. Homework is the portfolio. |
+| [three-month-course.md](three-month-course.md) | 12-week checklist. Follows the plan. Articulate trial starts week 6. |
 | [open-questions.md](open-questions.md) | Facts still needed (dates, phone, LMS name). |
 | [universal-english-case.md](universal-english-case.md) | Draft copy for the Universal English Work case. |
 | [ardmore-case.md](ardmore-case.md) | Draft copy for the Ardmore Work case. Edit here, then put it on the site. |
 | [report-o-matic-case.md](report-o-matic-case.md) | Draft copy for the Report-O-Matic Work case. |
 | [fire-list-o-matic-case.md](fire-list-o-matic-case.md) | Draft copy for the FireList-O-Matic Work case. |
+| [portfolio/job-aid-safe-ai/storyboard.md](portfolio/job-aid-safe-ai/storyboard.md) | Case A: one-page job aid + 8-slide stakeholder deck (same Safe AI audience). |
 | [portfolio/rise-safe-ai/storyboard.md](portfolio/rise-safe-ai/storyboard.md) | Branching script for the first Rise module. |
 
 ## Portfolio site (Vercel)

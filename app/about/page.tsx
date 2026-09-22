@@ -36,7 +36,10 @@ export default function AboutPage() {
         <p>
           Based in Espartinas, Seville. Director and Director of Studies of
           Universal English S.L. since 2015: curriculum, budgets, teams, and
-          hybrid/online delivery, including online teacher training in educational technology. Open to EU remote employment or a Spanish
+          hybrid/online delivery, including online teacher training in
+          educational technology. Live classes have run on Zoom since 2019;
+          on Covid-19 closure, staff were trained in three hours and no
+          session was missed. Open to EU remote employment or a Spanish
           B2B / autónomo contract.
         </p>
         <p>

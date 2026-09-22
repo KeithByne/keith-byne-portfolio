@@ -33,8 +33,8 @@ Programme director, instructional designer, and educational software builder wit
 **Learning technology**
 - Educational SaaS and new product design
 - Wix and custom web platforms for autonomous learning (including iPALABRA)
-- Live online training (Skype, Zoom); digital resource training for teaching staff
-- LMS operations: [TO CONFIRM: product name — add only when named]
+- Live online delivery on Zoom from 2019; digital resource training for teaching staff
+- LMS operations: Google Classroom (Edmodo from 2015 until that platform closed)
 
 *Articulate Rise/Storyline and SCORM are added only when a live portfolio module exists. See [cv-skills-log.md](cv-skills-log.md).*
 
@@ -47,6 +47,8 @@ Tomares, Spain · 2015–present
 
 - Own curriculum, course development, staffing, budgets, marketing, and web content for an adult training organisation.
 - Designed and run international online technology training for teachers (Zoom), plus face-to-face trainer programmes; ongoing content work with Teachertrainingvideos.com / Russell Stannard.
+- Put live classes on Zoom from 2019 so teachers and adult learners could be trained quickly; on Covid-19 closure, trained the teaching staff in 3 hours and continued every class with no missed session.
+- Ran the academy LMS on Edmodo from 2015, then Google Classroom when Edmodo closed.
 - Introduced online classes, then hybrid classes, ahead of local competitors; built iPALABRA free learning websites and wrote content for private ESL platforms.
 - Specified and developed educational SaaS products and new digital learning tools, including Report-O-Matic (REPORT-O-MATIC LTD): a student-handling environment with multi-level access, report generation/storage/reference, registers, timetable development, resource allocation, and relocation; 13-language UI and 13-language report output so the PDF can go home in the student’s own language. Also FireList-O-Matic: a phone-first residential-school accountability product with multi-level access (Centre Manager, Group Leader, Home Staff, visitor QRs), Night Log campus presence, FIRE live muster, and drawable site zones.
 

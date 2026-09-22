@@ -1,7 +1,13 @@
 "use client";
 
 import Link from "next/link";
-import { useEffect, useRef, useState, type ReactNode } from "react";
+import {
+  useEffect,
+  useLayoutEffect,
+  useRef,
+  useState,
+  type ReactNode,
+} from "react";
 import { createPortal } from "react-dom";
 
 function PhoneLoop({
@@ -158,9 +164,14 @@ const cases: {
         <h3>Online, then hybrid</h3>
         <p>
           The academy was first in the area to offer online classes, then
-          hybrid. International online technology training for teachers ran
-          on Zoom, with face-to-face trainer programmes as well, and ongoing
-          content work with Teachertrainingvideos.com / Russell Stannard.
+          hybrid. Live classes moved onto Zoom from 2019 because teachers and
+          adult learners could be trained quickly. On Covid-19 closure,
+          teaching staff were trained in three hours and every class continued
+          with no missed session. International online technology training
+          for teachers also ran on Zoom, with face-to-face trainer programmes,
+          and ongoing content work with Teachertrainingvideos.com / Russell
+          Stannard. The academy LMS was Edmodo from 2015, then Google
+          Classroom when Edmodo closed.
         </p>
         <h3>The public site</h3>
         <p>
@@ -188,7 +199,15 @@ const cases: {
           <li>
             Hybrid and online
             <span>
-              First in the area to offer online classes, then hybrid
+              First in the area to offer online classes, then hybrid; Zoom
+              from 2019; three-hour staff training on Covid-19 closure, no
+              missed sessions
+            </span>
+          </li>
+          <li>
+            LMS
+            <span>
+              Edmodo from 2015, then Google Classroom when Edmodo closed
             </span>
           </li>
           <li>
@@ -229,7 +248,9 @@ const cases: {
       "Covid-19 remote content, then seasonal centre operations · sharing centre-management duties",
     logo: {
       src: "/work/ardmore/logo.png",
+      href: "https://theardmoregroup.com/locations/university-of-hertfordshire/",
       alt: "Ardmore",
+      cta: "Live site",
     },
     body: (
       <>
@@ -264,6 +285,17 @@ const cases: {
           employment period.
         </p>
         <ul className="roles">
+          <li>
+            Location / Centre
+            <span>
+              <a
+                href="https://theardmoregroup.com/locations/university-of-hertfordshire/"
+                rel="noreferrer"
+              >
+                University of Hertfordshire
+              </a>
+            </span>
+          </li>
           <li>
             ArdmoreX
             <span>
@@ -308,7 +340,7 @@ const cases: {
     subtitle:
       "Student handling environment · multi-level access · a series of operational problems, solved in a live product",
     logo: {
-      src: "/work/report-o-matic/logo-night.png",
+      src: "/work/report-o-matic/logo.png",
       href: "https://www.report-o-matic.online/landing.html",
       alt: "Report-O-Matic",
     },
@@ -549,8 +581,114 @@ const cases: {
   },
 ];
 
+const USER_SCROLL_KEYS = new Set([
+  "ArrowUp",
+  "ArrowDown",
+  "PageUp",
+  "PageDown",
+  "Home",
+  "End",
+  " ",
+]);
+
+function foldDurationMs() {
+  if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+    return 0;
+  }
+  const raw = getComputedStyle(document.documentElement)
+    .getPropertyValue("--fold-duration")
+    .trim();
+  if (raw.endsWith("ms")) return parseFloat(raw) || 900;
+  return (parseFloat(raw) || 0.9) * 1000;
+}
+
+function usePinnedFoldTitle(openId: string | null) {
+  const listRef = useRef<HTMLDivElement>(null);
+  const alignRef = useRef<(() => void) | null>(null);
+  const stopRef = useRef<(() => void) | null>(null);
+
+  useEffect(() => () => stopRef.current?.(), []);
+
+  useLayoutEffect(() => {
+    alignRef.current?.();
+  }, [openId]);
+
+  const pinNext = (el: HTMLElement) => {
+    stopRef.current?.();
+    const pinnedTop = el.getBoundingClientRect().top;
+    let cancelled = false;
+    let raf = 0;
+    let timeout = 0;
+    const root = document.documentElement;
+    const previousAnchor = root.style.overflowAnchor;
+    root.style.overflowAnchor = "none";
+
+    const align = () => {
+      if (cancelled) return;
+      const delta = el.getBoundingClientRect().top - pinnedTop;
+      if (Math.abs(delta) < 0.5) return;
+      window.scrollBy(0, delta);
+    };
+
+    const observer = new ResizeObserver(() => align());
+    const list = listRef.current;
+    if (list) {
+      observer.observe(list);
+      for (const fold of list.querySelectorAll(".fold")) observer.observe(fold);
+    }
+
+    const stop = () => {
+      if (cancelled) return;
+      cancelled = true;
+      cancelAnimationFrame(raf);
+      window.clearTimeout(timeout);
+      observer.disconnect();
+      window.removeEventListener("wheel", onWheel, true);
+      window.removeEventListener("touchmove", onUserIntent, true);
+      window.removeEventListener("keydown", onKey, true);
+      root.style.overflowAnchor = previousAnchor;
+      alignRef.current = null;
+      if (stopRef.current === stop) stopRef.current = null;
+    };
+
+    const onUserIntent = () => stop();
+    const onWheel = (event: WheelEvent) => {
+      if (event.deltaY !== 0 || event.deltaX !== 0) stop();
+    };
+    const onKey = (event: KeyboardEvent) => {
+      if (USER_SCROLL_KEYS.has(event.key)) stop();
+    };
+
+    alignRef.current = align;
+    stopRef.current = stop;
+
+    align();
+    const tick = () => {
+      if (cancelled) return;
+      align();
+      raf = requestAnimationFrame(tick);
+    };
+    raf = requestAnimationFrame(tick);
+
+    window.addEventListener("wheel", onWheel, { passive: true, capture: true });
+    window.addEventListener("touchmove", onUserIntent, {
+      passive: true,
+      capture: true,
+    });
+    window.addEventListener("keydown", onKey, { capture: true });
+
+    timeout = window.setTimeout(() => {
+      align();
+      stop();
+    }, foldDurationMs() + 80);
+  };
+
+  return { listRef, pinNext };
+}
+
 export function WorkCases() {
   const [openId, setOpenId] = useState<string | null>("universal-english");
+  const { listRef, pinNext } = usePinnedFoldTitle(openId);
 
   return (
     <main className="band">
@@ -560,7 +698,7 @@ export function WorkCases() {
         the first.
       </p>
 
-      <div className="case-list">
+      <div className="case-list" ref={listRef}>
         {cases.map((item) => {
           const open = openId === item.id;
           return (
@@ -598,9 +736,12 @@ export function WorkCases() {
                   className="case-toggle"
                   aria-expanded={open}
                   aria-controls={`case-panel-${item.id}`}
-                  onClick={() =>
-                    setOpenId((current) => (current === item.id ? null : item.id))
-                  }
+                  onClick={(event) => {
+                    pinNext(event.currentTarget);
+                    setOpenId((current) =>
+                      current === item.id ? null : item.id,
+                    );
+                  }}
                 >
                   <span className="case-toggle-title">{item.title}</span>
                   <span className="case-toggle-sub">{item.subtitle}</span>
