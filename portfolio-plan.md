@@ -116,7 +116,7 @@ Read once. After that, the staged plan uses ordinary words, with the jargon in b
 | **Figma** | Optional: boxes-on-a-page drawing of the Rise path. Free. | No |
 | **LMS** | Learning Management System — the school/company platform that *hosts* courses (Moodle, etc.). Name the one you already run, when you can. | — |
 | **SCORM** | A zip format so a module will *play inside* an LMS. Ads ask for **SCORM 1.2**. | — |
-| **SCORM Cloud** | A free host so an employer can click a demo. Use it for a dummy PDF first, then for real modules. | Free account, not a 30-day authoring trial |
+| **SCORM Cloud** | Free host so an employer can click a demo. Dummy PDF first, then Rise/Storyline packages. [cloud.scorm.com](https://cloud.scorm.com/) · [pricing](https://rusticisoftware.com/products/scorm-cloud/pricing/) · [getting started](https://cloud.scorm.com/docs/user-guide/getting-started/) | Free account, not a 30-day authoring trial |
 | **Articulate 360** | Paid suite. **30-day trial, no card.** Contains Rise and Storyline. **One clock for both.** | **Yes — 30 days** |
 | **Rise 360** | Form-based e-learning. Faster. Case B. | Inside that trial |
 | **Storyline 360** | Timeline, buttons, memory of choices (“variables” / “states”). Case C. Senior ads often require it. | Inside that trial |
@@ -193,6 +193,7 @@ Stage 7  Apply
 
 **Week 3 — Canva**
 
+- **Canva Free** account is already open (22 Sep 2026). No time limit. Do not start Pro.
 - Build the one A4 page from the locked cheat-sheet script.  
 - Export PDF + PNG.  
 - Public Drive (or site) link.
@@ -213,7 +214,7 @@ Stage 7  Apply
 
 **Do**
 
-- Create a **SCORM Cloud** account (locked as the portfolio host; free trial is not time-limited). Keith is researching it; do not open the account before Week 5.
+- **SCORM Cloud** account is already open (free Trial, 22 Sep 2026). No time limit. Leave it idle until this week, then upload a dummy PDF/package and write 10-step notes. Do not add a card.
 - Academy ops LMS is already named: Google Classroom (from Edmodo). That is not this upload.  
 - Upload a simple package **or** the job-aid PDF as a stand-in course.  
 - Write 10-step publish notes in this repo.

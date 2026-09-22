@@ -26,6 +26,7 @@ The homework **is** the portfolio.
 ## Weeks 3–5 — easy tools, then dummy hosting
 
 **Week 3 — Stage 3 (Canva)**
+- **Canva Free** account is already open (22 Sep 2026). No time limit. Do not start Pro.
 - One-page cheat sheet from the locked script.
 - Export PDF + PNG. Public Drive (or site) link.
 - Unlock log: Canva, once the URL exists.
@@ -36,7 +37,7 @@ The homework **is** the portfolio.
 - Unlock log: PowerPoint job aids and stakeholder decks.
 
 **Week 5 — Stage 4 (LMS plumbing)**
-- Research **SCORM Cloud** (locked as the portfolio host). Open the free account in this week, not before.
+- **[SCORM Cloud](https://cloud.scorm.com/)** account is already open (free Trial; no time limit). Product: [Rustici SCORM Cloud](https://rusticisoftware.com/products/scorm-cloud/). Pricing: [trial limits](https://rusticisoftware.com/products/scorm-cloud/pricing/). Guide: [getting started](https://cloud.scorm.com/docs/user-guide/getting-started/). Do not add a card.
 - Upload a simple package or the job-aid PDF as a stand-in course. Write 10-step publish notes in this repo.
 - Unlock log: SCORM Cloud (academy LMS is already named on the CV as Google Classroom).
 - **Still do not** start Articulate.

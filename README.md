@@ -13,6 +13,18 @@ Keith is building the **most employable version of himself** for remote European
 
 Run the scripts the work needs **without asking**. `npm install`, `npm run dev`, git, Vercel deploy and alias, ffmpeg, and any other command required to finish the job. Do not stop to confirm. When a site change is done, push it.
 
+**Show documents (common protocol).** Keith cannot usefully read long copy in chat. When he needs to see a plan, storyboard, job aid, deck, skills log, or any other formatted page:
+
+1. Start the local docs server if it is not already up: `node tmp/docs-preview/serve.js` (http://127.0.0.1:3458/).
+2. Open **each** page in a **new browser window**. For the full set: `node tmp/docs-preview/open-all.js`. For one artefact, open that URL the same way.
+3. Put the links in the reply. Do not paste the document body into chat as the way he is meant to read it.
+
+Never open Canva’s marketing or Pro / 30-day trial page. He already has Canva Free. Do not design the one-pager for him in Canva; he is finishing that himself.
+
+**Visual theme.** Follow [portfolio/visual-theme.md](portfolio/visual-theme.md). **Open Sauce** (Poppins stand-in) for text; **League Gothic** (Impact stand-in) when space is tight, on titles and numbers only. Colour blocks; 01 / 02 / 03. Elegant, not juvenile. Do not invent a second system.
+
+Jump menu (same server): Home, Action map, Plan, Weeks, Cheat sheet, One-pager, 8 slides, Rise, Tools, Skills log, plus SCORM Cloud.
+
 ## How to advise on new ideas
 
 When Keith suggests adding something (a video, an avatar, a page, a skill line, a photo, a tool), **do not build it first**. Say:
@@ -29,6 +41,7 @@ Be blunt. If an idea will look like a gimmick, ESL classroom residue, unearned t
 | [cv.md](cv.md) | Industry-format CV. Send this. Skills grow only via the log. |
 | [cover-letter.md](cover-letter.md) | Introduction letter. Swap the tokens per application. |
 | [cv-skills-log.md](cv-skills-log.md) | Which course module unlocks which CV line. |
+| Formatted docs (local) | [http://127.0.0.1:3458/](http://127.0.0.1:3458/) — clickable menu. Open all windows with `node tmp/docs-preview/open-all.js`. |
 | [portfolio-plan.md](portfolio-plan.md) | Overview, glossary, and staged build order. Read this first. |
 | [platforms.md](platforms.md) | Tools to learn, in hiring order, free vs trial vs skip. |
 | [three-month-course.md](three-month-course.md) | 12-week checklist. Follows the plan. Articulate trial starts week 6. |
@@ -37,8 +50,13 @@ Be blunt. If an idea will look like a gimmick, ESL classroom residue, unearned t
 | [ardmore-case.md](ardmore-case.md) | Draft copy for the Ardmore Work case. Edit here, then put it on the site. |
 | [report-o-matic-case.md](report-o-matic-case.md) | Draft copy for the Report-O-Matic Work case. |
 | [fire-list-o-matic-case.md](fire-list-o-matic-case.md) | Draft copy for the FireList-O-Matic Work case. |
+| [portfolio/safe-ai-action-map.md](portfolio/safe-ai-action-map.md) | Stage 1: who, problem, do this, how we would notice. |
 | [portfolio/job-aid-safe-ai/storyboard.md](portfolio/job-aid-safe-ai/storyboard.md) | Case A: one-page job aid + 8-slide stakeholder deck (same Safe AI audience). |
+| [portfolio/visual-theme.md](portfolio/visual-theme.md) | Locked look from the Canva job aid. Use on later media. |
+| [portfolio/job-aid-safe-ai/job-aid-sample.pdf](portfolio/job-aid-safe-ai/job-aid-sample.pdf) | Keith’s Canva job aid (working file). |
+| [portfolio/job-aid-safe-ai/deck.html](portfolio/job-aid-safe-ai/deck.html) | Working 8-slide talk (HTML prototype). Remake in PowerPoint later. |
 | [portfolio/rise-safe-ai/storyboard.md](portfolio/rise-safe-ai/storyboard.md) | Branching script for the first Rise module. |
+| [SCORM Cloud](https://cloud.scorm.com/) | Portfolio LMS host. Free Trial account already open; no time limit. Dummy upload in Week 5. |
 
 ## Portfolio site (Vercel)
 

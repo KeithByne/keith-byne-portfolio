@@ -18,6 +18,7 @@ Programme director, instructional designer, and educational software builder wit
 
 **Instructional design and curriculum**
 - Course and materials design for adult, professional, and institutional audiences
+- Action mapping / performance-first design
 - ESP/EAP programmes for enterprise accounts
 - Hybrid and fully online learning design; web-based learning paths
 

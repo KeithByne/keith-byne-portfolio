@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Before you paste, classify — job aid</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500;600&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --paper: #ffffff;
+      --ink: #12141a;
+      --muted: #5b616c;
+      --rule: #e6e8ee;
+      --wash: #f3f5f8;
+      --accent: #0d5c57;
+      color-scheme: light;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: #e8eaef;
+      color: var(--ink);
+      font: 12.5pt/1.45 "IBM Plex Sans", "Segoe UI", sans-serif;
+    }
+    .sheet {
+      width: 210mm;
+      max-width: calc(100% - 2rem);
+      min-height: 297mm;
+      margin: 1.5rem auto;
+      padding: 14mm 16mm 12mm;
+      background: var(--paper);
+      box-shadow: 0 18px 40px rgba(18, 20, 26, 0.12);
+    }
+    .top {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: 1rem;
+      padding-bottom: 10px;
+      border-bottom: 1px solid var(--ink);
+    }
+    .eyebrow {
+      font-family: "IBM Plex Mono", ui-monospace, monospace;
+      font-size: 8.5pt;
+      font-weight: 600;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin: 0;
+    }
+    .audience {
+      font-family: "IBM Plex Mono", ui-monospace, monospace;
+      font-size: 8.5pt;
+      font-weight: 500;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin: 0;
+    }
+    h1 {
+      font-size: 28pt;
+      font-weight: 600;
+      line-height: 1.05;
+      letter-spacing: -0.035em;
+      margin: 14px 0 8px;
+      max-width: 18ch;
+    }
+    h1 em {
+      font-style: normal;
+      color: var(--accent);
+    }
+    .sub {
+      margin: 0 0 18px;
+      color: var(--muted);
+      font-size: 12pt;
+      max-width: 42ch;
+    }
+    h2 {
+      font-family: "IBM Plex Mono", ui-monospace, monospace;
+      font-size: 8.5pt;
+      font-weight: 600;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin: 18px 0 8px;
+    }
+    .checks {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: grid;
+      gap: 8px;
+    }
+    .checks li {
+      display: grid;
+      grid-template-columns: 2.1rem 1fr;
+      gap: 0.7rem;
+      align-items: start;
+      margin: 0;
+      padding: 10px 12px;
+      background: var(--wash);
+    }
+    .num {
+      font-family: "IBM Plex Mono", ui-monospace, monospace;
+      font-size: 11pt;
+      font-weight: 600;
+      color: var(--accent);
+      padding-top: 1px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 11pt;
+    }
+    th, td {
+      text-align: left;
+      vertical-align: top;
+      padding: 8px 10px 8px 0;
+      border-bottom: 1px solid var(--rule);
+    }
+    th {
+      font-family: "IBM Plex Mono", ui-monospace, monospace;
+      font-size: 8pt;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--muted);
+      border-bottom: 1px solid var(--ink);
+    }
+    td:last-child { font-weight: 500; }
+    .do {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+    .do li {
+      margin: 0;
+      padding: 8px 0 8px 12px;
+      border-left: 3px solid var(--rule);
+    }
+    .do li.never { border-left-color: var(--ink); }
+    .stop {
+      margin-top: 16px;
+      background: var(--ink);
+      color: #f7f8fa;
+      padding: 14px 16px;
+      display: flex;
+      justify-content: space-between;
+      gap: 1rem;
+      align-items: baseline;
+    }
+    .stop strong { font-weight: 600; }
+    .stop .next {
+      font-family: "IBM Plex Mono", ui-monospace, monospace;
+      font-size: 9pt;
+      font-weight: 500;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: #9fd4cf;
+      white-space: nowrap;
+    }
+    footer {
+      margin-top: 14px;
+      display: flex;
+      justify-content: space-between;
+      gap: 1rem;
+      font-size: 9pt;
+      color: var(--muted);
+    }
+    @media print {
+      body { background: #fff; }
+      .sheet { box-shadow: none; margin: 0; width: 210mm; max-width: none; }
+    }
+    @page { size: A4; margin: 0; }
+    * { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  </style>
+</head>
+<body>
+  <article class="sheet" aria-label="Job aid: classify data before using AI or sharing files. Three checks: what data, is the tool approved, ask if unsure.">
+    <div class="top">
+      <p class="eyebrow">Job aid · 30 seconds</p>
+      <p class="audience">Desk · remote EU team</p>
+    </div>
+
+    <h1>Before you paste, <em>classify.</em></h1>
+    <p class="sub">Remote work is fast. Public AI and personal drives are faster. Take 30 seconds.</p>
+
+    <h2>Three checks before any AI or file share</h2>
+    <ol class="checks">
+      <li><span class="num">01</span><span>What data is this? (public / internal / personal / customer)</span></li>
+      <li><span class="num">02</span><span>Is this tool on the approved list?</span></li>
+      <li><span class="num">03</span><span>If I am unsure, I do not paste — I ask my line manager or data-protection lead.</span></li>
+    </ol>
+
+    <h2>Classify</h2>
+    <table>
+      <thead>
+        <tr><th>If it is…</th><th>Treat it as…</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Already on the public website, no people named</td><td>Public</td></tr>
+        <tr><td>Internal process, no personal or customer data</td><td>Internal — approved tools only</td></tr>
+        <tr><td>Names, emails, staff or candidate files</td><td>Personal data — do not paste into public AI</td></tr>
+        <tr><td>Customer lists, contracts, unpublished commercial files</td><td>Customer / confidential — do not paste into public AI</td></tr>
+      </tbody>
+    </table>
+
+    <h2>Then do this</h2>
+    <ul class="do">
+      <li><strong>Public or already-approved text:</strong> approved tool is fine.</li>
+      <li><strong>Personal or customer data:</strong> take out the real details or use a fake example, then approved tool — or no AI.</li>
+      <li class="never"><strong>Never:</strong> paste the live file into a public AI tool; put work files on a personal Drive/Dropbox so a contractor can “just edit overnight.”</li>
+    </ul>
+
+    <div class="stop">
+      <span><strong>If unsure:</strong> Stop. Do not paste. Ask your line manager or data-protection lead.</span>
+      <span class="next">→ Keep this on the desk</span>
+    </div>
+
+    <footer>
+      <span>Classify → approved tool or no AI → ask if unsure.</span>
+      <span>Keith Byne — portfolio sample, not a named client.</span>
+    </footer>
+  </article>
+</body>
+</html>
