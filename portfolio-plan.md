@@ -53,7 +53,7 @@ A, B, and C share the Safe AI topic. D is a different artefact (L&D-manager evid
 | Cheat-sheet + slides script | Written in plain English |
 | Action map (who / problem / do this / count) | **Not written yet** |
 | Storyline script | **Not written yet** |
-| Canva page / PowerPoint | **Not built** |
+| Canva page / PowerPoint | **Canva job aid live.** PowerPoint deck not built. |
 | Articulate trial | **Must stay closed** |
 
 **Next actual step after this file:** Stage 1 — write the action map. Do not open Canva or Articulate yet.

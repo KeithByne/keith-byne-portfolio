@@ -25,6 +25,8 @@ Programme director, instructional designer, and educational software builder wit
 **Visual communication**
 - BA (Hons) Fine Art
 - Graphic design, illustration, and CAD-CAM production (1984–1996), including work for Microsoft and Virgin Airlines
+- Canva: one-page job aids (Before You Paste — Classify)
+- Inkscape for vector artwork (website and screen-print practice)
 
 **Programme operations**
 - Director and Director of Studies, Universal English S.L. (2015–present): budgets, teams, marketing, resource management

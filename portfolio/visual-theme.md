@@ -44,4 +44,4 @@ Colour groups concepts. It is not decoration. Meaning is also in the words and t
 
 - `keith.byne@portfolio.sample` is a placeholder. Real mail on the CV is `keith.byne@hotmail.co.uk`.
 - “Data Protection Lead” as the named ask-role is still [TO CONFIRM].
-- Canva is not on `cv.md` until a **public** PDF URL exists.
+- Canva is on `cv.md` (23 Sep 2026). Public PDF: `/work/safe-ai/before-you-paste-classify.pdf`.

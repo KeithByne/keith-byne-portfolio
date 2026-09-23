@@ -28,7 +28,7 @@ Full order and glossary: [portfolio-plan.md](portfolio-plan.md). **Do not start 
 ## Touch once — do not claim expertise
 
 - One portfolio LMS upload: **[SCORM Cloud](https://cloud.scorm.com/)** (locked 22 Sep 2026). Free Trial account already open; no calendar expiry. Leave it idle until Week 5. Do not add a card. Academy ops LMS is Google Classroom (from Edmodo). Do not add Moodle.
-- **Canva Free** opened 22 Sep 2026. No calendar expiry. Not on `cv.md` until a public one-pager PDF exists. Do not start Canva Pro.
+- **Canva Free** opened 22 Sep 2026. One-pager is public; Canva is on `cv.md`. Do not start Canva Pro.
 - Names to recognise in ads only: Workday Learning, Docebo, 360Learning, LearnUpon, Rise Up.
 - One short AI clip only if you later choose it in week 11; prefer CapCut or DaVinci Resolve. Do not open a Synthesia/HeyGen trial early.
 

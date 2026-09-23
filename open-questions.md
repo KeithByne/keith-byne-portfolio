@@ -13,7 +13,7 @@ Source of truth: [cv-source-original.md](cv-source-original.md) (2026 Word CV).
   - **Live online:** Zoom from 2019 (chosen so teachers and adult learners could be trained quickly). On Covid-19 closure, teaching staff were trained in 3 hours; all classes continued with no missed session.
   - **Portfolio / SCORM demo:** **[SCORM Cloud](https://cloud.scorm.com/)** — free Trial account opened 22 Sep 2026. No time limit (Rustici: not time-based; can sit for years). Caps: 3 courses, 5 GB, 10 resettable registrations. Leave idle until the Week 5 dummy upload. Do not add a card or upgrade. Not on `cv.md` until an upload exists.
   - **Not using:** Moodle (no account). MoodleCloud has no permanent free plan.
-- [x] Canva Free — account opened 22 Sep 2026. Keith is building the one-pager in Canva. Not on `cv.md` until a public PDF URL exists.
+- [x] Canva Free — account opened 22 Sep 2026. One-pager live 23 Sep 2026: `/work/safe-ai/before-you-paste-classify.pdf`. Canva line is on `cv.md`. Paint.NET not listed (hiring managers do not ask for it).
 - [x] Visual theme — locked 22 Sep 2026 from `portfolio/job-aid-safe-ai/job-aid-sample.pdf`. Tokens in [portfolio/visual-theme.md](portfolio/visual-theme.md). Apply to later slides, Rise, Storyline, and site extras. Do not invent a second look.
 
 ## Dates still missing

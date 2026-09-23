@@ -17,7 +17,7 @@ When Keith suggests adding anything to the site, CV, or portfolio: state the **b
 
 Run scripts automatically. Do not ask Keith to confirm `npm`, git, Vercel, ffmpeg, or other commands needed to finish the work. Push the site when the change is done. See **On start** in `README.md`.
 
-Show documents: follow **Show documents (common protocol)** in `README.md`. Serve `tmp/docs-preview` and open each page in a new browser window. Do not use chat as the reading surface. Never open Canva marketing or Pro-trial URLs. Keith is finishing the Canva one-pager himself.
+Show documents: follow **Show documents (common protocol)** in `README.md`. Serve `tmp/docs-preview` and open each page in a new browser window. Do not use chat as the reading surface. Never open Canva marketing or Pro-trial URLs.
 
 Visual theme: follow [portfolio/visual-theme.md](portfolio/visual-theme.md). Open Sauce (Poppins stand-in) for text; **League Gothic** (Impact stand-in) when space is tight, display only. Elegant, not juvenile. Colour blocks; 01 / 02 / 03. Do not invent a second look.
 
