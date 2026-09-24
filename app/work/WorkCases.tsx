@@ -107,12 +107,253 @@ function Shot({
   );
 }
 
+function ClickCover({
+  open,
+  onOpen,
+  wash,
+  children,
+}: {
+  open: boolean;
+  onOpen: () => void;
+  wash: "step" | "stop" | "do";
+  children: ReactNode;
+}) {
+  return (
+    <div className={`ppt-cover is-${wash}${open ? " is-open" : ""}`}>
+      <div className="ppt-cover-body">{children}</div>
+      <button type="button" onClick={onOpen} disabled={open}>
+        Click
+      </button>
+    </div>
+  );
+}
+
+function StakeholderDeck() {
+  const [slide, setSlide] = useState(0);
+  const [choice, setChoice] = useState<"paste" | "name" | null>(null);
+  const [whoOpen, setWhoOpen] = useState([false, false, false]);
+  const [steps, setSteps] = useState(0);
+  const [decideOpen, setDecideOpen] = useState([false, false, false]);
+  const count = 8;
+
+  return (
+    <figure className="ppt">
+      <div className="ppt-slide" aria-live="polite">
+        <p className="ppt-kicker">
+          <span>
+            {slide + 1} / {count}
+          </span>
+        </p>
+        {slide === 0 ? (
+          <>
+            <h3>Before you paste, classify.</h3>
+            <p>A 30-second habit for remote teams using AI and shared files.</p>
+            <p>One-page cheat sheet + 15-minute module.</p>
+            <p>Keith Byne — a portfolio sample, not a named client project.</p>
+          </>
+        ) : null}
+        {slide === 1 ? (
+          <>
+            <h3>The problem is a paste</h3>
+            <ol>
+              <li>Just drop this into ChatGPT and tidy it.</li>
+              <li>Put it on my personal Drive so the contractor can edit overnight.</li>
+            </ol>
+            <p>Both are faster than the allowed path. Both create leak risk.</p>
+            <p className="ppt-prompt">Click a choice.</p>
+            <div className="ppt-choices">
+              <button type="button" onClick={() => setChoice("paste")}>
+                Paste it now
+              </button>
+              <button type="button" onClick={() => setChoice("name")}>
+                Name the data first
+              </button>
+            </div>
+            {choice === "paste" ? (
+              <p className="ppt-result is-stop">
+                <strong>Wrong.</strong> That is the leak.
+              </p>
+            ) : null}
+            {choice === "name" ? (
+              <p className="ppt-result is-do">
+                <strong>Right.</strong> Classify, then choose a path.
+              </p>
+            ) : null}
+          </>
+        ) : null}
+        {slide === 2 ? (
+          <>
+            <h3>The 30 seconds that matter</h3>
+            <ClickCover
+              wash="step"
+              open={whoOpen[0]}
+              onOpen={() =>
+                setWhoOpen((current) => [true, current[1], current[2]])
+              }
+            >
+              <strong>Who.</strong> Knowledge workers on a distributed EU team.
+            </ClickCover>
+            <ClickCover
+              wash="step"
+              open={whoOpen[1]}
+              onOpen={() =>
+                setWhoOpen((current) => [current[0], true, current[2]])
+              }
+            >
+              <strong>When.</strong> Before any prompt, paste, or file share.
+            </ClickCover>
+            <ClickCover
+              wash="stop"
+              open={whoOpen[2]}
+              onOpen={() =>
+                setWhoOpen((current) => [current[0], current[1], true])
+              }
+            >
+              <strong>Not.</strong> A long compliance course. Not classroom
+              English. Not IT-only.
+            </ClickCover>
+          </>
+        ) : null}
+        {slide === 3 ? (
+          <>
+            <h3>What we need them to do</h3>
+            <button
+              type="button"
+              className="ppt-reveal"
+              onClick={() => setSteps((current) => Math.min(3, current + 1))}
+              disabled={steps >= 3}
+            >
+              Click to reveal each step.
+            </button>
+            <ol className="ppt-steps">
+              {steps >= 1 ? <li>Name the kind of data.</li> : null}
+              {steps >= 2 ? (
+                <li>Approved tool, stripped example, or no AI.</li>
+              ) : null}
+              {steps >= 3 ? <li>Ask if unsure.</li> : null}
+            </ol>
+            <p>
+              Count fewer unapproved AI pastes and fewer personal-drive shares.
+              We will not invent a percentage.
+            </p>
+          </>
+        ) : null}
+        {slide === 4 ? (
+          <>
+            <h3>Why not just send the policy PDF</h3>
+            <div className="ppt-table">
+              <p>
+                <span>Instead of</span> A 40-page acceptable-use policy
+              </p>
+              <p>
+                <span>We ship</span> One page at the desk
+              </p>
+              <p>
+                <span>Instead of</span> A 45-minute intro to AI
+              </p>
+              <p>
+                <span>We ship</span> A 10 to 15 minute module: name the data,
+                then take a path
+              </p>
+              <p>
+                <span>Instead of</span> A manual for every AI product
+              </p>
+              <p>
+                <span>We ship</span> Three checks that still work when the tools
+                change
+              </p>
+            </div>
+          </>
+        ) : null}
+        {slide === 5 ? (
+          <>
+            <h3>What the worker sees</h3>
+            <img
+              src="/work/safe-ai/job-aid.png"
+              alt="Job aid: classify data before using AI or sharing files."
+            />
+            <p>Three checks. Classify table. Stop rules.</p>
+            <p>This stays next to the desktop. The module is not the reminder.</p>
+          </>
+        ) : null}
+        {slide === 6 ? (
+          <>
+            <h3>The 15-minute module</h3>
+            <p>A map only. Do not play it in this meeting.</p>
+            <ol>
+              <li>Welcome</li>
+              <li>Classify (a live decision)</li>
+              <li>Two paths: careful path, or a correction then rejoin</li>
+              <li>Three checks, everyone together again</li>
+              <li>One marked scenario</li>
+              <li>Point to the cheat sheet and finish</li>
+            </ol>
+          </>
+        ) : null}
+        {slide === 7 ? (
+          <>
+            <h3>What you need them to decide</h3>
+            <ClickCover
+              wash="do"
+              open={decideOpen[0]}
+              onOpen={() =>
+                setDecideOpen((current) => [true, current[1], current[2]])
+              }
+            >
+              The habit. Classify, then an allowed path, then ask.
+            </ClickCover>
+            <ClickCover
+              wash="step"
+              open={decideOpen[1]}
+              onOpen={() =>
+                setDecideOpen((current) => [current[0], true, current[2]])
+              }
+            >
+              The ask-if-unsure person: [TO CONFIRM: DPO / line manager /
+              other]
+            </ClickCover>
+            <ClickCover
+              wash="step"
+              open={decideOpen[2]}
+              onOpen={() =>
+                setDecideOpen((current) => [current[0], current[1], true])
+              }
+            >
+              Where the page will live. Intranet, or a pinned PDF, somewhere
+              they already look.
+            </ClickCover>
+            <p>Then build the Rise module from the existing script.</p>
+          </>
+        ) : null}
+      </div>
+      <figcaption>Stakeholder deck — click a choice or a bar, then open the PowerPoint</figcaption>
+      <div className="ppt-nav">
+        <button
+          type="button"
+          onClick={() => setSlide((current) => current - 1)}
+          disabled={slide === 0}
+        >
+          Previous slide
+        </button>
+        <button
+          type="button"
+          onClick={() => setSlide((current) => current + 1)}
+          disabled={slide === count - 1}
+        >
+          Next slide
+        </button>
+        <a href="/work/safe-ai/before-you-paste.pptx">Open the PowerPoint</a>
+      </div>
+    </figure>
+  );
+}
+
 const pieces = [
   {
     n: "01",
-    title: "Before you paste, classify",
+    title: "Job aid and stakeholder deck",
     status: "Sample",
-    note: "One page for the person at the keyboard. Classify the data, then the allowed path, or stop and ask. Same audience as the later Rise module: remote teams and safe AI use.",
+    note: "One page at the desk, and the PowerPoint for the yes-meeting. Click the choices and the bars. Same audience as the later Rise module: remote teams and safe AI use.",
   },
   {
     n: "02",
@@ -563,7 +804,7 @@ const cases: {
   {
     id: "modules",
     title: "E-learning modules",
-    subtitle: "Job aid is up · Rise, Storyline, and the onboarding map still in build",
+    subtitle: "Job aid and deck are up · Rise, Storyline, and the onboarding map still in build",
     body: (
       <div className="work-list">
         {pieces.map((piece) => (
@@ -589,6 +830,7 @@ const cases: {
                       Open the one-page PDF
                     </a>
                   </p>
+                  <StakeholderDeck />
                 </div>
               ) : null}
             </div>
