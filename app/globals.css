@@ -493,9 +493,106 @@ h1 em {
   display: grid;
   grid-template-columns: 4.5rem 1fr;
   gap: 1rem;
-  align-items: baseline;
+  align-items: start;
   padding: 1.15rem 0;
   border-top: 1px solid var(--line);
+}
+
+.safe-ai-pair {
+  display: grid;
+  grid-template-columns: 14rem 1fr;
+  gap: 0.35rem 1rem;
+  margin-top: 1rem;
+  align-items: start;
+}
+
+.safe-ai-pair .case-shot-hit {
+  aspect-ratio: 210 / 297;
+  background: #fff;
+}
+
+.safe-ai-pair .case-shot-hit img {
+  height: 100%;
+  object-fit: contain;
+  object-position: top center;
+  background: #fff;
+}
+
+.safe-ai-file {
+  margin: 0.45rem 0 0;
+}
+
+.deck {
+  margin: 0;
+}
+
+.deck-slide {
+  background: #fff;
+  color: #3b3b3b;
+  aspect-ratio: 16 / 9;
+  padding: 1.15rem 1.3rem 1rem;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.deck-kicker {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  color: #6b6b6b;
+  font-size: 0.72rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.deck-slide h3 {
+  color: #3b3b3b;
+  font-size: 1.35rem;
+  margin: 0.55rem 0 0.7rem;
+}
+
+.deck-slide ul {
+  margin: 0;
+  padding-left: 1.1rem;
+  color: #3b3b3b;
+}
+
+.deck-slide li {
+  margin: 0.28rem 0;
+  line-height: 1.35;
+}
+
+.deck-page {
+  width: 4.2rem;
+  margin-top: auto;
+  border: 1px solid #e6e6e6;
+}
+
+.deck figcaption {
+  margin-top: 0.4rem;
+  color: var(--mute);
+  font-size: 0.8rem;
+}
+
+.deck-nav {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 0.55rem;
+}
+
+.deck-nav button {
+  font: inherit;
+  color: var(--ink);
+  background: transparent;
+  border: 1px solid var(--line);
+  padding: 0.35rem 0.7rem;
+  cursor: pointer;
+}
+
+.deck-nav button:disabled {
+  color: var(--mute);
+  cursor: default;
 }
 
 .work-item strong { font-size: 1.15rem; }
@@ -544,8 +641,12 @@ h1 em {
   .contact-grid,
   .work-item,
   .studio-grid,
-  .case-shots {
+  .case-shots,
+  .safe-ai-pair {
     grid-template-columns: 1fr;
+  }
+  .safe-ai-pair .case-shot {
+    max-width: 16rem;
   }
   .case-shots-phones {
     flex-direction: column;
