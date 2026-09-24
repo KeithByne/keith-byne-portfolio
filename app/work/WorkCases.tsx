@@ -369,8 +369,8 @@ const pieces = [
   {
     n: "04",
     title: "90-day onboarding framework",
-    status: "Planned",
-    note: "Needs analysis and hybrid onboarding map - the L&D-manager artefact, not a course.",
+    status: "Outline",
+    note: "The shape of the L&D piece: a needs analysis, a hybrid 90-day map, and a skill-gap sheet. Not a course. Read this before the real documents.",
   },
 ];
 
@@ -813,6 +813,65 @@ const cases: {
               <strong>{piece.title}</strong>
               <span className="status">{piece.status}</span>
               <p>{piece.note}</p>
+              {piece.n === "04" ? (
+                <div className="onboard-outline">
+                  <h3>What this is</h3>
+                  <p>
+                    A plan for one new person’s first 90 days on a hybrid
+                    team. Some days with other people, some days remote. Not
+                    a course, and not the Safe AI module. A portfolio sample,
+                    not a named employer.
+                  </p>
+                  <h3>Needs analysis</h3>
+                  <p>The finished page answers three questions.</p>
+                  <ol>
+                    <li>What must they be able to do by day 90?</li>
+                    <li>What do they already bring?</li>
+                    <li>
+                      Which gaps need practice with a person, and which are
+                      only information?
+                    </li>
+                  </ol>
+                  <h3>The 90 days</h3>
+                  <ol className="onboard-days">
+                    <li>
+                      <strong>Days 1–30.</strong> Learn the work beside
+                      someone. People, tools, and the shape of the week.
+                    </li>
+                    <li>
+                      <strong>Days 31–60.</strong> Do the work with a check.
+                      Together when the task is new. A page or a call when it
+                      repeats.
+                    </li>
+                    <li>
+                      <strong>Days 61–90.</strong> Own the work. The manager
+                      steps back.
+                    </li>
+                  </ol>
+                  <p>
+                    How we would notice: the job happens without the manager
+                    in the room. No invented percentage.
+                  </p>
+                  <h3>Skill-gap sheet</h3>
+                  <p>
+                    The second file. One row per skill: needed by day 90,
+                    where they are now, and how the gap closes — a buddy,
+                    practice, one short session, or a page. Not a course
+                    catalogue.
+                  </p>
+                  <h3>Still open</h3>
+                  <ul>
+                    <li>The role being onboarded. [TO CONFIRM]</li>
+                    <li>Which days the team is together. [TO CONFIRM]</li>
+                    <li>Who the buddy is. [TO CONFIRM]</li>
+                  </ul>
+                  <p>
+                    Later, the plan is a document and the gaps are a sheet.
+                    This is the shape, so you can read it before those files
+                    exist.
+                  </p>
+                </div>
+              ) : null}
               {piece.n === "01" ? (
                 <div className="safe-ai-pair">
                   <Shot

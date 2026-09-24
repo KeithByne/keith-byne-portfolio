@@ -50,6 +50,14 @@ Source of truth: [cv-source-original.md](cv-source-original.md) (2026 Word CV).
 - [ ] Hours per week for this course vs Report-O-Matic marketing
 - [ ] Preferred first application week (not before Week 6 unless a role is purely programme-management)
 
+## 90-day onboarding outline (24 Sep 2026)
+
+The Work page holds the shape only. Not a client project. Not on `cv.md`.
+
+- [ ] Role being onboarded
+- [ ] Which days the team is together
+- [ ] Who the buddy is
+
 ## Parked (24 Sep 2026)
 
 - Own LMS for the portfolio, in the style of a company onboarding system. Leave it. Portfolio host stays SCORM Cloud. A homemade LMS would read as a software side project, not as instructional design. Revisit only if he asks for a thin shell that launches packages SCORM Cloud already tracks.
