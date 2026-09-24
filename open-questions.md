@@ -52,7 +52,7 @@ Source of truth: [cv-source-original.md](cv-source-original.md) (2026 Word CV).
 
 ## 90-day onboarding outline (24 Sep 2026)
 
-The Work page holds the shape only. Not a client project. Not on `cv.md`.
+The Work page holds the plan and the skill-gap sheet. Not a client project. On `cv.md` as needs analysis and hybrid onboarding frameworks (24 Sep 2026).
 
 - [x] Role being onboarded (Keith, 24 Sep 2026): operations coordinator for a hybrid team. By day 90 they run the weekly rhythm: handovers, tools, and the meetings that keep the week moving.
 - [x] Days together (Keith, 24 Sep 2026): first week together. Then Tuesday and Wednesday together. Monday, Thursday, and Friday remote.

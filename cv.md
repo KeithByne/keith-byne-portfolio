@@ -30,6 +30,7 @@ Programme director, instructional designer, and educational software builder wit
 **Programme operations**
 - Director and Director of Studies, Universal English S.L. (2015–present): budgets, teams, marketing, resource management
 - Staff interviewing and onboarding
+- Needs analysis and hybrid onboarding frameworks
 - High-volume centre operations (Ardmore; management team built for 200, flexed to 400+ at peak)
 
 **Learning technology**

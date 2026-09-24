@@ -369,8 +369,8 @@ const pieces = [
   {
     n: "04",
     title: "90-day onboarding framework",
-    status: "Review",
-    note: "Two documents to read: the 90-day plan and the skill-gap sheet. Same look as the job aid. Not a course.",
+    status: "Sample",
+    note: "90-day plan and skill-gap sheet for an operations coordinator on a hybrid team. Not a course.",
   },
 ];
 
@@ -803,7 +803,7 @@ const cases: {
   {
     id: "modules",
     title: "E-learning modules",
-    subtitle: "Job aid and deck are up · Rise, Storyline, and the onboarding map still in build",
+    subtitle: "Job aid, deck, and onboarding plan are up · Rise and Storyline still in build",
     body: (
       <div className="work-list">
         {pieces.map((piece) => (
