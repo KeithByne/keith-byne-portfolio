@@ -49,3 +49,7 @@ Source of truth: [cv-source-original.md](cv-source-original.md) (2026 Word CV).
 
 - [ ] Hours per week for this course vs Report-O-Matic marketing
 - [ ] Preferred first application week (not before Week 6 unless a role is purely programme-management)
+
+## Parked (24 Sep 2026)
+
+- Own LMS for the portfolio, in the style of a company onboarding system. Leave it. Portfolio host stays SCORM Cloud. A homemade LMS would read as a software side project, not as instructional design. Revisit only if he asks for a thin shell that launches packages SCORM Cloud already tracks.
