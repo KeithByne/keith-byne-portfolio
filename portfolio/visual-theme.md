@@ -42,7 +42,7 @@ Colour groups concepts. It is not decoration. Meaning is also in the words and t
 
 ## Job-aid slide in the PowerPoint
 
-The page colour is `#FFFFFF`. That colour stays on the PDF. Do not use it as the background of the job-aid slide. The slide ground is `#E6E6E6`, so the white page is visible against the slide.
+Slide 6 uses the same white ground as the other slides. The PDF is what defines the page. Do not put a coloured ground behind it.
 
 ## Do not carry over without a decision
 
