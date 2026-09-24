@@ -322,7 +322,6 @@ function StakeholderDeck() {
               Where the page will live. Intranet, or a pinned PDF, somewhere
               they already look.
             </ClickCover>
-            <p>Then build the Rise module from the existing script.</p>
           </>
         ) : null}
       </div>
