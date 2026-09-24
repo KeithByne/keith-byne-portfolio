@@ -40,6 +40,10 @@ Colour groups concepts. It is not decoration. Meaning is also in the words and t
 4. **Staged process** as oversized `01 02 03` on equal tiles. Short caption under each number.
 5. Small centred footer.
 
+## Job-aid slide in the PowerPoint
+
+The page colour is `#FFFFFF`. That colour stays on the PDF. Do not use it as the background of the job-aid slide. The slide ground is `#E6E6E6`, so the white page is visible against the slide.
+
 ## Do not carry over without a decision
 
 - `keith.byne@portfolio.sample` is a placeholder. Real mail on the CV is `keith.byne@hotmail.co.uk`.

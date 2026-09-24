@@ -138,7 +138,7 @@ function StakeholderDeck() {
 
   return (
     <figure className="ppt">
-      <div className="ppt-slide" aria-live="polite">
+      <div className={slide === 5 ? "ppt-slide is-job-aid" : "ppt-slide"} aria-live="polite">
         <p className="ppt-kicker">
           <span>
             {slide + 1} / {count}
