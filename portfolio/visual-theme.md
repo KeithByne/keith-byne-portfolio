@@ -13,11 +13,11 @@ Modern, clean, clear, easy to read. Simple. Staged. Group ideas in **colour bloc
 
 **Type rule**
 
-- Open text: **Open Sauce** (Sans / One / Two). Modern, elegant, **round O**. Not juvenile. Stand-in: **Poppins**, Regular to Semibold only — not ExtraBold, not Black, not Nunito.
+- Open text: **Open Sauce One**. Modern, elegant, **round O**. Not juvenile. Weights 400, 500, and 600 only — not ExtraBold, not Black, not Nunito. Self-hosted at `public/fonts/` (`open-sauce.css`). Do not substitute Poppins.
 - Condensed, when space is tight: **League Gothic**. Stand-in: **Impact**. Use these for titles, eyebrows, and `01 02 03` — not for body sentences. Return to Open Sauce as soon as there is room.
 - Do not set paragraphs in League Gothic or Impact (that reads as a poster, not a job aid).
 - Hierarchy is size and this open / condensed pair. Do not add a third family.
-- Web stack: `"Open Sauce One", "Open Sauce Sans", Poppins, sans-serif` for text; `"League Gothic", Impact, sans-serif` for tight display.
+- Web stack: `"Open Sauce One", sans-serif` for text; `"League Gothic", Impact, sans-serif` for tight display. When an H5P or SCORM zip is styled, body text uses these same Open Sauce files.
 - Avoid Helvetica Condensed, Arial Narrow, and oval old-style grotesques.
 
 ## Colour
