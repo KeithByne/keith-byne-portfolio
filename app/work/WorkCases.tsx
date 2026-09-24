@@ -816,8 +816,7 @@ const cases: {
               {piece.n === "04" ? (
                 <div className="onboard-docs">
                   <p>
-                    Portfolio sample, not a named employer. Open each page
-                    and say what to change.
+                    Portfolio sample, not a named employer.
                   </p>
                   <div className="onboard-pair">
                     <figure>
