@@ -58,6 +58,12 @@ The Work page holds the plan and the skill-gap sheet. Not a client project. On `
 - [x] Days together (Keith, 24 Sep 2026): first week together. Then Tuesday and Wednesday together. Monday, Thursday, and Friday remote.
 - [x] Buddy (Keith, 24 Sep 2026): the line manager for days 1–30, then a peer from day 31.
 
+## SCORM practice (24 Sep 2026)
+
+Before the Articulate day: one Lumi branching decision and one eXeLearning four-page lesson, both from the Rise storyboard, both uploaded to the existing SCORM Cloud account. Not a second design. Not on `cv.md` until a launch link exists.
+
+- Practice sheets: `/work/practice/lumi.html` and `/work/practice/exe.html`
+
 ## Parked (24 Sep 2026)
 
 - Own LMS for the portfolio, in the style of a company onboarding system. Leave it. Portfolio host stays SCORM Cloud. A homemade LMS would read as a software side project, not as instructional design. Revisit only if he asks for a thin shell that launches packages SCORM Cloud already tracks.
