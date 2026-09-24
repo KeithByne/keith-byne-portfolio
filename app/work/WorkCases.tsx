@@ -107,133 +107,12 @@ function Shot({
   );
 }
 
-const deckSlides: { kicker: string; title: string; lines: string[] }[] = [
-  {
-    kicker: "Ask",
-    title: "Before you paste, classify.",
-    lines: [
-      "A 30-second habit for remote teams using AI and shared files.",
-      "One-page job aid, then a 15-minute module.",
-      "A portfolio sample, not a named client project.",
-    ],
-  },
-  {
-    kicker: "Problem",
-    title: "The problem is a paste, not a knowledge gap.",
-    lines: [
-      "“Just drop this into ChatGPT and tidy it.”",
-      "“Put it on my personal Drive so the contractor can edit overnight.”",
-      "Both are faster than the allowed path. Both create leak risk.",
-    ],
-  },
-  {
-    kicker: "Who and when",
-    title: "The 30 seconds that matter",
-    lines: [
-      "Who: knowledge workers on a distributed EU team.",
-      "When: before any prompt, paste, or file share.",
-      "Not a long compliance course, and not IT-only.",
-    ],
-  },
-  {
-    kicker: "Behaviour",
-    title: "What we need them to do",
-    lines: [
-      "Name the kind of data, then approved tool, stripped example, or no AI.",
-      "If unsure, stop and ask.",
-      "Count fewer unapproved pastes and personal-drive shares. No invented percentage.",
-    ],
-  },
-  {
-    kicker: "Design choice",
-    title: "Why not just send the policy PDF",
-    lines: [
-      "A 40-page policy becomes one page at the desk.",
-      "A 45-minute intro becomes a 10–15 minute module.",
-      "A manual for every product becomes three checks that survive a tool change.",
-    ],
-  },
-  {
-    kicker: "The worker’s page",
-    title: "The job aid stays on the desk",
-    lines: [
-      "Three checks. Classify table. Stop rules.",
-      "This stays next to the desktop. The module is not the reminder.",
-    ],
-  },
-  {
-    kicker: "Later module",
-    title: "15 minutes, map only",
-    lines: [
-      "Welcome, then one live classify decision.",
-      "Two paths, then the three checks again.",
-      "One marked scenario, then point back to the job aid.",
-    ],
-  },
-  {
-    kicker: "Decision",
-    title: "Please approve three things",
-    lines: [
-      "The habit: classify, then the allowed path, then ask.",
-      "Who people ask if they are unsure.",
-      "Where the page will live: intranet or a pinned PDF.",
-    ],
-  },
-];
-
-function StakeholderDeck() {
-  const [index, setIndex] = useState(0);
-  const slide = deckSlides[index];
-  return (
-    <figure className="deck">
-      <div className="deck-slide" aria-live="polite">
-        <p className="deck-kicker">
-          {slide.kicker}
-          <span>
-            {index + 1} / {deckSlides.length}
-          </span>
-        </p>
-        <h3>{slide.title}</h3>
-        <ul>
-          {slide.lines.map((line) => (
-            <li key={line}>{line}</li>
-          ))}
-        </ul>
-        {index === 5 ? (
-          <img
-            className="deck-page"
-            src="/work/safe-ai/job-aid.png"
-            alt=""
-          />
-        ) : null}
-      </div>
-      <figcaption>Stakeholder deck — 8 slides for a 10-minute yes-meeting</figcaption>
-      <div className="deck-nav">
-        <button
-          type="button"
-          onClick={() => setIndex((current) => current - 1)}
-          disabled={index === 0}
-        >
-          Previous
-        </button>
-        <button
-          type="button"
-          onClick={() => setIndex((current) => current + 1)}
-          disabled={index === deckSlides.length - 1}
-        >
-          Next
-        </button>
-      </div>
-    </figure>
-  );
-}
-
 const pieces = [
   {
     n: "01",
-    title: "Job aid and stakeholder deck",
+    title: "Before you paste, classify",
     status: "Sample",
-    note: "One page at the desk, and eight slides for the person who has to say yes. Same audience as the later Rise module: remote teams, data handling, and safe AI use.",
+    note: "One page for the person at the keyboard. Classify the data, then the allowed path, or stop and ask. Same audience as the later Rise module: remote teams and safe AI use.",
   },
   {
     n: "02",
@@ -684,7 +563,7 @@ const cases: {
   {
     id: "modules",
     title: "E-learning modules",
-    subtitle: "Job aid and deck are up · three pieces still in build",
+    subtitle: "Job aid is up · Rise, Storyline, and the onboarding map still in build",
     body: (
       <div className="work-list">
         {pieces.map((piece) => (
@@ -696,23 +575,20 @@ const cases: {
               <p>{piece.note}</p>
               {piece.n === "01" ? (
                 <div className="safe-ai-pair">
-                  <div>
-                    <Shot
-                      src="/work/safe-ai/job-aid.png"
-                      alt="Job aid: classify data before using AI or sharing files. Three checks: what data, is the tool approved, ask if unsure."
-                      caption="Job aid"
-                    />
-                    <p className="safe-ai-file">
-                      <a
-                        href="/work/safe-ai/before-you-paste.pdf"
-                        target="_blank"
-                        rel="noreferrer"
-                      >
-                        Open the one-page PDF
-                      </a>
-                    </p>
-                  </div>
-                  <StakeholderDeck />
+                  <Shot
+                    src="/work/safe-ai/job-aid.png"
+                    alt="Job aid: classify data before using AI or sharing files. Three checks: what data, is the tool approved, ask if unsure."
+                    caption="Job aid"
+                  />
+                  <p className="safe-ai-file">
+                    <a
+                      href="/work/safe-ai/before-you-paste.pdf"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      Open the one-page PDF
+                    </a>
+                  </p>
                 </div>
               ) : null}
             </div>
