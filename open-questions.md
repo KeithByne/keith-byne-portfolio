@@ -54,9 +54,9 @@ Source of truth: [cv-source-original.md](cv-source-original.md) (2026 Word CV).
 
 The Work page holds the shape only. Not a client project. Not on `cv.md`.
 
-- [ ] Role being onboarded
-- [ ] Which days the team is together
-- [ ] Who the buddy is
+- [x] Role being onboarded (Keith, 24 Sep 2026): operations coordinator for a hybrid team. By day 90 they run the weekly rhythm: handovers, tools, and the meetings that keep the week moving.
+- [x] Days together (Keith, 24 Sep 2026): first week together. Then Tuesday and Wednesday together. Monday, Thursday, and Friday remote.
+- [x] Buddy (Keith, 24 Sep 2026): the line manager for days 1–30, then a peer from day 31.
 
 ## Parked (24 Sep 2026)
 
