@@ -369,8 +369,8 @@ const pieces = [
   {
     n: "04",
     title: "90-day onboarding framework",
-    status: "Outline",
-    note: "Operations coordinator, hybrid team. Needs analysis, a 90-day map, and a skill-gap sheet. Not a course.",
+    status: "Review",
+    note: "Two documents to read: the 90-day plan and the skill-gap sheet. Same look as the job aid. Not a course.",
   },
 ];
 
@@ -814,81 +814,43 @@ const cases: {
               <span className="status">{piece.status}</span>
               <p>{piece.note}</p>
               {piece.n === "04" ? (
-                <div className="onboard-outline">
-                  <h3>What this is</h3>
+                <div className="onboard-docs">
                   <p>
-                    A plan for one new operations coordinator on a hybrid
-                    team. By day 90 they run the weekly rhythm: handovers,
-                    tools, and the meetings that keep the week moving. Not a
-                    course, and not the Safe AI module. A portfolio sample,
-                    not a named employer.
+                    Portfolio sample, not a named employer. Open each page
+                    and say what to change.
                   </p>
-                  <h3>Needs analysis</h3>
-                  <p>The finished page answers three questions.</p>
-                  <ol>
-                    <li>
-                      What must they be able to do by day 90? Run the weekly
-                      rhythm without the manager in the room.
-                    </li>
-                    <li>What do they already bring?</li>
-                    <li>
-                      Which gaps need practice with a person, and which are
-                      only information?
-                    </li>
-                  </ol>
-                  <h3>Days together</h3>
-                  <p>
-                    The first week is together. After that, Tuesday and
-                    Wednesday are together. Monday, Thursday, and Friday are
-                    remote.
-                  </p>
-                  <h3>The 90 days</h3>
-                  <ol className="onboard-days">
-                    <li>
-                      <strong>Days 1–30.</strong> Learn the work beside the
-                      line manager. People, tools, and the shape of the week.
-                      The line manager is the buddy.
-                    </li>
-                    <li>
-                      <strong>Days 31–60.</strong> Do the work with a check.
-                      The buddy changes to a peer. Together when the task is
-                      new. A page or a call when it repeats.
-                    </li>
-                    <li>
-                      <strong>Days 61–90.</strong> Own the weekly rhythm. The
-                      manager steps back. The peer stays available.
-                    </li>
-                  </ol>
-                  <p>
-                    How we would notice: handovers, tools, and the weekly
-                    meetings happen without the manager in the room. No
-                    invented percentage.
-                  </p>
-                  <h3>Skill-gap sheet</h3>
-                  <p>
-                    The second file. One row per skill: needed by day 90,
-                    where they are now, and how the gap closes — the line
-                    manager in the first 30 days, then the peer, plus
-                    practice, one short session, or a page. Not a course
-                    catalogue.
-                  </p>
-                  <h3>Locked for this sample</h3>
-                  <ul>
-                    <li>Role: operations coordinator for a hybrid team.</li>
-                    <li>
-                      Together: first week, then Tuesday and Wednesday.
-                      Remote: Monday, Thursday, and Friday.
-                    </li>
-                    <li>
-                      Buddy: the line manager for days 1–30, then a peer from
-                      day 31.
-                    </li>
-                  </ul>
-                  <p>
-                    Later, the plan is a document and the gaps are a sheet.
-                    This is the shape, so you can read it before those files
-                    exist.
-                  </p>
+                  <div className="onboard-pair">
+                    <figure>
+                      <iframe
+                        title="90-day plan"
+                        src="/work/onboarding/plan.html"
+                      />
+                      <figcaption>
+                        <a
+                          href="/work/onboarding/plan.html"
+                          target="_blank"
+                          rel="noreferrer"
+                        >
+                          Open the 90-day plan
+                        </a>
+                      </figcaption>
+                    </figure>
+                    <figure>
+                      <iframe
+                        title="Skill-gap sheet"
+                        src="/work/onboarding/gaps.html"
+                      />
+                      <figcaption>
+                        <a
+                          href="/work/onboarding/gaps.html"
+                          target="_blank"
+                          rel="noreferrer"
+                        >
+                          Open the skill-gap sheet
+                        </a>
+                      </figcaption>
+                    </figure>
+                  </div>
                 </div>
               ) : null}
               {piece.n === "01" ? (

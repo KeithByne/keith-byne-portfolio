@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Run the week — 90-day plan</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=League+Gothic&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet" />
+  <style>
+    :root { --ink: #3b3b3b; --paper: #fff; --step: #e6e6e6; --stop: #e8ded5; }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: #d9d9d9; color: var(--ink); font: 15px/1.45 Poppins, sans-serif; }
+    .sheet {
+      width: 210mm; min-height: 297mm; margin: 1.25rem auto; padding: 16mm 16mm 14mm;
+      background: var(--paper);
+    }
+    .eyebrow {
+      margin: 0; font-family: "League Gothic", Impact, sans-serif; letter-spacing: 0.14em;
+      text-transform: uppercase; font-size: 15px; font-weight: 400;
+    }
+    h1 {
+      margin: 10px 0 8px; font-size: 34px; font-weight: 600; letter-spacing: -0.03em; line-height: 1.05;
+    }
+    .deck { margin: 0 0 18px; max-width: 38ch; }
+    h2 {
+      margin: 18px 0 10px; padding-top: 8px; border-top: 1px solid var(--ink);
+      font-family: "League Gothic", Impact, sans-serif; font-size: 15px; font-weight: 400;
+      letter-spacing: 0.12em; text-transform: uppercase;
+    }
+    .days { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+    .days p { margin: 0; padding: 12px 14px; background: var(--step); }
+    .steps { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 10px; }
+    .steps article { background: var(--step); padding: 12px 12px 14px; min-height: 148px; }
+    .num { font-family: "League Gothic", Impact, sans-serif; font-size: 42px; line-height: 1; letter-spacing: 0.02em; }
+    .steps h3 { margin: 6px 0 6px; font-size: 15px; font-weight: 600; }
+    .steps p { margin: 0; font-size: 13px; }
+    .pair { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+    .pair article { padding: 14px; min-height: 120px; }
+    .pair h3 { margin: 0 0 8px; font-size: 15px; font-weight: 600; }
+    .pair ul { margin: 0; padding-left: 1.1rem; }
+    .pair li { margin: 0.25rem 0; }
+    .do { background: var(--step); }
+    .stop { background: var(--stop); }
+    footer { margin-top: 22px; text-align: center; font-size: 12px; }
+  </style>
+</head>
+<body>
+  <main class="sheet">
+    <p class="eyebrow">90-day onboarding — portfolio sample</p>
+    <h1>Run the week.</h1>
+    <p class="deck">One new operations coordinator. By day 90 they run handovers, tools, and the meetings that keep the week moving.</p>
+
+    <h2>Days together</h2>
+    <div class="days">
+      <p><strong>First week.</strong> Together. The line manager is the buddy.</p>
+      <p><strong>After that.</strong> Tuesday and Wednesday together. Monday, Thursday, and Friday remote.</p>
+    </div>
+
+    <h2>The 90 days</h2>
+    <div class="steps">
+      <article>
+        <div class="num">01</div>
+        <h3>Days 1–30</h3>
+        <p>Learn the work beside the line manager. People, tools, and the shape of the week.</p>
+      </article>
+      <article>
+        <div class="num">02</div>
+        <h3>Days 31–60</h3>
+        <p>A peer becomes the buddy. Do the work with a check. Together when the task is new. A page or a call when it repeats.</p>
+      </article>
+      <article>
+        <div class="num">03</div>
+        <h3>Days 61–90</h3>
+        <p>Own the weekly rhythm. The manager steps back. The peer stays available.</p>
+      </article>
+    </div>
+
+    <h2>By day 90 — and what this is not</h2>
+    <div class="pair">
+      <article class="do">
+        <h3>By day 90</h3>
+        <ul>
+          <li>Handovers go out without a rewrite.</li>
+          <li>The shared tools are current.</li>
+          <li>The weekly meetings happen.</li>
+        </ul>
+      </article>
+      <article class="stop">
+        <h3>Not this</h3>
+        <ul>
+          <li>A course catalogue.</li>
+          <li>A named employer.</li>
+          <li>An invented percentage.</li>
+        </ul>
+      </article>
+    </div>
+
+    <footer>Keith Byne — portfolio sample. The job happens without the manager in the room.</footer>
+  </main>
+</body>
+</html>
