@@ -705,6 +705,24 @@ h1 em {
   border-bottom: 1px solid var(--line);
 }
 
+.lumi-activity {
+  margin: 0.9rem 0 0;
+}
+
+.lumi-activity iframe {
+  width: 100%;
+  height: 36rem;
+  border: 0;
+  background: #d9d9d9;
+}
+
+.lumi-activity figcaption { margin-top: 0.4rem; }
+
+.lumi-activity a {
+  color: var(--ink);
+  border-bottom: 1px solid var(--line);
+}
+
 .work-item strong { font-size: 1.15rem; }
 .work-item p { margin: 0.35rem 0 0; color: var(--mute); max-width: 40rem; }
 .idx { color: var(--accent); font-size: 0.85rem; }

@@ -803,7 +803,7 @@ const cases: {
   {
     id: "modules",
     title: "E-learning modules",
-    subtitle: "Job aid, deck, and onboarding plan are up · Rise and Storyline still in build",
+    subtitle: "Job aid, deck, onboarding plan, and one Lumi activity are up · Rise and Storyline still in build",
     body: (
       <div className="work-list">
         {pieces.map((piece) => (
@@ -874,6 +874,33 @@ const cases: {
             </div>
           </article>
         ))}
+        <article className="work-item">
+          <span className="idx">Lumi</span>
+          <div>
+            <strong>Classify the data</strong>
+            <span className="status">Sample</span>
+            <p>
+              The job-aid rule, as a practice item. The learner places the type.
+              Irrelevant is the wrong move. A correct drop uses the do wash. A
+              wrong drop uses the don’t wash.
+            </p>
+            <figure className="lumi-activity">
+              <iframe
+                title="Classify the data"
+                src="/work/practice/demo01.html"
+              />
+              <figcaption>
+                <a
+                  href="/work/practice/demo01.html"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Open the activity
+                </a>
+              </figcaption>
+            </figure>
+          </div>
+        </article>
       </div>
     ),
   },
