@@ -11,13 +11,17 @@ Use this on later slides, Rise, Storyline, and site extras. Do not invent a seco
 
 Modern, clean, clear, easy to read. Simple. Staged. Group ideas in **colour blocks**. Show process as **01 / 02 / 03**. Sans-serif and modern.
 
-**Type rule**
+**Type rule** (Keith, 23 Sep 2026)
 
-- Open text: **Open Sauce** (Sans / One / Two). Modern, elegant, **round O**. Not juvenile. Stand-in: **Poppins**, Regular to Semibold only — not ExtraBold, not Black, not Nunito.
-- Condensed, when space is tight: **League Gothic**. Stand-in: **Impact**. Use these for titles, eyebrows, and `01 02 03` — not for body sentences. Return to Open Sauce as soon as there is room.
-- Do not set paragraphs in League Gothic or Impact (that reads as a poster, not a job aid).
-- Hierarchy is size and this open / condensed pair. Do not add a third family.
-- Web stack: `"Open Sauce One", "Open Sauce Sans", Poppins, sans-serif` for text; `"League Gothic", Impact, sans-serif` for tight display.
+Two families. Open Sauce One, and League Gothic for the condensed face. No third face.
+
+- **Document names** — League Gothic. The name of a page, a policy, a module, a manual.
+- **Main titles** — Open Sauce One Bold. The one large line on a slide. Larger than every League Gothic line on that slide.
+- **Object titles** — League Gothic, smaller than the main title, and one third bigger than the body text in that block. Labels on cards, steps, and buttons, including `01 02 03`.
+- **Body** — Open Sauce One Regular. Sentences. Do not set a sentence in League Gothic.
+- **Block spacing** — one line of space between a block title and the body under it. Line spacing 1.5 throughout the stack and the other cases.
+- Open Sauce Sans and Open Sauce Two are other cuts. The text cut is One. Not ExtraBold, not Black.
+- Web stack: `"Open Sauce One"` for body and main titles; `"League Gothic", Impact` for document names and object titles. Impact only if League Gothic is missing.
 - Avoid Helvetica Condensed, Arial Narrow, and oval old-style grotesques.
 
 ## Colour

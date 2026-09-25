@@ -21,9 +21,9 @@ Run the scripts the work needs **without asking**. `npm install`, `npm run dev`,
 
 Never open Canva’s marketing or Pro / 30-day trial page. He already has Canva Free. Do not design the one-pager for him in Canva; he is finishing that himself.
 
-**Visual theme.** Follow [portfolio/visual-theme.md](portfolio/visual-theme.md). **Open Sauce** (Poppins stand-in) for text; **League Gothic** (Impact stand-in) when space is tight, on titles and numbers only. Colour blocks; 01 / 02 / 03. Elegant, not juvenile. Do not invent a second system.
+**Visual theme.** Follow [portfolio/visual-theme.md](portfolio/visual-theme.md). **Open Sauce One Bold** for main titles; **Open Sauce One** for body; **League Gothic** for document names and for object titles (smaller than the main title). Impact only if League Gothic is missing. Colour blocks; 01 / 02 / 03. Elegant, not juvenile. Do not invent a second system.
 
-Jump menu (same server): Home, Action map, Plan, Weeks, Cheat sheet, One-pager, 8 slides, Rise, Tools, Skills log, plus SCORM Cloud.
+Jump menu (same server): Home, Action map, Plan, Weeks, Cheat sheet, One-pager, 8 slides, Presenter view, Rise, Tools, Skills log, plus SCORM Cloud.
 
 ## How to advise on new ideas
 
@@ -55,6 +55,7 @@ Be blunt. If an idea will look like a gimmick, ESL classroom residue, unearned t
 | [portfolio/visual-theme.md](portfolio/visual-theme.md) | Locked look from the Canva job aid. Use on later media. |
 | [portfolio/job-aid-safe-ai/job-aid-sample.pdf](portfolio/job-aid-safe-ai/job-aid-sample.pdf) | Keith’s Canva job aid (working file). |
 | [portfolio/job-aid-safe-ai/deck.html](portfolio/job-aid-safe-ai/deck.html) | Working 8-slide talk (HTML prototype). Remake in PowerPoint later. |
+| [portfolio/job-aid-safe-ai/presenter-view.html](portfolio/job-aid-safe-ai/presenter-view.html) | How to put “You say” in Notes and give the talk (Presenter view). |
 | [portfolio/rise-safe-ai/storyboard.md](portfolio/rise-safe-ai/storyboard.md) | Branching script for the first Rise module. |
 | [SCORM Cloud](https://cloud.scorm.com/) | Portfolio LMS host. Free Trial account already open; no time limit. Dummy upload in Week 5. |
 

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Presenter view and notes — eight-slide talk</title>
+  <style>
+    :root {
+      --paper: #ffffff;
+      --ink: #3b3b3b;
+      --muted: #5b616c;
+      --do: #dbe0dc;
+      --dont: #e8ded5;
+      --step: #e6e6e6;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--paper);
+      color: var(--ink);
+      font: 17px/1.5 Poppins, "Open Sauce One", "Segoe UI", sans-serif;
+    }
+    main { max-width: 42rem; margin: 0 auto; padding: 1.6rem 1.2rem 4rem; }
+    .eyebrow {
+      font-family: "League Gothic", Impact, sans-serif;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      font-size: 1.15rem;
+      margin: 0 0 0.4rem;
+    }
+    h1 {
+      font-weight: 600;
+      font-size: 2rem;
+      line-height: 1.15;
+      margin: 0 0 0.6rem;
+    }
+    h1 em { font-style: normal; }
+    .deck { color: var(--muted); margin: 0 0 1.4rem; }
+    h2 {
+      font-size: 0.78rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin: 1.6rem 0 0.6rem;
+    }
+    .steps { list-style: none; margin: 0; padding: 0; display: grid; gap: 0.7rem; }
+    .steps li {
+      display: grid;
+      grid-template-columns: 2.4rem 1fr;
+      gap: 0.8rem;
+      background: var(--step);
+      padding: 0.85rem 1rem;
+    }
+    .num {
+      font-family: "League Gothic", Impact, sans-serif;
+      font-size: 1.6rem;
+      line-height: 1;
+    }
+    .block { background: var(--do); padding: 0.85rem 1rem; margin: 0.5rem 0 1rem; }
+    .warn { background: var(--dont); padding: 0.85rem 1rem; margin: 0.5rem 0 1rem; }
+    .notes {
+      background: var(--step);
+      padding: 0.85rem 1rem;
+      margin: 0.4rem 0;
+      font-size: 0.95rem;
+      white-space: pre-line;
+    }
+    .notes strong { display: block; margin-bottom: 0.25rem; }
+    ol { padding-left: 1.2rem; }
+    a { color: var(--ink); }
+  </style>
+</head>
+<body>
+<main>
+  <p class="eyebrow">PowerPoint · eight-slide talk</p>
+  <h1>Presenter view and <em>notes</em></h1>
+  <p class="deck">They see the slide. You see the slide, the next slide, a clock, and the “You say” lines. Use desktop PowerPoint on Windows, not the browser editor.</p>
+
+  <h2>What each screen is for</h2>
+  <div class="block">
+    <strong>Audience screen:</strong> only the slide. No notes.<br />
+    <strong>Your screen (Presenter view):</strong> this slide, the next one, the timer, and your notes.
+  </div>
+  <div class="warn">
+    Do not share your whole desktop on Zoom if Presenter view is on that screen. They would see your notes. Share the slideshow window, or use a second display for them.
+  </div>
+
+  <h2>Staged process</h2>
+  <ol class="steps">
+    <li>
+      <span class="num">01</span>
+      <span>
+        <strong>Put the script under each slide.</strong>
+        Open the deck. <strong>View → Notes</strong> (or click <strong>Notes</strong> on the bar at the bottom). Click in the notes pane under the slide. Paste the matching “You say” line from the list below. One slide, one note. Keep it short enough to glance at.
+      </span>
+    </li>
+    <li>
+      <span class="num">02</span>
+      <span>
+        <strong>Turn on Presenter view.</strong>
+        Open the <strong>Slide Show</strong> tab. Tick <strong>Use Presenter View</strong>. If you have two screens, set <strong>Monitor</strong> to the one they will look at. Start with <strong>From Beginning</strong> (<strong>F5</strong>) or <strong>From Current Slide</strong> (<strong>Shift+F5</strong>).
+      </span>
+    </li>
+    <li>
+      <span class="num">03</span>
+      <span>
+        <strong>Give the talk.</strong>
+        Click or press the right arrow to advance. Read the notes, not the slide aloud. The timer is in Presenter view — this talk is about ten minutes (see the timing table in the <a href="job-aid.html">cheat sheet script</a>). End on slide 8 with the three decisions, not “any questions?”
+      </span>
+    </li>
+  </ol>
+
+  <h2>If you only have one screen</h2>
+  <p>Presenter view can still open. You see notes; they would see the same screen if they sit next to you. For Zoom: start the slide show, then share <strong>only the window that shows the slides</strong> (often titled “PowerPoint Slide Show”). Keep Presenter view on your machine, unshared.</p>
+  <p>If Presenter view does not appear: <strong>Slide Show → Set Up Slide Show → Presented by a speaker (full screen)</strong>. Then start again with F5.</p>
+
+  <h2>If Presenter view looks tiny</h2>
+  <p>In Presenter view, drag the splitter between the slide and the notes, or use the notes <strong>A+</strong> / <strong>A−</strong> buttons so you can read at arm’s length.</p>
+
+  <h2>The script (already in Notes)</h2>
+  <p>One line per idea. Speak the plain lines. Square brackets are for you — do not read them aloud.</p>
+  <div class="notes"><strong>Slide 1</strong>
+This is a 30-second habit at the keyboard.
+I want a desk page, and a short module for people who do not have the habit yet.
+[Start with the request. Not a contents list.]
+[Do not call this AI awareness training.]</div>
+  <div class="notes"><strong>Slide 2</strong>
+Two shortcuts leak data.
+Drop it in ChatGPT and tidy it.
+Put it on a personal Drive so the contractor can edit overnight.
+Both are faster than the allowed path.
+Both create GDPR and leak risk.
+[Do not invent an incident or a fine.]
+[Click Paste it now, then Name the data first.]</div>
+  <div class="notes"><strong>Slide 3</strong>
+Same people as the later Rise module.
+The page lives on the desk.
+The module is for people who do not yet have the habit.
+[Click each Click bar. It slides off to the right.]</div>
+  <div class="notes"><strong>Slide 4</strong>
+If they already know the rule, a page is enough.
+If they do not stop to name the data, they need the short module.
+We count actions, not quiz scores.
+[Click three times. Each cover slides off.]</div>
+  <div class="notes"><strong>Slide 5</strong>
+Tool names go stale.
+The habit does not.
+[Do not invent an approved-tool brand list.]
+[Leave the ask-role as TO CONFIRM. Do not name Slack, Microsoft, or ChatGPT.]</div>
+  <div class="notes"><strong>Slide 6</strong>
+Walk the three checks aloud.
+This slide is the product for the worker.
+The module is not the reminder.</div>
+  <div class="notes"><strong>Slide 7</strong>
+This is a map only.
+One decision. One marked question. Ten to fifteen minutes.
+[Do not play the module in this meeting.]
+[Storyline is a later piece.]</div>
+  <div class="notes"><strong>Slide 8</strong>
+I need three decisions from you.
+The habit.
+Who they ask if they are unsure.
+Where the page will live.
+[End on a decision. Not “any questions?”]
+[If they will not name who to ask, do not invent a job title.]
+[Click each Click bar.]</div>
+
+  <h2>Practice once before you show anyone</h2>
+  <p>F5. Speak the eight notes out loud. If a note is too long to read in a glance, cut it. Then you are ready to build the slides.</p>
+</main>
+</body>
+</html>

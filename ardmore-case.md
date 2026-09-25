@@ -29,6 +29,7 @@ The flex put a natural strain on the team. The job description of Administrator 
 
 ## List under the paragraphs
 
+- **Location / Centre** — [University of Hertfordshire](https://theardmoregroup.com/locations/university-of-hertfordshire/)
 - **ArdmoreX** — Research, create, and deploy language-learner content on the remote platform during Covid-19
 - **Scale** — Built for 200 students; unexpected intake after another company at the same university collapsed; flexed to more than 400 at peak
 - **Support to management** — Open brief under the Centre Manager: Rooming, Activity, Academic, and Centre Management, plus administration whose tasks shifted through the season

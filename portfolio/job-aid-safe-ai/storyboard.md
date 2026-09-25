@@ -148,7 +148,12 @@ A 30-second habit for remote teams using AI and shared files.
 One-page cheat sheet + 15-minute module.  
 Keith Byne — a portfolio sample, not a named client project.
 
-**You say:** Start with the request, not a contents list. You want them to treat this as a *habit at the keyboard*, not as “AI awareness training.”
+**You say**
+
+This is a 30-second habit at the keyboard.  
+I want a desk page, and a short module for people who do not have the habit yet.  
+[Start with the request. Not a contents list.]  
+[Do not call this AI awareness training.]
 
 ### Slide 2 — The problem is a paste, not “they don’t know enough”
 
@@ -158,7 +163,15 @@ Remote staff are leaking data in two common moves:
 2. “Put it on my personal Drive so the contractor can edit overnight.”  
 Both are faster than the allowed path. Both create GDPR and leak risk.
 
-**You say:** Do not invent an incident or a fine. The problem is what people *do*. Most companies already have a long policy PDF; nobody opens it at the moment they paste.
+**You say**
+
+Two shortcuts leak data.  
+Drop it in ChatGPT and tidy it.  
+Put it on a personal Drive so the contractor can edit overnight.  
+Both are faster than the allowed path.  
+Both create GDPR and leak risk.  
+[Do not invent an incident or a fine.]  
+[Click Paste it now, then Name the data first.]
 
 ### Slide 3 — Who, and the 30 seconds that matter
 
@@ -167,7 +180,12 @@ Both are faster than the allowed path. Both create GDPR and leak risk.
 **When:** Before any prompt, paste, or file share.  
 **Not:** a long compliance course; not classroom English; not IT-only.
 
-**You say:** Same people as the later Rise module. The page lives on the desk. The module is for people who do not yet have the habit.
+**You say**
+
+Same people as the later Rise module.  
+The page lives on the desk.  
+The module is for people who do not yet have the habit.  
+[Click each Click bar. It slides off to the right.]
 
 ### Slide 4 — What we need them to do, and how we would notice
 
@@ -176,7 +194,12 @@ Both are faster than the allowed path. Both create GDPR and leak risk.
 **Count this:** Fewer unapproved AI pastes / fewer personal-drive shares.  
 We will not invent a percentage.
 
-**You say:** Cathy Moore’s point, in plain terms: if they already know the rule, a page is enough. If they do not stop to name the data, they need the short module. We count actions, not quiz scores.
+**You say**
+
+If they already know the rule, a page is enough.  
+If they do not stop to name the data, they need the short module.  
+We count actions, not quiz scores.  
+[Click three times. Each cover slides off.]
 
 ### Slide 5 — Why not just send the policy PDF
 
@@ -188,7 +211,12 @@ We will not invent a percentage.
 | A 45-minute “intro to AI” | A 10–15 minute module: name the data, then take a path |
 | A manual for every AI product | Three checks that still work when the tools change |
 
-**You say:** Tool names go stale. The habit does not. Any “approved tools” list belongs to a real role in a real company — here it stays as a placeholder, owned by [TO CONFIRM: role]. Do not invent Slack/Microsoft/ChatGPT as “the” list.
+**You say**
+
+Tool names go stale.  
+The habit does not.  
+[Do not invent an approved-tool brand list.]  
+[Leave the ask-role as TO CONFIRM. Do not name Slack, Microsoft, or ChatGPT.]
 
 ### Slide 6 — The cheat sheet (what the worker sees)
 
@@ -197,7 +225,11 @@ A large picture of the one-pager (once Canva exists).
 Labels pointing at: three checks / classify table / stop rules.  
 Line: “This stays next to the desktop. The module is not the reminder.”
 
-**You say:** Until Canva is done, show a simple wireframe (boxes for title, checks, table, footer). Read the three checks aloud. This slide *is* the product for the worker.
+**You say**
+
+Walk the three checks aloud.  
+This slide is the product for the worker.  
+The module is not the reminder.
 
 ### Slide 7 — The 15-minute module (map only — do not play it)
 
@@ -210,7 +242,12 @@ Safe AI and data handling for remote enterprise teams
 6. One marked scenario (right/wrong)  
 7. Point to the cheat sheet and finish  
 
-**You say:** Do not run the whole module in this meeting. One decision, one scored question, 10–15 minutes. You build that in weeks 5–6 from the Rise script already written. The later Storyline “manager conversation” is a different piece — not these slides.
+**You say**
+
+This is a map only.  
+One decision. One marked question. Ten to fifteen minutes.  
+[Do not play the module in this meeting.]  
+[Storyline is a later piece.]
 
 ### Slide 8 — What you need them to decide
 
@@ -222,7 +259,15 @@ Please approve three things:
 
 Then: build the Rise module from the existing script.
 
-**You say:** End on a decision, not “any questions?” If they will not name who to ask, do not invent a job title on the page. Leave the [TO CONFIRM] line visible.
+**You say**
+
+I need three decisions from you.  
+The habit.  
+Who they ask if they are unsure.  
+Where the page will live.  
+[End on a decision. Not “any questions?”]  
+[If they will not name who to ask, do not invent a job title.]  
+[Click each Click bar.]
 
 ---
 

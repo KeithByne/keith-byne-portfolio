@@ -19,6 +19,6 @@ Run scripts automatically. Do not ask Keith to confirm `npm`, git, Vercel, ffmpe
 
 Show documents: follow **Show documents (common protocol)** in `README.md`. Serve `tmp/docs-preview` and open each page in a new browser window. Do not use chat as the reading surface. Never open Canva marketing or Pro-trial URLs.
 
-Visual theme: follow [portfolio/visual-theme.md](portfolio/visual-theme.md). Open Sauce (Poppins stand-in) for text; **League Gothic** (Impact stand-in) when space is tight, display only. Elegant, not juvenile. Colour blocks; 01 / 02 / 03. Do not invent a second look.
+Visual theme: follow [portfolio/visual-theme.md](portfolio/visual-theme.md). Open Sauce One Bold for main titles; Open Sauce One for body; **League Gothic** for document names and for smaller object titles. Elegant, not juvenile. Colour blocks; 01 / 02 / 03. Do not invent a second look.
 
 Site motion: follow **Site motion preset** in `README.md`. Accordions and similar expand/collapse must slide (~0.9s). Do not jump-open or scroll-snap the title.
