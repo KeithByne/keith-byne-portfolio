@@ -20,8 +20,9 @@ Two families. Open Sauce One, and League Gothic for the condensed face. No third
 - **Object titles** — League Gothic, smaller than the main title, and one third bigger than the body text in that block. Labels on cards, steps, and buttons, including `01 02 03`.
 - **Body** — Open Sauce One Regular. Sentences. Do not set a sentence in League Gothic.
 - **Block spacing** — one line of space between a block title and the body under it. Line spacing 1.5 throughout the stack and the other cases.
-- Open Sauce Sans and Open Sauce Two are other cuts. The text cut is One. Not ExtraBold, not Black.
-- Web stack: `"Open Sauce One"` for body and main titles; `"League Gothic", Impact` for document names and object titles. Impact only if League Gothic is missing.
+- Open text: **Open Sauce One**. Modern, elegant, **round O**. Weights 400, 500, and 600 only — not ExtraBold, not Black, not Nunito. Self-hosted at `public/fonts/` (`open-sauce.css`). Do not substitute Poppins.
+- Condensed, when space is tight: **League Gothic**. Stand-in: **Impact**. Use for titles, eyebrows, and `01 02 03` — not for body sentences.
+- Web stack: `"Open Sauce One", sans-serif` for text; `"League Gothic", Impact, sans-serif` for document names and object titles. When an H5P or SCORM zip is styled, body text uses these same Open Sauce files.
 - Avoid Helvetica Condensed, Arial Narrow, and oval old-style grotesques.
 
 ## Colour
@@ -43,6 +44,10 @@ Colour groups concepts. It is not decoration. Meaning is also in the words and t
 3. **Colour blocks** for grouped ideas (do / don’t, or the next pair the content needs). Equal columns. Line icons only — no illustration, no stock photo, no fake logo.
 4. **Staged process** as oversized `01 02 03` on equal tiles. Short caption under each number.
 5. Small centred footer.
+
+## Job-aid slide in the PowerPoint
+
+Slide 6 uses the same white ground as the other slides. The PDF is what defines the page. Do not put a coloured ground behind it.
 
 ## Do not carry over without a decision
 

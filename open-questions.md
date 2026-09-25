@@ -49,3 +49,21 @@ Source of truth: [cv-source-original.md](cv-source-original.md) (2026 Word CV).
 
 - [ ] Hours per week for this course vs Report-O-Matic marketing
 - [ ] Preferred first application week (not before Week 6 unless a role is purely programme-management)
+
+## 90-day onboarding outline (24 Sep 2026)
+
+The Work page holds the plan and the skill-gap sheet. Not a client project. On `cv.md` as needs analysis and hybrid onboarding frameworks (24 Sep 2026).
+
+- [x] Role being onboarded (Keith, 24 Sep 2026): operations coordinator for a hybrid team. By day 90 they run the weekly rhythm: handovers, tools, and the meetings that keep the week moving.
+- [x] Days together (Keith, 24 Sep 2026): first week together. Then Tuesday and Wednesday together. Monday, Thursday, and Friday remote.
+- [x] Buddy (Keith, 24 Sep 2026): the line manager for days 1–30, then a peer from day 31.
+
+## SCORM practice (24 Sep 2026)
+
+Before the Articulate day: one Lumi branching decision and one eXeLearning four-page lesson, both from the Rise storyboard, both uploaded to the existing SCORM Cloud account. Not a second design. Not on `cv.md` until a launch link exists.
+
+- Practice sheets: `/work/practice/lumi.html` and `/work/practice/exe.html`
+
+## Parked (24 Sep 2026)
+
+- Own LMS for the portfolio, in the style of a company onboarding system. Leave it. Portfolio host stays SCORM Cloud. A homemade LMS would read as a software side project, not as instructional design. Revisit only if he asks for a thin shell that launches packages SCORM Cloud already tracks.

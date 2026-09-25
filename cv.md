@@ -25,12 +25,13 @@ Programme director, instructional designer, and educational software builder wit
 **Visual communication**
 - BA (Hons) Fine Art
 - Graphic design, illustration, and CAD-CAM production (1984–1996), including work for Microsoft and Virgin Airlines
-- Canva: one-page job aids (Before You Paste — Classify)
+- Canva and PowerPoint job aids and stakeholder decks
 - Inkscape for vector artwork (website and screen-print practice)
 
 **Programme operations**
 - Director and Director of Studies, Universal English S.L. (2015–present): budgets, teams, marketing, resource management
 - Staff interviewing and onboarding
+- Needs analysis and hybrid onboarding frameworks
 - High-volume centre operations (Ardmore; management team built for 200, flexed to 400+ at peak)
 
 **Learning technology**

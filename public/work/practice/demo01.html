@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Demo 01 — styled</title>
+  <link href="/fonts/open-sauce.css" rel="stylesheet" />
+  <style>
+    body { margin: 0; background: #d9d9d9; color: #3b3b3b; font: 15px/1.45 "Open Sauce One", sans-serif; }
+    .sheet { width: min(880px, calc(100% - 2rem)); margin: 1.25rem auto; padding: 1.5rem 1.5rem 2rem; background: #fff; }
+    #h5p-container { min-height: 280px; }
+  </style>
+  <script src="https://cdn.jsdelivr.net/npm/h5p-standalone@3.8.0/dist/main.bundle.js"></script>
+</head>
+<body>
+  <main class="sheet">
+    <div id="h5p-container"></div>
+  </main>
+  <script>
+    new H5PStandalone.H5P(document.getElementById("h5p-container"), {
+      h5pJsonPath: "/work/practice/demo01",
+      frameJs: "https://cdn.jsdelivr.net/npm/h5p-standalone@3.8.0/dist/frame.bundle.js",
+      frameCss: "https://cdn.jsdelivr.net/npm/h5p-standalone@3.8.0/dist/styles/h5p.css"
+    });
+  </script>
+</body>
+</html>

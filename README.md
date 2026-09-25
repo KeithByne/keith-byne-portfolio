@@ -21,7 +21,22 @@ Run the scripts the work needs **without asking**. `npm install`, `npm run dev`,
 
 Never open Canva’s marketing or Pro / 30-day trial page. He already has Canva Free. Do not design the one-pager for him in Canva; he is finishing that himself.
 
-**Visual theme.** Follow [portfolio/visual-theme.md](portfolio/visual-theme.md). **Open Sauce One Bold** for main titles; **Open Sauce One** for body; **League Gothic** for document names and for object titles (smaller than the main title). Impact only if League Gothic is missing. Colour blocks; 01 / 02 / 03. Elegant, not juvenile. Do not invent a second system.
+**Faces and colours (locked).** Read this every time. Do not ask Keith to repeat it. A hiring manager should see the same two faces and the same five colours on every job aid, deck, plan, sheet, H5P, and SCORM page. Detail lives in [portfolio/visual-theme.md](portfolio/visual-theme.md). Do not invent a second look. Do not substitute Poppins, Nunito, Outfit, or Syne on that content.
+
+| Role | Face | Use |
+|------|------|-----|
+| Text | **Open Sauce** (file: Open Sauce One, weights 400 / 500 / 600, `public/fonts/open-sauce.css`) | Body, captions, titles when there is room |
+| Tight display | **League Gothic** (Impact only if the file is missing) | Eyebrows, `01` / `02` / `03`, labels when space is tight |
+
+| Role | Hex | Use |
+|------|-----|-----|
+| Paper | `#FFFFFF` | Page and empty field. Slide 6 of the deck is white too; the PDF defines that page. |
+| Ink | `#3B3B3B` | Titles, icons, body |
+| Do wash | `#DBE0DC` | Colour block: allowed path |
+| Don’t wash | `#E8DED5` | Colour block: stop path |
+| Step wash | `#E6E6E6` | Colour block: 01 / 02 / 03 |
+
+Style: modern, clean, easy to read. Wide white margins. Eyebrow, then a large title, then one line. Ideas sit in equal colour blocks. Process is oversized `01` / `02` / `03` with a short caption. Line icons only. Elegant, not juvenile. No third typeface, no teal, no cream stationery, no black `#000`, no red danger panel.
 
 Jump menu (same server): Home, Action map, Plan, Weeks, Cheat sheet, One-pager, 8 slides, Presenter view, Rise, Tools, Skills log, plus SCORM Cloud.
 
