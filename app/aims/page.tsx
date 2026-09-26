@@ -8,13 +8,14 @@ export default function AimsPage() {
           I am looking for year-round employment in instructional design.
         </p>
         <p>
-          The reason is the shape of the year. Since COVID, summer courses
-          in Spain and summer programmes across Europe have thinned. I am
-          self-employed, so those months are not covered by unemployment
-          benefit. Year-round employment closes that gap. I am more available
-          for it now. My son, a qualified teacher, has taken the daily
-          teaching at the school. My role is oversight and management. I am
-          no longer involved in the teaching.
+          Since COVID, summer courses in Spain and summer programmes across
+          Europe have thinned. I am self-employed, so those months are not
+          covered by unemployment benefit. Year-round employment closes that
+          gap. I have made myself available. My son, a qualified teacher, has
+          taken over the daily routine. I have changed my role to oversight
+          and management in order to give myself time for retraining and
+          development. My involvement in teaching now is mainly teacher
+          training.
         </p>
         <p>
           This is a change of market, not a late start in a strange field.
