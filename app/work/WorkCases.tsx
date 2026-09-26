@@ -107,6 +107,41 @@ function Shot({
   );
 }
 
+function LumiActivity() {
+  const ref = useRef<HTMLIFrameElement>(null);
+
+  useEffect(() => {
+    const onMessage = (event: MessageEvent) => {
+      const frame = ref.current;
+      if (!frame || event.source !== frame.contentWindow) return;
+      if (event.origin !== window.location.origin) return;
+      const data = event.data as { source?: string; height?: number } | null;
+      if (!data || data.source !== "lumi-demo" || typeof data.height !== "number") return;
+      const next = Math.ceil(data.height);
+      if (next < 80 || next > 1600) return;
+      if (Math.abs(frame.getBoundingClientRect().height - next) < 2) return;
+      frame.style.height = `${next}px`;
+    };
+    window.addEventListener("message", onMessage);
+    return () => window.removeEventListener("message", onMessage);
+  }, []);
+
+  return (
+    <figure className="lumi-activity">
+      <iframe
+        ref={ref}
+        title="Classify the data"
+        src="/work/practice/demo01.html"
+      />
+      <figcaption>
+        <a href="/work/practice/demo01.html" target="_blank" rel="noreferrer">
+          Open the activity
+        </a>
+      </figcaption>
+    </figure>
+  );
+}
+
 function ClickCover({
   open,
   onOpen,
@@ -886,21 +921,7 @@ const cases: {
               Irrelevant is the wrong move. A correct drop uses the do wash. A
               wrong drop uses the don’t wash.
             </p>
-            <figure className="lumi-activity">
-              <iframe
-                title="Classify the data"
-                src="/work/practice/demo01.html"
-              />
-              <figcaption>
-                <a
-                  href="/work/practice/demo01.html"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  Open the activity
-                </a>
-              </figcaption>
-            </figure>
+            <LumiActivity />
           </div>
         </article>
       </div>

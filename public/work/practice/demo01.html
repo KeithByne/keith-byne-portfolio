@@ -9,8 +9,14 @@
     body { margin: 0; background: #d9d9d9; color: #3b3b3b; font: 15px/1.45 "Open Sauce One", sans-serif; }
     .sheet { width: min(880px, calc(100% - 2rem)); margin: 1.25rem auto; padding: 1.5rem 1.5rem 2rem; background: #fff; }
     #h5p-container { min-height: 280px; }
+    html.is-frame body { background: #fff; overflow: hidden; }
+    html.is-frame .sheet { width: 100%; margin: 0; }
+    html.is-frame #h5p-container { min-height: 0; }
   </style>
   <script src="https://cdn.jsdelivr.net/npm/h5p-standalone@3.8.0/dist/main.bundle.js"></script>
+  <script>
+    if (window.parent !== window) document.documentElement.classList.add("is-frame");
+  </script>
 </head>
 <body>
   <main class="sheet">
@@ -22,6 +28,25 @@
       frameJs: "https://cdn.jsdelivr.net/npm/h5p-standalone@3.8.0/dist/frame.bundle.js",
       frameCss: "https://cdn.jsdelivr.net/npm/h5p-standalone@3.8.0/dist/styles/h5p.css"
     });
+
+    if (window.parent !== window) {
+      const sheet = document.querySelector(".sheet");
+      let scheduled = false;
+      const report = () => {
+        if (scheduled) return;
+        scheduled = true;
+        requestAnimationFrame(() => {
+          scheduled = false;
+          const height = Math.ceil(document.body.scrollHeight);
+          if (height > 0) {
+            parent.postMessage({ source: "lumi-demo", height }, location.origin);
+          }
+        });
+      };
+      new ResizeObserver(report).observe(sheet);
+      window.addEventListener("resize", report);
+      report();
+    }
   </script>
 </body>
 </html>
