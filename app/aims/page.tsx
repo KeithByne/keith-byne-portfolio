@@ -2,7 +2,7 @@ export default function AimsPage() {
   return (
     <main className="band aims">
       <p className="eyebrow">Aims</p>
-      <h1>A full year of work.</h1>
+      <h1>Work Year Round.</h1>
       <div className="prose">
         <p>
           I am looking for year-round employment in instructional design.
