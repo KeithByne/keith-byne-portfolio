@@ -29,6 +29,34 @@
       frameCss: "https://cdn.jsdelivr.net/npm/h5p-standalone@3.8.0/dist/styles/h5p.css"
     });
 
+    function fitWords() {
+      const inner = document.querySelector(".h5p-iframe");
+      const doc = inner && inner.contentDocument;
+      if (!doc) return false;
+      const chips = [...doc.querySelectorAll(".h5p-drag-draggables-container [aria-grabbed]")];
+      if (!chips.length) return false;
+      if (!doc.querySelector(".h5p-drag-wide-screen, .h5p-drag-draggable-wide-screen")) return false;
+      const bank = doc.querySelector(".h5p-drag-draggables-container");
+      if (bank) bank.classList.remove("h5p-drag-wide-screen");
+      for (const chip of chips) {
+        if (chip.classList.contains("ui-draggable-dragging")) continue;
+        chip.classList.remove("h5p-drag-draggable-wide-screen");
+        chip.style.position = "relative";
+        chip.style.left = "auto";
+        chip.style.top = "auto";
+        chip.style.width = "auto";
+        chip.style.maxWidth = "none";
+        chip.style.overflow = "visible";
+        chip.style.whiteSpace = "nowrap";
+        chip.style.display = "inline-block";
+      }
+      const sentences = doc.querySelector(".h5p-drag-droppable-words");
+      if (sentences) sentences.style.marginRight = "0";
+      const drag = doc.querySelector(".h5p-drag-text");
+      if (drag) drag.style.overflow = "visible";
+      return true;
+    }
+
     if (window.parent !== window) {
       const sheet = document.querySelector(".sheet");
       let scheduled = false;
@@ -37,6 +65,7 @@
         scheduled = true;
         requestAnimationFrame(() => {
           scheduled = false;
+          fitWords();
           const height = Math.ceil(document.body.scrollHeight);
           if (height > 0) {
             parent.postMessage({ source: "lumi-demo", height }, location.origin);
@@ -44,6 +73,15 @@
         });
       };
       new ResizeObserver(report).observe(sheet);
+      const innerWatch = new ResizeObserver(report);
+      const arm = () => {
+        const inner = document.querySelector(".h5p-iframe");
+        if (inner && !inner.dataset.fitWatch) {
+          inner.dataset.fitWatch = "1";
+          innerWatch.observe(inner);
+        }
+      };
+      new MutationObserver(arm).observe(sheet, { childList: true, subtree: true });
       window.addEventListener("resize", report);
       report();
     }

@@ -117,10 +117,10 @@ function LumiActivity() {
       if (event.origin !== window.location.origin) return;
       const data = event.data as { source?: string; height?: number } | null;
       if (!data || data.source !== "lumi-demo" || typeof data.height !== "number") return;
-      const next = Math.ceil(data.height);
-      if (next < 80 || next > 1600) return;
-      if (Math.abs(frame.getBoundingClientRect().height - next) < 2) return;
-      frame.style.height = `${next}px`;
+      const height = Math.ceil(data.height);
+      if (height < 80 || height > 1600) return;
+      if (Math.abs(frame.getBoundingClientRect().height - height) < 2) return;
+      frame.style.height = `${height}px`;
     };
     window.addEventListener("message", onMessage);
     return () => window.removeEventListener("message", onMessage);
@@ -128,11 +128,13 @@ function LumiActivity() {
 
   return (
     <figure className="lumi-activity">
-      <iframe
-        ref={ref}
-        title="Classify the data"
-        src="/work/practice/demo01.html"
-      />
+      <div className="lumi-fit">
+        <iframe
+          ref={ref}
+          title="Classify the data"
+          src="/work/practice/demo01.html"
+        />
+      </div>
       <figcaption>
         <a href="/work/practice/demo01.html" target="_blank" rel="noreferrer">
           Open the activity

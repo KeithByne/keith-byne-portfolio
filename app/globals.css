@@ -499,6 +499,8 @@ h1 em {
   border-top: 1px solid var(--line);
 }
 
+.work-item > div { min-width: 0; }
+
 .safe-ai-pair {
   display: grid;
   grid-template-columns: 14rem 1fr;
@@ -719,6 +721,14 @@ h1 em {
 
 .lumi-activity {
   margin: 0.9rem 0 0;
+  min-width: 0;
+  max-width: 100%;
+}
+
+.lumi-fit {
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
 }
 
 .lumi-activity iframe {
