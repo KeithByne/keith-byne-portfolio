@@ -10,15 +10,13 @@ export default function AimsPage() {
         <p>
           Since COVID, summer courses in Spain and summer programmes across
           Europe have thinned. I am self-employed, so those months are not
-          covered by unemployment           benefit. Year-round employment closes that gap.
+          covered by unemployment benefit. Year-round employment closes that gap.
         </p>
         <p>
           Obtaining summer work at Ardmore gave me the opportunity to really
           see the onboarding process, due to the fact that I was required to
-          undertake an eight-part online training course, followed up by
-          physical training on site. It was during this online training
-          course that I realised that this kind of work would be my next
-          logical step.
+          undertake an eight-part online training course. During this
+          course, it became obvious that this should be my next logical step.
         </p>
         <p>
           I have made myself available. My son, a qualified teacher, has
