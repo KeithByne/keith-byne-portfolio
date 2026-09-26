@@ -73,7 +73,7 @@ function Shot({
   const media = video ? (
     <PhoneLoop src={src} poster={poster} alt={alt} />
   ) : (
-    <img src={src} alt={alt} onError={() => setOk(false)} />
+    <img src={src} alt={alt} decoding="async" onError={() => setOk(false)} />
   );
   return (
     <figure
@@ -97,7 +97,7 @@ function Shot({
               {video ? (
                 <PhoneLoop src={src} poster={poster} alt="" />
               ) : (
-                <img src={src} alt="" />
+                <img src={src} alt="" decoding="async" />
               )}
             </div>,
             document.body,
@@ -111,6 +111,14 @@ function LumiActivity() {
   const ref = useRef<HTMLIFrameElement>(null);
 
   useEffect(() => {
+    let pending = 0;
+    let timer = 0;
+    const apply = () => {
+      const frame = ref.current;
+      if (!frame || pending < 80) return;
+      if (Math.abs(frame.getBoundingClientRect().height - pending) < 2) return;
+      frame.style.height = `${pending}px`;
+    };
     const onMessage = (event: MessageEvent) => {
       const frame = ref.current;
       if (!frame || event.source !== frame.contentWindow) return;
@@ -119,11 +127,16 @@ function LumiActivity() {
       if (!data || data.source !== "lumi-demo" || typeof data.height !== "number") return;
       const height = Math.ceil(data.height);
       if (height < 80 || height > 1600) return;
-      if (Math.abs(frame.getBoundingClientRect().height - height) < 2) return;
-      frame.style.height = `${height}px`;
+      pending = height;
+      window.clearTimeout(timer);
+      const wait = Math.max(180, foldBusyUntil - performance.now());
+      timer = window.setTimeout(apply, wait);
     };
     window.addEventListener("message", onMessage);
-    return () => window.removeEventListener("message", onMessage);
+    return () => {
+      window.removeEventListener("message", onMessage);
+      window.clearTimeout(timer);
+    };
   }, []);
 
   return (
@@ -308,6 +321,7 @@ function StakeholderDeck() {
             <img
               src="/work/safe-ai/job-aid.png"
               alt="Job aid: classify data before using AI or sharing files."
+              decoding="async"
             />
             <p>Three checks. Classify table. Stop rules.</p>
             <p>This stays next to the desktop. The module is not the reminder.</p>
@@ -941,6 +955,8 @@ const USER_SCROLL_KEYS = new Set([
   " ",
 ]);
 
+let foldBusyUntil = 0;
+
 function foldDurationMs() {
   if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
     return 0;
@@ -965,6 +981,7 @@ function usePinnedFoldTitle(openId: string | null) {
 
   const pinNext = (el: HTMLElement) => {
     stopRef.current?.();
+    foldBusyUntil = performance.now() + foldDurationMs() + 120;
     const pinnedTop = el.getBoundingClientRect().top;
     let cancelled = false;
     let raf = 0;
@@ -976,23 +993,17 @@ function usePinnedFoldTitle(openId: string | null) {
     const align = () => {
       if (cancelled) return;
       const delta = el.getBoundingClientRect().top - pinnedTop;
-      if (Math.abs(delta) < 0.5) return;
-      window.scrollBy(0, delta);
+      if (Math.abs(delta) < 2) return;
+      const next = Math.round(window.scrollY + delta);
+      if (next === Math.round(window.scrollY)) return;
+      window.scrollTo(0, next);
     };
-
-    const observer = new ResizeObserver(() => align());
-    const list = listRef.current;
-    if (list) {
-      observer.observe(list);
-      for (const fold of list.querySelectorAll(".fold")) observer.observe(fold);
-    }
 
     const stop = () => {
       if (cancelled) return;
       cancelled = true;
       cancelAnimationFrame(raf);
       window.clearTimeout(timeout);
-      observer.disconnect();
       window.removeEventListener("wheel", onWheel, true);
       window.removeEventListener("touchmove", onUserIntent, true);
       window.removeEventListener("keydown", onKey, true);

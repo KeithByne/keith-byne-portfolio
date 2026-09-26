@@ -303,15 +303,11 @@ h1 em {
 
 .fold-body {
   opacity: 0;
-  transform: translateY(-0.55rem);
-  transition:
-    opacity 0.7s ease 0.08s,
-    transform var(--fold-duration) var(--fold-ease);
+  transition: opacity 0.7s ease 0.08s;
 }
 
 .is-open > .fold .fold-body {
   opacity: 1;
-  transform: none;
 }
 
 .case-toggle {
@@ -804,6 +800,7 @@ h1 em {
   }
   .onboard-doc-plan { width: min(16rem, 100%); }
   .onboard-doc-gaps { width: min(100%, 28rem); }
+  .lumi-activity iframe { height: 26rem; }
   .ppt {
     grid-column: auto;
     grid-row: auto;
