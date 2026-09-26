@@ -18,14 +18,13 @@ export default function AimsPage() {
           training.
         </p>
         <p>
-          This is a change of market, not a late start in a strange field.
+          This is not a late start, but rather a change of direction.
           Programme design, teacher training, visual communication, and
-          educational software are already the work. Instructional design is
-          where that experience belongs for twelve months, not for a summer
-          peak. Staying with a summer-only model would mean waiting for a
-          season that has not returned. I am learning the tools this industry
-          uses to show the work. I will keep building this portfolio until
-          full-time employment is in place.
+          educational software are already within my compass. Instructional
+          design is where that experience belongs for twelve months, not for
+          a summer peak. A twelve-month working model is my aim. I am
+          learning the tools this industry uses to show the work. I will
+          develop this project until full-time employment is in place.
         </p>
       </div>
     </main>
