@@ -8,7 +8,7 @@ export default function AboutPage() {
     },
     {
       src: "/portraits/studio.png",
-      alt: "Keith Byne standing in a studio, grey jacket",
+      alt: "Keith Byne pulling a silk-screen print in his garage studio",
     },
     {
       src: "/portraits/using-cursor.png",
