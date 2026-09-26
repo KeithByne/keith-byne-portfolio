@@ -747,6 +747,8 @@ h1 em {
 
 .prose p { color: var(--mute); line-height: 1.65; }
 
+.aims .prose { max-width: 40rem; }
+
 .roles { list-style: none; padding: 0; margin: 0; }
 .roles li {
   padding: 1rem 0;
