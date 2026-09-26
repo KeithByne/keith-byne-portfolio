@@ -819,12 +819,13 @@ const cases: {
                     Portfolio sample, not a named employer.
                   </p>
                   <div className="onboard-pair">
-                    <figure>
-                      <iframe
-                        title="90-day plan"
-                        src="/work/onboarding/plan.html"
+                    <div className="onboard-doc onboard-doc-plan">
+                      <Shot
+                        src="/work/onboarding/plan.png"
+                        alt="90-day plan, one page: Run the week. Days together, the 90 days, and what this is not."
+                        caption="90-day plan"
                       />
-                      <figcaption>
+                      <p className="safe-ai-file">
                         <a
                           href="/work/onboarding/plan.html"
                           target="_blank"
@@ -832,14 +833,15 @@ const cases: {
                         >
                           Open the 90-day plan
                         </a>
-                      </figcaption>
-                    </figure>
-                    <figure>
-                      <iframe
-                        title="Skill-gap sheet"
-                        src="/work/onboarding/gaps.html"
+                      </p>
+                    </div>
+                    <div className="onboard-doc onboard-doc-gaps">
+                      <Shot
+                        src="/work/onboarding/gaps.png"
+                        alt="Skill-gap sheet, one page: where the gaps close for handover, tools, meetings, decisions, and remote days."
+                        caption="Skill-gap sheet"
                       />
-                      <figcaption>
+                      <p className="safe-ai-file">
                         <a
                           href="/work/onboarding/gaps.html"
                           target="_blank"
@@ -847,8 +849,8 @@ const cases: {
                         >
                           Open the skill-gap sheet
                         </a>
-                      </figcaption>
-                    </figure>
+                      </p>
+                    </div>
                   </div>
                 </div>
               ) : null}
