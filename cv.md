@@ -10,7 +10,7 @@ keith.byne@hotmail.co.uk | [TO CONFIRM: phone] | [TO CONFIRM: portfolio URL]
 
 ## Professional profile
 
-Programme director, instructional designer, and educational software builder with 30 years designing adult learning, corporate language programmes, and digital training systems. Combines visual communication (Fine Art; professional graphic design for enterprise brands) with course architecture, teacher-as-trainer delivery, and hands-on web/SaaS product development. Since 2015, Director of Universal English S.L., running curriculum, budgets, teams, and hybrid/online delivery. Open to EU remote employment or a Spanish B2B / autónomo contract.
+Programme director, instructional designer, and educational software builder with 30 years designing adult learning, corporate language programmes, and digital training systems. Combines visual communication (Fine Art; professional graphic design for enterprise brands) with course architecture, teacher-as-trainer delivery, and hands-on web/SaaS product development. Since 2015, Director of Universal English S.L., running curriculum, budgets, teams, and hybrid/online delivery. Open to EU remote employment, a Spanish B2B / autónomo contract, or being taken on through REPORT-O-MATIC LTD, a British registered company.
 
 ---
 
@@ -108,7 +108,7 @@ UK · 1984–1996
 
 ## Right to work
 
-Based in Espartinas, Seville. Authorised to work for an EU employer remotely without visa sponsorship. Can invoice as autónomo / B2B where the employer cannot hire on payroll.
+Based in Espartinas, Seville. Authorised to work for an EU employer remotely without visa sponsorship. Can invoice as autónomo / B2B, or through REPORT-O-MATIC LTD, a British registered company, where the employer cannot hire on payroll.
 
 ---
 
