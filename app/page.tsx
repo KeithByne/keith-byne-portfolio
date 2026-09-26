@@ -28,7 +28,7 @@ export default function HomePage() {
         </div>
         <figure className="portrait">
           <img
-            src="/portraits/turtleneck.png"
+            src="/portraits/turtleneck-front.png"
             alt="Keith Byne, short white hair, black turtleneck, looking slightly off camera"
           />
           <figcaption className="caption">
