@@ -801,72 +801,6 @@ const cases: {
     ),
   },
   {
-    id: "job-aid",
-    title: "Before You Paste — Classify",
-    subtitle:
-      "One-page job aid · remote teams · safe AI and data handling · Canva",
-    logo: {
-      src: "/work/safe-ai/page.png",
-      href: "/work/safe-ai/before-you-paste-classify.pdf",
-      alt: "Before You Paste — Classify",
-      cta: "Open PDF",
-    },
-    body: (
-      <>
-        <h3>A page at the desk, not a course</h3>
-        <p>
-          Remote staff leak data in two fast moves: pasting live files into
-          public AI, and putting work on a personal drive so a contractor
-          can “edit overnight.” The habit that matters is the 30 seconds
-          before they paste. This page sits next to the screen.
-        </p>
-        <p>
-          Same audience as the later Rise module: knowledge workers on a
-          distributed EU team. Portfolio sample, not a named client. Made
-          in Canva.
-        </p>
-        <ul className="roles">
-          <li>
-            Do
-            <span>
-              Classify the data, then an approved tool, a stripped example,
-              or no AI
-            </span>
-          </li>
-          <li>
-            Don’t
-            <span>
-              Paste live files into public AI; share work on personal
-              drives; skip the ask when unsure
-            </span>
-          </li>
-          <li>
-            Three checks
-            <span>
-              What data is this? Is the tool approved? If unsure, stop and
-              ask
-            </span>
-          </li>
-          <li>
-            Live PDF
-            <span>
-              <a href="/work/safe-ai/before-you-paste-classify.pdf">
-                Before You Paste — Classify
-              </a>
-            </span>
-          </li>
-        </ul>
-        <div className="case-shots">
-          <Shot
-            src="/work/safe-ai/page.png"
-            alt="Job aid: classify data before using AI or sharing files. Three checks: what data, is the tool approved, ask if unsure."
-            caption="One-page job aid"
-          />
-        </div>
-      </>
-    ),
-  },
-  {
     id: "modules",
     title: "E-learning modules",
     subtitle: "Job aid, deck, onboarding plan, and one Lumi activity are up · Rise and Storyline still in build",
@@ -923,7 +857,7 @@ const cases: {
                   <Shot
                     src="/work/safe-ai/job-aid.png"
                     alt="Job aid: classify data before using AI or sharing files. Three checks: what data, is the tool approved, ask if unsure."
-                    caption="Job aid"
+                    caption="Before You Paste — Classify"
                   />
                   <p className="safe-ai-file">
                     <a
