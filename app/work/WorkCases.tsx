@@ -631,7 +631,7 @@ const cases: {
     subtitle:
       "Student handling environment · multi-level access · a series of operational problems, solved in a live product",
     logo: {
-      src: "/work/report-o-matic/logo.png",
+      src: "/work/report-o-matic/logo.png?v=day",
       href: "https://www.report-o-matic.online/landing.html",
       alt: "Report-O-Matic",
     },
