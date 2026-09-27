@@ -259,8 +259,7 @@ function StakeholderDeck() {
                 setWhoOpen((current) => [current[0], current[1], true])
               }
             >
-              <strong>Not.</strong> A long compliance course. Not classroom
-              English. Not IT-only.
+              <strong>Not.</strong> A long compliance course. Not IT-only.
             </ClickCover>
           </>
         ) : null}

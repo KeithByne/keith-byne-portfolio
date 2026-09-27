@@ -178,7 +178,7 @@ Both create GDPR and leak risk.
 **On the slide**  
 **Who:** Knowledge workers on a distributed EU team.  
 **When:** Before any prompt, paste, or file share.  
-**Not:** a long compliance course; not classroom English; not IT-only.
+**Not:** a long compliance course; not IT-only.
 
 **You say**
 
