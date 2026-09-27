@@ -855,6 +855,10 @@ const cases: {
     id: "modules",
     title: "E-learning modules",
     subtitle: "Job aid, deck, onboarding plan, and one Lumi activity are up · Rise and Storyline still in build",
+    logo: {
+      src: "/work/e-learning/logo.png",
+      alt: "E-learning modules",
+    },
     body: (
       <div className="work-list">
         {pieces.map((piece) => (
@@ -1048,7 +1052,7 @@ function usePinnedFoldTitle(openId: string | null) {
 }
 
 export function WorkCases() {
-  const [openId, setOpenId] = useState<string | null>("universal-english");
+  const [openId, setOpenId] = useState<string | null>(null);
   const { listRef, pinNext } = usePinnedFoldTitle(openId);
 
   return (
