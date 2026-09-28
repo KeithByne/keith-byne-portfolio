@@ -39,7 +39,10 @@ export default function AboutPage() {
           hybrid/online delivery, including online teacher training in
           educational technology. Live classes have run on Zoom since 2019;
           on Covid-19 closure, staff were trained in three hours and no
-          session was missed. Open to EU remote employment, a Spanish
+          session was missed.
+        </p>
+        <p>
+          Open to EU remote employment, a Spanish
           B2B / autónomo contract, or being taken on through REPORT-O-MATIC
           LTD, a British registered company. Software development runs
           through that same company.
