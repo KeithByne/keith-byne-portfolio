@@ -42,10 +42,7 @@ export default function AboutPage() {
           session was missed.
         </p>
         <p>
-          Open to EU remote employment, a Spanish
-          B2B / autónomo contract, or being taken on through REPORT-O-MATIC
-          LTD, a British registered company. Software development runs
-          through that same company.
+          Open to EU remote employment.
         </p>
         <p>
           Working habits stem from a generation that left school expecting a
