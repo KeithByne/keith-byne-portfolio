@@ -455,7 +455,8 @@ const cases: {
         <p>
           The academy was first in the area to offer online classes, then
           hybrid. Live classes moved onto Zoom from 2019 because teachers and
-          adult learners could be trained quickly. On Covid-19 closure,
+          adult learners could be trained quickly. They ran on Zoom until
+          2021, then Skype, and now Teams. On Covid-19 closure,
           teaching staff were trained in three hours and every class continued
           with no missed session. International online technology training
           for teachers also ran on Zoom, with face-to-face trainer programmes,
@@ -490,8 +491,8 @@ const cases: {
             Hybrid and online
             <span>
               First in the area to offer online classes, then hybrid; Zoom
-              from 2019; three-hour staff training on Covid-19 closure, no
-              missed sessions
+              from 2019 until 2021, then Skype, now Teams; three-hour staff
+              training on Covid-19 closure, no missed sessions
             </span>
           </li>
           <li>

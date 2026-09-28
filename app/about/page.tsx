@@ -34,14 +34,6 @@ export default function AboutPage() {
       </div>
       <div className="prose">
         <p>
-          Based in Espartinas, Seville. Director and Director of Studies of
-          Universal English S.L. since 2015: curriculum, budgets, teams, and
-          hybrid/online delivery, including online teacher training in
-          educational technology. Live classes have run on Zoom since 2019;
-          on Covid-19 closure, staff were trained in three hours and no
-          session was missed.
-        </p>
-        <p>
           Open to EU remote employment.
         </p>
         <p>
@@ -53,6 +45,12 @@ export default function AboutPage() {
           Learn the next tool on the job became working routine.
           &apos;Flexibility&apos;, &apos;mobility&apos; and &apos;learning
           curve&apos; were nudged into conversations by the coffee machine.
+        </p>
+        <p>
+          Currently directing adult learning programmes: curriculum, teams,
+          and hybrid delivery, including training teachers in educational
+          technology. Live classes ran on Zoom from 2019 until 2021, then
+          Skype, now Teams.
         </p>
         <p>
           Before the academy: eleven years contributing to digital materials for

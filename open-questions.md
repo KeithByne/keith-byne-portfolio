@@ -10,7 +10,7 @@ Source of truth: [cv-source-original.md](cv-source-original.md) (2026 Word CV).
 - [ ] LinkedIn URL
 - [x] LMS — locked 22 Sep 2026:
   - **Academy ops:** Edmodo from 2015 until Edmodo closed; **Google Classroom** from then to present.
-  - **Live online:** Zoom from 2019 (chosen so teachers and adult learners could be trained quickly). On Covid-19 closure, teaching staff were trained in 3 hours; all classes continued with no missed session.
+  - **Live online:** Zoom from 2019 until 2021, then Skype, now Teams (Keith, 28 Sep 2026). Zoom was chosen so teachers and adult learners could be trained quickly. On Covid-19 closure, teaching staff were trained in 3 hours; all classes continued with no missed session.
   - **Portfolio / SCORM demo:** **[SCORM Cloud](https://cloud.scorm.com/)** — free Trial account opened 22 Sep 2026. No time limit (Rustici: not time-based; can sit for years). Caps: 3 courses, 5 GB, 10 resettable registrations. Leave idle until the Week 5 dummy upload. Do not add a card or upgrade. Not on `cv.md` until an upload exists.
   - **Not using:** Moodle (no account). MoodleCloud has no permanent free plan.
 - [x] Canva Free — account opened 22 Sep 2026. One-pager live 23 Sep 2026: `/work/safe-ai/before-you-paste-classify.pdf`. Canva line is on `cv.md`. Paint.NET not listed (hiring managers do not ask for it).
