@@ -47,7 +47,7 @@ export default function AboutPage() {
         <p>
           Working habits stem from a generation that left school expecting a
           job for life and found empty promises. IT was not on the syllabus.
-          Processors, then computers, arrived on the work benches. That
+          Processors, then computers, arrived on the work benches. My
           generation learned them ad hoc, building the bridge from analogue
           to digital.
           Lifelong learning evolved. Learn the next tool on the job became
