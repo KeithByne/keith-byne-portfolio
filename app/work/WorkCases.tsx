@@ -854,7 +854,7 @@ const cases: {
   {
     id: "modules",
     title: "E-learning modules",
-    subtitle: "Job aid, deck, onboarding plan, and one Lumi activity are up · Rise and Storyline still in build",
+    subtitle: "Job aid, deck, onboarding, visual system, and one Lumi activity are up · Rise and Storyline still in build",
     logo: {
       src: "/work/e-learning/logo.png",
       alt: "E-learning modules",
@@ -931,6 +931,26 @@ const cases: {
             </div>
           </article>
         ))}
+        <article className="work-item">
+          <span className="idx">Theme</span>
+          <div>
+            <strong>Module visual system</strong>
+            <span className="status">Reference</span>
+            <p>
+              The faces and colours for every demo, including Rise and
+              Storyline. Not a named client brand.
+            </p>
+            <p className="safe-ai-file">
+              <a
+                href="/work/theme/brand-guideline.pdf"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Open the brand-guideline PDF
+              </a>
+            </p>
+          </div>
+        </article>
         <article className="work-item">
           <span className="idx">Lumi</span>
           <div>

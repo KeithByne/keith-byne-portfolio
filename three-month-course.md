@@ -52,6 +52,7 @@ Start the Articulate 360 trial on **day 1 of week 6**. Same 30-day login for Ris
 - Unlock log: Rise + URL.
 
 **Weeks 8–9 — Stage 5 (Storyline)**
+- Watch first if needed: [Storyline 360 beginner course (Georg Volmer, 2026)](https://www.youtube.com/watch?v=yu30DqR6RnI). Clicks only. Then build Case C from **our** locked script.
 - Build Case C from the locked Storyline script (variables/states).
 - Publish SCORM 1.2 + HTML5. Host on SCORM Cloud and Netlify.
 - Unlock log: Storyline + SCORM + URL.
@@ -70,6 +71,7 @@ Start the Articulate 360 trial on **day 1 of week 6**. Same 30-day login for Ris
 - Search titles: Instructional Designer, eLearning Developer, Learning Experience Designer, Digital Learning Designer.
 - Use L&D Manager only where the advert is design-heavy or player-coach.
 - Tailor [cover-letter.md](cover-letter.md) per advert. Name one live artefact.
+- Execution plan: [outreach-plan.md](outreach-plan.md) (findable + named people; no mail blast).
 
 ## Done (end of week 12)
 

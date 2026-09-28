@@ -7,7 +7,7 @@
 **Metric (for the case-study page):** Fewer unapproved AI pastes / fewer personal-drive shares. We will not invent a percentage.  
 **Length:** 10–15 minutes. One scored check. One branch.
 
-Do not start the Articulate trial until Week 5. Build from this script.
+Do not start the Articulate trial until week 6. Production table (every word, interactions, block format): [Articulate assets](../../Articulate%20assets/Articulate%20assets.md).
 
 ## Course map
 

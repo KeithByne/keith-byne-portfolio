@@ -5,7 +5,7 @@ Source files (22 Sep 2026):
 - [portfolio/job-aid-safe-ai/job-aid-sample.pdf](job-aid-safe-ai/job-aid-sample.pdf)
 - [portfolio/job-aid-safe-ai/job-aid-sample.png](job-aid-safe-ai/job-aid-sample.png)
 
-Use this on later slides, Rise, Storyline, and site extras. Do not invent a second look.
+Printable A4: [public/work/theme/brand-guideline.html](/work/theme/brand-guideline.html) and PDF [public/work/theme/brand-guideline.pdf](/work/theme/brand-guideline.pdf). Use that sheet in Rise and Storyline. Do not invent a second look.
 
 ## What “good” is (Keith, 22 Sep 2026)
 

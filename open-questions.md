@@ -38,7 +38,7 @@ Source of truth: [cv-source-original.md](cv-source-original.md) (2026 Word CV).
 
 ## Still unverified from the old blueprint
 
-- [ ] Salary bands — need a named source (Spain L&D Manager; remote Northern Europe ID)
+- [x] Salary bands — named sources logged 28 Sep 2026 in [how-industry-works.md](how-industry-works.md) §05 (Page Personnel Spain 2025; StepStone / Michael Page Germany; Hellowork France; PayScale NL; Instinct UK 2024 public table). Not a promise of an offer. Remote from Seville still depends on whether the employer location-bands. Do not invent a single “Keith number.”
 
 ## Studio page (kbyne.com selection)
 

@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Storyline 360 storyboard — Before you paste, classify</title>
+  <style>
+    body { font: 11pt/1.35 Calibri, sans-serif; color: #3b3b3b; }
+    h1 { font-size: 18pt; }
+    h2 { font-size: 14pt; margin-top: 1.4em; }
+    table { border-collapse: collapse; width: 100%; }
+    th, td { border: 1px solid #3b3b3b; padding: 6px 8px; vertical-align: top; }
+    th { background: #e6e6e6; }
+    td.copy { white-space: pre-wrap; }
+  </style>
+</head>
+<body>
+<h1>Storyline 360 production storyboard</h1>
+<p><strong>Working title:</strong> Before you paste, classify.</p>
+<p><strong>Project name:</strong> Safe AI — the classify conversation</p>
+<p><strong>Audience:</strong> Knowledge workers on a distributed EU team. The conversation is a line manager and a remote staff member.</p>
+<p><strong>Business problem:</strong> People paste client data into public AI tools and share files on personal devices.</p>
+<p><strong>Required behaviour:</strong> Before any paste, prompt, or file share: name the data → approved tool, stripped example, or no AI → if unsure, stop and ask.</p>
+<p><strong>Length:</strong> 12–18 minutes. One conversation. Two variables. One scored check.</p>
+<p><strong>Visual:</strong> Module visual system PDF. 16:9. Paper #FFFFFF, ink #3B3B3B, do #DBE0DC, don’t #E8DED5, step #E6E6E6. Open Sauce One (body, buttons) and League Gothic (01 02 03 only). Player: paper, ink, accent as ink. No fake client logo.</p>
+<p><strong>Characters:</strong> Jordan (line manager). Alex (remote staff). First names only. No surnames. No photographs of real people unless Keith supplies them; use Storyline illustrated characters or empty caption bars until then.</p>
+<p><strong>Variables:</strong> classifiedCorrect (True/False, default False). askedIfUnsure (True/False, default False). ScorePercent (Number, default 0).</p>
+<p><strong>Player:</strong> Menu on. Seekbar off. Volume if no audio: hide. Closed captions off until audio exists. Keyboard tab order: heading, body, then buttons left to right.</p>
+<p><strong>Portfolio sample.</strong> Not a named employer. Ask-role on screen: “line manager or data-protection lead.”</p>
+<p><strong>How to read the table:</strong> “On-screen copy” is every word on the base slide and on each named layer. Do not add extra sentences in Storyline. “Slide format” is the layout to build.</p>
+
+<h2>Scene 1 — Welcome</h2>
+<table>
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Slide format</th>
+      <th>On-screen copy (every word)</th>
+      <th>Interactions</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1.0</td>
+      <td>Player chrome (all slides)</td>
+      <td class="copy">Menu
+Resources
+Exit
+Prev
+Next</td>
+      <td>Storyline player. Menu titles match the slide titles in this document. Resources folder empty until the job-aid PDF is attached. Next is disabled until the slide’s required click is done (see each row). Prev allowed except on 1.1.</td>
+    </tr>
+    <tr>
+      <td>1.1</td>
+      <td>Title slide (welcome)</td>
+      <td class="copy">Before you paste, classify.
+
+A 12-minute conversation. Same habit as the job aid.
+
+Start</td>
+      <td>Base layer only. Start is a rectangle button, ink outline, paper fill. Trigger: jump to 1.2 when the user clicks Start. Next in the player is hidden on this slide. No timeline animation longer than 0.4s. Accessibility: Start is a button.</td>
+    </tr>
+    <tr>
+      <td>1.2</td>
+      <td>Title plus body (how this works)</td>
+      <td class="copy">How this works
+
+You follow Jordan (line manager) and Alex (remote staff). You choose what Jordan says. Wrong choices are coached. One answer is scored at the end.
+
+Continue</td>
+      <td>Continue jumps to 2.1. No other buttons. No audio yet; if audio is added later, the same words are the script.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2>Scene 2 — The conversation</h2>
+<table>
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Slide format</th>
+      <th>On-screen copy (every word)</th>
+      <th>Interactions</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>2.1</td>
+      <td>Conversation — caption plus body (Alex speaks)</td>
+      <td class="copy">Alex
+
+I’ll just drop this into ChatGPT and tidy the English. It’s a customer list. Emails and contract values. Should be quick.
+
+What should Jordan say?
+
+Don’t paste that. Name the data first.
+
+Public AI is fine if you delete the chat afterwards.</td>
+      <td>Two choice buttons. First button → 2.2 (correct path). Second button → 2.3 (coach path). Set classifiedCorrect = True if first button; False if second. Player Next disabled until a choice. Character caption “Alex” is a label, not a button.</td>
+    </tr>
+    <tr>
+      <td>2.2</td>
+      <td>Conversation — caption plus body, do wash on the reply bar (Jordan, correct)</td>
+      <td class="copy">Jordan
+
+Don’t paste that. Emails and contract values are personal data and commercial data. Public tools may keep prompts. Classify first.
+
+Alex
+
+Right. So what do I do with it?
+
+Continue</td>
+      <td>Visited only if classifiedCorrect is True. Continue → 2.4. No other choices on this slide.</td>
+    </tr>
+    <tr>
+      <td>2.3</td>
+      <td>Conversation — caption plus body, don’t wash on the reply bar (Jordan, coach)</td>
+      <td class="copy">Alex
+
+I’ll delete the chat. Nobody will see it.
+
+Jordan
+
+Deleting the chat does not make the paste safe. Names, emails, and contract values are personal data under GDPR and confidential to the company. You have not failed. We classify it now, same as everyone else.
+
+Continue</td>
+      <td>Visited only if classifiedCorrect is False. Continue → 2.4. Both paths rejoin. Do not show a fail screen.</td>
+    </tr>
+    <tr>
+      <td>2.4</td>
+      <td>Title plus four choice buttons (classify)</td>
+      <td class="copy">What data is this?
+
+Public
+Internal
+Personal
+Customer
+
+Submit</td>
+      <td>Four buttons, one selection (button set). Personal and Customer are both acceptable (the file is both). Public and Internal are wrong. On Submit: if Personal or Customer, set classifiedCorrect = True and show layer L-right. If Public or Internal, set classifiedCorrect = False and show layer L-wrong. Submit disabled until one type is selected. States: Normal, Hover, Selected, Visited.</td>
+    </tr>
+    <tr>
+      <td>2.4 L-right</td>
+      <td>Feedback layer — correct (do wash)</td>
+      <td class="copy">Correct
+
+This list is personal data and customer data. It is not public. It is not merely internal working text.
+
+Continue</td>
+      <td>Layer. Continue hides the layer and jumps to 2.5. Dim the base slide. Close X omitted so the learner must Continue.</td>
+    </tr>
+    <tr>
+      <td>2.4 L-wrong</td>
+      <td>Feedback layer — incorrect (don’t wash)</td>
+      <td class="copy">Not public. Not merely internal.
+
+Emails and contract values are personal data and customer data. Classify it as that, then choose the tool.
+
+Continue</td>
+      <td>Layer. Continue jumps to 2.5. Same destination as the correct layer. Coach, do not loop this slide unless the learner uses Prev.</td>
+    </tr>
+    <tr>
+      <td>2.5</td>
+      <td>Title plus three step tiles (01 02 03)</td>
+      <td class="copy">Three checks before any AI or file share
+
+01
+What data is this? (public / internal / personal / customer)
+
+02
+Is this tool on the approved list?
+
+03
+If I am unsure, I do not paste — I ask my line manager or data-protection lead.
+
+Continue</td>
+      <td>Three rectangles, step wash. League Gothic on 01 02 03. Optional: click each tile for a selected state (same words, no extra copy). Continue → 2.6. If the learner clicks tile 03, set askedIfUnsure = True.</td>
+    </tr>
+    <tr>
+      <td>2.6</td>
+      <td>Conversation — caption plus two choices (remembered path)</td>
+      <td class="copy">Alex
+
+OK. I still want better English. What is the approved move?
+
+Jordan — choose one
+
+Strip the emails (or use a fake), then use the approved tool.
+
+Paste it. It’s only one list.
+
+Put it on my personal Drive so a contractor can edit overnight.</td>
+      <td>Three buttons. First is correct: set ScorePercent = 100, jump to 2.7. Second: ScorePercent = 0, jump to 2.8. Third: ScorePercent = 0, jump to 2.8. This is the scored item. Report as a survey/quiz question named Q1_approved_move for SCORM 1.2. If classifiedCorrect was False earlier, do not change the answers — same three choices. Variable only used in the close line on 3.1.</td>
+    </tr>
+    <tr>
+      <td>2.7</td>
+      <td>Title plus body (correct close of conversation, do wash)</td>
+      <td class="copy">Correct
+
+Redact first, then use an approved tool. That is the whole habit.
+
+Continue</td>
+      <td>Continue → 3.1.</td>
+    </tr>
+    <tr>
+      <td>2.8</td>
+      <td>Title plus body (incorrect close of conversation, don’t wash)</td>
+      <td class="copy">Not quite
+
+One list with emails is still personal data. Personal drives are not the contractor workaround. Redact first, or do not use AI.
+
+Continue</td>
+      <td>Same slide for both wrong answers. Continue → 3.1. Do not lock the close. Score remains 0.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2>Scene 3 — Close</h2>
+<table>
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Slide format</th>
+      <th>On-screen copy (every word)</th>
+      <th>Interactions</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>3.1</td>
+      <td>Title plus body (close)</td>
+      <td class="copy">The habit is the course
+
+Classify → approved tool or no AI → ask if unsure.
+
+Take the one-page job aid and keep it next to your desktop.
+
+Finish</td>
+      <td>If askedIfUnsure is True, do not add extra words — the same close for everyone. Finish executes Complete course and Exit, or jump to 3.2. Optional resource: attach the job-aid PDF in Player Resources with the label Job aid (PDF). Do not put a URL on the slide until it is live.</td>
+    </tr>
+    <tr>
+      <td>3.2</td>
+      <td>Results / complete</td>
+      <td class="copy">You’re done.
+
+Your score: %ScorePercent%%
+
+Review
+Exit</td>
+      <td>Results slide. Success: always (this is a habit module; score is shown, not a pass mark). Review jumps to 2.6. Exit closes the player. SCORM 1.2: complete when 3.1 Finish is clicked; score is ScorePercent. If Storyline inserts “Success” / “Failure” headings, hide them. Replace %ScorePercent%% with the variable reference.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2>Button and state copy (master)</h2>
+<table>
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Slide format</th>
+      <th>On-screen copy (every word)</th>
+      <th>Interactions</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>M1</td>
+      <td>Button states (all choice buttons)</td>
+      <td class="copy">Normal: ink text on paper
+Hover: ink text on step #E6E6E6
+Selected: ink text on do #DBE0DC
+Disabled: ink at 50%
+Visited: same as Normal with a 1 px ink underline</td>
+      <td>No extra words on states. Don’t wash is only for incorrect feedback layers, not for hover.</td>
+    </tr>
+    <tr>
+      <td>M2</td>
+      <td>Menu titles (exact)</td>
+      <td class="copy">Welcome
+How this works
+Alex asks
+Jordan — don’t paste
+Jordan — coach
+Classify the file
+Three checks
+The approved move
+Correct
+Not quite
+The habit is the course
+You’re done</td>
+      <td>One menu item per slide, in this order. Layers are not in the menu. Hide 2.2 or 2.3 from the menu with a condition: show 2.2 only if classifiedCorrect = True; show 2.3 only if False. Or leave both in the menu but restrict navigation to previously viewed.</td>
+    </tr>
+    <tr>
+      <td>M3</td>
+      <td>Accessibility names (not visible; screen reader)</td>
+      <td class="copy">Start
+Continue
+Don’t paste that. Name the data first.
+Public AI is fine if you delete the chat afterwards.
+Public
+Internal
+Personal
+Customer
+Submit
+Strip the emails (or use a fake), then use the approved tool.
+Paste it. It’s only one list.
+Put it on my personal Drive so a contractor can edit overnight.
+Finish
+Review
+Exit</td>
+      <td>Alt text matches the visible label. No “click here.” No character photos without alt: “Jordan, line manager” / “Alex, remote staff.”</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2>Words that must not appear</h2>
+<p>students, classroom, teacher, pupils, kids, 40% fewer leaks, a named client, a fake company logo, teal, Poppins, Montserrat, try again (on the coach path), you have failed.</p>
+
+<p>Keith Byne · portfolio sample · Case C · Safe AI</p>
+</body>
+</html>

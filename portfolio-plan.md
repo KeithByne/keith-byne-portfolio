@@ -52,7 +52,7 @@ A, B, and C share the Safe AI topic. D is a different artefact (L&D-manager evid
 | Rise script | Written (still denser language) |
 | Cheat-sheet + slides script | Written in plain English |
 | Action map (who / problem / do this / count) | **Not written yet** |
-| Storyline script | **Not written yet** |
+| Storyline script | Written — lock in `Articulate assets/` |
 | Canva page / PowerPoint | **Canva job aid live.** PowerPoint deck not built. |
 | Articulate trial | **Must stay closed** |
 
@@ -176,7 +176,7 @@ Stage 7  Apply
 |--------|------|--------|
 | Rise module (Case B) | `portfolio/rise-safe-ai/storyboard.md` | Written — **read and lock**. Plain-English pass if it still feels opaque. |
 | Cheat sheet + 8 slides (Case A) | `portfolio/job-aid-safe-ai/storyboard.md` | Written in plain English — **lock**. |
-| Storyline conversation (Case C) | `portfolio/storyline-safe-ai/storyboard.md` | **Write now.** One manager / staff conversation, same Safe AI habit. Right and wrong choices. What the screen remembers. |
+| Storyline conversation (Case C) | `Articulate assets/Articulate assets.md` | Written — **lock**. One manager / staff conversation, same Safe AI habit. Right and wrong choices. What the screen remembers. Word table in that folder. |
 | Onboarding outline (Case D) | short section in that Storyline file or `portfolio/onboarding/outline.md` | **One page only:** what a 90-day hybrid onboarding plan will contain. You build the real Docs in Stage 6. |
 
 **Optional, still free:** a Figma (or paper) drawing of the Rise path: Welcome → classify → two paths → meet again → one question → point to the cheat sheet.
@@ -236,7 +236,7 @@ You now have: an action map, locked scripts, a live cheat sheet, a live deck, an
 | Days in the trial | Build |
 |-------------------|--------|
 | **1–14 (weeks 6–7)** | **Rise** from the locked script. 10–15 minutes, one branch, one marked question, points at the cheat sheet. Host on SCORM Cloud and/or web export. |
-| **15–28 (weeks 8–9)** | **Storyline** from the locked script. One manager conversation with remembered choices. Export **SCORM 1.2** + HTML5. Host on SCORM Cloud **and** Netlify (so the link survives when the trial dies). |
+| **15–28 (weeks 8–9)** | **Storyline** from the locked script. One manager conversation with remembered choices. Export **SCORM 1.2** + HTML5. Host on SCORM Cloud **and** Netlify (so the link survives when the trial dies). Clicks tutorial (saved): [Georg Volmer, Storyline 360 beginners, 2026](https://www.youtube.com/watch?v=yu30DqR6RnI). Do not copy his demo or his fonts. |
 | **Before day 30** | Copy everything off Review 360. Write the Work-page paragraphs for A, B, and C (problem, limit, choice, link). |
 
 **Do not:** discover the teaching during the trial. Do not rely on Articulate’s share link as the portfolio URL.

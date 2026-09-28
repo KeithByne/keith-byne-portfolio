@@ -9,7 +9,7 @@ This folder is **not** Report-O-Matic. That product lives in `C:\dev\Report-O-Ma
 
 ## On start
 
-Keith is building the **most employable version of himself** for remote European ID / LXD / e-learning / L&D roles. Flag any request that drifts off that path — wrong tools, gimmicks, unearned skill claims, side projects hiring managers will not credit — even when he is enthusiastic. Then wait for him to choose.
+Keith is building the **most employable version of himself** for remote European instructional design (ID) / learning experience design (LXD) / e-learning / learning and development (L&D) roles. Flag any request that drifts off that path — wrong tools, gimmicks, unearned skill claims, side projects hiring managers will not credit — even when he is enthusiastic. Then wait for him to choose.
 
 Run the scripts the work needs **without asking**. `npm install`, `npm run dev`, git, Vercel deploy and alias, ffmpeg, and any other command required to finish the job. Do not stop to confirm. When a site change is done, push it.
 
@@ -18,6 +18,8 @@ Run the scripts the work needs **without asking**. `npm install`, `npm run dev`,
 1. Start the local docs server if it is not already up: `node tmp/docs-preview/serve.js` (http://127.0.0.1:3458/).
 2. Open **each** page in a **new browser window**. For the full set: `node tmp/docs-preview/open-all.js`. For one artefact, open that URL the same way.
 3. Put the links in the reply. Do not paste the document body into chat as the way he is meant to read it.
+
+**Jargon (common protocol).** Keith is learning this industry’s language in context. In every reply and on every page we write: the first time an initialism, acronym, or short industry name appears, write the ordinary words, then the short form in brackets. Example: Applicant Tracking System (ATS). After that, the short form is fine in the same conversation. Do not skip “obvious” ones (ATS, LMS, ID, LXD, L&D, GDPR, SCORM). Do not dump a glossary in chat; teach the word in the sentence that uses it. The long glossary stays in [portfolio-plan.md](portfolio-plan.md).
 
 Never open Canva’s marketing or Pro / 30-day trial page. He already has Canva Free. Do not design the one-pager for him in Canva; he is finishing that himself.
 
@@ -38,7 +40,7 @@ Never open Canva’s marketing or Pro / 30-day trial page. He already has Canva 
 
 Style: modern, clean, easy to read. Wide white margins. Eyebrow, then a large title, then one line. Ideas sit in equal colour blocks. Process is oversized `01` / `02` / `03` with a short caption. Line icons only. Elegant, not juvenile. No third typeface, no teal, no cream stationery, no black `#000`, no red danger panel.
 
-Jump menu (same server): Home, Action map, Plan, Weeks, Cheat sheet, One-pager, 8 slides, Presenter view, Rise, Tools, Skills log, plus SCORM Cloud.
+Jump menu (same server): Home, Action map, Plan, Weeks, Cheat sheet, One-pager, 8 slides, Presenter view, Rise, Articulate assets, Rise table, Storyline table, Tools, Outreach, Skills log, plus SCORM Cloud.
 
 ## How to advise on new ideas
 
@@ -55,6 +57,8 @@ Be blunt. If an idea will look like a gimmick, ESL classroom residue, unearned t
 |------|------------|
 | [cv.md](cv.md) | Industry-format CV. Send this. Skills grow only via the log. |
 | [cover-letter.md](cover-letter.md) | Introduction letter. Swap the tokens per application. |
+| [outreach-plan.md](outreach-plan.md) | After the portfolio: how to be seen, and how to approach named people. |
+| [how-industry-works.md](how-industry-works.md) | Europe: remote vs hybrid, employed vs freelance, pay bands, and how to package. |
 | [cv-skills-log.md](cv-skills-log.md) | Which course module unlocks which CV line. |
 | Formatted docs (local) | [http://127.0.0.1:3458/](http://127.0.0.1:3458/) — clickable menu. Open all windows with `node tmp/docs-preview/open-all.js`. |
 | [portfolio-plan.md](portfolio-plan.md) | Overview, glossary, and staged build order. Read this first. |
@@ -68,10 +72,12 @@ Be blunt. If an idea will look like a gimmick, ESL classroom residue, unearned t
 | [portfolio/safe-ai-action-map.md](portfolio/safe-ai-action-map.md) | Stage 1: who, problem, do this, how we would notice. |
 | [portfolio/job-aid-safe-ai/storyboard.md](portfolio/job-aid-safe-ai/storyboard.md) | Case A: one-page job aid + 8-slide stakeholder deck (same Safe AI audience). |
 | [portfolio/visual-theme.md](portfolio/visual-theme.md) | Locked look from the Canva job aid. Use on later media. |
+| Brand sheet (PDF) | [public/work/theme/brand-guideline.pdf](public/work/theme/brand-guideline.pdf) — faces, colours, Rise / Storyline paste values. |
 | [portfolio/job-aid-safe-ai/job-aid-sample.pdf](portfolio/job-aid-safe-ai/job-aid-sample.pdf) | Keith’s Canva job aid (working file). |
 | [portfolio/job-aid-safe-ai/deck.html](portfolio/job-aid-safe-ai/deck.html) | Working 8-slide talk (HTML prototype). Remake in PowerPoint later. |
 | [portfolio/job-aid-safe-ai/presenter-view.html](portfolio/job-aid-safe-ai/presenter-view.html) | How to put “You say” in Notes and give the talk (Presenter view). |
-| [portfolio/rise-safe-ai/storyboard.md](portfolio/rise-safe-ai/storyboard.md) | Branching script for the first Rise module. |
+| [Articulate assets](Articulate%20assets/Articulate%20assets.md) | Rise and Storyline working kit. Drop new Articulate files in that folder. |
+| [portfolio/rise-safe-ai/storyboard.md](portfolio/rise-safe-ai/storyboard.md) | Short Rise outline. Full table is in Articulate assets. |
 | [SCORM Cloud](https://cloud.scorm.com/) | Portfolio LMS host. Free Trial account already open; no time limit. Dummy upload in Week 5. |
 
 ## Portfolio site (Vercel)

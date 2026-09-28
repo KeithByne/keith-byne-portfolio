@@ -15,6 +15,8 @@ Full order and glossary: [portfolio-plan.md](portfolio-plan.md). **Do not start 
 | SCORM Cloud | Live tracked demo for employers | Free account, not a 30-day clock. Start at [cloud.scorm.com](https://cloud.scorm.com/). Product page: [Rustici SCORM Cloud](https://rusticisoftware.com/products/scorm-cloud/). Pricing: [trial limits](https://rusticisoftware.com/products/scorm-cloud/pricing/). Guide: [getting started](https://cloud.scorm.com/docs/user-guide/getting-started/). | Week 5 (dummy), weeks 7 and 9 (real modules) |
 | Articulate Rise 360 | Responsive corporate modules | 30-day Articulate 360 trial, no card. **Do not start until every script is written and Case A is live.** | Weeks 6–7 |
 | Articulate Storyline 360 | Hard filter on Senior ID ads (states, variables, branching) | Same trial as Rise | Weeks 8–9 |
+
+**Saved tutorial for weeks 8–9 (watch; do not open the Articulate trial to follow along until week 6):** [Articulate Storyline 360 Tutorial (2026) | Full Course for Beginners](https://www.youtube.com/watch?v=yu30DqR6RnI) — Georg Volmer. First interactive course: player, audio, markers, click-to-reveal, a quiz. Use it to learn clicks. Build **our** Safe AI conversation from the locked Storyline script, not his information-security demo. Keep the locked visual theme (Open Sauce / League Gothic; do not copy his Montserrat look).
 | SCORM 1.2 | Proof the module will load in an LMS | Export from Articulate | Week 9 |
 | Netlify | Host HTML5 export after the trial dies | Free tier. Do not rely on Review 360 links. | Week 9 |
 

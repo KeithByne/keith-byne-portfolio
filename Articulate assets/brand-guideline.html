@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Module visual system — brand guideline</title>
+  <link href="/fonts/theme.css" rel="stylesheet" />
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--step);
+      color: var(--ink);
+      font: 400 11pt/1.5 "Open Sauce One", sans-serif;
+    }
+    .sheet {
+      width: 210mm;
+      min-height: 297mm;
+      margin: 1.25rem auto;
+      padding: 16mm 16mm 14mm;
+      background: var(--paper);
+    }
+    .eyebrow {
+      margin: 0;
+      font-family: "League Gothic", Impact, sans-serif;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      font-size: 15px;
+      font-weight: 400;
+    }
+    h1 {
+      margin: 10px 0 8px;
+      font-size: 32px;
+      font-weight: 600;
+      letter-spacing: -0.03em;
+      line-height: 1.05;
+    }
+    .deck { margin: 0 0 18px; max-width: 46ch; }
+    h2 {
+      margin: 18px 0 8px;
+      padding-top: 8px;
+      border-top: 1px solid var(--ink);
+      font-family: "League Gothic", Impact, sans-serif;
+      font-size: 15px;
+      font-weight: 400;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+    h3 {
+      margin: 12px 0 6px;
+      font-size: 15px;
+      font-weight: 600;
+    }
+    p, li { margin: 0.35rem 0; }
+    ul { padding-left: 1.15rem; }
+    .swatches { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 10px; }
+    .swatch { min-height: 92px; padding: 12px; }
+    .swatch strong { display: block; font-family: "League Gothic", Impact, sans-serif; font-size: 18px; letter-spacing: 0.04em; }
+    .swatch code, .swatch span { display: block; font-size: 10.5pt; margin-top: 4px; }
+    .paper { background: var(--paper); outline: 1px solid var(--step); }
+    .ink { background: var(--ink); color: var(--paper); }
+    .do { background: var(--do); }
+    .dont { background: var(--dont); }
+    .step { background: var(--step); }
+    .pair { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+    .pair article { padding: 12px 14px; min-height: 110px; }
+    .type-sample .doc { font-family: "League Gothic", Impact, sans-serif; letter-spacing: 0.12em; text-transform: uppercase; font-size: 18px; }
+    .type-sample .title { font-size: 22px; font-weight: 600; letter-spacing: -0.03em; }
+    .type-sample .object { font-family: "League Gothic", Impact, sans-serif; font-size: 20px; }
+    .type-sample .body { font-size: 11pt; }
+    .paste {
+      background: var(--step);
+      padding: 10px 12px;
+      font-size: 10.5pt;
+      white-space: pre-wrap;
+    }
+    footer { margin-top: 20px; text-align: center; font-size: 10pt; }
+    @media print {
+      body { background: var(--paper); }
+      .sheet { margin: 0; box-shadow: none; page-break-after: always; }
+      .sheet:last-of-type { page-break-after: auto; }
+    }
+    @page { size: A4; margin: 0; }
+    * { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  </style>
+</head>
+<body>
+  <article class="sheet">
+    <p class="eyebrow">Learning artefacts · not a named client</p>
+    <h1>Module visual system.</h1>
+    <p class="deck">Use this sheet in Rise and Storyline so every demo matches the job aid. Two faces. Five colours. No third look.</p>
+
+    <h2>Colours — paste these hex values</h2>
+    <div class="swatches">
+      <div class="swatch paper"><strong>Paper</strong><code>#FFFFFF</code><span>Page, empty field, slide fill</span></div>
+      <div class="swatch ink"><strong>Ink</strong><code>#3B3B3B</code><span>Titles, body, icons, player chrome</span></div>
+      <div class="swatch do"><strong>Do</strong><code>#DBE0DC</code><span>Allowed path, continue, correct</span></div>
+      <div class="swatch dont"><strong>Don’t</strong><code>#E8DED5</code><span>Stop path, incorrect, caution</span></div>
+      <div class="swatch step"><strong>Step</strong><code>#E6E6E6</code><span>01 / 02 / 03 tiles, neutral blocks</span></div>
+    </div>
+    <p>Colour groups meaning. It is not decoration. No teal, no cream stationery, no black <code>#000</code>, no red danger panel.</p>
+
+    <h2>Type</h2>
+    <div class="pair">
+      <article class="step type-sample">
+        <p class="doc">Document name</p>
+        <p class="title">Main title — Open Sauce One 600</p>
+        <p class="object">01 object title — League Gothic</p>
+        <p class="body">Body is Open Sauce One 400. Sentences never sit in League Gothic. Line spacing 1.5. One line of space under a block title.</p>
+      </article>
+      <article class="step">
+        <h3>Weights</h3>
+        <p>Open Sauce One: 400, 500, 600 only. Not ExtraBold, not Black.</p>
+        <p>League Gothic: regular. Stand-in if the file is missing: Impact.</p>
+        <p>Do not use Poppins, Nunito, Outfit, Syne, Montserrat, or IBM Plex on these modules.</p>
+      </article>
+    </div>
+    <footer>Keith Byne · portfolio sample · same tokens as the Canva job aid</footer>
+  </article>
+
+  <article class="sheet">
+    <p class="eyebrow">Rise 360 · Storyline 360</p>
+    <h1>Set the theme once.</h1>
+    <p class="deck">Do this on day one of the trial. Then build. Do not pick a new palette per screen.</p>
+
+    <h2>Rise — theme colours</h2>
+    <p>In Rise: Theme → colors. Map them like this:</p>
+    <div class="paste">Page / background    #FFFFFF
+Headings and body    #3B3B3B
+Accent / buttons     #3B3B3B
+Block — allowed      #DBE0DC
+Block — stop         #E8DED5
+Block — steps        #E6E6E6</div>
+    <p>Upload Open Sauce One if the trial lets you add a font. If it does not, use the closest sans Rise already has for body, and keep League Gothic for <code>01 02 03</code> only when you can embed it. Do not switch to a decorative Rise template.</p>
+
+    <h2>Storyline — slide and player</h2>
+    <div class="paste">Slide fill             #FFFFFF
+Text                   #3B3B3B
+Player / menu          #3B3B3B on #FFFFFF
+Correct / continue     fill #DBE0DC, text #3B3B3B
+Incorrect / stop       fill #E8DED5, text #3B3B3B
+Neutral tiles          #E6E6E6
+Focus / selected       2 px ink outline, not a new colour</div>
+    <p>Install Open Sauce One and League Gothic on the Windows machine before the trial week. Storyline can use installed faces. Embed them on publish so the SCORM zip still looks right.</p>
+
+    <h2>Layout (both tools)</h2>
+    <ul>
+      <li>Wide white margins. Do not fill the page.</li>
+      <li>Eyebrow (League Gothic) → large title (Open Sauce 600) → one-line deck.</li>
+      <li>Equal colour blocks for do / don’t. Line icons only. No stock photo, no fake logo.</li>
+      <li>Process as oversized <strong>01 02 03</strong> on equal step tiles. Short caption under each number.</li>
+    </ul>
+    <footer>Print this PDF. Keep it next to the trial machine.</footer>
+  </article>
+</body>
+</html>
