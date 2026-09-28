@@ -50,11 +50,10 @@ export default function AboutPage() {
         <p>
           Working habits stem from a generation that left school expecting a
           job for life and found empty promises. IT was not on the syllabus.
-          Processors, then computers, arrived on the work benches. My
-          generation learned them ad hoc, building the bridge from analogue
-          to digital.
-          Lifelong learning evolved. Learn the next tool on the job became
-          working routine. Courses were demos by salesmen.
+          Processors, then computers, arrived on the work benches. Courses
+          were demos by salesmen. My generation learned them ad hoc, building
+          the bridge from analogue to digital. Lifelong learning evolved.
+          Learn the next tool on the job became working routine.
           &apos;Flexibility&apos;, &apos;mobility&apos; and &apos;learning
           curve&apos; became the language of the work.
         </p>
