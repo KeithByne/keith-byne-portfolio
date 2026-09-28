@@ -459,7 +459,7 @@ const cases: {
           2021, then Skype, and now Teams. On Covid-19 closure,
           teaching staff were trained in three hours and every class continued
           with no missed session. International online technology training
-          for teachers also ran on Zoom, with face-to-face trainer programmes,
+          for teachers, with face-to-face trainer programmes,
           and ongoing content work with Teachertrainingvideos.com / Russell
           Stannard. The academy LMS was Edmodo from 2015, then Google
           Classroom when Edmodo closed.
@@ -504,7 +504,7 @@ const cases: {
           <li>
             Teacher training
             <span>
-              International Zoom programmes; face-to-face trainer programmes;
+              International programmes; face-to-face trainer programmes;
               content with Teachertrainingvideos.com
             </span>
           </li>

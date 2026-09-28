@@ -50,7 +50,7 @@ Programme director, instructional designer, and educational software builder wit
 Tomares, Spain · 2015–present
 
 - Own curriculum, course development, staffing, budgets, marketing, and web content for an adult training organisation.
-- Designed and run international online technology training for teachers (Zoom), plus face-to-face trainer programmes; ongoing content work with Teachertrainingvideos.com / Russell Stannard.
+- Designed and run international online technology training for teachers, plus face-to-face trainer programmes; ongoing content work with Teachertrainingvideos.com / Russell Stannard.
 - Put live classes on Zoom from 2019 until 2021 so teachers and adult learners could be trained quickly, then Skype, now Teams; on Covid-19 closure, trained the teaching staff in 3 hours and continued every class with no missed session.
 - Ran the academy LMS on Edmodo from 2015, then Google Classroom when Edmodo closed.
 - Introduced online classes, then hybrid classes, ahead of local competitors; built iPALABRA free learning websites and wrote content for private ESL platforms.
