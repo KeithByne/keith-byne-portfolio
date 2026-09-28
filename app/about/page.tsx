@@ -55,7 +55,7 @@ export default function AboutPage() {
           the bridge from analogue to digital. Lifelong learning evolved.
           Learn the next tool on the job became working routine.
           &apos;Flexibility&apos;, &apos;mobility&apos; and &apos;learning
-          curve&apos; became the language of the work.
+          curve&apos; were nudged into conversations by the coffee machine.
         </p>
         <p>
           Before the academy: eleven years contributing to digital materials for
