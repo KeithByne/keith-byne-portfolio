@@ -26,7 +26,7 @@ Printable theme sheet for day one of the trial: [brand-guideline.pdf](brand-guid
 | 28 Sep 2026 | This index | `Articulate assets.md` |
 | 28 Sep 2026 | Rise 360 production storyboard (table) | `rise-storyboard.html`, `rise-storyboard.docx` |
 | 28 Sep 2026 | Storyline 360 production storyboard (table) | `storyline-storyboard.html`, `storyline-storyboard.docx` |
-| 28 Sep 2026 | Module visual system (copy) | `brand-guideline.pdf`, `brand-guideline.html` |
+| 30 Sep 2026 | Storyboard Master (blank + filled Safe AI example + Brand Guideline ROM PDF). Formatting locked; cell wording editable. | `Storyboard Master/` |
 
 Older scripts still in the repo (do not duplicate; this folder is now the working home):
 

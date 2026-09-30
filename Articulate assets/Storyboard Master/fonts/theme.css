@@ -1,0 +1,10 @@
+@import url("./open-sauce.css");
+@import url("./league-gothic.css");
+
+:root {
+  --paper: #ffffff;
+  --ink: #3b3b3b;
+  --do: #dbe0dc;
+  --dont: #e8ded5;
+  --step: #e6e6e6;
+}

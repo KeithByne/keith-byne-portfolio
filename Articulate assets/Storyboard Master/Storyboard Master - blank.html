@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Storyboard Master — blank</title>
+  <style>
+  @font-face { font-family: "Open Sauce One"; font-weight: 400; src: url("fonts/open-sauce-one-latin-400-normal.woff2") format("woff2"); }
+  @font-face { font-family: "Open Sauce One"; font-weight: 500; src: url("fonts/open-sauce-one-latin-500-normal.woff2") format("woff2"); }
+  @font-face { font-family: "Open Sauce One"; font-weight: 600; src: url("fonts/open-sauce-one-latin-600-normal.woff2") format("woff2"); }
+  @font-face { font-family: "League Gothic"; font-weight: 400; src: url("fonts/league-gothic-regular.woff2") format("woff2"); }
+  @page { size: A4 landscape; margin: 10mm; }
+  * { box-sizing: border-box; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  body { margin: 0; background: #E6E6E6; color: #3B3B3B; }
+  .sheet, .sheet-portrait, .sheet-board {
+    margin: 0 auto 10px;
+    padding: 8mm 10mm 7mm;
+    background: #FFFFFF;
+  }
+  .sheet-portrait {
+    width: 190mm;
+    min-height: 277mm;
+    page-break-after: always;
+    page-break-inside: avoid;
+    break-after: page;
+    break-inside: avoid;
+  }
+  .sheet {
+    width: 277mm;
+    min-height: 190mm;
+    page-break-after: always;
+    page-break-inside: avoid;
+    break-after: page;
+    break-inside: avoid;
+  }
+  .sheet-board {
+    width: 277mm;
+    page-break-after: always;
+  }
+  .sheet-board:last-child { page-break-after: auto; }
+  h1, h2, h3, p, li, td, th { margin: 0; }
+  .block { page-break-inside: avoid; break-inside: avoid; }
+  .block + .block { margin-top: 6mm; }
+  .block-label { font-family: "League Gothic", Impact, sans-serif; letter-spacing: 0.14em; text-transform: uppercase; font-size: 16pt; font-weight: 400; padding: 4px 10px; background: #E6E6E6; }
+  .block-body { padding: 8px 0 10px; }
+  .meta { width: 100%; border-collapse: collapse; table-layout: fixed; font-family: Calibri, "Segoe UI", sans-serif; font-size: 14pt; line-height: 1.35; }
+  .meta col.label { width: 38mm; }
+  .meta td { vertical-align: top; padding: 8pt 10pt; }
+  .meta .k { width: 38mm; font-size: 16pt; font-weight: 700; padding-right: 10pt; background: #E6E6E6; }
+  .meta tr.gap td { padding: 0; height: 8pt; font-size: 4pt; line-height: 4pt; background: transparent; }
+  .pair { width: 100%; border-collapse: collapse; table-layout: fixed; }
+  .pair > tbody > tr > td { vertical-align: top; }
+  .pair-gap { width: 10pt; font-size: 10pt; line-height: 10pt; padding: 0; }
+  .fonts-block { width: 100%; border-collapse: collapse; }
+  .fonts-block td { padding: 8pt 10pt; vertical-align: top; }
+  .type-row { margin: 0 0 6px; text-align: left; page-break-inside: avoid; }
+  .type-note { font-family: Calibri, "Segoe UI", sans-serif; font-size: 8.5pt; color: #3B3B3B; margin: 0 0 2px; }
+  .doc-name { font-family: "League Gothic", Impact, sans-serif; font-size: 22px; letter-spacing: 0.12em; text-transform: uppercase; color: #3B3B3B; line-height: 1.1; }
+  .main-title { font-family: "Open Sauce One", sans-serif; font-weight: 600; font-size: 28px; letter-spacing: -0.03em; color: #3B3B3B; line-height: 1.05; }
+  .object-title { font-family: "League Gothic", Impact, sans-serif; font-size: 20px; color: #3B3B3B; line-height: 1.1; }
+  .medium { font-family: "Open Sauce One", sans-serif; font-weight: 500; font-size: 14pt; color: #3B3B3B; line-height: 1.4; }
+  .body-sample { font-family: "Open Sauce One", sans-serif; font-weight: 400; font-size: 11pt; line-height: 1.5; color: #3B3B3B; }
+  .button-sample { font-family: "Open Sauce One", sans-serif; font-weight: 500; font-size: 11pt; color: #3B3B3B; display: inline-block; border: 2px solid #3B3B3B; padding: 4px 14px; }
+  .caption-sample { font-family: "Open Sauce One", sans-serif; font-weight: 400; font-size: 9.5pt; color: #3B3B3B; }
+  .swatch-table { width: 100%; border-collapse: collapse; font-family: Calibri, "Segoe UI", sans-serif; font-size: 14pt; }
+  .swatch-table td { border: 1px solid #3B3B3B; vertical-align: middle; padding: 8pt 10pt; }
+  .swatch-fill { width: 58%; height: 14mm; border: 1px solid #3B3B3B; padding: 8pt 10pt; }
+  .swatch-code { padding: 8pt 10pt; background: #FFFFFF; }
+  .swatch-code strong { display: block; font-size: 16pt; font-weight: 700; }
+  .swatch-code code { font-family: Consolas, monospace; font-size: 14pt; letter-spacing: 0.04em; }
+  .card-keep { break-inside: avoid; page-break-inside: avoid; }
+  .card-title { font-family: Calibri, "Segoe UI", sans-serif; font-size: 16pt; font-weight: 700; margin: 0 0 8px; color: #3B3B3B; page-break-after: avoid; break-after: avoid; }
+  .card { width: 100%; border-collapse: collapse; table-layout: fixed; font-family: Calibri, "Segoe UI", sans-serif; font-size: 14pt; line-height: 1.35; page-break-inside: avoid; break-inside: avoid; }
+  .card col.label { width: 38mm; }
+  .card th, .card td { border: 1px solid #3B3B3B; padding: 8pt 10pt; vertical-align: top; }
+  .card th { background: #E6E6E6; text-align: left; font-size: 16pt; font-weight: 700; width: 38mm; }
+  .card td { font-size: 14pt; }
+  .card .copy { white-space: pre-wrap; }
+  .slide-gap { font-family: Calibri, "Segoe UI", sans-serif; font-size: 14pt; line-height: 14pt; height: 14pt; margin: 14pt 0 0; }
+  .board { width: 100%; border-collapse: collapse; font-family: Calibri, "Segoe UI", sans-serif; font-size: 14pt; line-height: 1.35; }
+  .board th, .board td { border: 1px solid #3B3B3B; padding: 7px 8px; vertical-align: top; }
+  .board th { background: #E6E6E6; text-align: left; font-size: 16pt; font-weight: 700; }
+  .board thead { display: table-header-group; }
+  .board tr { page-break-inside: avoid; break-inside: avoid; }
+  .board .id { width: 8%; }
+  .board .assets { width: 18%; }
+  .board .format { width: 16%; }
+  .board .copy { width: 30%; white-space: pre-wrap; }
+  .board .ix { width: 28%; }
+  .foot { font-family: Calibri, "Segoe UI", sans-serif; font-size: 14pt; text-align: center; margin-top: 8px; }
+  @media print {
+    body { background: #FFFFFF; }
+    .sheet { margin: 0; min-height: 0; height: auto; }
+  }
+</style>
+</head>
+<body>
+
+<article class="sheet-portrait">
+  <div class="block">
+    <div class="block-label" style="background:#E6E6E6">Block 01 · Brand guideline (written)</div>
+    <div class="block-body">
+      <table class="meta" width="100%" cellpadding="8" cellspacing="0">
+        <colgroup><col class="label" style="width:38mm" /><col /></colgroup>
+        <tr class="gap"><td>&nbsp;</td><td>&nbsp;</td></tr>
+        <tr><td class="k" bgcolor="#E6E6E6">Company</td><td>[Company name]</td></tr>
+        <tr><td class="k" bgcolor="#E6E6E6">Project</td><td>[Project name]</td></tr>
+        <tr><td class="k" bgcolor="#E6E6E6">Aspect Ratio</td><td>16:9 HD (1920 x 1080)</td></tr>
+        <tr><td class="k" bgcolor="#E6E6E6">Project Aim</td><td>[Short description of what this project must make people able to do.]</td></tr>
+        <tr><td class="k" bgcolor="#E6E6E6">Alignment</td><td>Left (all learner-facing text)</td></tr>
+        <tr><td class="k" bgcolor="#E6E6E6">Logo / artwork</td><td>Client supplies. Do not invent a mark.</td></tr>
+        <tr><td class="k" bgcolor="#E6E6E6">Notes</td><td>[Paste definitions from meeting notes or the client’s brand sheet. Faces, sizes, casing, alignment, colours, what not to use.]</td></tr>
+      </table>
+    </div>
+  </div>
+  <p class="foot">[Company name] · [Project name] · page 1</p>
+</article><br clear="all" style="page-break-before:always" /><a name="LANDSCAPE"></a>
+<article class="sheet">
+  <table class="pair" width="100%" border="0" cellpadding="0" cellspacing="0">
+    <tr>
+      <td valign="top">
+        <table class="fonts-block" width="100%" cellpadding="8" cellspacing="0">
+          <tr><td bgcolor="#E6E6E6" class="block-label">Block 02 · Fonts (visual reference)</td></tr>
+          <tr>
+            <td style="text-align:left">
+            <div class="type-row">
+              <p class="type-note">Document name · League Gothic · 22px · ink · UPPER CASE</p>
+              <p class="doc-name">DOCUMENT NAME</p>
+            </div>
+            <div class="type-row">
+              <p class="type-note">Main Header (H1) · Open Sauce One 600 · 28px · ink · Upper and lower case</p>
+              <p class="main-title">Main Header (H1)</p>
+            </div>
+            <div class="type-row">
+              <p class="type-note">Object Title · League Gothic · 20px · ink · Upper and lower case</p>
+              <p class="object-title">Object Title</p>
+            </div>
+            <div class="type-row">
+              <p class="type-note">Subhead · Open Sauce One 500 · 14pt · ink · Upper and lower case</p>
+              <p class="medium">Subhead</p>
+            </div>
+            <div class="type-row">
+              <p class="type-note">Body Text (body) · Open Sauce One 400 · 11pt · line-height 1.5 · ink · Upper and lower case</p>
+              <p class="body-sample">Body Text (body)</p>
+              <p class="body-sample">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+            <div class="type-row">
+              <p class="type-note">Button · Open Sauce One 500 · 11pt · ink · Upper and lower case</p>
+              <p><span class="button-sample">Button</span></p>
+            </div>
+            <div class="type-row">
+              <p class="type-note">Caption · Open Sauce One 400 · 9.5pt · ink · Upper and lower case</p>
+              <p class="caption-sample">Caption</p>
+            </div>
+            </td>
+          </tr>
+        </table>
+      </td>
+      <td class="pair-gap" width="10" valign="top" style="width:10pt;font-size:10pt;line-height:10pt;font-family:Calibri,sans-serif">&nbsp;</td>
+      <td valign="top">
+        <table class="swatch-table" width="100%" cellpadding="8" cellspacing="0">
+          <tr><td colspan="2" bgcolor="#E6E6E6" class="block-label">Block 03 · Colour scale (picker target)</td></tr>
+          <tr><td colspan="2" class="type-note">Solid fills. Open this page as PDF in a browser and sample the left column into Rise 360 or Storyline 360.</td></tr>
+              <tr>
+                <td class="swatch-fill" bgcolor="#FFFFFF" style="background:#FFFFFF;border:1px solid #3B3B3B">&nbsp;</td>
+                <td class="swatch-code"><strong>[Paper]</strong><code>#FFFFFF</code><span>[use]</span></td>
+              </tr><tr>
+                <td class="swatch-fill" bgcolor="#3B3B3B" style="background:#3B3B3B;border:1px solid #3B3B3B">&nbsp;</td>
+                <td class="swatch-code"><strong>[Ink]</strong><code>#3B3B3B</code><span>[use]</span></td>
+              </tr><tr>
+                <td class="swatch-fill" bgcolor="#DBE0DC" style="background:#DBE0DC;border:1px solid #3B3B3B">&nbsp;</td>
+                <td class="swatch-code"><strong>[Do / accent]</strong><code>#DBE0DC</code><span>[use]</span></td>
+              </tr><tr>
+                <td class="swatch-fill" bgcolor="#E8DED5" style="background:#E8DED5;border:1px solid #3B3B3B">&nbsp;</td>
+                <td class="swatch-code"><strong>[Don’t / caution]</strong><code>#E8DED5</code><span>[use]</span></td>
+              </tr><tr>
+                <td class="swatch-fill" bgcolor="#E6E6E6" style="background:#E6E6E6;border:1px solid #3B3B3B">&nbsp;</td>
+                <td class="swatch-code"><strong>[Step / neutral]</strong><code>#E6E6E6</code><span>[use]</span></td>
+              </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+  <p class="foot">[Company name] · [Project name] · page 2</p>
+</article><br clear="all" style="page-break-before:always" /><article class="sheet-board">
+      <p class="card-title">[Rise 360 blocks / Storyline 360 scenes and slides]</p>
+      
+<div class="card-keep">
+<p class="card-title">[Tool] · [1.1]</p>
+<table class="card" width="100%" cellpadding="8" cellspacing="0">
+  <colgroup><col class="label" /><col /></colgroup>
+  <tr><th bgcolor="#E6E6E6">Assets</th><td>[Background image / photo / 360° / icon / audio / character — name the file and what it is. Write None if solid colour only.]</td></tr>
+  <tr><th bgcolor="#E6E6E6">Format</th><td>[Welcome / title plus body / process / knowledge check / conversation / layer / …]</td></tr>
+  <tr><th bgcolor="#E6E6E6">Screen Copy</th><td class="copy">[Every word on screen, including buttons]</td></tr>
+  <tr><th bgcolor="#E6E6E6">Interactions</th><td>[Clicks, jumps, variables, states, score]</td></tr>
+</table>
+</div>
+<p class="slide-gap">&nbsp;</p>
+<div class="card-keep">
+<p class="card-title">[Tool] · [1.2]</p>
+<table class="card" width="100%" cellpadding="8" cellspacing="0">
+  <colgroup><col class="label" /><col /></colgroup>
+  <tr><th bgcolor="#E6E6E6">Assets</th><td>[ ]</td></tr>
+  <tr><th bgcolor="#E6E6E6">Format</th><td>[ ]</td></tr>
+  <tr><th bgcolor="#E6E6E6">Screen Copy</th><td class="copy">[ ]</td></tr>
+  <tr><th bgcolor="#E6E6E6">Interactions</th><td>[ ]</td></tr>
+</table>
+</div>
+<p class="slide-gap">&nbsp;</p>
+      <p class="foot">[Company name] · [Project name]</p>
+    </article><br clear="all" style="page-break-before:always" />
+</body>
+</html>

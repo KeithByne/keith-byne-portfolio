@@ -21,7 +21,9 @@ Show documents: follow **Show documents (common protocol)** in `README.md`. Serv
 
 Jargon: follow **Jargon (common protocol)** in `README.md`. First use of an initialism or acronym: ordinary words, then the short form in brackets. Teach it in the sentence that uses it. Do not skip “obvious” ones.
 
-Articulate 360 working files live in `Articulate assets/`. Put new Rise / Storyline assets there. Do not start the 30-day trial before week 6.
+Articulate 360 working files live in `Articulate assets/`. New Rise / Storyline jobs use `Articulate assets/Storyboard Master/`. Do not start the 30-day trial before week 6.
+
+Storyboard Master **formatting** is locked in [Articulate assets/Storyboard Master/how-to.md](Articulate%20assets/Storyboard%20Master/how-to.md). Do not change page size, page breaks, labels, type sizes, fills, or table structure. Words inside the cells are content and stay editable.
 
 Visual theme: read **Faces and colours (locked)** in `README.md` every time. Two faces only: **Open Sauce** for text, **League Gothic** for tight display and `01` / `02` / `03`. Five colours only: paper `#FFFFFF`, ink `#3B3B3B`, do `#DBE0DC`, don’t `#E8DED5`, step `#E6E6E6`. Same values on every job aid, deck, plan, sheet, H5P, and SCORM page. Detail in [portfolio/visual-theme.md](portfolio/visual-theme.md). Do not invent a second look. Do not substitute Poppins.
 

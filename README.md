@@ -40,7 +40,7 @@ Never open Canva’s marketing or Pro / 30-day trial page. He already has Canva 
 
 Style: modern, clean, easy to read. Wide white margins. Eyebrow, then a large title, then one line. Ideas sit in equal colour blocks. Process is oversized `01` / `02` / `03` with a short caption. Line icons only. Elegant, not juvenile. No third typeface, no teal, no cream stationery, no black `#000`, no red danger panel.
 
-Jump menu (same server): Home, Action map, Plan, Weeks, Cheat sheet, One-pager, 8 slides, Presenter view, Rise, Articulate assets, Rise table, Storyline table, Tools, Outreach, Skills log, plus SCORM Cloud.
+Jump menu (same server): Home, Action map, Plan, Weeks, Cheat sheet, One-pager, 8 slides, Presenter view, Rise, Articulate assets, Rise table, Storyline table, Storyboard Master, Master example, Brand ROM, Tools, Outreach, Skills log, plus SCORM Cloud.
 
 ## How to advise on new ideas
 
@@ -77,6 +77,7 @@ Be blunt. If an idea will look like a gimmick, ESL classroom residue, unearned t
 | [portfolio/job-aid-safe-ai/deck.html](portfolio/job-aid-safe-ai/deck.html) | Working 8-slide talk (HTML prototype). Remake in PowerPoint later. |
 | [portfolio/job-aid-safe-ai/presenter-view.html](portfolio/job-aid-safe-ai/presenter-view.html) | How to put “You say” in Notes and give the talk (Presenter view). |
 | [Articulate assets](Articulate%20assets/Articulate%20assets.md) | Rise and Storyline working kit. Drop new Articulate files in that folder. |
+| [Storyboard Master](Articulate%20assets/Storyboard%20Master/how-to.md) | Reusable storyboard. Formatting is locked. Words in the cells stay editable. |
 | [portfolio/rise-safe-ai/storyboard.md](portfolio/rise-safe-ai/storyboard.md) | Short Rise outline. Full table is in Articulate assets. |
 | [SCORM Cloud](https://cloud.scorm.com/) | Portfolio LMS host. Free Trial account already open; no time limit. Dummy upload in Week 5. |
 
