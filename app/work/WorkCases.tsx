@@ -1095,7 +1095,7 @@ export function WorkCases() {
       </p>
 
       <div className="case-list" ref={listRef}>
-        {cases.map((item) => {
+        {[...cases].reverse().map((item) => {
           const open = openId === item.id;
           return (
             <article
