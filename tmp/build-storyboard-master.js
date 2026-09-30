@@ -45,7 +45,7 @@ const css = `
   @font-face { font-family: "League Gothic"; font-weight: 400; src: url("fonts/league-gothic-regular.woff2") format("woff2"); }
   @page { size: A4 landscape; margin: 10mm; }
   * { box-sizing: border-box; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
-  body { margin: 0; background: ${STEP}; color: ${INK}; }
+  body { margin: 0; background: ${PAPER}; color: ${INK}; }
   .sheet, .sheet-portrait, .sheet-board {
     margin: 0 auto 10px;
     padding: 8mm 10mm 7mm;

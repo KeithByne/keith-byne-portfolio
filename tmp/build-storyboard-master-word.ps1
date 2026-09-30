@@ -326,15 +326,25 @@ function Convert-HtmlToDocx {
   Restore-CellFills $doc
   Set-PageFooter $doc $FooterPrefix -OfTotal:$OfTotal
   Remove-BodyFooterParas $doc $BareLine
+  Set-WhitePageBackground $doc
   Assert-CardsStayOnOnePage $doc
   $doc.SaveAs2($DocxPath, 16)
   $doc.Close([ref]$false)
+}
+
+function Set-WhitePageBackground {
+  param($doc)
+  $fill = $doc.Background.Fill
+  $fill.Solid()
+  $fill.ForeColor.RGB = 16777215
+  $fill.Visible = -1
 }
 
 function Export-DocxToPdf {
   param([string]$DocxPath, [string]$PdfPath)
   if (Test-Path -LiteralPath $PdfPath) { Remove-Item -LiteralPath $PdfPath -Force }
   $doc = $word.Documents.Open((Resolve-Path -LiteralPath $DocxPath).Path)
+  Set-WhitePageBackground $doc
   $doc.Repaginate()
   $pages = $doc.ComputeStatistics(2)
   if ($pages -lt 3) { throw "Storyboard PDF has $pages pages. Expected a paged document." }
@@ -353,6 +363,7 @@ function Convert-HtmlToPdf {
   Restore-CellFills $doc
   Set-PageFooter $doc $FooterPrefix -OfTotal:$OfTotal
   Remove-BodyFooterParas $doc $BareLine
+  Set-WhitePageBackground $doc
   $doc.ExportAsFixedFormat($PdfPath, 17)
   $doc.Close([ref]$false)
 }
