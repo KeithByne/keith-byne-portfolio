@@ -408,13 +408,13 @@ const pieces = [
     n: "02",
     title: "Safe AI and data handling",
     status: "In build",
-    note: "Branching Articulate Rise module, 10-15 minutes. Classify the data, then take the approved path. Storyboard is written.",
+    note: "Branching Articulate Rise module, 10–15 minutes. Classify the data, then take the approved path. The storyboard is the plan, including the Storyline scenes.",
   },
   {
     n: "03",
     title: "Storyline scenario",
     status: "Planned",
-    note: "One interactive manager conversation with variables and states. Published as SCORM 1.2 once the Articulate trial is live.",
+    note: "One interactive manager conversation with variables and states. The scenes are in the same storyboard. Published as SCORM 1.2 once the Articulate trial is live.",
   },
   {
     n: "04",
@@ -908,6 +908,17 @@ const cases: {
                     </div>
                   </div>
                 </div>
+              ) : null}
+              {piece.n === "02" || piece.n === "03" ? (
+                <p className="safe-ai-file">
+                  <a
+                    href="/work/safe-ai/storyboard.html"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    Open the storyboard
+                  </a>
+                </p>
               ) : null}
               {piece.n === "01" ? (
                 <div className="safe-ai-pair">

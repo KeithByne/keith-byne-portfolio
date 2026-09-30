@@ -733,4 +733,14 @@ const blankDoc = wrap(
 fs.writeFileSync(path.join(outDir, "Portfolio sample_Before you paste classify.html"), filledDoc);
 fs.writeFileSync(path.join(outDir, "Portfolio sample_Before you paste classify - brand.html"), brandOnly);
 fs.writeFileSync(path.join(outDir, "Storyboard Master - blank.html"), blankDoc);
+const portfolioHtml = filledDoc.replaceAll('url("fonts/', 'url("/fonts/');
+const portfolioPath = path.join(
+  String.raw`C:\Users\keith\European-Corporate-Pivot`,
+  "public",
+  "work",
+  "safe-ai",
+  "storyboard.html",
+);
+fs.writeFileSync(portfolioPath, portfolioHtml);
 console.log("Wrote HTML to " + outDir);
+console.log("Wrote portfolio copy to " + portfolioPath);

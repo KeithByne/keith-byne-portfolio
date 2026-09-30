@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Storyboard — Portfolio sample_Before you paste classify</title>
+  <style>
+  @font-face { font-family: "Open Sauce One"; font-weight: 400; src: url("/fonts/open-sauce-one-latin-400-normal.woff2") format("woff2"); }
+  @font-face { font-family: "Open Sauce One"; font-weight: 500; src: url("/fonts/open-sauce-one-latin-500-normal.woff2") format("woff2"); }
+  @font-face { font-family: "Open Sauce One"; font-weight: 600; src: url("/fonts/open-sauce-one-latin-600-normal.woff2") format("woff2"); }
+  @font-face { font-family: "League Gothic"; font-weight: 400; src: url("/fonts/league-gothic-regular.woff2") format("woff2"); }
+  @page { size: A4 landscape; margin: 10mm; }
+  * { box-sizing: border-box; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  body { margin: 0; background: #E6E6E6; color: #3B3B3B; }
+  .sheet, .sheet-portrait, .sheet-board {
+    margin: 0 auto 10px;
+    padding: 8mm 10mm 7mm;
+    background: #FFFFFF;
+  }
+  .sheet-portrait {
+    width: 190mm;
+    min-height: 277mm;
+    page-break-after: always;
+    page-break-inside: avoid;
+    break-after: page;
+    break-inside: avoid;
+  }
+  .sheet {
+    width: 277mm;
+    min-height: 190mm;
+    page-break-after: always;
+    page-break-inside: avoid;
+    break-after: page;
+    break-inside: avoid;
+  }
+  .sheet-board {
+    width: 277mm;
+    page-break-after: always;
+  }
+  .sheet-board:last-child { page-break-after: auto; }
+  h1, h2, h3, p, li, td, th { margin: 0; }
+  .block { page-break-inside: avoid; break-inside: avoid; }
+  .block + .block { margin-top: 6mm; }
+  .block-label { font-family: "League Gothic", Impact, sans-serif; letter-spacing: 0.14em; text-transform: uppercase; font-size: 16pt; font-weight: 400; padding: 4px 10px; background: #E6E6E6; }
+  .block-body { padding: 8px 0 10px; }
+  .meta { width: 100%; border-collapse: collapse; table-layout: fixed; font-family: Calibri, "Segoe UI", sans-serif; font-size: 14pt; line-height: 1.35; }
+  .meta col.label { width: 38mm; }
+  .meta td { vertical-align: top; padding: 8pt 10pt; }
+  .meta .k { width: 38mm; font-size: 16pt; font-weight: 700; padding-right: 10pt; background: #E6E6E6; }
+  .meta tr.gap td { padding: 0; height: 8pt; font-size: 4pt; line-height: 4pt; background: transparent; }
+  .pair { width: 100%; border-collapse: collapse; table-layout: fixed; }
+  .pair > tbody > tr > td { vertical-align: top; }
+  .pair-gap { width: 10pt; font-size: 10pt; line-height: 10pt; padding: 0; }
+  .fonts-block { width: 100%; border-collapse: collapse; }
+  .fonts-block td { padding: 8pt 10pt; vertical-align: top; }
+  .type-row { margin: 0 0 6px; text-align: left; page-break-inside: avoid; }
+  .type-note { font-family: Calibri, "Segoe UI", sans-serif; font-size: 8.5pt; color: #3B3B3B; margin: 0 0 2px; }
+  .doc-name { font-family: "League Gothic", Impact, sans-serif; font-size: 22px; letter-spacing: 0.12em; text-transform: uppercase; color: #3B3B3B; line-height: 1.1; }
+  .main-title { font-family: "Open Sauce One", sans-serif; font-weight: 600; font-size: 28px; letter-spacing: -0.03em; color: #3B3B3B; line-height: 1.05; }
+  .object-title { font-family: "League Gothic", Impact, sans-serif; font-size: 20px; color: #3B3B3B; line-height: 1.1; }
+  .medium { font-family: "Open Sauce One", sans-serif; font-weight: 500; font-size: 14pt; color: #3B3B3B; line-height: 1.4; }
+  .body-sample { font-family: "Open Sauce One", sans-serif; font-weight: 400; font-size: 11pt; line-height: 1.5; color: #3B3B3B; }
+  .button-sample { font-family: "Open Sauce One", sans-serif; font-weight: 500; font-size: 11pt; color: #3B3B3B; display: inline-block; border: 2px solid #3B3B3B; padding: 4px 14px; }
+  .caption-sample { font-family: "Open Sauce One", sans-serif; font-weight: 400; font-size: 9.5pt; color: #3B3B3B; }
+  .swatch-table { width: 100%; border-collapse: collapse; font-family: Calibri, "Segoe UI", sans-serif; font-size: 14pt; }
+  .swatch-table td { border: 1px solid #3B3B3B; vertical-align: middle; padding: 8pt 10pt; }
+  .swatch-fill { width: 58%; height: 14mm; border: 1px solid #3B3B3B; padding: 8pt 10pt; }
+  .swatch-code { padding: 8pt 10pt; background: #FFFFFF; }
+  .swatch-code strong { display: block; font-size: 16pt; font-weight: 700; }
+  .swatch-code code { font-family: Consolas, monospace; font-size: 14pt; letter-spacing: 0.04em; }
+  .card-keep { break-inside: avoid; page-break-inside: avoid; }
+  .card-title { font-family: Calibri, "Segoe UI", sans-serif; font-size: 16pt; font-weight: 700; margin: 0 0 8px; color: #3B3B3B; page-break-after: avoid; break-after: avoid; }
+  .card { width: 100%; border-collapse: collapse; table-layout: fixed; font-family: Calibri, "Segoe UI", sans-serif; font-size: 14pt; line-height: 1.35; page-break-inside: avoid; break-inside: avoid; }
+  .card col.label { width: 38mm; }
+  .card th, .card td { border: 1px solid #3B3B3B; padding: 8pt 10pt; vertical-align: top; }
+  .card th { background: #E6E6E6; text-align: left; font-size: 16pt; font-weight: 700; width: 38mm; }
+  .card td { font-size: 14pt; }
+  .card .copy { white-space: pre-wrap; }
+  .slide-gap { font-family: Calibri, "Segoe UI", sans-serif; font-size: 14pt; line-height: 14pt; height: 14pt; margin: 14pt 0 0; }
+  .board { width: 100%; border-collapse: collapse; font-family: Calibri, "Segoe UI", sans-serif; font-size: 14pt; line-height: 1.35; }
+  .board th, .board td { border: 1px solid #3B3B3B; padding: 7px 8px; vertical-align: top; }
+  .board th { background: #E6E6E6; text-align: left; font-size: 16pt; font-weight: 700; }
+  .board thead { display: table-header-group; }
+  .board tr { page-break-inside: avoid; break-inside: avoid; }
+  .board .id { width: 8%; }
+  .board .assets { width: 18%; }
+  .board .format { width: 16%; }
+  .board .copy { width: 30%; white-space: pre-wrap; }
+  .board .ix { width: 28%; }
+  .foot { font-family: Calibri, "Segoe UI", sans-serif; font-size: 14pt; text-align: center; margin-top: 8px; }
+  @media print {
+    body { background: #FFFFFF; }
+    .sheet { margin: 0; min-height: 0; height: auto; }
+  }
+</style>
+</head>
+<body>
+
+<article class="sheet-portrait">
+  <div class="block">
+    <div class="block-label" style="background:#E6E6E6">Block 01 · Brand guideline (written)</div>
+    <div class="block-body">
+      <table class="meta" width="100%" cellpadding="8" cellspacing="0">
+        <colgroup><col class="label" style="width:38mm" /><col /></colgroup>
+        <tr class="gap"><td>&nbsp;</td><td>&nbsp;</td></tr>
+        <tr><td class="k" bgcolor="#E6E6E6">Company</td><td>Portfolio sample</td></tr>
+        <tr><td class="k" bgcolor="#E6E6E6">Project</td><td>Before you paste, classify.</td></tr>
+        <tr><td class="k" bgcolor="#E6E6E6">Aspect Ratio</td><td>16:9 HD (1920 x 1080)</td></tr>
+        <tr><td class="k" bgcolor="#E6E6E6">Project Aim</td><td>A 10–18 minute habit module so remote EU knowledge workers classify data before any paste, prompt, or file share. Same habit in Rise 360 (blocks) and Storyline 360 (slides).</td></tr>
+        <tr><td class="k" bgcolor="#E6E6E6">Alignment</td><td>Left (all learner-facing text)</td></tr>
+        <tr><td class="k" bgcolor="#E6E6E6">Logo / artwork</td><td>Client supplies. Do not invent a mark.</td></tr>
+        <tr><td class="k" bgcolor="#E6E6E6">Notes</td><td>Not a named client. No logo. Line icons only; no stock photo. Named ask-role still unconfirmed; on-screen copy uses “line manager or data-protection lead.” Do not use Poppins, Nunito, Outfit, Syne, Montserrat, IBM Plex, teal, cream stationery, black #000, or a red danger panel. Public site chrome stays navy / Outfit / Syne; this sheet is for the learning artefacts only.</td></tr>
+      </table>
+    </div>
+  </div>
+  <p class="foot">Portfolio sample · Before you paste, classify. · page 1</p>
+</article><br clear="all" style="page-break-before:always" /><a name="LANDSCAPE"></a>
+<article class="sheet">
+  <table class="pair" width="100%" border="0" cellpadding="0" cellspacing="0">
+    <tr>
+      <td valign="top">
+        <table class="fonts-block" width="100%" cellpadding="8" cellspacing="0">
+          <tr><td bgcolor="#E6E6E6" class="block-label">Block 02 · Fonts (visual reference)</td></tr>
+          <tr>
+            <td style="text-align:left">
+            <div class="type-row">
+              <p class="type-note">Document name · League Gothic · 22px · ink · UPPER CASE</p>
+              <p class="doc-name">DOCUMENT NAME</p>
+            </div>
+            <div class="type-row">
+              <p class="type-note">Main Header (H1) · Open Sauce One 600 · 28px · ink · Upper and lower case</p>
+              <p class="main-title">Main Header (H1)</p>
+            </div>
+            <div class="type-row">
+              <p class="type-note">Object Title · League Gothic · 20px · ink · Upper and lower case</p>
+              <p class="object-title">Object Title</p>
+            </div>
+            <div class="type-row">
+              <p class="type-note">Subhead · Open Sauce One 500 · 14pt · ink · Upper and lower case</p>
+              <p class="medium">Subhead</p>
+            </div>
+            <div class="type-row">
+              <p class="type-note">Body Text (body) · Open Sauce One 400 · 11pt · line-height 1.5 · ink · Upper and lower case</p>
+              <p class="body-sample">Body Text (body)</p>
+              <p class="body-sample">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+            <div class="type-row">
+              <p class="type-note">Button · Open Sauce One 500 · 11pt · ink · Upper and lower case</p>
+              <p><span class="button-sample">Button</span></p>
+            </div>
+            <div class="type-row">
+              <p class="type-note">Caption · Open Sauce One 400 · 9.5pt · ink · Upper and lower case</p>
+              <p class="caption-sample">Caption</p>
+            </div>
+            </td>
+          </tr>
+        </table>
+      </td>
+      <td class="pair-gap" width="10" valign="top" style="width:10pt;font-size:10pt;line-height:10pt;font-family:Calibri,sans-serif">&nbsp;</td>
+      <td valign="top">
+        <table class="swatch-table" width="100%" cellpadding="8" cellspacing="0">
+          <tr><td colspan="2" bgcolor="#E6E6E6" class="block-label">Block 03 · Colour scale (picker target)</td></tr>
+          <tr><td colspan="2" class="type-note">Solid fills. Open this page as PDF in a browser and sample the left column into Rise 360 or Storyline 360.</td></tr>
+              <tr>
+                <td class="swatch-fill" bgcolor="#FFFFFF" style="background:#FFFFFF;border:1px solid #3B3B3B">&nbsp;</td>
+                <td class="swatch-code"><strong>Paper</strong><code>#FFFFFF</code><span>Page and empty field</span></td>
+              </tr><tr>
+                <td class="swatch-fill" bgcolor="#3B3B3B" style="background:#3B3B3B;border:1px solid #3B3B3B">&nbsp;</td>
+                <td class="swatch-code"><strong>Ink</strong><code>#3B3B3B</code><span>Titles, body, player</span></td>
+              </tr><tr>
+                <td class="swatch-fill" bgcolor="#DBE0DC" style="background:#DBE0DC;border:1px solid #3B3B3B">&nbsp;</td>
+                <td class="swatch-code"><strong>Do wash</strong><code>#DBE0DC</code><span>Allowed / correct</span></td>
+              </tr><tr>
+                <td class="swatch-fill" bgcolor="#E8DED5" style="background:#E8DED5;border:1px solid #3B3B3B">&nbsp;</td>
+                <td class="swatch-code"><strong>Don’t wash</strong><code>#E8DED5</code><span>Stop / incorrect</span></td>
+              </tr><tr>
+                <td class="swatch-fill" bgcolor="#E6E6E6" style="background:#E6E6E6;border:1px solid #3B3B3B">&nbsp;</td>
+                <td class="swatch-code"><strong>Step wash</strong><code>#E6E6E6</code><span>Steps / hover / headers</span></td>
+              </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+  <p class="foot">Portfolio sample · Before you paste, classify. · page 2</p>
+</article><br clear="all" style="page-break-before:always" /><article class="sheet-board">
+      <p class="card-title">Rise 360 — blocks</p>
+      
+<div class="card-keep">
+<p class="card-title">Rise 360 · P0</p>
+<table class="card" width="100%" cellpadding="8" cellspacing="0">
+  <colgroup><col class="label" /><col /></colgroup>
+  <tr><th bgcolor="#E6E6E6">Assets</th><td>Slide / block background: solid paper #FFFFFF. No background photograph. No 360° image.<br />Type (learner-facing): Open Sauce One 400/500/600 and League Gothic Regular. Install on Windows before trial week. Embed on publish.<br />No audio. No logo.</td></tr>
+  <tr><th bgcolor="#E6E6E6">Format</th><td>Rise player chrome (every lesson)</td></tr>
+  <tr><th bgcolor="#E6E6E6">Screen Copy</th><td class="copy">Menu<br />Safe AI and data handling<br />Previous<br />Next<br />Continue</td></tr>
+  <tr><th bgcolor="#E6E6E6">Interactions</th><td>Default Rise player. Do not rename Continue except where a row gives a different button label. Menu lists the seven lesson titles. Tab to Continue, Enter to advance. No auto-play audio.</td></tr>
+</table>
+</div>
+<p class="slide-gap">&nbsp;</p>
+<div class="card-keep">
+<p class="card-title">Rise 360 · 1.0</p>
+<table class="card" width="100%" cellpadding="8" cellspacing="0">
+  <colgroup><col class="label" /><col /></colgroup>
+  <tr><th bgcolor="#E6E6E6">Assets</th><td>None. Sidebar label only.</td></tr>
+  <tr><th bgcolor="#E6E6E6">Format</th><td>Lesson title (sidebar)</td></tr>
+  <tr><th bgcolor="#E6E6E6">Screen Copy</th><td class="copy">Welcome</td></tr>
+  <tr><th bgcolor="#E6E6E6">Interactions</th><td>Lesson label only. Not a heading on the canvas except in the menu.</td></tr>
+</table>
+</div>
+<p class="slide-gap">&nbsp;</p>
+<div class="card-keep">
+<p class="card-title">Rise 360 · 1.1</p>
+<table class="card" width="100%" cellpadding="8" cellspacing="0">
+  <colgroup><col class="label" /><col /></colgroup>
+  <tr><th bgcolor="#E6E6E6">Assets</th><td>Slide / block background: solid paper #FFFFFF. No background photograph. No 360° image.<br />Optional line icon only (classify / stop). If used: SVG or PNG, ink #3B3B3B, alt text required.<br />No photo.</td></tr>
+  <tr><th bgcolor="#E6E6E6">Format</th><td>Cover / title plus body</td></tr>
+  <tr><th bgcolor="#E6E6E6">Screen Copy</th><td class="copy">Before you paste, classify.<br /><br />Remote work is fast. Public AI tools and personal drives are faster still. This module is not a policy lecture. It is the 30-second habit your team needs before client text, staff data, or unpublished files leave an approved system.</td></tr>
+  <tr><th bgcolor="#E6E6E6">Interactions</th><td>No click on the text. Heading is the cover title. Body is one paragraph under it. Do wash not required.</td></tr>
+</table>
+</div>
+<p class="slide-gap">&nbsp;</p>
+<div class="card-keep">
+<p class="card-title">Rise 360 · 1.2</p>
+<table class="card" width="100%" cellpadding="8" cellspacing="0">
+  <colgroup><col class="label" /><col /></colgroup>
+  <tr><th bgcolor="#E6E6E6">Assets</th><td>Button: Rise default Continue control. Ink on paper. No custom image.</td></tr>
+  <tr><th bgcolor="#E6E6E6">Format</th><td>Continue button</td></tr>
+  <tr><th bgcolor="#E6E6E6">Screen Copy</th><td class="copy">Start with a live decision</td></tr>
+  <tr><th bgcolor="#E6E6E6">Interactions</th><td>Primary button. Goes to lesson 2. Only Continue label that is not the word Continue.</td></tr>
+</table>
+</div>
+<p class="slide-gap">&nbsp;</p>
+<div class="card-keep">
+<p class="card-title">Rise 360 · 2.0</p>
+<table class="card" width="100%" cellpadding="8" cellspacing="0">
+  <colgroup><col class="label" /><col /></colgroup>
+  <tr><th bgcolor="#E6E6E6">Assets</th><td>None. Sidebar label only.</td></tr>
+  <tr><th bgcolor="#E6E6E6">Format</th><td>Lesson title (sidebar)</td></tr>
+  <tr><th bgcolor="#E6E6E6">Screen Copy</th><td class="copy">Classify the data</td></tr>
+  <tr><th bgcolor="#E6E6E6">Interactions</th><td>Menu label. Ungraded.</td></tr>
+</table>
+</div>
+<p class="slide-gap">&nbsp;</p>
+<div class="card-keep">
+<p class="card-title">Rise 360 · 2.1</p>
+<table class="card" width="100%" cellpadding="8" cellspacing="0">
+  <colgroup><col class="label" /><col /></colgroup>
+  <tr><th bgcolor="#E6E6E6">Assets</th><td>Slide / block background: solid paper #FFFFFF. No background photograph. No 360° image.<br />No character art in Rise. No photo of a “colleague.”</td></tr>
+  <tr><th bgcolor="#E6E6E6">Format</th><td>Scenario / decision — stem (title plus body)</td></tr>
+  <tr><th bgcolor="#E6E6E6">Screen Copy</th><td class="copy">A colleague asks you to “just drop this into ChatGPT and tidy it.”<br /><br />The file is a customer list with emails and contract values. What is it?</td></tr>
+  <tr><th bgcolor="#E6E6E6">Interactions</th><td>Read only. Then two choices. Do not score. Choice B is the distractor. The list is personal and commercial data.</td></tr>
+</table>
+</div>
+<p class="slide-gap">&nbsp;</p>
+<div class="card-keep">
+<p class="card-title">Rise 360 · 2.2</p>
+<table class="card" width="100%" cellpadding="8" cellspacing="0">
+  <colgroup><col class="label" /><col /></colgroup>
+  <tr><th bgcolor="#E6E6E6">Assets</th><td>Two Rise scenario buttons. No extra icons required.</td></tr>
+  <tr><th bgcolor="#E6E6E6">Format</th><td>Scenario / decision — two buttons</td></tr>
+  <tr><th bgcolor="#E6E6E6">Screen Copy</th><td class="copy">Confidential or personal data — I must not paste it into a public AI tool.<br /><br />Harmless working text — public AI is fine.</td></tr>
+  <tr><th bgcolor="#E6E6E6">Interactions</th><td>Single choice. First button → lesson 3 (Branch A). Second button → lesson 4 (Branch B). Buttons are the full sentences. After a click, Rise jumps; do not show both branches.</td></tr>
+</table>
+</div>
+<p class="slide-gap">&nbsp;</p>
+<div class="card-keep">
+<p class="card-title">Rise 360 · 3.0</p>
+<table class="card" width="100%" cellpadding="8" cellspacing="0">
+  <colgroup><col class="label" /><col /></colgroup>
+  <tr><th bgcolor="#E6E6E6">Assets</th><td>None. Sidebar label only.</td></tr>
+  <tr><th bgcolor="#E6E6E6">Format</th><td>Lesson title (sidebar)</td></tr>
+  <tr><th bgcolor="#E6E6E6">Screen Copy</th><td class="copy">Personal and commercial data</td></tr>
+  <tr><th bgcolor="#E6E6E6">Interactions</th><td>Correct path only. Do wash on the block if Rise allows a coloured block.</td></tr>
+</table>
+</div>
+<p class="slide-gap">&nbsp;</p>
+<div class="card-keep">
+<p class="card-title">Rise 360 · 3.1</p>
+<table class="card" width="100%" cellpadding="8" cellspacing="0">
+  <colgroup><col class="label" /><col /></colgroup>
+  <tr><th bgcolor="#E6E6E6">Assets</th><td>Block fill: don’t wash #E8DED5 behind “Stop.” if Rise coloured blocks are used.<br />Slide / block background: solid paper #FFFFFF. No background photograph. No 360° image.</td></tr>
+  <tr><th bgcolor="#E6E6E6">Format</th><td>Title plus body (correct path)</td></tr>
+  <tr><th bgcolor="#E6E6E6">Screen Copy</th><td class="copy">Stop. This is personal and commercial data.<br /><br />Emails and contract values are personal data and business-confidential. Public AI tools may store prompts. Your approved path is: redacted example, internal approved tool, or no AI.</td></tr>
+  <tr><th bgcolor="#E6E6E6">Interactions</th><td>No extra buttons on the text.</td></tr>
+</table>
+</div>
+<p class="slide-gap">&nbsp;</p>
+<div class="card-keep">
+<p class="card-title">Rise 360 · 3.2</p>
+<table class="card" width="100%" cellpadding="8" cellspacing="0">
+  <colgroup><col class="label" /><col /></colgroup>
+  <tr><th bgcolor="#E6E6E6">Assets</th><td>Button: Rise Continue. No custom image.</td></tr>
+  <tr><th bgcolor="#E6E6E6">Format</th><td>Continue button</td></tr>
+  <tr><th bgcolor="#E6E6E6">Screen Copy</th><td class="copy">See the red lines</td></tr>
+  <tr><th bgcolor="#E6E6E6">Interactions</th><td>Goes to lesson 5 (rejoin). Skip lesson 4.</td></tr>
+</table>
+</div>
+<p class="slide-gap">&nbsp;</p>
+<div class="card-keep">
+<p class="card-title">Rise 360 · 4.0</p>
+<table class="card" width="100%" cellpadding="8" cellspacing="0">
+  <colgroup><col class="label" /><col /></colgroup>
+  <tr><th bgcolor="#E6E6E6">Assets</th><td>None. Sidebar label only.</td></tr>
+  <tr><th bgcolor="#E6E6E6">Format</th><td>Lesson title (sidebar)</td></tr>
+  <tr><th bgcolor="#E6E6E6">Screen Copy</th><td class="copy">That list is not harmless</td></tr>
+  <tr><th bgcolor="#E6E6E6">Interactions</th><td>Incorrect path. Coach, do not fail the module.</td></tr>
+</table>
+</div>
+<p class="slide-gap">&nbsp;</p>
+<div class="card-keep">
+<p class="card-title">Rise 360 · 4.1</p>
+<table class="card" width="100%" cellpadding="8" cellspacing="0">
+  <colgroup><col class="label" /><col /></colgroup>
+  <tr><th bgcolor="#E6E6E6">Assets</th><td>Block fill: don’t wash #E8DED5 behind the heading if a coloured block is used.</td></tr>
+  <tr><th bgcolor="#E6E6E6">Format</th><td>Title plus body (incorrect path, coaching)</td></tr>
+  <tr><th bgcolor="#E6E6E6">Screen Copy</th><td class="copy">That list is not harmless.<br /><br />Names, emails, and contract values are personal data under GDPR and confidential to the company. Public AI is the wrong path. You have not failed the module. You now take the same red-line screen as everyone else.</td></tr>
+  <tr><th bgcolor="#E6E6E6">Interactions</th><td>No score. No “try again.” Then the same rejoin as Branch A.</td></tr>
+</table>
+</div>
+<p class="slide-gap">&nbsp;</p>
+<div class="card-keep">
+<p class="card-title">Rise 360 · 4.2</p>
+<table class="card" width="100%" cellpadding="8" cellspacing="0">
+  <colgroup><col class="label" /><col /></colgroup>
+  <tr><th bgcolor="#E6E6E6">Assets</th><td>Button: Rise Continue. No custom image.</td></tr>
+  <tr><th bgcolor="#E6E6E6">Format</th><td>Continue button</td></tr>
+  <tr><th bgcolor="#E6E6E6">Screen Copy</th><td class="copy">See the red lines</td></tr>
+  <tr><th bgcolor="#E6E6E6">Interactions</th><td>Goes to lesson 5 (rejoin).</td></tr>
+</table>
+</div>
+<p class="slide-gap">&nbsp;</p>
+<div class="card-keep">
+<p class="card-title">Rise 360 · 5.0</p>
+<table class="card" width="100%" cellpadding="8" cellspacing="0">
+  <colgroup><col class="label" /><col /></colgroup>
+  <tr><th bgcolor="#E6E6E6">Assets</th><td>None. Sidebar label only.</td></tr>
+  <tr><th bgcolor="#E6E6E6">Format</th><td>Lesson title (sidebar)</td></tr>
+  <tr><th bgcolor="#E6E6E6">Screen Copy</th><td class="copy">Three checks</td></tr>
+  <tr><th bgcolor="#E6E6E6">Interactions</th><td>Both branches rejoin here.</td></tr>
+</table>
+</div>
+<p class="slide-gap">&nbsp;</p>
+<div class="card-keep">
+<p class="card-title">Rise 360 · 5.1</p>
+<table class="card" width="100%" cellpadding="8" cellspacing="0">
+  <colgroup><col class="label" /><col /></colgroup>
+  <tr><th bgcolor="#E6E6E6">Assets</th><td>Three process tiles, equal width, fill step wash #E6E6E6.<br />Numerals 01 02 03 in League Gothic.<br />Captions in Open Sauce One 400.<br />No photographs. No 360° images.</td></tr>
+  <tr><th bgcolor="#E6E6E6">Format</th><td>Title plus numbered process (01 02 03 on step tiles)</td></tr>
+  <tr><th bgcolor="#E6E6E6">Screen Copy</th><td class="copy">Three checks before any AI or file share<br /><br />01<br />What data is this? (public / internal / personal / customer)<br /><br />02<br />Is this tool on the approved list?<br /><br />03<br />If I am unsure, I do not paste — I ask my line manager or data-protection lead.</td></tr>
+  <tr><th bgcolor="#E6E6E6">Interactions</th><td>If Process block: each number expands the same sentence; no extra words.</td></tr>
+</table>
+</div>
+<p class="slide-gap">&nbsp;</p>
+<div class="card-keep">
+<p class="card-title">Rise 360 · 5.2</p>
+<table class="card" width="100%" cellpadding="8" cellspacing="0">
+  <colgroup><col class="label" /><col /></colgroup>
+  <tr><th bgcolor="#E6E6E6">Assets</th><td>Button: Rise Continue. No custom image.</td></tr>
+  <tr><th bgcolor="#E6E6E6">Format</th><td>Continue button</td></tr>
+  <tr><th bgcolor="#E6E6E6">Screen Copy</th><td class="copy">Try one scenario</td></tr>
+  <tr><th bgcolor="#E6E6E6">Interactions</th><td>Goes to lesson 6.</td></tr>
+</table>
+</div>
+<p class="slide-gap">&nbsp;</p>
+<div class="card-keep">
+<p class="card-title">Rise 360 · 6.0</p>
+<table class="card" width="100%" cellpadding="8" cellspacing="0">
+  <colgroup><col class="label" /><col /></colgroup>
+  <tr><th bgcolor="#E6E6E6">Assets</th><td>None. Sidebar label only.</td></tr>
+  <tr><th bgcolor="#E6E6E6">Format</th><td>Lesson title (sidebar)</td></tr>
+  <tr><th bgcolor="#E6E6E6">Screen Copy</th><td class="copy">One scenario</td></tr>
+  <tr><th bgcolor="#E6E6E6">Interactions</th><td>Only scored lesson. Leave Rise retry default.</td></tr>
+</table>
+</div>
+<p class="slide-gap">&nbsp;</p>
+<div class="card-keep">
+<p class="card-title">Rise 360 · 6.1</p>
+<table class="card" width="100%" cellpadding="8" cellspacing="0">
+  <colgroup><col class="label" /><col /></colgroup>
+  <tr><th bgcolor="#E6E6E6">Assets</th><td>Slide / block background: solid paper #FFFFFF. No background photograph. No 360° image.<br />No illustration of an email.</td></tr>
+  <tr><th bgcolor="#E6E6E6">Format</th><td>Knowledge check — stem (title plus body)</td></tr>
+  <tr><th bgcolor="#E6E6E6">Screen Copy</th><td class="copy">You are drafting a process note. You want AI to improve the English. The note includes one customer email address.</td></tr>
+  <tr><th bgcolor="#E6E6E6">Interactions</th><td>Read the stem. Then three answers. One correct.</td></tr>
+</table>
+</div>
+<p class="slide-gap">&nbsp;</p>
+<div class="card-keep">
+<p class="card-title">Rise 360 · 6.2</p>
+<table class="card" width="100%" cellpadding="8" cellspacing="0">
+  <colgroup><col class="label" /><col /></colgroup>
+  <tr><th bgcolor="#E6E6E6">Assets</th><td>Rise multiple-choice control. No extra assets.</td></tr>
+  <tr><th bgcolor="#E6E6E6">Format</th><td>Knowledge check — multiple choice, one correct</td></tr>
+  <tr><th bgcolor="#E6E6E6">Screen Copy</th><td class="copy">Remove the email (or replace with a fake), then use the approved tool.<br /><br />Paste the whole note into a public tool because it is “just one email.”<br /><br />Put the file on a personal Google Drive so a contractor can edit it overnight.</td></tr>
+  <tr><th bgcolor="#E6E6E6">Interactions</th><td>First option is correct. Shuffle off. Keep this order.</td></tr>
+</table>
+</div>
+<p class="slide-gap">&nbsp;</p>
+<div class="card-keep">
+<p class="card-title">Rise 360 · 6.3</p>
+<table class="card" width="100%" cellpadding="8" cellspacing="0">
+  <colgroup><col class="label" /><col /></colgroup>
+  <tr><th bgcolor="#E6E6E6">Assets</th><td>Button: Rise Submit. No custom image.</td></tr>
+  <tr><th bgcolor="#E6E6E6">Format</th><td>Knowledge check — Submit button</td></tr>
+  <tr><th bgcolor="#E6E6E6">Screen Copy</th><td class="copy">Submit</td></tr>
+  <tr><th bgcolor="#E6E6E6">Interactions</th><td>Reveals feedback. Do not auto-advance.</td></tr>
+</table>
+</div>
+<p class="slide-gap">&nbsp;</p>
+<div class="card-keep">
+<p class="card-title">Rise 360 · 6.4</p>
+<table class="card" width="100%" cellpadding="8" cellspacing="0">
+  <colgroup><col class="label" /><col /></colgroup>
+  <tr><th bgcolor="#E6E6E6">Assets</th><td>Feedback panel fill: do wash #DBE0DC. Text ink.</td></tr>
+  <tr><th bgcolor="#E6E6E6">Format</th><td>Feedback layer — correct (do wash)</td></tr>
+  <tr><th bgcolor="#E6E6E6">Screen Copy</th><td class="copy">Correct<br /><br />Redact first, then use an approved tool.</td></tr>
+  <tr><th bgcolor="#E6E6E6">Interactions</th><td>Only if the first option was submitted. Then lesson 7.</td></tr>
+</table>
+</div>
+<p class="slide-gap">&nbsp;</p>
+<div class="card-keep">
+<p class="card-title">Rise 360 · 6.5</p>
+<table class="card" width="100%" cellpadding="8" cellspacing="0">
+  <colgroup><col class="label" /><col /></colgroup>
+  <tr><th bgcolor="#E6E6E6">Assets</th><td>Feedback panel fill: don’t wash #E8DED5. Text ink.</td></tr>
+  <tr><th bgcolor="#E6E6E6">Format</th><td>Feedback layer — incorrect (don’t wash)</td></tr>
+  <tr><th bgcolor="#E6E6E6">Screen Copy</th><td class="copy">Not quite<br /><br />One email is still personal data. Personal drives are not the contractor workaround.</td></tr>
+  <tr><th bgcolor="#E6E6E6">Interactions</th><td>Same feedback for both wrong answers. Continue to lesson 7. Do not lock the close.</td></tr>
+</table>
+</div>
+<p class="slide-gap">&nbsp;</p>
+<div class="card-keep">
+<p class="card-title">Rise 360 · 6.6</p>
+<table class="card" width="100%" cellpadding="8" cellspacing="0">
+  <colgroup><col class="label" /><col /></colgroup>
+  <tr><th bgcolor="#E6E6E6">Assets</th><td>Button: Rise Continue. No custom image.</td></tr>
+  <tr><th bgcolor="#E6E6E6">Format</th><td>Continue after feedback</td></tr>
+  <tr><th bgcolor="#E6E6E6">Screen Copy</th><td class="copy">Continue</td></tr>
+  <tr><th bgcolor="#E6E6E6">Interactions</th><td>Goes to lesson 7.</td></tr>
+</table>
+</div>
+<p class="slide-gap">&nbsp;</p>
+<div class="card-keep">
+<p class="card-title">Rise 360 · 7.0</p>
+<table class="card" width="100%" cellpadding="8" cellspacing="0">
+  <colgroup><col class="label" /><col /></colgroup>
+  <tr><th bgcolor="#E6E6E6">Assets</th><td>None. Sidebar label only.</td></tr>
+  <tr><th bgcolor="#E6E6E6">Format</th><td>Lesson title (sidebar)</td></tr>
+  <tr><th bgcolor="#E6E6E6">Screen Copy</th><td class="copy">The habit is the course</td></tr>
+  <tr><th bgcolor="#E6E6E6">Interactions</th><td>Close. Not scored.</td></tr>
+</table>
+</div>
+<p class="slide-gap">&nbsp;</p>
+<div class="card-keep">
+<p class="card-title">Rise 360 · 7.1</p>
+<table class="card" width="100%" cellpadding="8" cellspacing="0">
+  <colgroup><col class="label" /><col /></colgroup>
+  <tr><th bgcolor="#E6E6E6">Assets</th><td>Optional later: job-aid PDF as a text link only when the public URL is the one you want. File name if attached: before-you-paste-classify.pdf. Do not put a URL on screen until it is live.</td></tr>
+  <tr><th bgcolor="#E6E6E6">Format</th><td>Title plus body</td></tr>
+  <tr><th bgcolor="#E6E6E6">Screen Copy</th><td class="copy">The habit is the course.<br /><br />Classify → approved tool or no AI → ask if unsure. Take the one-page job aid and keep it next to your desktop.</td></tr>
+  <tr><th bgcolor="#E6E6E6">Interactions</th><td>No quiz. Omit the link if the PDF URL is not live; keep the sentence.</td></tr>
+</table>
+</div>
+<p class="slide-gap">&nbsp;</p>
+<div class="card-keep">
+<p class="card-title">Rise 360 · 7.2</p>
+<table class="card" width="100%" cellpadding="8" cellspacing="0">
+  <colgroup><col class="label" /><col /></colgroup>
+  <tr><th bgcolor="#E6E6E6">Assets</th><td>Rise default completion chrome. Do not design a fake certificate.</td></tr>
+  <tr><th bgcolor="#E6E6E6">Format</th><td>End / complete</td></tr>
+  <tr><th bgcolor="#E6E6E6">Screen Copy</th><td class="copy">You’re all done.<br />Download your certificate<br />Restart this course</td></tr>
+  <tr><th bgcolor="#E6E6E6">Interactions</th><td>Leave Rise defaults. SCORM complete when this lesson is reached after the scored check.</td></tr>
+</table>
+</div>
+<p class="slide-gap">&nbsp;</p>
+      <p class="foot">Portfolio sample · Before you paste, classify.</p>
+    </article><br clear="all" style="page-break-before:always" />
+    <article class="sheet-board">
+      <p class="card-title">Storyline 360 — scenes, slides, layers</p>
+      
+<div class="card-keep">
+<p class="card-title">Storyline 360 · 1.0</p>
+<table class="card" width="100%" cellpadding="8" cellspacing="0">
+  <colgroup><col class="label" /><col /></colgroup>
+  <tr><th bgcolor="#E6E6E6">Assets</th><td>Storyline player chrome. Menu, Resources, Exit, Prev, Next. No custom skin graphic. Player: ink on paper.</td></tr>
+  <tr><th bgcolor="#E6E6E6">Format</th><td>Player chrome (all slides)</td></tr>
+  <tr><th bgcolor="#E6E6E6">Screen Copy</th><td class="copy">Menu<br />Resources<br />Exit<br />Prev<br />Next</td></tr>
+  <tr><th bgcolor="#E6E6E6">Interactions</th><td>Menu titles match M2. Resources empty until the job-aid PDF is attached. Next disabled until the required click. Prev allowed except on 1.1.</td></tr>
+</table>
+</div>
+<p class="slide-gap">&nbsp;</p>
+<div class="card-keep">
+<p class="card-title">Storyline 360 · 1.1</p>
+<table class="card" width="100%" cellpadding="8" cellspacing="0">
+  <colgroup><col class="label" /><col /></colgroup>
+  <tr><th bgcolor="#E6E6E6">Assets</th><td>Slide / block background: solid paper #FFFFFF. No background photograph. No 360° image.<br />Type (learner-facing): Open Sauce One 400/500/600 and League Gothic Regular. Install on Windows before trial week. Embed on publish.<br />Start button: rectangle, paper fill, 2 px ink outline. No logo. No photo.</td></tr>
+  <tr><th bgcolor="#E6E6E6">Format</th><td>Title slide (welcome)</td></tr>
+  <tr><th bgcolor="#E6E6E6">Screen Copy</th><td class="copy">Before you paste, classify.<br /><br />A 12-minute conversation. Same habit as the job aid.<br /><br />Start</td></tr>
+  <tr><th bgcolor="#E6E6E6">Interactions</th><td>Start jumps to 1.2. Hide player Next. Animation ≤ 0.4s. Start is a button.</td></tr>
+</table>
+</div>
+<p class="slide-gap">&nbsp;</p>
+<div class="card-keep">
+<p class="card-title">Storyline 360 · 1.2</p>
+<table class="card" width="100%" cellpadding="8" cellspacing="0">
+  <colgroup><col class="label" /><col /></colgroup>
+  <tr><th bgcolor="#E6E6E6">Assets</th><td>Slide / block background: solid paper #FFFFFF. No background photograph. No 360° image.<br />No audio file yet. If audio is added later, the on-screen words are the script. No waveform graphic.</td></tr>
+  <tr><th bgcolor="#E6E6E6">Format</th><td>Title plus body</td></tr>
+  <tr><th bgcolor="#E6E6E6">Screen Copy</th><td class="copy">How this works<br /><br />You follow Jordan (line manager) and Alex (remote staff). You choose what Jordan says. Wrong choices are coached. One answer is scored at the end.<br /><br />Continue</td></tr>
+  <tr><th bgcolor="#E6E6E6">Interactions</th><td>Continue → 2.1. No other buttons.</td></tr>
+</table>
+</div>
+<p class="slide-gap">&nbsp;</p>
+<div class="card-keep">
+<p class="card-title">Storyline 360 · 2.1</p>
+<table class="card" width="100%" cellpadding="8" cellspacing="0">
+  <colgroup><col class="label" /><col /></colgroup>
+  <tr><th bgcolor="#E6E6E6">Assets</th><td>Slide / block background: solid paper #FFFFFF. No background photograph. No 360° image.<br />Character asset: “Alex, remote staff.” Storyline illustrated character or caption bar only. No photograph unless Keith supplies one. Alt: Alex, remote staff.<br />Two choice buttons (no icons).</td></tr>
+  <tr><th bgcolor="#E6E6E6">Format</th><td>Conversation — caption plus body (Alex speaks)</td></tr>
+  <tr><th bgcolor="#E6E6E6">Screen Copy</th><td class="copy">Alex<br /><br />I’ll just drop this into ChatGPT and tidy the English. It’s a customer list. Emails and contract values. Should be quick.<br /><br />What should Jordan say?<br /><br />Don’t paste that. Name the data first.<br /><br />Public AI is fine if you delete the chat afterwards.</td></tr>
+  <tr><th bgcolor="#E6E6E6">Interactions</th><td>First button → 2.2, classifiedCorrect = True. Second → 2.3, False. Next disabled until a choice. Caption “Alex” is not a button.</td></tr>
+</table>
+</div>
+<p class="slide-gap">&nbsp;</p>
+<div class="card-keep">
+<p class="card-title">Storyline 360 · 2.2</p>
+<table class="card" width="100%" cellpadding="8" cellspacing="0">
+  <colgroup><col class="label" /><col /></colgroup>
+  <tr><th bgcolor="#E6E6E6">Assets</th><td>Character asset: “Jordan, line manager.” Illustrated or caption bar. Alt: Jordan, line manager.<br />Reply bar fill: do wash #DBE0DC.</td></tr>
+  <tr><th bgcolor="#E6E6E6">Format</th><td>Conversation — caption plus body, do wash on the reply bar</td></tr>
+  <tr><th bgcolor="#E6E6E6">Screen Copy</th><td class="copy">Jordan<br /><br />Don’t paste that. Emails and contract values are personal data and commercial data. Public tools may keep prompts. Classify first.<br /><br />Alex<br /><br />Right. So what do I do with it?<br /><br />Continue</td></tr>
+  <tr><th bgcolor="#E6E6E6">Interactions</th><td>Only if classifiedCorrect is True. Continue → 2.4.</td></tr>
+</table>
+</div>
+<p class="slide-gap">&nbsp;</p>
+<div class="card-keep">
+<p class="card-title">Storyline 360 · 2.3</p>
+<table class="card" width="100%" cellpadding="8" cellspacing="0">
+  <colgroup><col class="label" /><col /></colgroup>
+  <tr><th bgcolor="#E6E6E6">Assets</th><td>Same Jordan / Alex assets as 2.2.<br />Reply bar fill: don’t wash #E8DED5.</td></tr>
+  <tr><th bgcolor="#E6E6E6">Format</th><td>Conversation — caption plus body, don’t wash on the reply bar</td></tr>
+  <tr><th bgcolor="#E6E6E6">Screen Copy</th><td class="copy">Alex<br /><br />I’ll delete the chat. Nobody will see it.<br /><br />Jordan<br /><br />Deleting the chat does not make the paste safe. Names, emails, and contract values are personal data under GDPR and confidential to the company. You have not failed. We classify it now, same as everyone else.<br /><br />Continue</td></tr>
+  <tr><th bgcolor="#E6E6E6">Interactions</th><td>Only if classifiedCorrect is False. Continue → 2.4. No fail screen.</td></tr>
+</table>
+</div>
+<p class="slide-gap">&nbsp;</p>
+<div class="card-keep">
+<p class="card-title">Storyline 360 · 2.4</p>
+<table class="card" width="100%" cellpadding="8" cellspacing="0">
+  <colgroup><col class="label" /><col /></colgroup>
+  <tr><th bgcolor="#E6E6E6">Assets</th><td>Slide / block background: solid paper #FFFFFF. No background photograph. No 360° image.<br />Four type buttons (Public, Internal, Personal, Customer). No icons required.<br />Submit button.<br />States: Normal, Hover (step wash), Selected (do wash), Visited (ink underline), Disabled (ink 50%).</td></tr>
+  <tr><th bgcolor="#E6E6E6">Format</th><td>Title plus four choice buttons (classify)</td></tr>
+  <tr><th bgcolor="#E6E6E6">Screen Copy</th><td class="copy">What data is this?<br /><br />Public<br />Internal<br />Personal<br />Customer<br /><br />Submit</td></tr>
+  <tr><th bgcolor="#E6E6E6">Interactions</th><td>One selection. Personal and Customer both acceptable. Public and Internal wrong. Submit: Personal or Customer → classifiedCorrect True + layer L-right. Else False + L-wrong. Submit disabled until one type.</td></tr>
+</table>
+</div>
+<p class="slide-gap">&nbsp;</p>
+<div class="card-keep">
+<p class="card-title">Storyline 360 · 2.4 L-right</p>
+<table class="card" width="100%" cellpadding="8" cellspacing="0">
+  <colgroup><col class="label" /><col /></colgroup>
+  <tr><th bgcolor="#E6E6E6">Assets</th><td>Layer panel fill: do wash #DBE0DC. Dim base slide. No close-X graphic.</td></tr>
+  <tr><th bgcolor="#E6E6E6">Format</th><td>Feedback layer — correct (do wash)</td></tr>
+  <tr><th bgcolor="#E6E6E6">Screen Copy</th><td class="copy">Correct<br /><br />This list is personal data and customer data. It is not public. It is not merely internal working text.<br /><br />Continue</td></tr>
+  <tr><th bgcolor="#E6E6E6">Interactions</th><td>Continue hides the layer and jumps to 2.5.</td></tr>
+</table>
+</div>
+<p class="slide-gap">&nbsp;</p>
+<div class="card-keep">
+<p class="card-title">Storyline 360 · 2.4 L-wrong</p>
+<table class="card" width="100%" cellpadding="8" cellspacing="0">
+  <colgroup><col class="label" /><col /></colgroup>
+  <tr><th bgcolor="#E6E6E6">Assets</th><td>Layer panel fill: don’t wash #E8DED5. Dim base slide.</td></tr>
+  <tr><th bgcolor="#E6E6E6">Format</th><td>Feedback layer — incorrect (don’t wash)</td></tr>
+  <tr><th bgcolor="#E6E6E6">Screen Copy</th><td class="copy">Not public. Not merely internal.<br /><br />Emails and contract values are personal data and customer data. Classify it as that, then choose the tool.<br /><br />Continue</td></tr>
+  <tr><th bgcolor="#E6E6E6">Interactions</th><td>Continue → 2.5. Same destination as correct. Do not loop unless Prev.</td></tr>
+</table>
+</div>
+<p class="slide-gap">&nbsp;</p>
+<div class="card-keep">
+<p class="card-title">Storyline 360 · 2.5</p>
+<table class="card" width="100%" cellpadding="8" cellspacing="0">
+  <colgroup><col class="label" /><col /></colgroup>
+  <tr><th bgcolor="#E6E6E6">Assets</th><td>Three rectangles, equal, fill step wash #E6E6E6.<br />Numerals 01 02 03: League Gothic.<br />No 360° image. No photo.</td></tr>
+  <tr><th bgcolor="#E6E6E6">Format</th><td>Title plus three step tiles (01 02 03)</td></tr>
+  <tr><th bgcolor="#E6E6E6">Screen Copy</th><td class="copy">Three checks before any AI or file share<br /><br />01<br />What data is this? (public / internal / personal / customer)<br /><br />02<br />Is this tool on the approved list?<br /><br />03<br />If I am unsure, I do not paste — I ask my line manager or data-protection lead.<br /><br />Continue</td></tr>
+  <tr><th bgcolor="#E6E6E6">Interactions</th><td>Optional selected state, same words. Continue → 2.6. Clicking tile 03 sets askedIfUnsure = True.</td></tr>
+</table>
+</div>
+<p class="slide-gap">&nbsp;</p>
+<div class="card-keep">
+<p class="card-title">Storyline 360 · 2.6</p>
+<table class="card" width="100%" cellpadding="8" cellspacing="0">
+  <colgroup><col class="label" /><col /></colgroup>
+  <tr><th bgcolor="#E6E6E6">Assets</th><td>Same Alex / Jordan assets. Three choice buttons. This is the scored item (Q1_approved_move).</td></tr>
+  <tr><th bgcolor="#E6E6E6">Format</th><td>Conversation — caption plus three choices (scored)</td></tr>
+  <tr><th bgcolor="#E6E6E6">Screen Copy</th><td class="copy">Alex<br /><br />OK. I still want better English. What is the approved move?<br /><br />Jordan — choose one<br /><br />Strip the emails (or use a fake), then use the approved tool.<br /><br />Paste it. It’s only one list.<br /><br />Put it on my personal Drive so a contractor can edit overnight.</td></tr>
+  <tr><th bgcolor="#E6E6E6">Interactions</th><td>First: ScorePercent = 100 → 2.7. Second or third: 0 → 2.8. Same three choices even if classifiedCorrect was False.</td></tr>
+</table>
+</div>
+<p class="slide-gap">&nbsp;</p>
+<div class="card-keep">
+<p class="card-title">Storyline 360 · 2.7</p>
+<table class="card" width="100%" cellpadding="8" cellspacing="0">
+  <colgroup><col class="label" /><col /></colgroup>
+  <tr><th bgcolor="#E6E6E6">Assets</th><td>Panel fill: do wash #DBE0DC.</td></tr>
+  <tr><th bgcolor="#E6E6E6">Format</th><td>Title plus body (correct close of conversation, do wash)</td></tr>
+  <tr><th bgcolor="#E6E6E6">Screen Copy</th><td class="copy">Correct<br /><br />Redact first, then use an approved tool. That is the whole habit.<br /><br />Continue</td></tr>
+  <tr><th bgcolor="#E6E6E6">Interactions</th><td>Continue → 3.1.</td></tr>
+</table>
+</div>
+<p class="slide-gap">&nbsp;</p>
+<div class="card-keep">
+<p class="card-title">Storyline 360 · 2.8</p>
+<table class="card" width="100%" cellpadding="8" cellspacing="0">
+  <colgroup><col class="label" /><col /></colgroup>
+  <tr><th bgcolor="#E6E6E6">Assets</th><td>Panel fill: don’t wash #E8DED5.</td></tr>
+  <tr><th bgcolor="#E6E6E6">Format</th><td>Title plus body (incorrect close of conversation, don’t wash)</td></tr>
+  <tr><th bgcolor="#E6E6E6">Screen Copy</th><td class="copy">Not quite<br /><br />One list with emails is still personal data. Personal drives are not the contractor workaround. Redact first, or do not use AI.<br /><br />Continue</td></tr>
+  <tr><th bgcolor="#E6E6E6">Interactions</th><td>Same slide for both wrong answers. Continue → 3.1. Score stays 0.</td></tr>
+</table>
+</div>
+<p class="slide-gap">&nbsp;</p>
+<div class="card-keep">
+<p class="card-title">Storyline 360 · 3.1</p>
+<table class="card" width="100%" cellpadding="8" cellspacing="0">
+  <colgroup><col class="label" /><col /></colgroup>
+  <tr><th bgcolor="#E6E6E6">Assets</th><td>Optional player resource: Job aid (PDF) — attach only when the file is the live public PDF. No URL on the slide until live.</td></tr>
+  <tr><th bgcolor="#E6E6E6">Format</th><td>Title plus body (close)</td></tr>
+  <tr><th bgcolor="#E6E6E6">Screen Copy</th><td class="copy">The habit is the course<br /><br />Classify → approved tool or no AI → ask if unsure.<br /><br />Take the one-page job aid and keep it next to your desktop.<br /><br />Finish</td></tr>
+  <tr><th bgcolor="#E6E6E6">Interactions</th><td>Same close whether askedIfUnsure is True or False. Finish completes the course and goes to 3.2.</td></tr>
+</table>
+</div>
+<p class="slide-gap">&nbsp;</p>
+<div class="card-keep">
+<p class="card-title">Storyline 360 · 3.2</p>
+<table class="card" width="100%" cellpadding="8" cellspacing="0">
+  <colgroup><col class="label" /><col /></colgroup>
+  <tr><th bgcolor="#E6E6E6">Assets</th><td>Results slide. Hide Storyline Success / Failure headings if they appear. Variable reference for score. No certificate graphic.</td></tr>
+  <tr><th bgcolor="#E6E6E6">Format</th><td>Results / complete</td></tr>
+  <tr><th bgcolor="#E6E6E6">Screen Copy</th><td class="copy">You’re done.<br /><br />Your score: %ScorePercent%%<br /><br />Review<br />Exit</td></tr>
+  <tr><th bgcolor="#E6E6E6">Interactions</th><td>Always success (habit module; score is shown, not a pass mark). Review → 2.6. Exit closes the player. SCORM 1.2 complete when 3.1 Finish is clicked.</td></tr>
+</table>
+</div>
+<p class="slide-gap">&nbsp;</p>
+<div class="card-keep">
+<p class="card-title">Storyline 360 · M1</p>
+<table class="card" width="100%" cellpadding="8" cellspacing="0">
+  <colgroup><col class="label" /><col /></colgroup>
+  <tr><th bgcolor="#E6E6E6">Assets</th><td>Button state fills only. No extra words on states. Don’t wash is for incorrect feedback layers, not hover.</td></tr>
+  <tr><th bgcolor="#E6E6E6">Format</th><td>Button states (all choice buttons)</td></tr>
+  <tr><th bgcolor="#E6E6E6">Screen Copy</th><td class="copy">Normal: ink text on paper<br />Hover: ink text on step #E6E6E6<br />Selected: ink text on do #DBE0DC<br />Disabled: ink at 50%<br />Visited: same as Normal with a 1 px ink underline</td></tr>
+  <tr><th bgcolor="#E6E6E6">Interactions</th><td>Apply to every choice button.</td></tr>
+</table>
+</div>
+<p class="slide-gap">&nbsp;</p>
+<div class="card-keep">
+<p class="card-title">Storyline 360 · M2</p>
+<table class="card" width="100%" cellpadding="8" cellspacing="0">
+  <colgroup><col class="label" /><col /></colgroup>
+  <tr><th bgcolor="#E6E6E6">Assets</th><td>Menu labels only. Layers are not in the menu.</td></tr>
+  <tr><th bgcolor="#E6E6E6">Format</th><td>Menu titles (exact)</td></tr>
+  <tr><th bgcolor="#E6E6E6">Screen Copy</th><td class="copy">Welcome<br />How this works<br />Alex asks<br />Jordan — don’t paste<br />Jordan — coach<br />Classify the file<br />Three checks<br />The approved move<br />Correct<br />Not quite<br />The habit is the course<br />You’re done</td></tr>
+  <tr><th bgcolor="#E6E6E6">Interactions</th><td>Show 2.2 only if classifiedCorrect is True; 2.3 only if False — or restrict navigation to previously viewed.</td></tr>
+</table>
+</div>
+<p class="slide-gap">&nbsp;</p>
+<div class="card-keep">
+<p class="card-title">Storyline 360 · M3</p>
+<table class="card" width="100%" cellpadding="8" cellspacing="0">
+  <colgroup><col class="label" /><col /></colgroup>
+  <tr><th bgcolor="#E6E6E6">Assets</th><td>No extra visible type. Screen-reader names match visible labels.</td></tr>
+  <tr><th bgcolor="#E6E6E6">Format</th><td>Accessibility names (not visible; screen reader)</td></tr>
+  <tr><th bgcolor="#E6E6E6">Screen Copy</th><td class="copy">Start<br />Continue<br />Don’t paste that. Name the data first.<br />Public AI is fine if you delete the chat afterwards.<br />Public<br />Internal<br />Personal<br />Customer<br />Submit<br />Strip the emails (or use a fake), then use the approved tool.<br />Paste it. It’s only one list.<br />Put it on my personal Drive so a contractor can edit overnight.<br />Finish<br />Review<br />Exit</td></tr>
+  <tr><th bgcolor="#E6E6E6">Interactions</th><td>No “click here.” Character alt: Jordan, line manager / Alex, remote staff.</td></tr>
+</table>
+</div>
+<p class="slide-gap">&nbsp;</p>
+      <p class="foot">Portfolio sample · Before you paste, classify.</p>
+    </article><br clear="all" style="page-break-before:always" />
+</body>
+</html>
