@@ -912,7 +912,7 @@ const cases: {
               {piece.n === "02" || piece.n === "03" ? (
                 <p className="safe-ai-file">
                   <a
-                    href="/work/safe-ai/storyboard.html"
+                    href="/work/safe-ai/storyboard.pdf"
                     target="_blank"
                     rel="noreferrer"
                   >

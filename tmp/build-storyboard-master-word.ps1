@@ -331,6 +331,18 @@ function Convert-HtmlToDocx {
   $doc.Close([ref]$false)
 }
 
+function Export-DocxToPdf {
+  param([string]$DocxPath, [string]$PdfPath)
+  if (Test-Path -LiteralPath $PdfPath) { Remove-Item -LiteralPath $PdfPath -Force }
+  $doc = $word.Documents.Open((Resolve-Path -LiteralPath $DocxPath).Path)
+  $doc.Repaginate()
+  $pages = $doc.ComputeStatistics(2)
+  if ($pages -lt 3) { throw "Storyboard PDF has $pages pages. Expected a paged document." }
+  $doc.ExportAsFixedFormat($PdfPath, 17)
+  $doc.Close([ref]$false)
+  Write-Output "PDF $pages pages -> $PdfPath"
+}
+
 function Convert-HtmlToPdf {
   param([string]$HtmlPath, [string]$PdfPath, [string]$FooterPrefix, [string]$BareLine, [switch]$OfTotal)
   $html = (Resolve-Path -LiteralPath $HtmlPath).Path
@@ -354,6 +366,10 @@ $blankPrefix = "$blankBare ·"
 Convert-HtmlToDocx -HtmlPath $filledHtml -DocxPath $filledDocx -FooterPrefix $filledPrefix -BareLine $filledBare
 Convert-HtmlToDocx -HtmlPath $blankHtml -DocxPath $blankDocx -FooterPrefix $blankPrefix -BareLine $blankBare
 Convert-HtmlToPdf  -HtmlPath $brandHtml -PdfPath $brandPdf -FooterPrefix $brandPrefix -BareLine $filledBare -OfTotal
+$storyPdf = Join-Path $root 'Portfolio sample_Before you paste classify - storyboard.pdf'
+$publicPdf = 'C:\Users\keith\European-Corporate-Pivot\public\work\safe-ai\storyboard.pdf'
+Export-DocxToPdf -DocxPath $filledDocx -PdfPath $storyPdf
+Copy-Item -LiteralPath $storyPdf -Destination $publicPdf -Force
 
 $word.Quit()
 [System.Runtime.Interopservices.Marshal]::ReleaseComObject($word) | Out-Null
