@@ -10,7 +10,7 @@ His hair is cropped short, close to the scalp, combed forward, with a receding h
 
 If he says use his photo, use that file. A generated picture made darker is not his photo.
 
-The lecture-theatre shot stays. He is small in the frame. Do not regenerate the room.
+The lecture-theatre photo was replaced with his curly-hair portrait on 2 Oct 2026. Do not put the room shot back.
 
 LinkedIn and CV portraits were deleted at his request. Do not restore them.
 
@@ -22,7 +22,7 @@ LinkedIn and CV portraits were deleted at his request. Do not restore them.
 | About, first | `public/portraits/turtleneck.png` | The same healed portrait. |
 | About, second | `public/portraits/headshot.png` | His Paint.NET edit, pasted in as supplied. 2 Oct 2026. |
 | About, third | `public/portraits/informal.jpg` | His real close-up. Hand at chin, round glasses, short white hair combed forward. 27,966 bytes. |
-| About, fourth | `public/portraits/lecture-theatre.png` | Unchanged. From the back of the room. 21 Sep 2026. |
+| About, fourth | `public/portraits/lecture-theatre.jpg` | His curly-hair photo, scaled so the eyes and face size match the front-page portrait. 2 Oct 2026. |
 
 Home and About were pushed. The healed portrait went up in commit `7a02d02`. His photo replaced the generated Cursor shot on About in commit `bb598e6`.
 

@@ -15,9 +15,8 @@ export default function AboutPage() {
       alt: "Keith Byne, short white hair combed forward, glasses, hand at his chin",
     },
     {
-      src: "/portraits/lecture-theatre.png",
-      alt: "Lecture theatre seen from the back row, Keith Byne teaching at the front",
-      className: "from-back",
+      src: "/portraits/lecture-theatre.jpg",
+      alt: "Keith Byne, curly hair and beard, white t-shirt, looking at the camera",
     },
   ];
 
