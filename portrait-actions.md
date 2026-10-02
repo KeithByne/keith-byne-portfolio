@@ -20,7 +20,7 @@ LinkedIn and CV portraits were deleted at his request. Do not restore them.
 |------|------|------------|
 | Home | `public/portraits/front.jpg` | Healed studio portrait. 224,246 bytes. Same pixels as the About turtleneck. Alt: short white hair, black turtleneck, looking slightly off camera. |
 | About, first | `public/portraits/turtleneck.png` | The same healed portrait. |
-| About, second | `public/portraits/headshot.png` | His photo on the original white background, face scaled to the front-page portrait, black turtleneck added under the chin. 2 Oct 2026. |
+| About, second | `public/portraits/headshot.png` | His Paint.NET edit, pasted in as supplied. 2 Oct 2026. |
 | About, third | `public/portraits/informal.jpg` | His real close-up. Hand at chin, round glasses, short white hair combed forward. 27,966 bytes. |
 | About, fourth | `public/portraits/lecture-theatre.png` | Unchanged. From the back of the room. 21 Sep 2026. |
 
