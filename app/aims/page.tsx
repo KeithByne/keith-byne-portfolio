@@ -19,20 +19,20 @@ export default function AimsPage() {
           course, it became obvious that this should be my next logical step.
         </p>
         <p>
-          I have made myself available. My son, a qualified teacher, has
-          taken over the daily routine. I have changed my role to oversight
-          and management in order to give myself time for retraining and
-          development. My involvement in teaching now is mainly teacher
-          training.
+          I have made myself available. Adjusted my workflow. I have
+          changed my role to oversight and management in order to give
+          myself time for retraining and development. My involvement in
+          teaching now is mainly teacher training. I will be moving
+          progressively towards a remote working lifestyle.
         </p>
         <p>
           This is not a late start, but rather a change of direction.
           Programme design, teacher training, visual communication, and
           educational software are already within my compass. Instructional
-          design is where that experience belongs, not for
-          a summer peak. A twelve-month working model is my aim. I am
-          learning the tools this industry uses to show the work. I will
-          develop this project until full-time employment is in place.
+          design is where that experience belongs. A twelve-month working
+          model is my aim. I am learning the tools this industry uses to
+          show the work. I will develop this project until full-time remote
+          employment is in place.
         </p>
       </div>
     </main>
