@@ -15,3 +15,9 @@ out/
 next-env.d.ts
 .vercel
 .env*
+tmp/chrome-cv-profile/
+public/work/cv/_print.html
+public/work/cv/_print-*.html
+public/work/cv/keith-byne-cv-new.pdf
+.vercel
+.env*

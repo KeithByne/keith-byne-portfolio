@@ -425,6 +425,16 @@ for (const d of docs) {
   if (d.htmlSrc) {
     const raw = fs.readFileSync(path.join(root, d.htmlSrc), "utf8");
     fs.writeFileSync(path.join(outDir, d.id + ".html"), injectJump(raw, d.id));
+    if (d.id === "cv") {
+      fs.copyFileSync(
+        path.join(root, "public", "work", "cv", "front.jpg"),
+        path.join(outDir, "front.jpg"),
+      );
+      fs.copyFileSync(
+        path.join(root, "public", "work", "cv", "keith-byne-cv.pdf"),
+        path.join(outDir, "keith-byne-cv.pdf"),
+      );
+    }
   } else {
     const md = fs.readFileSync(path.join(root, d.src), "utf8");
     fs.writeFileSync(path.join(outDir, d.id + ".html"), page(d.title, mdToHtml(md), d.id));

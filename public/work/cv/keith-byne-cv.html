@@ -34,14 +34,15 @@
       position: relative;
     }
     header.mast {
-      display: grid;
-      grid-template-columns: 1fr 38mm;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
       gap: 10mm;
-      align-items: end;
       background: var(--paper);
       color: var(--ink);
       padding: 12mm 16mm 10mm;
     }
+    header.mast > div { flex: 1 1 auto; min-width: 0; }
     .eyebrow {
       color: var(--accent);
       text-transform: uppercase;
@@ -73,10 +74,13 @@
     }
     .facts a { color: var(--ink); text-decoration: none; border-bottom: 1px solid var(--line); }
     .headshot {
+      display: block;
+      flex: 0 0 38mm;
       width: 38mm;
       height: 47.5mm;
       object-fit: cover;
-      filter: saturate(0.92) contrast(1.04);
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
     }
     .pad {
       padding: 6.5mm 16mm 14mm;

@@ -1,4 +1,3 @@
-const http = require("http");
 const fs = require("fs");
 const path = require("path");
 const { spawn } = require("child_process");
@@ -13,51 +12,57 @@ const dir = path.join(
   "cv",
 );
 const pdf = path.join(dir, "keith-byne-cv.pdf");
+const pdfNew = path.join(dir, "keith-byne-cv-new.pdf");
+const printHtml = path.join(dir, "_print-" + Date.now() + ".html");
 const chrome = "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe";
-const mime = {
-  ".html": "text/html; charset=utf-8",
-  ".jpg": "image/jpeg",
-  ".css": "text/css",
-};
+const photo = fs.readFileSync(path.join(dir, "front.jpg")).toString("base64");
+let html = fs.readFileSync(path.join(dir, "keith-byne-cv.html"), "utf8");
+html = html.replace(
+  /src="front\.jpg"/,
+  `src="data:image/jpeg;base64,${photo}"`,
+);
+if (!html.includes("data:image/jpeg;base64,")) {
+  console.error("Portrait was not embedded");
+  process.exit(1);
+}
+fs.writeFileSync(printHtml, html);
+if (fs.existsSync(pdfNew)) fs.unlinkSync(pdfNew);
 
-const server = http.createServer((req, res) => {
-  const rel = decodeURIComponent((req.url || "/").split("?")[0]).replace(/^\/+/, "");
-  const file = path.join(dir, rel || "keith-byne-cv.html");
-  if (!file.startsWith(dir)) {
-    res.writeHead(403);
-    return res.end();
+const fileUrl = "file:///" + printHtml.replace(/\\/g, "/");
+const child = spawn(
+  chrome,
+  [
+    "--headless=new",
+    "--disable-gpu",
+    "--no-pdf-header-footer",
+    "--user-data-dir=" + path.join("C:", "Users", "keith", "European-Corporate-Pivot", "tmp", "chrome-cv-profile"),
+    "--allow-file-access-from-files",
+    "--virtual-time-budget=20000",
+    "--run-all-compositor-stages-before-draw",
+    `--print-to-pdf=${pdfNew}`,
+    fileUrl,
+  ],
+  { stdio: "inherit" },
+);
+child.on("exit", (code) => {
+  try {
+    fs.unlinkSync(printHtml);
+  } catch {}
+  if (!fs.existsSync(pdfNew)) {
+    console.error("PDF was not written");
+    process.exit(1);
   }
-  fs.readFile(file, (err, data) => {
-    if (err) {
-      res.writeHead(404);
-      return res.end("not found");
-    }
-    res.writeHead(200, { "Content-Type": mime[path.extname(file)] || "application/octet-stream" });
-    res.end(data);
-  });
-});
-
-server.listen(3471, "127.0.0.1", () => {
-  if (fs.existsSync(pdf)) fs.unlinkSync(pdf);
-  const child = spawn(
-    chrome,
-    [
-      "--headless=new",
-      "--disable-gpu",
-      "--no-pdf-header-footer",
-      "--no-first-run",
-      "--virtual-time-budget=12000",
-      `--print-to-pdf=${pdf}`,
-      "http://127.0.0.1:3471/keith-byne-cv.html",
-    ],
-    { stdio: "inherit" },
-  );
-  child.on("exit", (code) => {
-    server.close();
-    if (!fs.existsSync(pdf)) {
-      console.error("PDF was not written");
-      process.exit(1);
-    }
-    console.log("Wrote " + pdf + " (" + fs.statSync(pdf).size + " bytes) exit=" + code);
-  });
+  try {
+    fs.copyFileSync(pdfNew, pdf);
+    fs.unlinkSync(pdfNew);
+  } catch (err) {
+    console.error("Could not replace the open PDF. Left " + pdfNew);
+    console.error(err.message);
+    process.exit(1);
+  }
+  const bytes = fs.readFileSync(pdf);
+  const text = bytes.toString("latin1");
+  const jpeg = (text.match(/JFIF/g) || []).length;
+  const images = (text.match(/\/Image/g) || []).length;
+  console.log("Wrote " + pdf + " (" + bytes.length + " bytes) jfif=" + jpeg + " image=" + images + " exit=" + code);
 });
