@@ -24,6 +24,10 @@ export default function ContactPage() {
             <span>Espartinas, Seville · also Basildon, Essex</span>
           </li>
           <li>
+            Nationality
+            <span>British · UK passport · born Essex · native English</span>
+          </li>
+          <li>
             Work
             <span>EU remote · employment or Spanish B2B invoice</span>
           </li>

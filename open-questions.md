@@ -5,6 +5,7 @@ Source of truth: [cv-source-original.md](cv-source-original.md) (2026 Word CV).
 
 ## Identity and applications
 
+- [x] Nationality / English (Keith, 2 Oct 2026): UK passport; born Essex; native RP English. Public site and `cv.md` use British, UK passport, born Essex, native English — not “RP” on the shopfront.
 - [ ] Phone number for CV and letter
 - [ ] Portfolio URL (Wix, once live)
 - [ ] LinkedIn URL
