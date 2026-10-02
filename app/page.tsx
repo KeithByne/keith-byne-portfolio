@@ -28,8 +28,8 @@ export default function HomePage() {
         </div>
         <figure className="portrait">
           <img
-            src="/portraits/turtleneck-front.png"
-            alt="Keith Byne, short white hair, black turtleneck, looking slightly off camera"
+            src="/portraits/front.jpg"
+            alt="Keith Byne, short white hair combed forward, glasses, hand at his chin"
           />
           <figcaption className="caption">
             Director, Universal English S.L. · Educational management software developer · Online teacher training in educational technology · Fine Art · Sculpture · Serigraphy · Computer graphic design
