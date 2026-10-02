@@ -21,8 +21,8 @@ LinkedIn and CV portraits were deleted at his request. Do not restore them.
 | Home | `public/portraits/front.jpg` | Healed studio portrait. 224,246 bytes. Same pixels as the About turtleneck. Alt: short white hair, black turtleneck, looking slightly off camera. |
 | About, first | `public/portraits/turtleneck.png` | The same healed portrait. |
 | About, second | `public/portraits/headshot.png` | His Paint.NET edit, pasted in as supplied. 2 Oct 2026. |
-| About, third | `public/portraits/informal.jpg` | His real close-up. Hand at chin, round glasses, short white hair combed forward. 27,966 bytes. |
-| About, fourth | `public/portraits/lecture-theatre.jpg` | His curly-hair photo, scaled so the eyes and face size match the front-page portrait. 2 Oct 2026. |
+| About, third | `public/portraits/lecture-theatre.jpg` | His curly-hair photo, scaled so the eyes and face size match the front-page portrait. 2 Oct 2026. |
+| About, fourth | `public/portraits/informal.jpg` | Hand at his mouth. Head scaled to the same size as the front-page portrait. 2 Oct 2026. |
 
 Home and About were pushed. The healed portrait went up in commit `7a02d02`. His photo replaced the generated Cursor shot on About in commit `bb598e6`.
 

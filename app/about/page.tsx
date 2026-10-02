@@ -11,12 +11,12 @@ export default function AboutPage() {
       alt: "Keith Byne, short grey hair and beard, looking at the camera",
     },
     {
-      src: "/portraits/informal.jpg",
-      alt: "Keith Byne, short white hair combed forward, glasses, hand at his chin",
-    },
-    {
       src: "/portraits/lecture-theatre.jpg",
       alt: "Keith Byne, curly hair and beard, white t-shirt, looking at the camera",
+    },
+    {
+      src: "/portraits/informal.jpg?v=2",
+      alt: "Keith Byne, short white hair, glasses, hand at his mouth",
     },
   ];
 
