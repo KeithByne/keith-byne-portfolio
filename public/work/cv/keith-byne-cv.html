@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Keith Byne — Curriculum vitae</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600&amp;family=Syne:wght@600;700&amp;display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --ink: #e8ecff;
+      --mute: #9aa6d4;
+      --paper: #0b1024;
+      --line: rgba(232, 236, 255, 0.14);
+      --accent: #8b9cff;
+      --body: #12172c;
+      --quiet: #5c6794;
+      --wash: #f3f5ff;
+      --card: #eef1ff;
+    }
+    * { box-sizing: border-box; }
+    html, body {
+      margin: 0;
+      background: #d8dcec;
+      color: var(--body);
+      font-family: Outfit, "Segoe UI", sans-serif;
+    }
+    @page { size: A4; margin: 0; }
+    .sheet {
+      width: 210mm;
+      margin: 0 auto 12px;
+      background: #fff;
+      color: var(--body);
+      position: relative;
+    }
+    header.mast {
+      display: grid;
+      grid-template-columns: 1fr 38mm;
+      gap: 10mm;
+      align-items: end;
+      background: var(--paper);
+      color: var(--ink);
+      padding: 12mm 16mm 10mm;
+    }
+    .eyebrow {
+      color: var(--accent);
+      text-transform: uppercase;
+      letter-spacing: 0.16em;
+      font-size: 7.5pt;
+      margin: 0 0 5mm;
+      font-weight: 500;
+    }
+    h1 {
+      font-family: Syne, Outfit, sans-serif;
+      font-weight: 600;
+      font-size: 32pt;
+      letter-spacing: -0.045em;
+      line-height: 0.92;
+      margin: 0 0 3mm;
+    }
+    .titles {
+      font-size: 9.2pt;
+      font-weight: 500;
+      color: var(--ink);
+      margin: 0 0 3.5mm;
+      line-height: 1.35;
+    }
+    .facts {
+      color: var(--mute);
+      font-size: 8.5pt;
+      line-height: 1.5;
+      margin: 0;
+    }
+    .facts a { color: var(--ink); text-decoration: none; border-bottom: 1px solid var(--line); }
+    .headshot {
+      width: 38mm;
+      height: 47.5mm;
+      object-fit: cover;
+      filter: saturate(0.92) contrast(1.04);
+    }
+    .pad {
+      padding: 6.5mm 16mm 14mm;
+    }
+    h2 {
+      font-family: Syne, Outfit, sans-serif;
+      font-weight: 600;
+      font-size: 11pt;
+      letter-spacing: -0.03em;
+      color: var(--paper);
+      margin: 0 0 3.5mm;
+      padding-bottom: 1.8mm;
+      border-bottom: 1px solid rgba(11, 16, 36, 0.12);
+    }
+    h2 .num {
+      font-family: Syne, Outfit, sans-serif;
+      color: var(--accent);
+      letter-spacing: 0.08em;
+      font-size: 8pt;
+      margin-right: 2mm;
+    }
+    .lede {
+      font-size: 9.1pt;
+      line-height: 1.4;
+      margin: 0 0 5.5mm;
+      color: var(--body);
+    }
+    .grid4 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 3mm 5mm;
+      margin: 0 0 5mm;
+    }
+    .block {
+      background: var(--wash);
+      border-left: 2.5px solid var(--accent);
+      padding: 3mm 3.5mm 3.2mm;
+    }
+    .block h3 {
+      font-family: Syne, Outfit, sans-serif;
+      font-size: 9pt;
+      font-weight: 600;
+      letter-spacing: -0.03em;
+      margin: 0 0 1.6mm;
+      color: var(--paper);
+    }
+    .block ul {
+      margin: 0;
+      padding: 0 0 0 3.2mm;
+      font-size: 8.2pt;
+      line-height: 1.38;
+      color: var(--quiet);
+    }
+    .job { margin: 0 0 3.1mm; }
+    .job h3 {
+      font-family: Syne, Outfit, sans-serif;
+      font-size: 10pt;
+      font-weight: 600;
+      letter-spacing: -0.03em;
+      margin: 0;
+      color: var(--paper);
+    }
+    .where {
+      color: var(--quiet);
+      font-size: 8pt;
+      margin: 0.6mm 0 1.6mm;
+      font-weight: 500;
+    }
+    .job ul {
+      margin: 0;
+      padding: 0 0 0 3.6mm;
+      font-size: 8.1pt;
+      line-height: 1.34;
+      color: var(--body);
+    }
+    .job li + li { margin-top: 0.7mm; }
+    .edu {
+      font-size: 8.6pt;
+      line-height: 1.45;
+      margin: 0 0 4mm;
+      padding: 0;
+      list-style: none;
+    }
+    .edu li { margin: 0 0 1.2mm; }
+    .edu span { color: var(--quiet); }
+    .right {
+      font-size: 8.6pt;
+      line-height: 1.45;
+      margin: 0;
+      color: var(--body);
+    }
+    .folio {
+      position: absolute;
+      left: 16mm;
+      right: 16mm;
+      bottom: 7mm;
+      display: flex;
+      justify-content: space-between;
+      font-size: 7.5pt;
+      color: var(--quiet);
+      letter-spacing: 0.04em;
+    }
+    .break { page-break-before: always; }
+    .break .pad { padding-top: 12mm; }
+    @media print {
+      html, body { background: #fff; }
+      .sheet { margin: 0; box-shadow: none; min-height: 0; }
+      .break { page-break-before: always; }
+    }
+    @media screen {
+      body { padding: 16px 0 40px; }
+      .sheet { box-shadow: 0 18px 50px rgba(11, 16, 36, 0.18); min-height: 297mm; }
+    }
+  </style>
+</head>
+<body>
+  <article class="sheet">
+    <header class="mast">
+      <div>
+        <p class="eyebrow">Curriculum vitae</p>
+        <h1>Keith Byne</h1>
+        <p class="titles">Learning Experience Designer · Instructional Designer · Training Programme Director</p>
+        <p class="facts">
+          Espartinas, Seville · British citizen · native English · EU work authorised<br />
+          Also Basildon, Essex (born Essex)<br />
+          <a href="mailto:keith.byne@hotmail.co.uk">keith.byne@hotmail.co.uk</a>
+          ·
+          <a href="https://keith-byne-portfolio.vercel.app">keith-byne-portfolio.vercel.app</a>
+        </p>
+      </div>
+      <img class="headshot" src="front.jpg" alt="Keith Byne" />
+    </header>
+    <div class="pad">
+      <h2><span class="num">01</span>Profile</h2>
+      <p class="lede">Programme director, instructional designer, and educational software builder with 30 years designing adult learning, corporate language programmes, and digital training systems. Combines visual communication (Fine Art; professional graphic design for enterprise brands) with course architecture, teacher-as-trainer delivery, and hands-on web/SaaS product development. Since 2015, Director of Universal English S.L., running curriculum, budgets, teams, and hybrid/online delivery. Open to EU remote employment, a Spanish B2B / autónomo contract, or being taken on through REPORT-O-MATIC LTD, a British registered company.</p>
+
+      <h2><span class="num">02</span>Core expertise</h2>
+      <div class="grid4">
+        <div class="block">
+          <h3>Instructional design and curriculum</h3>
+          <ul>
+            <li>Course and materials design for adult, professional, and institutional audiences</li>
+            <li>Action mapping / performance-first design</li>
+            <li>ESP/EAP programmes for enterprise accounts</li>
+            <li>Hybrid and fully online learning design; web-based learning paths</li>
+          </ul>
+        </div>
+        <div class="block">
+          <h3>Visual communication</h3>
+          <ul>
+            <li>BA (Hons) Fine Art</li>
+            <li>Graphic design, illustration, and CAD-CAM (1984–1996), including Microsoft and Virgin Airlines</li>
+            <li>Canva and PowerPoint job aids and stakeholder decks</li>
+            <li>Inkscape for vector artwork</li>
+          </ul>
+        </div>
+        <div class="block">
+          <h3>Programme operations</h3>
+          <ul>
+            <li>Director and Director of Studies, Universal English S.L. (2015–present): budgets, teams, marketing, resource management</li>
+            <li>Staff interviewing and onboarding; needs analysis and hybrid onboarding frameworks</li>
+            <li>High-volume centre operations (Ardmore; management team built for 200, flexed to 400+ at peak)</li>
+          </ul>
+        </div>
+        <div class="block">
+          <h3>Learning technology</h3>
+          <ul>
+            <li>Educational SaaS and new product design</li>
+            <li>Wix and custom web platforms for autonomous learning (including iPALABRA)</li>
+            <li>Live online: Zoom 2019–2021, then Skype, now Teams; digital resource training for teaching staff</li>
+            <li>LMS operations: Google Classroom (Edmodo from 2015 until that platform closed)</li>
+          </ul>
+        </div>
+      </div>
+
+      <h2><span class="num">03</span>Professional experience</h2>
+
+      <div class="job">
+        <h3>Universal English S.L. — Director and Director of Studies</h3>
+        <p class="where">Tomares, Spain · 2015–present</p>
+        <ul>
+          <li>Own curriculum, course development, staffing, budgets, marketing, and web content for an adult training organisation.</li>
+          <li>Designed and run international online technology training for teachers, plus face-to-face trainer programmes; ongoing content work with Teachertrainingvideos.com / Russell Stannard.</li>
+          <li>Put live classes on Zoom from 2019 until 2021 so teachers and adult learners could be trained quickly, then Skype, now Teams; on Covid-19 closure, trained the teaching staff in 3 hours and continued every class with no missed session.</li>
+          <li>Ran the academy LMS on Edmodo from 2015, then Google Classroom when Edmodo closed.</li>
+          <li>Introduced online classes, then hybrid classes, ahead of local competitors; built iPALABRA free learning websites and wrote content for private ESL platforms.</li>
+          <li>Specified and developed educational SaaS including Report-O-Matic (REPORT-O-MATIC LTD): multi-level access, reports, registers, timetables, resource allocation; 13-language UI and report output. Also FireList-O-Matic: phone-first residential-school accountability with Night Log, FIRE live muster, and drawable site zones.</li>
+        </ul>
+      </div>
+
+      <div class="job">
+        <h3>Ardmore Summer School — Centre administrator / acting centre management</h3>
+        <p class="where">Hertfordshire, UK · seasonal, alongside Universal English</p>
+        <ul>
+          <li>During Covid-19, researched, created, and deployed educational content for language learners on ArdmoreX, the organisation’s new remote learning platform.</li>
+          <li>Worked in a large operational team on intensive programmes; the management team was built for 200 students and flexed up to more than 400 at peak after another company at the same university collapsed, following geopolitical unrest in the Middle East.</li>
+          <li>Open brief as Administrator under the Centre Manager during the volume flex: supported Rooming, Activity, Academic, and Centre Management while holding administration, whose task definitions changed during the employment period.</li>
+          <li>Day-to-day contact with visiting-institution agents and representatives sending groups to the centre.</li>
+          <li>Supported the Director of Studies with digital recording systems and staff support; first aid and safeguarding.</li>
+        </ul>
+      </div>
+
+      <div class="job">
+        <h3>English Connection — Teacher and recruitment interviewer</h3>
+        <p class="where">Bormujos, Spain · 2013–2015</p>
+        <ul>
+          <li>Delivered adult English programmes and interviewed incoming teaching staff.</li>
+        </ul>
+      </div>
+
+      <div class="job">
+        <h3>Teachertrainingvideos.com — Materials developer and web-based instructor</h3>
+        <p class="where">UK (remote) · 2002–2013</p>
+        <ul>
+          <li>Contributed to digital learning content to brief, including New Standard English (China) and the BBC’s Get into Spanish.</li>
+          <li>Designed web-based learning using tools such as Wix for ESL, EAP, and ESP.</li>
+          <li>Delivered live online instruction via Skype.</li>
+        </ul>
+      </div>
+
+      <div class="job">
+        <h3>English Club — ESP/EAP instructor and major-accounts specialist</h3>
+        <p class="where">Paris, France · 2000–2002</p>
+        <ul>
+          <li>Designed and delivered English for Specific and Academic Purposes for enterprise clients.</li>
+          <li>Owned customer relations for major accounts, including Microsoft, Usinor, Eurosport, and Sorecom.</li>
+        </ul>
+      </div>
+
+      <div class="job">
+        <h3>CLIC International House — Teacher and digital resource trainer</h3>
+        <p class="where">Seville, Spain · 1996–2000</p>
+        <ul>
+          <li>Classroom instruction plus digital-resource training for teaching staff.</li>
+          <li>Began a long professional collaboration with Russell Stannard (then Director of Studies).</li>
+        </ul>
+      </div>
+
+      <div class="job">
+        <h3>Graphic design studios — Graphic designer</h3>
+        <p class="where">UK · 1984–1996</p>
+        <ul>
+          <li>Graphic design, illustration, and CAD-CAM design/manufacture.</li>
+          <li>Client-facing problem-solving for accounts including Microsoft and Virgin Airlines.</li>
+        </ul>
+      </div>
+
+      <h2><span class="num">04</span>Education and credentials</h2>
+      <ul class="edu">
+        <li>BA (Hons) Fine Art — Norwich School of Art, Norfolk, UK <span>(1993–1996)</span></li>
+        <li>Foundation in Art &amp; Design — Thurrock Technical College, Essex, UK</li>
+        <li>Cambridge CELTA — International House Seville, Spain</li>
+        <li>Cert. TESOL — Trinity College London, UK</li>
+      </ul>
+
+      <h2><span class="num">05</span>Right to work</h2>
+      <p class="right">Based in Espartinas, Seville. Authorised to work for an EU employer remotely without visa sponsorship. Can invoice as autónomo / B2B, or through REPORT-O-MATIC LTD, a British registered company, where the employer cannot hire on payroll.</p>
+    </div>
+  </article>
+</body>
+</html>
