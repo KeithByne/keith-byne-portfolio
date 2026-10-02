@@ -33,37 +33,45 @@ export default function AboutPage() {
         </div>
       </div>
       <div className="prose">
+        <p>Open to EU remote employment.</p>
         <p>
-          Open to EU remote employment.
+          My working attitude stems from a generation that left school
+          expecting a job for life and found an employment wasteland. ITC was
+          never on the syllabus. First processors, then computers, arrived on
+          the work benches. Courses were demos by salesmen. My generation
+          learned them ad hoc, building bridges from analogue to digital one
+          step at a time. Lifelong learning evolved through circumstance.
+          Learn the next tool on the job became routine. Expressions like
+          &apos;Flexibility&apos;, &apos;Mobility&apos; and &apos;Learning
+          Curve&apos; nudged into our conversations by the coffee machine.
         </p>
         <p>
-          Working habits stem from a generation that left school expecting a
-          job for life and found empty promises. IT was not on the syllabus.
-          Processors, then computers, arrived on the work benches. Courses
-          were demos by salesmen. My generation learned them ad hoc, building
-          the bridge from analogue to digital. Lifelong learning evolved.
-          Learn the next tool on the job became working routine.
-          &apos;Flexibility&apos;, &apos;mobility&apos; and &apos;learning
-          curve&apos; were nudged into conversations by the coffee machine.
+          So, who am I now? Essentially a problem solver rather than a crowd
+          pleaser. Able to work alone for long periods, a little obsessive. I
+          look and listen carefully. I find friction points and ease them.
+          Taking on new skills is a constant that began the day I left
+          school. Ernest Shackleton is my leadership model. I understand
+          management as a supporting role. I never give up, I do not blame, I
+          redirect. I see things &apos;in-the-round&apos;. I listen to my
+          team before I decide but then, I decide.
         </p>
         <p>
           Currently directing adult learning programmes: curriculum, teams,
-          and hybrid delivery, including training teachers in educational
-          technology. Live classes ran on Zoom from 2019 until 2021, then
-          Skype, now Teams.
+          and hybrid delivery, including training teachers in all aspects,
+          including educational technology.
         </p>
         <p>
-          Before the academy: eleven years contributing to digital materials for
-          Teachertrainingvideos.com, including New Standard English (China)
-          and the BBC&apos;s Get into Spanish; ESP/EAP in Paris for enterprise
-          accounts; and twelve years as a graphic designer, including CAD-CAM
-          and brand work.
+          Before the academy: Among other things, contributing to digital
+          materials for Teachertrainingvideos.com, including New Standard
+          English (China) and the BBC&apos;s Get into Spanish; ESP/EAP in
+          Paris for enterprise accounts; and twelve years as a graphic
+          designer, including CAD-CAM and brand work.
         </p>
         <p>
-          Visual training is a BA (Hons) Fine Art, Norwich School of
-          Art. A short selection of prints and process is on the{" "}
-          <Link href="/studio">Studio</Link> page; originals and the full
-          catalogue stay at{" "}
+          Visual training was a BA (Hons) Fine Art, Norwich School of Art. A
+          short selection of prints and process is on the{" "}
+          <Link href="/studio">Studio</Link> page; originals and catalogue
+          stay at{" "}
           <a href="https://kbyne.com" rel="noreferrer">
             kbyne.com
           </a>
