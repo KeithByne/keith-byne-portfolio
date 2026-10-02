@@ -9,8 +9,8 @@ export default function AimsPage() {
         </p>
         <p>
           Since COVID, summer courses in Spain and summer programmes across
-          Europe have thinned. I am self-employed, so those months are not
-          covered by unemployment benefit. Year-round employment closes that gap.
+          Europe have thinned. I am self-employed. Year-round employment
+          closes that gap.
         </p>
         <p>
           Obtaining summer work at Ardmore gave me the opportunity to really
