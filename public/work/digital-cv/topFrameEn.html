@@ -25,6 +25,19 @@ function moveObject (objectID,up,down) {
 	   	else 	{domStyle.top = up;}	}
 		
 
+
+function goHome() {
+	try {
+		var door = window.top.opener;
+		if (door && !door.closed) {
+			var audio = door.document.getElementById("intro-audio");
+			if (audio) audio.pause();
+		}
+	} catch (err) {}
+	window.top.location.href = "index.html";
+	return false;
+}
+
 </script>
 <SCRIPT type=text/javascript>
 <!--
@@ -134,7 +147,8 @@ a {  font-family: Arial, Helvetica, sans-serif; font-size: 14pt; color: #FFFFFF;
 </head>
 
 <body bgcolor="#cfcfcf";>
-<span id=test style="left: 576px; top: 84px; width: 204px; height: 15px; z-index: 100"> </span> 
+<a href="index.html" target="_top" onclick="return goHome();" title="Go back to the front door" style="position:absolute; left:600px; top:2px; z-index:30;"><b>Home</b></a>
+<span id=test style="left: 668px; top: 84px; width: 204px; height: 15px; z-index: 100"> </span> 
 <div ID="object1" CLASS="menu" STYLE="POSITION: ABSOLUTE; LEFT: 5px; TOP: -90px; z-index:10; width: 110px; height: 114px"> 
   <table width="160" border="0" cellspacing="0" cellpadding="0" height="114">
     <tr> 
@@ -251,7 +265,7 @@ target="bottomFrameEn">Example 8</a></td>
       <area shape="poly" coords="57,73,5,98,5,118,15,130,39,130,52,111,97,112,80,84,68,84,57,73" href="CVEn.doc" target="_blank" title="Print Version of CV" alt="Print Version of CV" > 
       <area shape="poly" coords="94,62,120,48,120,85,142,100,144,120,127,132,108,128,80,82,91,74,94,62" href="WebSkills.html" target="bottomFrameEn" title="Web Authoring Information" alt="Web Authoring Information" > 
       <area shape="poly" coords="57,22,100,22,111,6,130,4,149,18,144,34,95,59,83,51,74,51,54,26,57,22" href="Ideas.html" target="bottomFrameEn" title="Web Ideas" alt="Web Ideas" > 
-      <area shape="poly" coords="32,86,31,52,8,35,8,18,21,3,42,6,72,52,57,60,57,72,34,83,34,83,32,86" href="index.html" target="_top" title="Go Back to the Front Door" alt="Go Back to the Front Door" > 
+      <area shape="poly" coords="32,86,31,52,8,35,8,18,21,3,42,6,72,52,57,60,57,72,34,83,34,83,32,86" href="index.html" target="_top" onclick="return goHome();" title="Go Back to the Front Door" alt="Go Back to the Front Door" > 
     </map> </div>
 </div>
 
