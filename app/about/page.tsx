@@ -11,8 +11,8 @@ export default function AboutPage() {
       alt: "Keith Byne pulling a silk-screen print in his garage studio",
     },
     {
-      src: "/portraits/using-cursor.png",
-      alt: "Keith Byne using Cursor to write software",
+      src: "/portraits/informal.jpg",
+      alt: "Keith Byne, short white hair combed forward, glasses, hand at his chin",
     },
     {
       src: "/portraits/lecture-theatre.png",
