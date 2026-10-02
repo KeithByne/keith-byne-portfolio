@@ -1,0 +1,67 @@
+<html>
+<head>
+<title>index</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<META NAME="KEYWORDS" CONTENT="KEY WORD SEARCH HELPERS GO HERE">
+<META NAME="DESCRIPTION" CONTENT="DESCRIPTION OF PAGE TO BE USED BY SEARCH ENGINS GOES HERE">
+<META NAME="GENERATOR" CONTENT="NOTEPAD">
+<META NAME="AUTHOR" CONTENT="KEITH BYNE">
+<META NAME="COPYRITE" CONTENT="COPYRITE  2001 KEITH BYNE">
+<LINK REL=stylesheet HREF="SpanSS.css" TYPE="text/css">
+<style type="text/css">
+  #intro-audio { width: 145px; height: 32px; }
+</style>
+<script>
+  window.RufflePlayer = window.RufflePlayer || {};
+  window.RufflePlayer.config = { autoplay: "on", unmuteOverlay: "hidden" };
+</script>
+<script src="ruffle/ruffle.js"></script>
+
+</head>
+
+<body bgcolor="#cfcfcf">
+<p>&nbsp;</p>
+<div id="Layer1" style="position:absolute; width:600px; height:413px; z-index:1; top: 4px; left:180px"><object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=4,0,2,0" width="594" height="413">
+    <param name=movie value="IndexMovie.swf">
+    <param name=quality value=high>
+    <embed src="IndexMovie.swf" quality=high pluginspage="http://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash" type="application/x-shockwave-flash" width="594" height="413">
+    </embed> 
+  </object> </div>
+
+  
+<div id="Layer2" style="position:absolute; width:162px; height:421px; z-index:10; left: 5px; top: 4px"> 
+  <table width="19%" border="7" cellspacing="4" cellpadding="0" height="417">
+    <tr>
+      <td height="68" align="center"><audio id="intro-audio" src="Intro.wav" controls loop></audio></td>
+    </tr>
+    <tr> 
+      <td height="96"> 
+        <h4 align="center">Keith D.Byne</h4>
+        <h4 align="center">Curriculum Vitae</h4>
+        
+      </td>
+    </tr>
+    <tr>
+      <td height="72"><a href="siteEn.html" target="_blank" ><img border="0" src="img/ukBut.gif" width="145" height="73" title="Go to English Version" alt="Go to English version"></a></td>
+    </tr>
+    <tr>
+      <td height="39"> 
+        <h4 align="center">Language Idioma</h4>
+        </td>
+    </tr>
+    <tr>
+      <td height="95"><a href="siteEs.html" target="_blank"><img  border="0" src="img/esBut.gif" width="147" height="99" title="Ir a versi&oacute;n espa&ntilde;ola" alt="Ir a versi&oacute;n espa&ntilde;ola"></a></td>
+    </tr>
+  </table>
+</div>
+<p>&nbsp; </p>
+<script>
+window.addEventListener("click", function playIntro() {
+  var el = document.getElementById("intro-audio");
+  if (el) el.play();
+  window.removeEventListener("click", playIntro);
+}, true);
+</script>
+</body>
+</html>

@@ -432,6 +432,78 @@ const cases: {
   body: ReactNode;
 }[] = [
   {
+    id: "digital-cv-1999",
+    title: "1999 · My first online portfolio",
+    subtitle: "Updated · a browser curiosity, not a current sample",
+    logo: {
+      src: "/work/digital-cv/img/LabLogo.gif",
+      href: "/work/digital-cv/index.html",
+      alt: "1999 online portfolio",
+      cta: "Open the 1999 site",
+    },
+    body: (
+      <>
+        <h3>From a DVD that still spun</h3>
+        <p>
+          A bilingual digital curriculum vitae (CV): Macromedia Flash intro,
+          frames, Dynamic HTML (DHTML) demos, sculpture photos, English and
+          Spanish. Chrome dropped Flash and the old sound embed years ago, so
+          the disc sat unread. It now runs in a modern browser with a Flash
+          stand-in and ordinary audio. The grey, the menus, the labyrinth map
+          are the original.
+        </p>
+        <p>
+          This is a period piece at the bottom of the list on purpose. It is
+          not an instructional design (ID) sample.
+        </p>
+        <div className="case-shots">
+          <Shot
+            src="/work/digital-cv/img/OnLineCV.gif"
+            alt="On Line CV banner from the 1999 digital portfolio."
+            caption="The original banner"
+          />
+          <Shot
+            src="/work/digital-cv/img/LaberinthMap.gif"
+            alt="Labyrinth image map used as the menu on the 1999 digital portfolio."
+            caption="The labyrinth map"
+          />
+        </div>
+        <ul className="roles">
+          <li>
+            Open it
+            <span>
+              <a href="/work/digital-cv/index.html" rel="noreferrer" target="_blank">
+                1999 site
+              </a>
+              {" · "}
+              <a href="/work/digital-cv/siteEn.html" rel="noreferrer" target="_blank">
+                English
+              </a>
+              {" · "}
+              <a href="/work/digital-cv/siteEs.html" rel="noreferrer" target="_blank">
+                Español
+              </a>
+            </span>
+          </li>
+          <li>
+            What broke
+            <span>
+              Flash 4, a looping WAV embed, and a print-CV link that still
+              pointed at a Windows 98 path
+            </span>
+          </li>
+          <li>
+            What still works
+            <span>
+              Frames, drop-down menus, the sculpture set, the eight DHTML
+              demonstrations
+            </span>
+          </li>
+        </ul>
+      </>
+    ),
+  },
+  {
     id: "universal-english",
     title: "Universal English S.L.",
     subtitle:

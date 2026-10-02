@@ -1,0 +1,43 @@
+<html>
+<Head> <title>Plug-in ListEs</title>
+<meta http-equiv="Content-Type" content="text/html;">
+<META NAME="KEYWORDS" CONTENT="KEY WORD SEARCH HELPERS GO HERE">
+<META NAME="DESCRIPTION" CONTENT="DESCRIPTION OF PAGE TO BE USED BY SEARCH ENGINS GOES HERE">
+<META NAME="GENERATOR" CONTENT="NOTEPAD">
+<META NAME="AUTHOR" CONTENT="KEITH BYNE">
+<META NAME="COPYRITE" CONTENT="COPYRITE © 2001 KEITH BYNE">
+<LINK REL=stylesheet HREF="SpanSS.css" TYPE="text/css">
+<style type="text/css"></style>
+</Head>
+
+
+<body bgColor="#cfcfcf">
+<Div class="GHeader">Lista de &quot;Plug-ins&quot;</Div>
+<hr>
+<p>
+<Div class="GBodyTextBold"> El 'objeto' "navigator.pluins" genera la lista que 
+  viene a continuaci&oacute;n . Se puede usar la información para comprobar que 
+  el buscador del cliente puede entender lo que hay en el sitio de web y generar 
+  dinámicamente conexiones a otros sitios donde se puede conseguir el "plug-in" 
+  si hace falta. ('MIExplorer' no puede leer este javascript). </Div>
+
+<hr>
+<table BORDER>
+<tr><th>Plug-in Name</th>
+    <th>Filename</th>
+    <th>Description</th>
+</tr>
+<script LANGUAGE="Javascript">
+for (i=0; i<navigator.plugins.length; i++) {
+document.write("<tr><td>");
+document.write(navigator.plugins[i].name);
+document.write("</td><td>");
+document.write(navigator.plugins[i].filename);
+document.write("</td><td>");
+document.write(navigator.plugins[i].description);
+document.write("</td></tr>");
+}
+</script>
+</table>
+</body>
+</html>

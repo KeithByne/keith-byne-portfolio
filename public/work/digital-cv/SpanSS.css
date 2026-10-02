@@ -1,0 +1,26 @@
+a:link    {  font-family: Arial, Helvetica, sans-serif; font-size: 12pt; color: #FFFFFF; text-decoration: underline overline}
+a:hover   {  font-family: Arial, Helvetica, sans-serif; font-size: 12pt; color: #FFFF33; text-decoration: underline overline}
+a:visited {  font-family: Arial, Helvetica, sans-serif; font-size: 12pt; color: #FFFFFF; text-decoration: underline overline}
+
+DIV.Header         {color:#999999; font-family:arial; font-size:18pt;}
+Div.ParaHead       {color:#999999; font-family:arial; font-size:16pt; font-style:italic;}
+DIV.BodyText       {color:#999999; font-family:arial; font-size:10pt; font-weight:extra-light;}
+DIV.BodyTextBold   {color:#999999; font-family:arial; font-size:10pt; font-weight:700;}
+DIV.BodyItalic     {color:#999999; font-family:arial; font-size:10pt; font-style:italic;}
+Div.BodyItalicBold {color:#999999; font-family:arial; font-size:10pt; font-style:italic; font-weight:700;}
+
+DIV.WHeader         {color:#ffffff; font-family:arial; font-size:18pt;}
+Div.WParaHead       {color:#ffffff; font-family:arial; font-size:16pt; font-style:italic;}
+DIV.WBodyText       {color:#ffffff; font-family:arial; font-size:10pt; font-weight:extra-light;}
+DIV.WBodyTextBold   {color:#ffffff; font-family:arial; font-size:10pt; font-weight:700;}
+DIV.WBodyItalic     {color:#ffffff; font-family:arial; font-size:10pt; font-style:italic;}
+Div.WBodyItalicBold {color:#ffffff; font-family:arial; font-size:10pt; font-style:italic; font-weight:700;}
+
+DIV.GHeader         {color:#003636; font-family:arial; font-size:18pt;}
+Div.GParaHead       {color:#003636; font-family:arial; font-size:14pt; font-style:italic; background-color: #cfcfcf;}
+DIV.GBodyText       {color:#003636; font-family:arial; font-size:10pt; font-weight:extra-light;}
+DIV.GBodyTextBold   {color:#003636; font-family:arial; font-size:10pt; font-weight:700;}
+DIV.GBodyItalic     {color:#003636; font-family:arial; font-size:10pt; font-style:italic;}
+Div.GBodyItalicBold {color:#003636; font-family:arial; font-size:10pt; font-style:italic; font-weight:700;}
+
+a:link {  font-family: Arial, Helvetica, sans-serif; font-size: 14pt; color: #FFFFFF; text-decoration: underline overline}

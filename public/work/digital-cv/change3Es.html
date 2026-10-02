@@ -1,0 +1,121 @@
+<html>
+<head>
+<title>My JavaNewScriptEs</title>
+<meta http-equiv="Content-Type" content="text/html;">
+<META NAME="KEYWORDS" CONTENT="KEY WORD SEARCH HELPERS GO HERE">
+<META NAME="DESCRIPTION" CONTENT="DESCRIPTION OF PAGE TO BE USED BY SEARCH ENGINS GOES HERE">
+<META NAME="GENERATOR" CONTENT="NOTEPAD">
+<META NAME="AUTHOR" CONTENT="KEITH BYNE">
+<META NAME="COPYRITE" CONTENT="COPYRITE © 2001 KEITH BYNE">
+<LINK REL=stylesheet HREF="SpanSS.css" TYPE="text/css">
+<style type="text/css"></style>
+<script src="findDOM.js"></script>
+<script>
+<script src="findDOM.js"></script>
+<SCRIPT type=text/javascript>
+<!--
+	color = new Array (15);
+	color[0] = "#001111";
+	color[1] = "#002222";
+	color[2] = "#003333";
+	color[3] = "#004444";
+	color[4] = "#005555";
+	color[5] = "#006666";
+	color[6] = "#007777";
+	color[7] = "#008888";
+	color[8] = "#009999";
+	color[9] = "#00aaaa";
+	color[10] = "#00bbbb";
+	color[11] = "#00cccc";
+	color[12] = "#00dddd";
+	color[13] = "#00eeee";
+	color[14] = "#00ffff";
+
+	size = new Array (15);
+	size[0] = "20px";
+	size[1] = "22px";
+	size[2] = "24px";
+	size[3] = "26px";
+	size[4] = "28px";
+	size[5] = "30px";
+	size[6] = "32px";
+	size[7] = "34px";
+	size[8] = "36px";
+	size[9] = "38px";
+	size[10] = "40px";
+	size[11] = "42px";
+	size[12] = "44px";
+	size[13] = "46px";
+	size[14] = "48px";
+
+	drop = new Array (15);
+	drop[0] = "160px";
+	drop[1] = "155px";
+	drop[2] = "150px";
+	drop[3] = "145px";
+	drop[4] = "140px";
+	drop[5] = "135px";
+	drop[6] = "130px";
+	drop[7] = "125px";
+	drop[8] = "120px";
+	drop[9] = "115px";
+	drop[10] = "110px";
+	drop[11] = "108px";
+	drop[12] = "104px";
+	drop[13] = "102px";
+	drop[14] = "100px";
+
+		var innerLoop = 0;
+		var loop = 0;
+	ID=window.setTimeout("change3('test');",100);
+
+function change3(objectID) {
+	domStyle = findDOM(objectID,1);
+
+phrase = new String ('Se puede  poner  cualquier  texto aquí  incluso hacer  "links"');
+	phraseArray = phrase.split("  ");
+		howMany = phraseArray.length;
+			if (loop == howMany) loop = '0';
+
+	domStyle.color = color[innerLoop];
+	domStyle.fontSize = size[innerLoop];
+	domStyle.top = drop[innerLoop];
+
+document.getElementById(objectID).firstChild.nodeValue = phraseArray[loop];
+
+	innerLoop++;
+
+	if (innerLoop == 14) {
+	loop++;
+	innerLoop = 0;}
+
+ID=window.setTimeout("change3('test');",100);
+}
+//-->
+</script>
+<style type="text/css">span { 
+ font-family: Arial, Helvetica, sans-serif;
+ text-align: center;
+ vertical-align: middle; 
+ position: absolute; 
+ left: 467px;
+ top: 301px;
+ height: 100px;
+ width: 700px;
+ }
+</style>
+</head>
+
+<body bgColor="#cfcfcf";>
+<span id=test style="left: 204px; top: 30px; width: 429px; height: 100px">This 
+is the text that will show in a non javascript1.2 browser.</span> 
+<div id="Layer1" style="position:absolute; width:147px; height:224px; z-index:1; left: 22px; top: 10px"> 
+  <p>
+  <Div class="GBodyTextBold">Este javascript transforma color, posición y talla 
+    de una frase que cambia. 
+    <p>Se puede manipular cualquier aspecto incluso hacer "links". 
+    <p>Para descargar es más rápido que 'Flash' y se puede cambiar posteriormente. 
+  </Div>
+</div> 
+</body>
+</html>

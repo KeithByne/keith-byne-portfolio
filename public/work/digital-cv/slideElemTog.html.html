@@ -1,0 +1,90 @@
+<html>
+<head>
+<title>slideElem</title>
+<meta http-equiv="Content-Type" content="text/html;">
+<META NAME="KEYWORDS" CONTENT="KEY WORD SEARCH HELPERS GO HERE">
+<META NAME="DESCRIPTION" CONTENT="DESCRIPTION OF PAGE TO BE USED BY SEARCH ENGINS GOES HERE">
+<META NAME="GENERATOR" CONTENT="NOTEPAD">
+<META NAME="AUTHOR" CONTENT="KEITH BYNE">
+<META NAME="COPYRITE" CONTENT="COPYRITE © 2001 KEITH BYNE">
+<LINK REL=stylesheet HREF="SpanSS.css" TYPE="text/css">
+<style type="text/css"></style>
+<script src="findDOM.js"></script>
+<LINK REL=stylesheet HREF="Span.css" TYPE="text/css">
+<script src="findDOM.js"></script>
+<script>
+function setSlide(objectID,x2,y2) {
+domStyle = findDOM(objectID,1);
+
+var x1 = parseInt(domStyle.left);
+var y1 = parseInt(domStyle.top);
+
+if (y1 != 25) {
+    y2 = 25;}
+else {y2 = 300;}
+
+
+slider(x1,x2,y1,y2);
+
+}
+
+function slider(x1,x2,y1,y2) {
+
+if (x1 != x2) {
+	if (x1 < x2) {x1 +=5;}
+	else {
+	if (x1 > x2) {x1 -=5;}
+	}
+if (y1 != y2) {
+	if (y1 < y2) {y1 +=5;}
+	else {
+	if (y1 > y2) {y1 -=5;}
+	}}
+
+if ((x1 !=  x2) || (y2 != y2)){
+
+	if (document.getElementById){
+	
+	
+	domStyle.top = parseInt(y1) + "px";}
+
+
+	else if (document.layers || document.all){
+
+	
+	domStyle.top = y1;}
+
+setTimeout ('slider('+x1+','+x2+','+y1+','+y2+')',5);
+}}}</Script>
+
+<style>
+	.slideElement {
+	position: absolute;
+	font: bold 18px helvetica;
+	background-color: #cfcfcf;}
+a {  font-family: Arial, Helvetica, sans-serif; font-size: 12pt; color: #FFFFFF; text-decoration: underline overline}
+</style>
+</head>
+<body bgColor="#cfcfcf">
+
+<div ID="A1" CLASS="slideElement" STYLE="POSITION: ABSOLUTE;
+ LEFT: 25px; TOP: 25px; width: 183px; height: 214px; z-index: 10"> 
+  <blockquote>
+    <Div class="GParaHead"> 
+      <div align="center">
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+      </div>
+      <p><a href="javascript:setSlide('A1',300,300);">Click Me!</a></p>
+    </Div>
+    </blockquote>
+</div>
+
+
+<div id="Layer1" style="position:absolute; width:178px; height:213px; z-index:1; left: 25px; top: 25px"> 
+  <Div class="GParaHead">The ability to be able to move elements dynamically to 
+    another place on or off the screen can have a variety of revealing uses.</Div>
+</div>
+
+</body>
+</html>

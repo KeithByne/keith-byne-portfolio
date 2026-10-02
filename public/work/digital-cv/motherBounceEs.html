@@ -1,0 +1,83 @@
+<HTML>
+<HEAD>
+<TITLE> Mother of BOUNCE!Es </TITLE>
+<meta http-equiv="Content-Type" content="text/html;">
+<META NAME="KEYWORDS" CONTENT="KEY WORD SEARCH HELPERS GO HERE">
+<META NAME="DESCRIPTION" CONTENT="DESCRIPTION OF PAGE TO BE USED BY SEARCH ENGINS GOES HERE">
+<META NAME="GENERATOR" CONTENT="NOTEPAD">
+<META NAME="AUTHOR" CONTENT="KEITH BYNE">
+<META NAME="COPYRITE" CONTENT="COPYRITE © 2001 KEITH BYNE">
+<LINK REL=stylesheet HREF="SpanSS.css" TYPE="text/css">
+<style type="text/css"></style>
+<script src="findDOM.js"></script>
+<script>
+
+
+var x = 0, y = 0, w=160, h=100;//window position and size
+var dx = 5, dy = 5;            //window velocity
+var interval = 50;            //milliseconds between updates
+
+
+//create the window to be moved
+//the javascript: url a simple way to display a short document
+//The final argument specities the window size.
+
+var win = window.open('javascript:"<BR><H1>BOUNCE!</H1>"',"",
+		 "width=" + w + ",height=" +h);
+
+//set the initial position of the new window
+win.moveTo(x,y);
+
+//use setInterval() to call the bounce() method every interval
+//milliseconds. Store the return value so that we can stop the 
+//animation by passing it to clearInterval().
+
+var intervalID = window.setInterval("bounce()",interval);
+
+
+//this function moves the window by (dx,dy) every interval ms.
+//It bounces every time the window reaches the edge of the screen
+function bounce() {
+	//if the user closes the window, stop the animation
+	if (win.closed) {
+		clearInterval (intervalID);
+		return;		
+		}
+
+	//have we reached the left or right edge?
+	if ((x+dx > (screen.availWidth - w)) || (x+dx < 0)) dx = -dx;
+ 
+	//have we reached the top or bottom edge?
+	if ((y+dy > (screen.availHeight - h)) || (y+dy < 0)) dy = -dy;
+
+	//update the current position of the window
+
+	x += dx;
+	y += dy;
+
+	//Finally move the window to the new position
+
+	win.moveTo(x,y);
+
+	}
+</script>
+
+</HEAD>
+<BODY bgColor="#cfcfcf">
+<!-- Clicking this button stops the animation -->
+<div id="Layer1" style="position:absolute; width:451px; height:212px; z-index:1; left: 161px; top: 15px"> 
+  <Div class="GParaHead"> 
+    <p align="center">Generar nuevas ventanas es increíblemente común y muy irritante.</p>
+    <p align="center"> Pero puede ser divertido intentar darle a la cruz de cerrar. 
+      Esta acción en sí puede desencadenar muchos programas en un sitio de Web. 
+    <p align="center"> Si se aburre, el botón "STOP" cerrará la ventana también. 
+  </Div>
+</div>
+
+<FORM>
+<INPUT TYPE="BUTTON" VALUE="STOP"
+	onClick="clearInterval(intervalID); win.close();">
+</FORM>
+
+</BODY>
+</HTML>

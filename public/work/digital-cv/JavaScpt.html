@@ -1,0 +1,293 @@
+<html>
+<head>
+<title>My First JavaScript Page</title>
+<meta http-equiv="Content-Type" content="text/html;">
+<META NAME="KEYWORDS" CONTENT="KEY WORD SEARCH HELPERS GO HERE">
+<META NAME="DESCRIPTION" CONTENT="DESCRIPTION OF PAGE TO BE USED BY SEARCH ENGINS GOES HERE">
+<META NAME="GENERATOR" CONTENT="NOTEPAD">
+<META NAME="AUTHOR" CONTENT="KEITH BYNE">
+<META NAME="COPYRITE" CONTENT="COPYRITE © 2001 KEITH BYNE">
+<LINK REL=stylesheet HREF="SpanSS.css" TYPE="text/css">
+<style media="SCREEN" type="text/css">
+	#object1 {
+		font-family: Arial, Helvetica, sans-serif;
+		width: 300px;
+		height: 250px; 
+		position: absolute;
+		visibility: visible;
+		top: 4px;
+		left:80px;
+		color: #003636;
+		background-color: #cfcfcf;
+		font-size: 10pt;
+		line-height: 14pt;
+		z-index: 0;
+		clip:  rect(   );
+		vertical-align: baseline;
+		padding-left: 5px;
+		padding-right: 2px;
+		padding-top: 7px;
+		padding-bottom: 7px}
+#object2 {
+		font-family: Arial, Helvetica, sans-serif;
+		width: 300px;
+		height: 250px; 
+		position: absolute;
+		visibility: visible;
+		top: 4px;
+		left:80px;
+		color: #003636;
+		background-color: #cfcfcf;
+		font-size: 10pt;
+		line-height: 14pt;
+		z-index: 0;
+		clip:  rect(   );
+		vertical-align: baseline;
+		padding-left: 5px;
+		padding-right: 2px;
+		padding-top: 7px;
+		padding-bottom: 7px}
+#object3 {
+		font-family: Arial, Helvetica, sans-serif;
+		width: 300px;
+		height: 250px; 
+		position: absolute;
+		visibility: visible;
+		top: 4px;
+		left:80px;
+		color: #003636;
+		background-color: #cfcfcf;
+		font-size: 10pt;
+		line-height: 14pt;
+		z-index: 0;
+		clip:  rect(   );
+		vertical-align: baseline;
+		padding-left: 5px;
+		padding-right: 2px;
+		padding-top: 7px;
+		padding-bottom: 7px}
+#object4 {
+		font-family: Arial, Helvetica, sans-serif;
+		width: 300px;
+		height: 250px; 
+		position: absolute;
+		visibility: visible;
+		top: 4px;
+		left:80px;
+		color: #003636;
+		background-color: #cfcfcf;
+		font-size: 10pt;
+		line-height: 14pt;
+		z-index: 0;
+		clip:  rect(   );
+		vertical-align: baseline;
+		padding-left: 5px;
+		padding-right: 2px;
+		padding-top: 7px;
+		padding-bottom: 7px}
+#object5 {
+		font-family: Arial, Helvetica, sans-serif;
+		width: 300px;
+		height: 250px; 
+		position: absolute;
+		visibility: visible;
+		top: 4px;
+		left:80px;
+		color: #003636;
+		background-color: #cfcfcf;
+		font-size: 10pt;
+		line-height: 12pt;
+		z-index: 0;
+		clip:  rect(   );
+		vertical-align: baseline;
+		padding-left: 5px;
+		padding-right: 2px;
+		padding-top: 7px;
+		padding-bottom: 7px}
+#object6 {
+		font-family: Arial, Helvetica, sans-serif;
+		width: 300px;
+		height: 250px; 
+		position: absolute;
+		visibility: visible;
+		top: 4px;
+		left:80px;
+		color: #003636;
+		background-color: #cfcfcf;
+		font-size: 10pt;
+		line-height: 14pt;
+		z-index: 0;
+		clip:  rect(   );
+		vertical-align: baseline;
+		padding-left: 5px;
+		padding-right: 2px;
+		padding-top: 7px;
+		padding-bottom: 7px}
+  
+	#table {
+		font-family: areal;
+		position: absolute;
+		visibility: visible;
+		top: 4px;
+		left:80px;
+		color: #003636;
+		background-color: #cfcfcf;
+		font-size: 12pt;
+		line-height: 14pt;
+		z-index: 50;
+; height: 300px; width: 300px; padding-top: 4px; padding-right: 4px; padding-bottom: 4px; padding-left: 4px		}	
+</style>
+<script src="findDOM.js"></script>
+<Script>
+	currTop = 'table';
+
+	function showObject(newTop) {
+	if (currTop == 'table'){
+	domTop =document.getElementById(currTop);
+	domNew = document.getElementById(newTop);
+	domTop.style.zIndex = "0";
+	domNew.style.zIndex = "100";
+	currTop = newTop;}
+	else {
+	newTop = 'table';
+	domTop = document.getElementById(currTop);
+	domNew = document.getElementById(newTop);
+	domTop.style.zIndex = "0";
+	domNew.style.zIndex = "100";
+	currTop = newTop;}
+	}
+
+</Script>
+</head>
+
+<body bgColor="#cfcfcf">
+
+<div id="Layer1" style="position:absolute; width:775px; height:259px; z-index:1; top:2px; left: 4px"> 
+  <table width="100%" border="0" cellspacing="0" height="256">
+    <tr> 
+      <td width="9%" height="51"><a href="#"	
+	onMouseOver="a.src='Art/bodyBridgeThm.jpg'; z.src='Art/bodyBridge.jpg';" 
+	onMouseOut= "a.src='Art/bodyBridgeThm.jpg'; z.src='img/Bumps.gif';"
+	onClick="showObject('object1')"><img border=0 name="a" src="Art/bodyBridgeThm.jpg" width="63" hight="75" height="48"></a></td>
+      <td colspan="4" rowspan="7">
+      
+      </td>
+      <td rowspan="7" width="50%"><img border=0 name="z" src="img/Bumps.gif" width="392" height="258"></td>
+    </tr>
+    <tr> 
+      <td width="9%" height="40"><a href="#"	
+	onMouseOver="b.src='Art/stockScuThm.jpg'; z.src='Art/stockScu.jpg';" 
+	onMouseOut= "b.src='Art/stockScuThm.jpg'; z.src='img/Bumps.gif';"
+	onClick="showObject('object2')"> <img border=0 name="b" src="Art/stockScuThm.jpg" width="64" hight="75" alt="" height="38"></a></td>
+    </tr>
+    <tr> 
+      <td width="9%" height="36"><a href="#"	
+	onMouseOver="c.src='Art/selectionScuThm.jpg'; z.src='Art/selectionScu.jpg';" 
+	onMouseOut= "c.src='Art/selectionScuThm.jpg'; z.src='img/Bumps.gif';"
+	onClick="showObject('object3')"> <img border=0 name="c" src="Art/selectionScuThm.jpg" width="63" hight="90" alt="" height="40"></a></td>
+    </tr>
+    <tr> 
+      <td width="9%" height="31"><a href="#"	
+	onMouseOver="d.src='Art/outBenchScuThm.jpg'; z.src='Art/outBenchScu.jpg';" 
+	onMouseOut= "d.src='Art/outBenchScuThm.jpg'; z.src='img/Bumps.gif';"
+	onClick="showObject('object4')"> <img border=0 name="d" src="Art/outBenchScuThm.jpg" width="65" hight="90" alt="" height="39"></a></td>
+    </tr>
+    <tr> 
+      <td width="9%" height="41"><a href="#"	
+	onMouseOver="e.src='Art/jamonThm.jpg'; z.src='Art/jamon.JPG';" 
+	onMouseOut= "e.src='Art/jamonThm.jpg'; z.src='img/Bumps.gif';"
+	onClick="showObject('object5')"> <img border=0 name="e" src="Art/jamonThm.jpg" width="65" hight="90" alt="" height="40"></a></td>
+    </tr>
+    <tr> 
+      <td width="9%" height="44"><a href="#"	
+	onMouseOver="f.src='Art/jamonDtl2Thm.jpg'; z.src='Art/jamonDtl2.jpg';" 
+	onMouseOut= "f.src='Art/jamonDtl2Thm.jpg'; z.src='img/Bumps.gif';"
+	onClick="showObject('object6')"> <img border=0 name="f" src="Art/jamonDtl2Thm.jpg" width="65" hight="90" title="Newer browser users can Click Here to See Information" alt="Newer browser users can Click Here to See Information" height="41"></a></td>
+    </tr>
+  </table>
+</div>
+<DIV id="object1" style="width: 300px; height: 200px"> 
+  <p><b>Object Series:</b> Angels in the Architecture</p>
+  <p><b>Object Name:</b> bodyBridge</p>
+  <p><b>Size:</b> 25x16x13cm.</p>
+  <p><b>Materials:</b> clay</p>
+  <p><b>Comment: </b>One of a group of maquettes linked to drawings of bridges in Seville. The idea was, and still is, to carve 
+    the finished versions in wood, on a larger scale.</p>
+  </div>
+<DIV id="object2" style="width: 300px; height: 210px"> 
+  <p><b>Object Series:</b> signs of signs</p>
+  <p><b>Object Name:</b> stock</p>
+  <p><b>Size:</b> 98x24x14cm.</p>
+  <p><b>Materials:</b> wood, metal studs and fabric</p>
+  <p><b>Comment: </b>This series of work explores methods 
+    of joining materials. These methods were made obvious and as simple as posible. The joining methods soon suggested mediaeval 
+    artifacts.</p>
+  </div>
+<DIV id="object3" style="width: 300px; height: 206px"> 
+  <p><b>Object Series:</b> Giant hands on the Landscape</p>
+  <p><b>Object Name:</b> selection</p>
+  <p><b>Size:</b> 64x20x13cm.</p>
+  <p><b>Materials:</b> sea-washed stones, wood.</p>
+  <p><b>Comment: </b>Made to reflect the arbitrary nature of human 
+    selection, whereby we have the human faculty to select one thing from a limitless variety of like things and in our hearts and minds, make that one 
+    thing, unique.</p>
+  </div>
+<DIV id="object4" style="width: 300px; height: 198px"> 
+  <p><b>Object Series:</b> Giant hands on the Landscape</p>
+  <p><b>Object Name:</b> outCropBench</p>
+  <p><b>Size</b>: 128x35x35cm.</p>
+  <p><b>Materials:</b> wood, cement and shellac.</p>
+  <p><b>Comment: </b>To make this object I had to invent a molding process that 
+    would allow me to first make the mould and then twist it before casting the 
+    final object. </p>
+</div>
+<DIV id="object5" style="width: 300px; height: 184px"> 
+  <p><b>Object Series:</b> signs of signs</p>
+  <p><b>Object Name:</b> jamón</p>
+  <p><b>Size:</b> 94x42x22cm.</p>
+  <p><b>Materials</b>: wood, lead and hand made nails</p>
+  <p><b>Comment: </b>Something medical or torturous, preservation and decay. The name came last because 
+    of the superficial resemblance to a ham.</p>
+  </div>
+<DIV id="object6" style="width: 300px; height: 181px"> 
+  <p><b>Object Series:</b> signs of signs</p>
+  <p><b>Object Name:</b> jamónDetail</p>
+  <p><b>Size:</b> 94x42x22cm.</p>
+  <p><b>Materials:</b> wood, lead and hand made nails</p>
+  <p><b>Comment:</b> The two parts were rejoined 
+    with hand made nails. The final object was painted 
+    with olive oil and became almost flesh-like. </p>
+  </div>
+<div id="table" style="width: 294px; height: 257px"> 
+  <table width="279" border="0" cellspacing="0" cellpadding="0" height="232">
+    <tr> 
+      <td height="123"> 
+        <blockquote>
+          <Div class="GParaHead">
+            <div align="center">Mouse over the thumbnail to see the picture</div>
+          </Div>
+        </blockquote>
+      </td>
+  </tr>
+    <tr> 
+      <td>
+        <blockquote>
+          <Div class="GParaHead">
+            <div align="center">Click the thumbnail to see the description</div>
+          </Div>
+        </blockquote>
+        <Div class="GParaHead">
+          <div align="center">
+            <p>&nbsp;</p>
+          </div>
+        </Div>
+      </td>
+  </tr>
+  
+</table>
+
+</Div> 
+
+</body>
+
+</html>
