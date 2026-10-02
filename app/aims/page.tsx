@@ -29,7 +29,7 @@ export default function AimsPage() {
           This is not a late start, but rather a change of direction.
           Programme design, teacher training, visual communication, and
           educational software are already within my compass. Instructional
-          design is where that experience belongs for twelve months, not for
+          design is where that experience belongs, not for
           a summer peak. A twelve-month working model is my aim. I am
           learning the tools this industry uses to show the work. I will
           develop this project until full-time employment is in place.
