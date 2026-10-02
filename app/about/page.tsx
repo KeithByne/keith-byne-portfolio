@@ -27,7 +27,7 @@ export default function AboutPage() {
         <h1>Programme lead with a designer&apos;s eye.</h1>
         <div className="photo-grid">
           {shots.map((shot) => (
-            <img key={shot.src} src={shot.src} alt={shot.alt} className={shot.className} />
+            <img key={shot.src} src={shot.src} alt={shot.alt} />
           ))}
         </div>
       </div>
