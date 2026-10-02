@@ -7,8 +7,8 @@ export default function AboutPage() {
       alt: "Keith Byne, black turtleneck, looking slightly off camera",
     },
     {
-      src: "/portraits/studio.png",
-      alt: "Keith Byne pulling a silk-screen print in his garage studio",
+      src: "/portraits/headshot.png",
+      alt: "Keith Byne, short grey hair and beard, brown sweater, looking at the camera",
     },
     {
       src: "/portraits/informal.jpg",
