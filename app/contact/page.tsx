@@ -25,7 +25,7 @@ export default function ContactPage() {
           </li>
           <li>
             Nationality
-            <span>British · UK passport · born Essex · native English</span>
+            <span>British citizen · UK passport · born Essex · native English</span>
           </li>
           <li>
             Work

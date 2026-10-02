@@ -35,8 +35,8 @@ export default function AboutPage() {
       <div className="prose">
         <p>Open to EU remote employment.</p>
         <p>
-          British. UK passport. Born in Essex. Native English. Based in
-          Seville.
+          British citizen. UK passport. Born in Essex. Native English. Based
+          in Seville.
         </p>
         <p>
           My working attitude stems from a generation that left school

@@ -2,7 +2,7 @@
 
 **Learning Experience Designer | Instructional Designer | Training Programme Director**
 
-Espartinas, Seville, Spain | British (UK passport) | native English | EU work authorised  
+Espartinas, Seville, Spain | British citizen (UK passport) | native English | EU work authorised  
 Also UK: Basildon, Essex (born Essex)  
 keith.byne@hotmail.co.uk | [TO CONFIRM: phone] | [TO CONFIRM: portfolio URL]
 
