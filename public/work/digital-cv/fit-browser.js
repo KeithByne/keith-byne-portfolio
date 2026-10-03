@@ -13,6 +13,26 @@
     return max;
   }
 
+  function paintCorner(scale) {
+    var path = String(location.pathname).toLowerCase();
+    if (path.indexOf("bottomframeen.html") === -1 && path.indexOf("bottomframees.html") === -1) return;
+    var bg = "url(\"img/1999-background.png\")";
+    var size = (1600 / scale) + "px " + (900 / scale) + "px";
+    var root = document.documentElement;
+    root.style.backgroundColor = "#cfcfcf";
+    root.style.backgroundImage = bg;
+    root.style.backgroundRepeat = "no-repeat";
+    root.style.backgroundPosition = "right bottom";
+    root.style.backgroundAttachment = "fixed";
+    root.style.backgroundSize = size;
+    document.body.style.backgroundColor = "transparent";
+    document.body.style.backgroundImage = bg;
+    document.body.style.backgroundRepeat = "no-repeat";
+    document.body.style.backgroundPosition = "right bottom";
+    document.body.style.backgroundAttachment = "fixed";
+    document.body.style.backgroundSize = size;
+  }
+
   function fit() {
     if (lock || document.getElementById("door") || !document.body) return;
     lock = true;
@@ -26,6 +46,7 @@
     } else {
       var max = contentRight();
       if (max < 80) {
+        paintCorner(1);
         lock = false;
         return;
       }
@@ -36,6 +57,7 @@
     }
     current = scale;
     root.style.zoom = String(scale);
+    paintCorner(scale);
     if (document.getElementById("onLineCV")) {
       var pt = scale < 1 ? 14 / scale : 14;
       var links = document.querySelectorAll(".menu a");
