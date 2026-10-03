@@ -9,7 +9,6 @@
 <META NAME="COPYRITE" CONTENT="COPYRITE  2001 KEITH BYNE">
 <LINK REL=stylesheet HREF="SpanSS.css" TYPE="text/css">
 <style type="text/css"></style>
-<script src="findDOM.js"></script>
 <script>
 	
 function moveObject (objectID,up,down) {
@@ -48,98 +47,6 @@ function goHome() {
 }
 
 </script>
-<SCRIPT type=text/javascript>
-<!--
-	color = new Array (15);
-	color[0] = "#ffffbb";
-	color[1] = "#ffffaa";
-	color[2] = "#ffff99";
-	color[3] = "#ffff88";
-	color[4] = "#ffff77";
-	color[5] = "#ffff66";
-	color[6] = "#ffff55";
-	color[7] = "#ffff44";
-	color[8] = "#ffff33";
-	color[9] = "#ffff22";
-	color[10] = "#ffff11";
-	color[11] = "#ffff11";
-	color[12] = "#ffff11";
-	color[13] = "#ffff11";
-	color[14] = "#ffff11";
-
-	size = new Array (15);
-	size[0] = "10px";
-	size[1] = "12px";
-	size[2] = "14px";
-	size[3] = "16px";
-	size[4] = "18px";
-	size[5] = "20px";
-	size[6] = "22px";
-	size[7] = "24px";
-	size[8] = "26px";
-	size[9] = "26px";
-	size[10] = "26px";
-	size[11] = "26px";
-	size[12] = "26px";
-	size[13] = "26px";
-	size[14] = "26px";
-
-	drop = new Array (15);
-	drop[0] = "0px";
-	drop[1] = "0px";
-	drop[2] = "0px";
-	drop[3] = "0px";
-	drop[4] = "0px";
-	drop[5] = "0px";
-	drop[6] = "0px";
-	drop[7] = "0px";
-	drop[8] = "0px";
-	drop[9] = "0px";
-	drop[10] = "0px";
-	drop[11] = "0px";
-	drop[12] = "0px";
-	drop[13] = "0px";
-	drop[14] = "0px";
-
-		var innerLoop = 0;
-		var loop = 0;
-	ID=window.setTimeout("change3('test');",100);
-
-function change3(objectID) {
-	domStyle = findDOM(objectID,1);
-
-phrase = new String ('WEB  Authoring  INFORMATION');
-	phraseArray = phrase.split("  ");
-		howMany = phraseArray.length;
-			if (loop == howMany) loop = '0';
-
-	domStyle.color = color[innerLoop];
-	domStyle.fontSize = size[innerLoop];
-	domStyle.top = drop[innerLoop];
-
-document.getElementById(objectID).firstChild.nodeValue = phraseArray[loop];
-
-	innerLoop++;
-
-	if (innerLoop == 14) {
-	loop++;
-	innerLoop = 0;}
-
-ID=window.setTimeout("change3('test');",100);
-}
-//-->
-</script>
-<style type="text/css">span { 
- font-family: Arial, Helvetica, sans-serif;
- text-align: center;
- vertical-align: middle; 
- position: absolute; 
- left: 467px;
- top: 301px;
- height: 100px;
- width: 700px;
- }
-</style>
 <STYLE>.menu {	
 	 WIDTH: 125px;
 	 COLOR: #cfcfcf; 
@@ -193,7 +100,6 @@ a {  font-family: Arial, Helvetica, sans-serif; font-size: 14pt; color: #FFFFFF;
 </head>
 
 <body bgcolor="#cfcfcf";>
-<span id=test style="left: 668px; top: 84px; width: 204px; height: 15px; z-index: 100"> </span> 
 <div ID="object1" CLASS="menu" STYLE="POSITION: ABSOLUTE; LEFT: 5px; TOP: -90px; z-index:10; width: 110px; height: 114px"> 
   <table width="160" border="0" cellspacing="0" cellpadding="0" height="114">
     <tr> 
