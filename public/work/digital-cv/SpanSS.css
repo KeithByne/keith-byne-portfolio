@@ -17,7 +17,7 @@ DIV.WBodyItalic     {color:#ffffff; font-family:arial; font-size:14pt; font-styl
 Div.WBodyItalicBold {color:#ffffff; font-family:arial; font-size:14pt; font-style:italic; font-weight:700;}
 
 DIV.GHeader         {color:#003636; font-family:arial; font-size:18pt;}
-Div.GParaHead       {color:#003636; font-family:arial; font-size:14pt; font-style:italic; background-color: #cfcfcf;}
+Div.GParaHead       {color:#003636; font-family:arial; font-size:14pt; font-style:italic;}
 DIV.GBodyText       {color:#003636; font-family:arial; font-size:14pt; font-weight:extra-light;}
 DIV.GBodyTextBold   {color:#003636; font-family:arial; font-size:14pt; font-weight:700;}
 DIV.GBodyItalic     {color:#003636; font-family:arial; font-size:14pt; font-style:italic;}
