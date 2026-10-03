@@ -4,10 +4,12 @@
 <title>siteEn</title>
 <script src="fit-browser.js"></script>
 <script>
-function fitSite() {
+function fitSite(designH) {
   var right = window.innerWidth * 0.78;
-  var topH = Math.ceil(450 * (right / 980));
-  var room = window.innerHeight - 160;
+  var design = designH || 216;
+  var topH = Math.ceil(design * (right / 980));
+  var room = window.innerHeight - 220;
+  if (room < 140) room = Math.floor(window.innerHeight * 0.42);
   if (topH > room) topH = room;
   var sets = document.getElementsByTagName("frameset");
   if (sets.length < 2) return;
@@ -20,7 +22,7 @@ window.onresize = fitSite;
 </head>
 <frameset cols="22%,*" framespacing="0" frameborder="0" onload="fitSite()">
   <frame name="checkEn" src="checkEn.html" scrolling="no">
-  <frameset rows="520,*" framespacing="0" frameborder="0">
+  <frameset rows="240,*" framespacing="0" frameborder="0">
     <frame name="topFrameEn" src="topFrameEn.html" scrolling="no">
     <frame name="bottomFrameEn" src="bottomFrameEn.html" scrolling="auto">
   </frameset>

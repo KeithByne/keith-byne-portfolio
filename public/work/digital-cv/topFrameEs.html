@@ -23,7 +23,17 @@ function moveObject (objectID,up,down) {
 			m.className = m.className.replace(" is-open", "").replace("is-open", "");
 		}
 		if (!open) el.className = el.className + " is-open";
+		fitBanner();
 		return false;
+	}
+
+function fitBanner() {
+		var design = 216;
+		var open = document.querySelector(".menu.is-open");
+		if (open) design = Math.max(design, open.offsetTop + open.offsetHeight + 6);
+		try {
+			if (window.parent && window.parent.fitSite) window.parent.fitSite(design);
+		} catch (err) {}
 	}
 		
 
@@ -146,11 +156,16 @@ ID=window.setTimeout("change3('test');",100);
 	}	
 a {  font-family: Arial, Helvetica, sans-serif; font-size: 14pt; color: #FFFFFF; text-decoration: underline overline}
 .menu {
-	top: 196px !important;
+	top: 180px !important;
 	height: 32px !important;
 	overflow: hidden !important;
 	background-color: #cfcfcf;
 	z-index: 20 !important;
+}
+.menu a:link,
+.menu a:visited,
+.menu a:hover {
+	color: #525252;
 }
 .menu.is-open {
 	height: auto !important;
@@ -328,6 +343,7 @@ a {  font-family: Arial, Helvetica, sans-serif; font-size: 14pt; color: #FFFFFF;
     var body = rows[0].parentNode;
     body.insertBefore(rows[rows.length - 1], rows[0]);
   }
+  if (window.fitBanner) window.fitBanner();
 })();
 </script>
 
