@@ -14,10 +14,9 @@
   }
 
   function paintCorner(scale) {
-    var path = String(location.pathname).toLowerCase();
-    if (path.indexOf("bottomframeen.html") === -1 && path.indexOf("bottomframees.html") === -1) return;
+    if (window.name !== "bottomFrameEn" && window.name !== "bottomFrameEs") return;
     var bg = "url(\"img/1999-background.png\")";
-    var size = (1600 / scale) + "px " + (900 / scale) + "px";
+    var size = (800 / scale) + "px " + (450 / scale) + "px";
     var root = document.documentElement;
     root.style.backgroundColor = "#cfcfcf";
     root.style.backgroundImage = bg;
