@@ -36,6 +36,19 @@
     }
     current = scale;
     root.style.zoom = String(scale);
+    if (document.getElementById("onLineCV")) {
+      var pt = scale < 1 ? 14 / scale : 14;
+      var links = document.querySelectorAll(".menu a");
+      for (var n = 0; n < links.length; n++) {
+        links[n].style.setProperty("font-size", pt + "pt", "important");
+      }
+      try {
+        var frames = window.parent.frames;
+        for (var f = 0; f < frames.length; f++) {
+          if (frames[f] && frames[f].fitCheck) frames[f].fitCheck(scale);
+        }
+      } catch (err) {}
+    }
     setTimeout(function () {
       lock = false;
     }, 200);
