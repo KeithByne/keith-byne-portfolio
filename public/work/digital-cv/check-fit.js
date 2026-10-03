@@ -5,6 +5,8 @@ function fitCheck(scale) {
   for (var i = 0; i < heads.length; i++) {
     heads[i].style.setProperty("font-size", 14 * scale + "pt", "important");
   }
+  var shade = document.getElementById("topShade");
+  if (shade) shade.style.height = (20 * scale) + "px";
 }
 function fitCheckFromBanner() {
   var scale = 1;

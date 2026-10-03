@@ -6,7 +6,7 @@
 <META NAME="DESCRIPTION" CONTENT="DESCRIPTION OF PAGE TO BE USED BY SEARCH ENGINS GOES HERE">
 <META NAME="GENERATOR" CONTENT="NOTEPAD">
 <META NAME="AUTHOR" CONTENT="KEITH BYNE">
-<META NAME="COPYRITE" CONTENT="COPYRITE ù 2001 KEITH BYNE">
+<META NAME="COPYRITE" CONTENT="COPYRITE ? 2001 KEITH BYNE">
 <LINK REL=stylesheet HREF="SpanSS.css" TYPE="text/css">
 <style type="text/css"></style>
 <script>
@@ -28,7 +28,7 @@ function moveObject (objectID,up,down) {
 
 function fitBanner() {
 		try {
-			if (window.parent && window.parent.fitSite) window.parent.fitSite(211);
+			if (window.parent && window.parent.fitSite) window.parent.fitSite(231);
 		} catch (err) {}
 	}
 		
@@ -91,6 +91,17 @@ a {  font-family: Arial, Helvetica, sans-serif; font-size: 14pt; color: #FFFFFF;
 	color: #FFFF99;
 }
 .menu td { background-color: #535353; padding: 2px 4px; line-height: 1.15; }
+.menu:not(.is-open) tr:not(:first-child) { display: none !important; }
+#topShade {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 20px;
+	background-color: #535353;
+	z-index: 5;
+	pointer-events: none;
+}
 #object1 { left: 4px !important; width: 185px !important; }
 #object2 { left: 194px !important; width: 150px !important; }
 #object3 { left: 350px !important; width: 120px !important; }
@@ -101,6 +112,7 @@ a {  font-family: Arial, Helvetica, sans-serif; font-size: 14pt; color: #FFFFFF;
 </head>
 
 <body bgcolor="#cfcfcf";>
+<div id="topShade"></div>
 <div ID="object1" CLASS="menu" STYLE="POSITION: ABSOLUTE; LEFT: 3px; TOP: -90px; z-index:10; width: 171px; height: 114px"> 
   <table width="168" border="0" cellspacing="0" cellpadding="0" height="114">
     <tr> 
@@ -134,13 +146,13 @@ a {  font-family: Arial, Helvetica, sans-serif; font-size: 14pt; color: #FFFFFF;
 <div ID="object2" CLASS="menu" STYLE="POSITION: ABSOLUTE; LEFT: 176px; TOP: -90px; z-index:10; width: 100px; height: 114px"> 
   <table width="77" border="0" cellspacing="0" cellpadding="0" height="115">
     <tr> 
-      <td bgColor="#535353"><a href="DesignEs.Html" target="bottomFrameEs">Diseùo</a></td>
+      <td bgColor="#535353"><a href="DesignEs.Html" target="bottomFrameEs">Dise?o</a></td>
     </tr>
     <tr> 
       <td bgColor="#535353"><a href="JobHistEs.html" target="bottomFrameEs">Historial</a></td>
     </tr>
     <tr> 
-      <td bgColor="#535353"><a href="D&amp;PEs.html" target="bottomFrameEs">Producciùn</a></td>
+      <td bgColor="#535353"><a href="D&amp;PEs.html" target="bottomFrameEs">Producci?n</a></td>
     </tr>
  <tr> 
       <td bgColor="#535353"><a href="clientsEs.htm" target="bottomFrameEs">Clientes</a></td>
@@ -168,7 +180,7 @@ a {  font-family: Arial, Helvetica, sans-serif; font-size: 14pt; color: #FFFFFF;
       <td bgColor="#535353"><a href="JavaScptEs.html"target="bottomFrameEs">Series</a></td>
     </tr>
     <tr> 
-      <td bgColor="#535353"><a href="TheoriesEs.html" target="bottomFrameEs">Teorùa</a></td>
+      <td bgColor="#535353"><a href="TheoriesEs.html" target="bottomFrameEs">Teor?a</a></td>
     </tr>
     <tr> 
       <td>
@@ -232,8 +244,8 @@ a {  font-family: Arial, Helvetica, sans-serif; font-size: 14pt; color: #FFFFFF;
 
 <div id="onLineCV" style="position:absolute; left:0px; top:0px;
   width:1000px; height:100px; background-color:#CFCFCF;
-  visibility:visible; ; z-index: 1"> <img src="img/OnLineCV.gif" width="580" height="180" style="margin-top:25px">
-  <div id="Layer1" style="position:absolute; width:149px; height:136px; z-index:1; left: 706px; top: 37px"><img name="LaberinthMap" src="img/LaberinthMap.gif" width="149" height="136" border="0" usemap="#m_LaberinthMap" alt="Go back to the Front Door"><map name="m_LaberinthMap"> 
+  visibility:visible; ; z-index: 1"> <img src="img/OnLineCV.gif" width="580" height="180" style="margin-top:45px">
+  <div id="Layer1" style="position:absolute; width:149px; height:136px; z-index:1; left: 706px; top: 57px"><img name="LaberinthMap" src="img/LaberinthMap.gif" width="149" height="136" border="0" usemap="#m_LaberinthMap" alt="Go back to the Front Door"><map name="m_LaberinthMap"> 
       <area shape="poly" coords="30,86,29,52,6,35,6,18,20,3,41,6,71,52,57,60,57,72,32,83,32,83,30,86" href="index.html" target="_top" onclick="return goHome();" title="Volver a la Puerta Principal" alt="Volver a la Puerta Principal" > 
       <area shape="poly" coords="57,22,99,22,111,6,129,4,149,18,144,34,94,59,83,51,73,51,54,26,57,22" href="IdeasEs.html" target="bottomFrameEs" title="Ideas de Web" alt="Ideas de Web" > 
       <area shape="poly" coords="92,62,119,48,119,85,142,100,144,120,126,132,108,128,79,82,89,74,92,62" href="WebSkillsEs.html" target="bottomFrameEs" title="Informaci&oacute;n de Web" alt="Informaci&oacute;n de Web" > 
