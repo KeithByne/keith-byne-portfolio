@@ -10,40 +10,43 @@
 <META NAME="COPYRITE" CONTENT="COPYRITE � 2001 KEITH BYNE">
 <LINK REL=stylesheet HREF="SpanSS.css" TYPE="text/css">
 <style type="text/css">
-  html, body { margin: 0; height: 100%; background: #cfcfcf; overflow-x: hidden; overflow-y: auto; }
+  html, body { margin: 0; height: 100%; background: #cfcfcf; overflow: hidden; }
   body > p { display: none; }
+  #door, #Layer1, #Layer2, #Layer2 table, #Layer2 td {
+    background-color: #cfcfcf;
+  }
   #door {
     position: absolute;
     left: 0;
     top: 0;
     width: 790px;
     height: 430px;
-    transform-origin: 0 0;
+    transform: none;
   }
   #Layer2 {
     position: absolute !important;
-    left: 8px !important;
-    top: 4px !important;
     width: 170px !important;
     height: auto !important;
+    transform-origin: 0 0;
   }
   #Layer2 table { width: 160px; }
   #intro-audio { width: 148px; height: 32px; }
   #Layer1 {
     position: absolute !important;
-    left: 186px !important;
-    top: 4px !important;
     width: 594px !important;
     height: 413px !important;
+    transform-origin: 0 0;
   }
   #Layer1 ruffle-embed,
   #Layer1 ruffle-object,
   #Layer1 ruffle-player,
+  #Layer1 canvas,
   #Layer1 object,
   #Layer1 embed {
     width: 100% !important;
     height: 100% !important;
     display: block;
+    background-color: #cfcfcf !important;
   }
 </style>
 <script>
@@ -95,11 +98,36 @@
 <script>
 function fitDoor() {
   var door = document.getElementById("door");
-  if (!door) return;
-  var scale = window.innerWidth / 790;
-  door.style.transform = "scale(" + scale + ")";
-  door.style.left = "0px";
-  door.style.top = "0px";
+  var lang = document.getElementById("Layer2");
+  var anim = document.getElementById("Layer1");
+  if (!lang || !anim) return;
+  if (door) door.style.transform = "none";
+  var langW = lang.offsetWidth;
+  var langH = lang.offsetHeight;
+  var animW = anim.offsetWidth;
+  var animH = anim.offsetHeight;
+  if (!langW || !langH || !animW || !animH) return;
+  var edge = 8;
+  var maxH = window.innerHeight - edge * 2;
+  if (maxH < 80) maxH = window.innerHeight;
+  var langScale = maxH / langH;
+  var colRight = edge + langW * langScale;
+  var space = window.innerWidth - colRight;
+  var animScale = maxH / animH;
+  var animWidth = animW * animScale;
+  var minGap = 8;
+  if (animWidth > space - minGap * 2) {
+    animWidth = Math.max(40, space - minGap * 2);
+    animScale = animWidth / animW;
+  }
+  var animHeight = animH * animScale;
+  var gap = (space - animWidth) / 2;
+  lang.style.left = edge + "px";
+  lang.style.top = edge + "px";
+  lang.style.transform = "scale(" + langScale + ")";
+  anim.style.left = (colRight + gap) + "px";
+  anim.style.top = ((window.innerHeight - animHeight) / 2) + "px";
+  anim.style.transform = "scale(" + animScale + ")";
 }
 function stopDoorAudio() {
   var el = document.getElementById("intro-audio");
