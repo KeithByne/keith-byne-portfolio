@@ -1,6 +1,6 @@
-a:link    {  font-family: Arial, Helvetica, sans-serif; font-size: 14pt; color: #99CCFF; text-decoration: underline overline}
-a:hover   {  font-family: Arial, Helvetica, sans-serif; font-size: 14pt; color: #99CCFF; text-decoration: underline overline}
-a:visited {  font-family: Arial, Helvetica, sans-serif; font-size: 14pt; color: #99CCFF; text-decoration: underline overline}
+a:link    {  font-family: Arial, Helvetica, sans-serif; font-size: 14pt; color: #4D6680; text-decoration: underline overline}
+a:hover   {  font-family: Arial, Helvetica, sans-serif; font-size: 14pt; color: #4D6680; text-decoration: underline overline}
+a:visited {  font-family: Arial, Helvetica, sans-serif; font-size: 14pt; color: #4D6680; text-decoration: underline overline}
 
 DIV.Header         {color:#999999; font-family:arial; font-size:18pt;}
 Div.ParaHead       {color:#999999; font-family:arial; font-size:16pt; font-style:italic;}
@@ -23,4 +23,4 @@ DIV.GBodyTextBold   {color:#003636; font-family:arial; font-size:14pt; font-weig
 DIV.GBodyItalic     {color:#003636; font-family:arial; font-size:14pt; font-style:italic;}
 Div.GBodyItalicBold {color:#003636; font-family:arial; font-size:14pt; font-style:italic; font-weight:700;}
 
-a:link {  font-family: Arial, Helvetica, sans-serif; font-size: 14pt; color: #99CCFF; text-decoration: underline overline}
+a:link {  font-family: Arial, Helvetica, sans-serif; font-size: 14pt; color: #4D6680; text-decoration: underline overline}
