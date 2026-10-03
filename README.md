@@ -56,6 +56,7 @@ Be blunt. If an idea will look like a gimmick, ESL classroom residue, unearned t
 | File | What it is |
 |------|------------|
 | [cv.md](cv.md) | Industry-format CV. Send this. Skills grow only via the log. |
+| [public/work/cv/keith-byne-cv.html](public/work/cv/keith-byne-cv.html) | Portfolio CV layout, locked 3 Oct 2026. Two pages. Change the words when asked. Do not move the page break, the four boxes, the header, the photo, or the type sizes. |
 | [cover-letter.md](cover-letter.md) | Introduction letter. Swap the tokens per application. |
 | [outreach-plan.md](outreach-plan.md) | After the portfolio: how to be seen, and how to approach named people. |
 | [how-industry-works.md](how-industry-works.md) | Europe: remote vs hybrid, employed vs freelance, pay bands, and how to package. |

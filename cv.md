@@ -44,6 +44,12 @@ Programme director, instructional designer, and educational software builder wit
 
 ---
 
+## Personal statement
+
+So, who am I now? Essentially a problem solver rather than a crowd pleaser. Able to work alone for long periods, a little obsessive. I look and listen carefully. I find friction points and ease them. Taking on new skills is a constant that began the day I left school. Ernest Shackleton is my leadership model. I understand management as a supporting role. I never give up, I do not blame, I redirect. I see things 'in-the-round'. I listen to my team before I decide but then, I decide.
+
+---
+
 ## Professional experience
 
 ### Universal English S.L. — Director and Director of Studies
