@@ -7,14 +7,48 @@
 <META NAME="DESCRIPTION" CONTENT="DESCRIPTION OF PAGE TO BE USED BY SEARCH ENGINS GOES HERE">
 <META NAME="GENERATOR" CONTENT="NOTEPAD">
 <META NAME="AUTHOR" CONTENT="KEITH BYNE">
-<META NAME="COPYRITE" CONTENT="COPYRITE  2001 KEITH BYNE">
+<META NAME="COPYRITE" CONTENT="COPYRITE ï¿½ 2001 KEITH BYNE">
 <LINK REL=stylesheet HREF="SpanSS.css" TYPE="text/css">
 <style type="text/css">
-  #intro-audio { width: 145px; height: 32px; }
+  html, body { margin: 0; height: 100%; background: #cfcfcf; overflow-x: hidden; overflow-y: auto; }
+  body > p { display: none; }
+  #door {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 790px;
+    height: 430px;
+    transform-origin: 0 0;
+  }
+  #Layer2 {
+    position: absolute !important;
+    left: 8px !important;
+    top: 4px !important;
+    width: 170px !important;
+    height: auto !important;
+  }
+  #Layer2 table { width: 160px; }
+  #intro-audio { width: 148px; height: 32px; }
+  #Layer1 {
+    position: absolute !important;
+    left: 186px !important;
+    top: 4px !important;
+    width: 594px !important;
+    height: 413px !important;
+  }
+  #Layer1 ruffle-embed,
+  #Layer1 ruffle-object,
+  #Layer1 ruffle-player,
+  #Layer1 object,
+  #Layer1 embed {
+    width: 100% !important;
+    height: 100% !important;
+    display: block;
+  }
 </style>
 <script>
   window.RufflePlayer = window.RufflePlayer || {};
-  window.RufflePlayer.config = { autoplay: "on", unmuteOverlay: "hidden" };
+  window.RufflePlayer.config = { autoplay: "on", unmuteOverlay: "hidden", scale: "showAll", letterbox: "off" };
 </script>
 <script src="ruffle/ruffle.js"></script>
 
@@ -22,7 +56,8 @@
 
 <body bgcolor="#cfcfcf">
 <p>&nbsp;</p>
-<div id="Layer1" style="position:absolute; width:600px; height:413px; z-index:1; top: 4px; left:180px"><object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=4,0,2,0" width="594" height="413">
+<div id="door">
+<div id="Layer1" style="position:absolute; width:594px; height:413px; z-index:1; top: 4px; left:186px"><object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=4,0,2,0" width="594" height="413">
     <param name=movie value="IndexMovie.swf">
     <param name=quality value=high>
     <embed src="IndexMovie.swf" quality=high pluginspage="http://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash" type="application/x-shockwave-flash" width="594" height="413">
@@ -43,7 +78,7 @@
       </td>
     </tr>
     <tr>
-      <td height="72"><a href="siteEn.html" target="_blank" ><img border="0" src="img/ukBut.gif" width="145" height="73" title="Go to English Version" alt="Go to English version"></a></td>
+      <td height="72"><a href="siteEn.html" onclick="return leaveDoor();"><img border="0" src="img/ukBut.gif" width="145" height="73" title="Go to English Version" alt="Go to English version"></a></td>
     </tr>
     <tr>
       <td height="39"> 
@@ -51,13 +86,38 @@
         </td>
     </tr>
     <tr>
-      <td height="95"><a href="siteEs.html" target="_blank"><img  border="0" src="img/esBut.gif" width="147" height="99" title="Ir a versi&oacute;n espa&ntilde;ola" alt="Ir a versi&oacute;n espa&ntilde;ola"></a></td>
+      <td height="95"><a href="siteEs.html" onclick="return leaveDoor();"><img  border="0" src="img/esBut.gif" width="147" height="99" title="Ir a versi&oacute;n espa&ntilde;ola" alt="Ir a versi&oacute;n espa&ntilde;ola"></a></td>
     </tr>
   </table>
 </div>
+</div>
 <p>&nbsp; </p>
 <script>
-window.addEventListener("click", function playIntro() {
+function fitDoor() {
+  var door = document.getElementById("door");
+  if (!door) return;
+  var scale = window.innerWidth / 790;
+  door.style.transform = "scale(" + scale + ")";
+  door.style.left = "0px";
+  door.style.top = "0px";
+}
+function stopDoorAudio() {
+  var el = document.getElementById("intro-audio");
+  if (!el) return;
+  el.pause();
+  try { el.currentTime = 0; } catch (err) {}
+}
+function leaveDoor() {
+  stopDoorAudio();
+  return true;
+}
+window.addEventListener("resize", fitDoor);
+window.addEventListener("load", fitDoor);
+window.addEventListener("pagehide", stopDoorAudio);
+fitDoor();
+window.addEventListener("click", function playIntro(event) {
+  var target = event.target;
+  if (target && target.closest && target.closest("a")) return;
   var el = document.getElementById("intro-audio");
   if (el) el.play();
   window.removeEventListener("click", playIntro);

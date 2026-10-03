@@ -6,23 +6,25 @@
 <META NAME="DESCRIPTION" CONTENT="DESCRIPTION OF PAGE TO BE USED BY SEARCH ENGINS GOES HERE">
 <META NAME="GENERATOR" CONTENT="NOTEPAD">
 <META NAME="AUTHOR" CONTENT="KEITH BYNE">
-<META NAME="COPYRITE" CONTENT="COPYRITE © 2001 KEITH BYNE">
+<META NAME="COPYRITE" CONTENT="COPYRITE ù 2001 KEITH BYNE">
 <LINK REL=stylesheet HREF="SpanSS.css" TYPE="text/css">
 <style type="text/css"></style>
 <script src="findDOM.js"></script>
 <script>
 	
 function moveObject (objectID,up,down) {
-		domStyle = findDOM(objectID,1);
-		if (document.layers){
-		if (domStyle.top != -90)
-			{domStyle.top = -90;}
-	   	else 	{domStyle.top = 0;}		
+		var ids = ["object1", "object2", "object3", "object4", "object5"];
+		var el = document.getElementById(objectID);
+		if (!el) return false;
+		var open = el.className.indexOf("is-open") !== -1;
+		for (var i = 0; i < ids.length; i++) {
+			var m = document.getElementById(ids[i]);
+			if (!m) continue;
+			m.className = m.className.replace(" is-open", "").replace("is-open", "");
 		}
-		else
-		if (domStyle.top != down)
-			{domStyle.top = down;}
-	   	else 	{domStyle.top = up;}	}
+		if (!open) el.className = el.className + " is-open";
+		return false;
+	}
 		
 
 
@@ -99,7 +101,7 @@ function goHome() {
 function change3(objectID) {
 	domStyle = findDOM(objectID,1);
 
-phrase = new String ('INFORMACI”N  de DESARROLLO  de WEB');
+phrase = new String ('INFORMACIùN  de DESARROLLO  de WEB');
 	phraseArray = phrase.split("  ");
 		howMany = phraseArray.length;
 			if (loop == howMany) loop = '0';
@@ -143,11 +145,42 @@ ID=window.setTimeout("change3('test');",100);
 	visibility: show;	
 	}	
 a {  font-family: Arial, Helvetica, sans-serif; font-size: 14pt; color: #FFFFFF; text-decoration: underline overline}
+.menu {
+	top: 196px !important;
+	height: 32px !important;
+	overflow: hidden !important;
+	background-color: #cfcfcf;
+	z-index: 20 !important;
+}
+.menu.is-open {
+	height: auto !important;
+	overflow: visible !important;
+}
+.menu table {
+	display: flex;
+	flex-direction: column;
+	height: auto !important;
+	width: 100% !important;
+	background-color: #cfcfcf;
+}
+.menu tr { display: flex; }
+.menu tr:first-child a { white-space: nowrap; }
+.menu tr:first-child a:link,
+.menu tr:first-child a:visited,
+.menu tr:first-child a:hover {
+	color: #333333;
+}
+.menu td { background-color: #cfcfcf; padding: 2px 4px; line-height: 1.15; }
+#object1 { left: 4px !important; width: 185px !important; }
+#object2 { left: 194px !important; width: 150px !important; }
+#object3 { left: 350px !important; width: 120px !important; }
+#object4 { left: 476px !important; width: 210px !important; }
+#object5 { left: 692px !important; width: 270px !important; }
 --></style>
+<script src="fit-browser.js"></script>
 </head>
 
 <body bgcolor="#cfcfcf";>
-<a href="index.html" target="_top" onclick="return goHome();" title="Volver a la puerta principal" style="position:absolute; left:590px; top:2px; z-index:30;"><b>Inicio</b></a>
 <span id=test style="left: 656px; top: 85px; width: 221px; height: 15px; z-index: 100"> 
 </span> 
 <div ID="object1" CLASS="menu" STYLE="POSITION: ABSOLUTE; LEFT: 3px; TOP: -90px; z-index:10; width: 171px; height: 114px"> 
@@ -169,7 +202,7 @@ a {  font-family: Arial, Helvetica, sans-serif; font-size: 14pt; color: #FFFFFF;
     <tr> 
       <td>
         <div align="center"><a href="#" 
- onClick="javascript:moveObject('object1','-90px','0px');"><b>Datos Personales</b></a></div>
+ onClick="return moveObject('object1','-90px','0px');"><b>Datos Personales</b></a></div>
       </td>
     </tr>
   </table>
@@ -180,13 +213,13 @@ a {  font-family: Arial, Helvetica, sans-serif; font-size: 14pt; color: #FFFFFF;
 <div ID="object2" CLASS="menu" STYLE="POSITION: ABSOLUTE; LEFT: 176px; TOP: -90px; z-index:10; width: 100px; height: 114px"> 
   <table width="77" border="0" cellspacing="0" cellpadding="0" height="115">
     <tr> 
-      <td bgColor="#cfcfcf"><a href="DesignEs.Html" target="bottomFrameEs">DiseÒo</a></td>
+      <td bgColor="#cfcfcf"><a href="DesignEs.Html" target="bottomFrameEs">Diseùo</a></td>
     </tr>
     <tr> 
       <td bgColor="#cfcfcf"><a href="JobHistEs.html" target="bottomFrameEs">Historial</a></td>
     </tr>
     <tr> 
-      <td bgColor="#cfcfcf"><a href="D&amp;PEs.html" target="bottomFrameEs">ProducciÛn</a></td>
+      <td bgColor="#cfcfcf"><a href="D&amp;PEs.html" target="bottomFrameEs">Producciùn</a></td>
     </tr>
  <tr> 
       <td bgColor="#cfcfcf"><a href="clientsEs.htm" target="bottomFrameEs">Clientes</a></td>
@@ -194,7 +227,7 @@ a {  font-family: Arial, Helvetica, sans-serif; font-size: 14pt; color: #FFFFFF;
     <tr> 
       <td>
         <div align="center"><a href="#" 
- onClick="javascript:moveObject('object2','-90px','0px');"><b>Trabajos</b></a></div>
+ onClick="return moveObject('object2','-90px','0px');"><b>Trabajos</b></a></div>
       </td>
     </tr>
   </table>
@@ -214,12 +247,12 @@ a {  font-family: Arial, Helvetica, sans-serif; font-size: 14pt; color: #FFFFFF;
       <td bgColor="#cfcfcf"><a href="JavaScptEs.html"target="bottomFrameEs">Series</a></td>
     </tr>
     <tr> 
-      <td bgColor="#cfcfcf"><a href="TheoriesEs.html" target="bottomFrameEs">TeorÌa</a></td>
+      <td bgColor="#cfcfcf"><a href="TheoriesEs.html" target="bottomFrameEs">Teorùa</a></td>
     </tr>
     <tr> 
       <td>
         <div align="center"><a href="#" 
- onClick="javascript:moveObject('object3','-90px','0px');"><b>Escultura</b></a></div>
+ onClick="return moveObject('object3','-90px','0px');"><b>Escultura</b></a></div>
       </td>
     </tr>
   </table>
@@ -243,20 +276,38 @@ a {  font-family: Arial, Helvetica, sans-serif; font-size: 14pt; color: #FFFFFF;
       <td bgColor="#cfcfcf"><a href="change3Es.html" target="bottomFrameEs">Ejemplo 6</a></td>
     </tr>
     <tr> 
-      
-      <td bgColor="#cfcfcf"><a href="slideElemTog.htmlEs.html" target="bottomFrameEs">Ejemplo 
-        7</a></td>
-      <td bgColor="#cfcfcf"><a href="motherBounceEs.html"
-target="bottomFrameEs">Ejemplo 8</a></td>
+      <td colspan="2" bgColor="#cfcfcf"><a href="slideElemTog.htmlEs.html" target="bottomFrameEs">Ejemplo 7</a></td>
     </tr>
  <tr> 
       <td colspan="3">
         <div align="center"><a href="#" 
- onclick="javascript:moveObject('object4','-90px','0px');"><b>Demonstraciones</b></a></div>
+ onclick="return moveObject('object4','-90px','0px');"><b>Demonstraciones</b></a></div>
     </td>
     </tr>
   </table>
 </Div>			
+
+<div ID="object5" CLASS="menu" STYLE="POSITION: ABSOLUTE; LEFT: 692px; TOP: 196px; z-index:20; width: 270px; height: 42px">
+  <table width="270" border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td bgColor="#cfcfcf"><a href="IdeasEs.html" target="bottomFrameEs" title="Ideas de Web">Ideas de Web</a></td>
+    </tr>
+    <tr>
+      <td bgColor="#cfcfcf"><a href="WebSkillsEs.html" target="bottomFrameEs">Informaci&oacute;n de Web</a></td>
+    </tr>
+    <tr>
+      <td bgColor="#cfcfcf"><a href="CVEs.doc" target="_blank">CV para Imprimir</a></td>
+    </tr>
+    <tr>
+      <td bgColor="#cfcfcf"><a href="index.html" target="_top" onclick="return goHome();">Inicio</a></td>
+    </tr>
+    <tr>
+      <td>
+        <div><a href="#" onclick="return moveObject('object5');"><b>Futuro</b></a></div>
+      </td>
+    </tr>
+  </table>
+</div>
 
 <div id="onLineCV" style="position:absolute; left:0px; top:0px;
   width:1000px; height:100px; background-color:#CFCFCF;
@@ -268,7 +319,17 @@ target="bottomFrameEs">Ejemplo 8</a></td>
       <area shape="poly" coords="57,73,3,98,3,118,14,130,37,130,51,111,96,112,79,84,67,84,57,73" href="CVEs.doc" target="_blank" title="CV para Imprimir" alt="CV para Imprimir" > 
     </map> </div>
 </div>
-
+<script>
+(function () {
+  var tables = document.querySelectorAll(".menu table");
+  for (var i = 0; i < tables.length; i++) {
+    var rows = tables[i].rows;
+    if (!rows || rows.length < 2) continue;
+    var body = rows[0].parentNode;
+    body.insertBefore(rows[rows.length - 1], rows[0]);
+  }
+})();
+</script>
 
 </body>
 </html>

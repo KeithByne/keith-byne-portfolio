@@ -452,6 +452,43 @@ h1 em {
   object-position: top center;
 }
 
+.case-shots-cv {
+  grid-template-columns: 1.45fr 1fr;
+}
+
+.case-shots-cv .cv-stage,
+.case-shots-cv .case-shot-hit {
+  aspect-ratio: 594 / 413;
+  background: #cfcfcf;
+  overflow: hidden;
+}
+
+.case-shots-cv .cv-stage {
+  position: relative;
+  width: 100%;
+}
+
+.case-shots-cv .cv-flash {
+  position: absolute;
+  inset: 0;
+}
+
+.case-shots-cv .cv-flash ruffle-player,
+.case-shots-cv .cv-flash ruffle-embed,
+.case-shots-cv .cv-flash ruffle-object {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: #cfcfcf;
+}
+
+.case-shots.case-shots-cv .case-shot-hit img {
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+  background: #cfcfcf;
+}
+
 .case-shot-zoom {
   position: fixed;
   inset: 0;
@@ -829,3 +866,5 @@ h1 em {
     animation: none;
   }
 }
+
+/* 1999 preview matte lives on .case-shots-cv */

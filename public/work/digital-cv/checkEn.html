@@ -1,0 +1,51 @@
+<html>
+<head>
+<title>checkEn</title>
+<meta http-equiv="Content-Type" content="text/html;">
+<LINK REL=stylesheet HREF="SpanSS.css" TYPE="text/css">
+<SCRIPT LANGUAGE="JavaScript">
+var isNew = 0;
+var isNS4 = 0;
+var isIE4 = 0;
+</SCRIPT>
+<SCRIPT LANGUAGE="JavaScript1.2">
+var brow = ((navigator.appName) + (parseInt(navigator.appVersion)));
+if (parseInt(navigator.appVersion) >= 5) {isNew = 1}
+else if (brow == "Netscape4") {isNS4 = 1;}
+else if (brow == "Microsoft Internet Explorer4") {isIE4 = 1;}
+</SCRIPT>
+<style type="text/css">
+  html, body { height: 100%; margin: 8px; background: #cfcfcf; }
+  table { height: 100%; }
+  #BrowserCheck h3 {
+    color: #000000;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14pt;
+    font-weight: bold;
+    line-height: 1.45;
+    margin: 0;
+  }
+</style>
+</head>
+<body bgcolor="#cfcfcf">
+<table width="100%" border="7" cellspacing="4" cellpadding="10">
+  <tr>
+    <td align="center" valign="middle" bgcolor="#cfcfcf">
+      <div id="BrowserCheck">
+        <script language="JavaScript"><!--
+if (isNew) {
+  document.write('<h3>This '+ brow +' browser<br>is registering as<br>Dynamic HTML capable.<br>You should not have any problems<br>with the content of this site.</h3>');
+} else if (isNS4) {
+  document.write('<h3>Your browser is <i>not</i> registering as<br>a totally Dynamic HTML capable browser.<br>Some of the examples<br>will <i>not</i> be possible<br>on this '+ brow + ' browser.<br>Sorry.</h3>');
+} else if (isIE4) {
+  document.write('<h3>Your browser is <i>not</i> registering as<br>a totally Dynamic HTML capable browser.<br>Some of the examples<br>may <i>not</i> be possible<br>on this '+ brow + ' browser.<br>Sorry.</h3>');
+} else {
+  document.write('<h3>Your browser is <i>not</i> registering as<br>a Dynamic HTML capable browser.<br>Some of the examples<br>will <i>not</i> be possible<br>on this '+ brow + ' browser.<br>Sorry.</h3>');
+}
+        //--></script>
+      </div>
+    </td>
+  </tr>
+</table>
+</body>
+</html>

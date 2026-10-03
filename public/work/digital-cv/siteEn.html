@@ -2,10 +2,28 @@
 <html>
 <head>
 <title>siteEn</title>
+<script src="fit-browser.js"></script>
+<script>
+function fitSite() {
+  var right = window.innerWidth * 0.78;
+  var topH = Math.ceil(450 * (right / 980));
+  var room = window.innerHeight - 160;
+  if (topH > room) topH = room;
+  var sets = document.getElementsByTagName("frameset");
+  if (sets.length < 2) return;
+  var wanted = topH + ",*";
+  if (String(sets[1].rows).replace(/\s/g, "") === wanted) return;
+  sets[1].rows = wanted;
+}
+window.onresize = fitSite;
+</script>
 </head>
-<frameset rows="37%,63%" framespacing="0" frameborder="0" cols="*">
-  <frame name="topFrameEn" src="topFrameEn.html" scrolling="no">
-  <frame name="bottomFrameEn" src="bottomFrameEn.html" scrolling="auto">
+<frameset cols="22%,*" framespacing="0" frameborder="0" onload="fitSite()">
+  <frame name="checkEn" src="checkEn.html" scrolling="no">
+  <frameset rows="520,*" framespacing="0" frameborder="0">
+    <frame name="topFrameEn" src="topFrameEn.html" scrolling="no">
+    <frame name="bottomFrameEn" src="bottomFrameEn.html" scrolling="auto">
+  </frameset>
 </frameset>
 <noframes><body>This page uses frames. Open topFrameEn.html if your browser does not show them.</body></noframes>
 </html>

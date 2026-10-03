@@ -54,18 +54,91 @@ function PhoneLoop({
   );
 }
 
+function CvFlash() {
+  const host = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const el = host.current;
+    if (!el) return;
+    const row = el.closest(".case-row");
+    if (!row) return;
+    let dead = false;
+    let player: (HTMLElement & { load: (options: { url: string; autoplay?: string }) => void; volume?: number }) | null = null;
+
+    const stop = () => {
+      player = null;
+      el.replaceChildren();
+    };
+
+    const start = () => {
+      if (dead || player) return;
+      const w = window as Window & {
+        RufflePlayer?: {
+          config?: Record<string, unknown>;
+          newest?: () => { createPlayer: () => NonNullable<typeof player> };
+        };
+      };
+      w.RufflePlayer = w.RufflePlayer || {};
+      w.RufflePlayer.config = {
+        autoplay: "on",
+        unmuteOverlay: "hidden",
+        letterbox: "off",
+        scale: "showAll",
+        backgroundColor: "#cfcfcf",
+        volume: 0,
+      };
+      const mount = () => {
+        if (dead || !w.RufflePlayer?.newest) return;
+        const created = w.RufflePlayer.newest().createPlayer();
+        created.style.width = "100%";
+        created.style.height = "100%";
+        created.style.background = "#cfcfcf";
+        el.replaceChildren(created);
+        created.load({ url: "/work/digital-cv/IndexMovie.swf", autoplay: "on" });
+        created.volume = 0;
+        player = created;
+      };
+      if (w.RufflePlayer.newest) {
+        mount();
+        return;
+      }
+      const script = document.createElement("script");
+      script.src = "/work/digital-cv/ruffle/ruffle.js";
+      script.onload = () => mount();
+      document.body.appendChild(script);
+    };
+
+    const sync = () => {
+      if (row.classList.contains("is-open")) start();
+      else stop();
+    };
+    const mo = new MutationObserver(sync);
+    mo.observe(row, { attributes: true, attributeFilter: ["class"] });
+    sync();
+    return () => {
+      dead = true;
+      mo.disconnect();
+      stop();
+    };
+  }, []);
+
+  return <div ref={host} className="cv-flash" />;
+}
+
 function Shot({
   src,
   alt,
   caption,
   video,
   poster,
+  matte,
 }: {
   src: string;
   alt: string;
   caption: string;
   video?: boolean;
   poster?: string;
+  matte?: string;
 }) {
   const [ok, setOk] = useState(true);
   const [enlarged, setEnlarged] = useState(false);
@@ -97,7 +170,7 @@ function Shot({
               {video ? (
                 <PhoneLoop src={src} poster={poster} alt="" />
               ) : (
-                <img src={src} alt="" decoding="async" />
+                <img src={src} alt="" decoding="async" style={matte ? { background: matte } : undefined} />
               )}
             </div>,
             document.body,
@@ -433,8 +506,8 @@ const cases: {
 }[] = [
   {
     id: "digital-cv-1999",
-    title: "1999 · My first online portfolio",
-    subtitle: "Updated · a browser curiosity, not a current sample",
+    title: "1999 · My first online CV",
+    subtitle: "A period piece, put here for fun",
     logo: {
       src: "/work/digital-cv/img/LabLogo.gif",
       href: "/work/digital-cv/index.html",
@@ -443,29 +516,35 @@ const cases: {
     },
     body: (
       <>
-        <h3>From a DVD that still spun</h3>
+        <h3>A first computer in Paris</h3>
         <p>
-          A bilingual digital curriculum vitae (CV): Macromedia Flash intro,
-          frames, Dynamic HTML (DHTML) demos, sculpture photos, English and
-          Spanish. Chrome dropped Flash and the old sound embed years ago, so
-          the disc sat unread. It now runs in a modern browser with a Flash
-          stand-in and ordinary audio. The grey, the menus, the labyrinth map
-          are the original.
+          My first attempt at an online curriculum vitae (CV), from 1999,
+          while I was working in Paris. I had bought my first computer and a
+          bunch of thick For Dummies books. It is bilingual: a Macromedia
+          Flash intro, frames, Dynamic HTML (DHTML) demos, sculpture photos,
+          English and Spanish.
         </p>
         <p>
-          This is a period piece at the bottom of the list on purpose. It is
-          not an instructional design (ID) sample.
+          Chrome dropped Flash and the old sound embed years ago, so the disc
+          sat unread. It now runs in a modern browser with a Flash stand-in
+          and ordinary audio.
         </p>
-        <div className="case-shots">
-          <Shot
-            src="/work/digital-cv/img/OnLineCV.gif"
-            alt="On Line CV banner from the 1999 digital portfolio."
-            caption="The original banner"
-          />
+        <p>
+          This is a period piece. It is not an instructional design (ID)
+          sample. I put it here for fun.
+        </p>
+        <div className="case-shots case-shots-cv">
+          <figure className="case-shot">
+            <div className="cv-stage">
+              <CvFlash />
+            </div>
+            <figcaption>The landing animation</figcaption>
+          </figure>
           <Shot
             src="/work/digital-cv/img/LaberinthMap.gif"
             alt="Labyrinth image map used as the menu on the 1999 digital portfolio."
             caption="The labyrinth map"
+            matte="#cfcfcf"
           />
         </div>
         <ul className="roles">
@@ -495,7 +574,7 @@ const cases: {
           <li>
             What still works
             <span>
-              Frames, drop-down menus, the sculpture set, the eight DHTML
+              Frames, drop-down menus, the sculpture set, the seven DHTML
               demonstrations
             </span>
           </li>
