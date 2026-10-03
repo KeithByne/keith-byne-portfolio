@@ -29,7 +29,10 @@ export default function ContactPage() {
           </li>
           <li>
             Work
-            <span>EU remote · employment or Spanish B2B invoice</span>
+            <span>
+              EU remote · employment, Spanish B2B invoice, or UK B2B through
+              REPORT-O-MATIC LTD
+            </span>
           </li>
         </ul>
       </div>
