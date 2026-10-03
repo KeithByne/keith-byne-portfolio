@@ -31,7 +31,7 @@
       }
       scale = window.innerWidth / max;
       if (scale > 2) scale = 2;
-      if (scale < 0.45) scale = 0.45;
+      if (scale < 1) scale = 1;
       if (Math.abs(scale - 1) < 0.05) scale = 1;
     }
     current = scale;
