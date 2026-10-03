@@ -6,7 +6,7 @@
 <META NAME="DESCRIPTION" CONTENT="This is a demonstration site to show prospective employers some information about the Web areas I have studied">
 <META NAME="GENERATOR" CONTENT="NOTEPAD">
 <META NAME="AUTHOR" CONTENT="KEITH BYNE">
-<META NAME="COPYRITE" CONTENT="COPYRITE © 2001 KEITH BYNE">
+<META NAME="COPYRITE" CONTENT="COPYRITE  2001 KEITH BYNE">
 <LINK REL=stylesheet HREF="tweenFrames/Span.css" TYPE="text/css">
 <style media="SCREEN" type="text/css">
 <!--
@@ -48,7 +48,7 @@
 
 
  
-<DIV id="objectZ" style="top: 0px; left: 10px; width: 138px; height: 246px"> 
+<DIV id="objectZ" style="top: 0px; left: 10px; width: 138px; height: auto"> 
   <p><font color="#757575" size="-1">Object Series:</font></p>
   <p><font size="+1">Giant hands on the Landscape</font></p>
   <p><font color="#757575" size="-1">Object Name:</font><font color="#757575" size="+1"><font color="#FFFFFF" size="2">Selection</font></font></p>
@@ -73,6 +73,20 @@
 <p>&nbsp;</p>
 <p>&nbsp;</p>
 <p>&nbsp;</p>
+<script>
+function coverLayers() {
+  var under = document.getElementById("objectZ");
+  var over = document.getElementById("table");
+  if (!under || !over) return;
+  under.style.height = "auto";
+  over.style.boxSizing = "border-box";
+  over.style.left = under.offsetLeft + "px";
+  over.style.top = under.offsetTop + "px";
+  over.style.width = under.offsetWidth + "px";
+  over.style.height = under.offsetHeight + "px";
+}
+window.addEventListener("load", coverLayers);
+</script>
 
 </body>
 </HTML>
