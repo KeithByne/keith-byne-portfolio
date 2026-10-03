@@ -3,14 +3,16 @@
   var lock = false;
   var current = 0;
 
-  function contentRight() {
-    var max = 0;
+  function contentBox() {
+    var maxR = 0;
+    var maxB = 0;
     var nodes = document.body.querySelectorAll("img, table, div, form, span, h4, p");
     for (var i = 0; i < nodes.length; i++) {
-      var right = nodes[i].getBoundingClientRect().right;
-      if (right > max) max = right;
+      var rect = nodes[i].getBoundingClientRect();
+      if (rect.right > maxR) maxR = rect.right;
+      if (rect.bottom > maxB) maxB = rect.bottom;
     }
-    return max;
+    return { right: maxR, bottom: maxB };
   }
 
   function paintCorner(scale) {
@@ -43,16 +45,26 @@
       document.body.style.margin = "0";
       scale = window.innerWidth / 980;
     } else {
-      var max = contentRight();
-      if (max < 80) {
+      var box = contentBox();
+      if (box.right < 80) {
         paintCorner(1);
         lock = false;
         return;
       }
-      scale = window.innerWidth / max;
-      if (scale > 2) scale = 2;
-      if (scale < 1) scale = 1;
-      if (Math.abs(scale - 1) < 0.05) scale = 1;
+      if (document.body.className.indexOf("fit-frame") !== -1) {
+        document.body.style.overflow = "hidden";
+        document.body.style.margin = "0";
+        var scaleW = (window.innerWidth - 16) / box.right;
+        var scaleH = (window.innerHeight - 16) / Math.max(box.bottom, 40);
+        scale = Math.min(scaleW, scaleH);
+        if (scale > 1.35) scale = 1.35;
+        if (scale < 0.55) scale = 0.55;
+      } else {
+        scale = window.innerWidth / box.right;
+        if (scale > 2) scale = 2;
+        if (scale < 1) scale = 1;
+        if (Math.abs(scale - 1) < 0.05) scale = 1;
+      }
     }
     current = scale;
     root.style.zoom = String(scale);
