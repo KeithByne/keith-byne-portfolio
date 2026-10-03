@@ -526,12 +526,15 @@ const cases: {
         </p>
         <p>
           Chrome dropped Flash and the old sound embed years ago, so the disc
-          sat unread. It now runs in a modern browser with a Flash stand-in
-          and ordinary audio.
+          sat unread. I reanimated the site in three hours using AI. It now
+          runs in a modern browser with a Flash stand-in and ordinary audio.
         </p>
         <p>
-          This is a period piece. It is not an instructional design (ID)
-          sample. I put it here for fun.
+          This is a period piece, but what I found interesting was revisiting
+          the way I was thinking in 1999 in &quot;web ideas&quot;. It is not an
+          instructional design (ID) sample. I included it here for fun. It is
+          a curiosity and goes along with The Matrix, liquid metal special
+          effects and the Y2K bug.
         </p>
         <div className="case-shots case-shots-cv">
           <figure className="case-shot">
