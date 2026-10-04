@@ -804,7 +804,7 @@ h1 em {
 
 .aims {
   display: grid;
-  grid-template-columns: minmax(0, 1.05fr) minmax(16rem, 23rem);
+  grid-template-columns: minmax(0, 1fr) minmax(16rem, 26rem);
   gap: 2.5rem 3rem;
   align-items: start;
 }
