@@ -32,7 +32,7 @@ export default function AimsPage() {
           This is not a late start, but rather a change of direction.
           Programme design, teacher training, visual communication, and
           educational software are already within my compass. Instructional
-          design is where that experience belongs. A twelve-month working
+          design is where that experience belongs. A twelve-month remote working
           model is my aim. I am learning the tools this industry uses to
           show the work. I will develop this project until full-time remote
           employment is in place.
