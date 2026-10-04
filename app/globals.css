@@ -802,7 +802,29 @@ h1 em {
 
 .prose p { color: var(--mute); line-height: 1.65; }
 
-.aims .prose { max-width: 40rem; }
+.aims {
+  display: grid;
+  grid-template-columns: minmax(0, 1.05fr) minmax(16rem, 23rem);
+  gap: 2.5rem 3rem;
+  align-items: start;
+}
+
+.aims .prose { max-width: none; }
+
+.aims-copy,
+.aims-map {
+  min-width: 0;
+}
+
+.aims-map {
+  margin: 0.2rem 0 0;
+}
+
+.aims-map svg {
+  width: 100%;
+  height: auto;
+  display: block;
+}
 
 .roles { list-style: none; padding: 0; margin: 0; }
 .roles li {
@@ -825,12 +847,14 @@ h1 em {
   .hero,
   .about-grid,
   .contact-grid,
+  .aims,
   .work-item,
   .studio-grid,
   .case-shots,
   .safe-ai-pair {
     grid-template-columns: 1fr;
   }
+  .aims-map { max-width: 16rem; }
   .safe-ai-pair .case-shot,
   .onboard-doc-plan {
     max-width: 16rem;

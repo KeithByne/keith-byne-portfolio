@@ -1,9 +1,12 @@
+import { AimsMap } from "./AimsMap";
+
 export default function AimsPage() {
   return (
     <main className="band aims">
-      <p className="eyebrow">Aims</p>
-      <h1>Work Year Round.</h1>
-      <div className="prose">
+      <div className="aims-copy">
+        <p className="eyebrow">Aims</p>
+        <h1>Work Year Round.</h1>
+        <div className="prose">
         <p>
           I am looking for year-round employment in instructional design.
         </p>
@@ -34,7 +37,9 @@ export default function AimsPage() {
           show the work. I will develop this project until full-time remote
           employment is in place.
         </p>
+        </div>
       </div>
+      <AimsMap />
     </main>
   );
 }
