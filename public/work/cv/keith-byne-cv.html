@@ -201,10 +201,19 @@
     .break .job { margin-bottom: 2.2mm; }
     .break .job li + li { margin-top: 0.35mm; }
     .break .edu { margin-bottom: 3mm; }
+    .cv-open {
+      width: 210mm;
+      margin: 0 auto 8px;
+      display: flex;
+      justify-content: space-between;
+      font-size: 9pt;
+    }
+    .cv-open a { color: var(--paper); }
     @media print {
       html, body { background: #fff; }
       .sheet { margin: 0; box-shadow: none; min-height: 0; }
       .break { page-break-before: always; }
+      .cv-open { display: none; }
     }
     @media screen {
       body { padding: 16px 0 40px; }
@@ -213,6 +222,7 @@
   </style>
 </head>
 <body>
+  <p class="cv-open"><a href="/">Portfolio</a><a href="keith-byne-cv.pdf">Printable PDF</a></p>
   <article class="sheet">
     <header class="mast">
       <div>

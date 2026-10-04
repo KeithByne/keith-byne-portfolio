@@ -5,9 +5,9 @@ import { usePathname } from "next/navigation";
 
 const links = [
   { href: "/work", label: "Work" },
-  { href: "/studio", label: "Studio" },
   { href: "/about", label: "About" },
   { href: "/aims", label: "Aims" },
+  { href: "/work/cv/keith-byne-cv.html", label: "CV", file: true },
   { href: "/contact", label: "Contact" },
 ];
 
@@ -19,15 +19,21 @@ export function Header() {
         Keith Byne
       </Link>
       <nav className="nav" aria-label="Primary">
-        {links.map((link) => (
-          <Link
-            key={link.href}
-            href={link.href}
-            aria-current={path === link.href ? "page" : undefined}
-          >
-            {link.label}
-          </Link>
-        ))}
+        {links.map((link) =>
+          link.file ? (
+            <a key={link.href} href={link.href}>
+              {link.label}
+            </a>
+          ) : (
+            <Link
+              key={link.href}
+              href={link.href}
+              aria-current={path === link.href ? "page" : undefined}
+            >
+              {link.label}
+            </Link>
+          )
+        )}
       </nav>
     </header>
   );
