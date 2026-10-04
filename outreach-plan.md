@@ -1,6 +1,6 @@
 # After the portfolio: get in front of the right person
 
-This is the execution plan **once the public portfolio is finished**. It is not a spray of mail. It is how a remote European instructional designer is actually noticed.
+This is the execution plan **once the public portfolio is finished**. It is not a spray of mail. It is how a remote European instructional designer is actually noticed. The December calendar, accounts, and employer watch list are in [interview-plan.md](interview-plan.md).
 
 **The best option:** be findable, then write to **named people about named roles**, with **one live artefact** in each note. Eight to twelve human touches a week beat five hundred identical emails.
 
@@ -26,7 +26,7 @@ Until that gate: finish the modules. You may set up LinkedIn and alerts now. You
 
 Search titles (from the 12-week course): Instructional Designer, eLearning Developer, Learning Experience Designer, Digital Learning Designer. Use **L&D Manager** only where the advert is design-heavy or player-coach. That is the later path, not the first wave.
 
-How people in this industry actually sit and get paid: [how-industry-works.md](how-industry-works.md). **Default package: employee on a monthly salary**, remote or hybrid you can attend. Contractor invoice only when the advert asks. Not piece work.
+How people in this industry actually sit and get paid: [how-industry-works.md](how-industry-works.md). **Default package: employee on a monthly salary**, fully remote. Contractor invoice only when the advert asks. Not piece work. Days in an office are not a search: no employer in Seville, Córdoba, or Huelva met the role and language criteria on 4 October 2026.
 
 ---
 

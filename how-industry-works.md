@@ -6,14 +6,14 @@ This is a rundown for packaging, not a salary promise. Percentages below are **n
 
 ---
 
-## 01 Where they sit (office, hybrid, remote)
+## 01 Where they sit (office or remote)
 
 **All jobs in the EU, not only L&D**
 
 | What | Figure | Source |
 |------|--------|--------|
 | Usually work from home (most days) | **about 9%** of employed people in the EU (8.9% in 2024; Eurostat also published 8.9% for 2025 in a later note) | [Eurostat / EU Labour Force Survey](https://www.statista.com/statistics/879251/employees-teleworking-in-the-eu/), series `lfsa_ehomp` |
-| Work from home at least sometimes (hybrid sits here) | **22%** of employees in the EU in 2024, up from **8%** in 2015 | [Eurofound](https://www.mynewsdesk.com/eurofound/pressreleases/luxembourg-the-netherlands-and-sweden-lead-the-way-on-working-from-home-in-europe-3459526), European Working Conditions Survey 2024 |
+| Work from home at least sometimes | **22%** of employees in the EU in 2024, up from **8%** in 2015 | [Eurofound](https://www.mynewsdesk.com/eurofound/pressreleases/luxembourg-the-netherlands-and-sweden-lead-the-way-on-working-from-home-in-europe-3459526), European Working Conditions Survey 2024 |
 | Spain, usually from home | **7.8%** (2024) | Same Eurostat table via Statista |
 | High countries, at least sometimes | Luxembourg **41%**; Netherlands and Sweden **38%** (2024) | Eurofound 2024 |
 | Low countries, at least sometimes | Bulgaria **8%**, Hungary **7%**, Italy **6%**, Romania **4%** (2024) | Eurofound 2024 |
@@ -22,11 +22,11 @@ This is a rundown for packaging, not a salary promise. Percentages below are **n
 
 **What that means for ID / L&D / e-learning**
 
-Knowledge work (designing learning, writing modules, running a learning platform) sits **above** the 9% “usually at home” average. It is closer to the **one-in-five hybrid** picture, and to the high-telework countries (Ireland, Finland, Netherlands, Sweden, Belgium, Germany, France).
+Knowledge work (designing learning, writing modules, running a learning platform) sits **above** the 9% “usually at home” average. It is closer to the one-in-five “sometimes from home” picture, and to the high-telework countries (Ireland, Finland, Netherlands, Sweden, Belgium, Germany, France).
 
-There is still **no** published EU percentage for “instructional designers who are fully remote.” Treat fully remote as **common in ads**, not as the majority of all L&D jobs. German and French corporates often want **hybrid** (some days on site). UK, Netherlands, and pan-EU digital-learning agencies more often say **remote**. Spain’s “usually from home” figure is **below** the EU average, so a Seville base competing for **fully remote EU** roles is real — and it is a **subset** of ads, not the whole market.
+There is still **no** published EU percentage for “instructional designers who are fully remote.” Treat fully remote as **common in ads**, not as the majority of all L&D jobs. German and French corporates often want some days on site. Those ads are outside this search. UK, Netherlands, and pan-EU digital-learning agencies more often say **remote**. Spain’s “usually from home” figure is **below** the EU average, so a Seville base competing for **fully remote EU** roles is real — and it is a **subset** of ads, not the whole market.
 
-The Chartered Institute of Personnel and Development (CIPD) *Learning at work 2023* survey (91% UK respondents) treats hybrid working as normal for the profession and reports **53%** of people in L&D functions saying team workload had increased. That is workload, not a remote percentage. [CIPD report](https://www.cipd.org/uk/knowledge/reports/learning-at-work/).
+The Chartered Institute of Personnel and Development (CIPD) *Learning at work 2023* survey (91% UK respondents) reports **53%** of people in L&D functions saying team workload had increased. That is workload, not a remote percentage. [CIPD report](https://www.cipd.org/uk/knowledge/reports/learning-at-work/).
 
 Fosway (a European HR / digital-learning analyst) *Digital Learning Realities 2025*: **61%** of L&D teams saw budget decrease or stay the same. Teams are stretched. That is why you see **both** permanent hires and short contractors on the same desk.
 
@@ -71,34 +71,34 @@ There is **no sourced European percentage** for “how many IDs are on a day rat
 
 ## 04 How to package yourself
 
-**Lead with employment.** You already do on About: *Open to EU remote employment.* Keep that. Add hybrid if the advert is hybrid. Do not add “autónomo / REPORT-O-MATIC LTD / no friction for HR” until they ask how to hire.
+**Lead with employment.** You already do on About: *Open to EU remote employment.* Keep that. The search is fully remote. Do not add “autónomo / REPORT-O-MATIC LTD / no friction for HR” until they ask how to hire.
 
 **Read the advert like a contract type:**
 
 | If the ad says | You are |
 |----------------|---------|
 | Permanent, CDI, *unbefristet*, *indefinite*, salary, benefits | Employee. Send the CV and the letter as written. |
-| Hybrid, 2–3 days in [city] | Only apply if you can be in that city those days. Seville plus “hybrid Berlin” is not hybrid. |
+| Days in an office, any city | Skip. No employer in Seville, Córdoba, or Huelva met the role and language criteria (checked 4 Oct 2026). |
 | Remote, EU, work-from-home | Your target. Still an employee unless it says contractor. |
 | Contract, 6 months, day rate, zzp, outside IR35, freelance | Contractor. One sentence: you can invoice. Then stop talking about tax. |
 | Per-module, per-slide, “content writer for courses” | Walk away or treat as pocket money. Not the career. |
 
 **Two desks in the same industry**
 
-1. **In-house L&D** — you sit in the company. Salary. Hybrid is common. They want someone who will still be there next year. Rise, Storyline, and a live module help. ESL school leadership does not help as the opener.
+1. **In-house L&D** — you sit in the company. Salary. Fully remote. They want someone who will still be there next year. Rise, Storyline, and a live module help. ESL school leadership does not help as the opener. Ads that want days in an office are outside this search.
 2. **Agency / freelance build** — you ship modules for other companies’ learners. Day rate or project fee. They want speed and a tool list. Your job aid and deck already speak this language. A live Rise module will speak it louder.
 
 **What a hiring manager will read if you get this wrong**
 
 - Autónomo / LTD first: “this person is a vendor,” not “this person can join my team.”
 - Piece work: cheap and replaceable.
-- Fully remote only, no hybrid: you will miss a large slice of German and French corporates.
+- Fully remote is the search. German and French corporates that want days on site are outside it.
 - “I can do any contract type, any tax wrapper”: noise. They will ask.
 
 **Practical weekly packaging (once the portfolio gate is met)**
 
 - Search titles: Instructional Designer, eLearning Developer, Learning Experience Designer, Digital Learning Designer. For the one-person “build it, run the platform, report to managers” seat: Digital Learning Manager, L&D Specialist, Training Manager (player-coach).
-- Filter: remote **or** hybrid you can actually attend.
+- Filter: fully remote, EU.
 - First wave: **permanent, salary**. Combined-seat pay is in **06**.
 - If a good ad is contract-only: answer as contractor, one line, same CV.
 - Letter: employment first. Invoice second, and only if they use that word.
@@ -115,7 +115,7 @@ These are **named sources**. They are **gross** (before tax and social security)
 
 ### What you should expect on the first wave
 
-**Best option:** aim at **permanent Senior ID / LXD / Digital Learning Designer**, remote or hybrid you can attend. A realistic first-wave band, if they pay a Western European designer rate and do **not** cut you for living in Spain, is about **€40,000–€60,000** gross. Spain-local designer roles sit lower: about **€30,000–€45,000** even when the title says senior. A **Learning and Development Manager** at a large Spanish firm is a different desk: Page Personnel puts that nearer **€50,000–€65,000** plus bonus.
+**Best option:** aim at **permanent Senior ID / LXD / Digital Learning Designer**, fully remote. A realistic first-wave band, if they pay a Western European designer rate and do **not** cut you for living in Spain, is about **€40,000–€60,000** gross. Spain-local designer roles sit lower: about **€30,000–€45,000** even when the title says senior. A **Learning and Development Manager** at a large Spanish firm is a different desk: Page Personnel puts that nearer **€50,000–€65,000** plus bonus.
 
 A hiring manager will not pay Head-of-L&D money for a first ID hire. UK Instinct’s Head of L&D line is **£85,000+**. That is not the first-wave target.
 
@@ -262,9 +262,9 @@ Germany: the mittelstand “does the training and the system” seat is often *P
 
 Doing all three hats does **not** cancel location-banding. A Dutch company that pays Spain for designers will pay Spain for a Digital Learning Manager too. What the combined seat **does** change is **which ads you can enter**:
 
-- Hybrid Berlin / Paris / Munich: still blocked from Seville, even if you can run their LMS and send them a weekly completion report.
-- Remote SME that wants one hire: this is the market that values all three hats, and it does not need you in an office two days a week. Pay is still whatever band they use for Spain, or one European band if they say so.
-- Spanish multinational: L&D Manager band above, hybrid possible inside Spain.
+- Days in an office in Berlin, Paris, or Munich: outside the search, even if you can run their learning platform and send them a weekly completion report.
+- Remote firm that wants one hire: this is the market that values all three hats. Pay is still whatever band they use for Spain, or one European band if they say so.
+- Spanish firm: the L&D Manager band above, and only when the advert is fully remote.
 
 **A realistic three-hat number from Seville, if they title you Digital Learning Manager / player-coach L&D, not technician:**
 
@@ -279,13 +279,13 @@ Those are planning bands from the tables above, not an offer. Do not add LMS Man
 
 ---
 
-## 07 Hybrid in Andalusia (odds, not a lottery ticket)
+## 07 Offices in Seville, Córdoba, and Huelva
 
-There is **no** published percentage that says “X% of Andalusian firms hire a hybrid instructional designer.” Do not invent one. The odds picture is structural: how many companies here even *have* an L&D desk, and how many of those will let you work some days from Espartinas.
+**Best option:** fully remote EU employment. Days in an office are not a search.
 
-**Best option:** keep **EU remote employment** as the main hunt. Treat Andalusia hybrid as a **thin parallel search**, almost entirely **Seville**, not the whole region. Do not wait for a local hybrid Digital Learning Manager to appear.
+Checked 4 October 2026. No employer in Seville, Córdoba, or Huelva met the rung-1 titles and the languages on the CV. ATEXIS (Alten) in Seville does post instructional design, and has offered days in that office or fully remote from elsewhere in Spain. The advert requires French at B2 and English at C1. French is not on [cv.md](cv.md), so it does not qualify. Netex names instructional designers and has offices in A Coruña, Madrid, Barcelona, London, and Leeds. None of those is in the three provinces.
 
-**How a hiring manager here will read a hybrid-only search:** you are fishing in a small pond. Most Andalusian employers never post this job.
+**How a hiring manager will read a local-office search from Espartinas:** a very small pond. Most Andalusian employers never post this job. Do not wait for one.
 
 ### What the region actually is
 
@@ -302,11 +302,7 @@ Your read is right on **small firms**. It is less true that the *workforce* is m
 | People who regularly work from home | Andalusia **10.7%**; Madrid about **one in three** | INE ICT-in-enterprises survey, reported [20minutos, 2025](https://www.20minutos.es/lainformacion/economia-y-finanzas/espana-que-trabaja-desde-casa-uno-cada-tres-madrilenos-teletrabaja-frente-solo-un-5-los-canarios-murcianos_6537240_0.html) |
 | Firms that offer telework | Andalusia **30.9%**; Madrid **53.3%** | Same INE survey via that report |
 
-A hybrid L&D / ID seat needs a company that (1) has an office you can reach, (2) has enough people to need onboarding and an LMS, and (3) allows hybrid. That is almost never the olive grove or the five-person shop. It is a **tiny slice** of the **0.4%** with 100+ staff, plus a few consultancies and online universities.
-
-### Hybrid does not mean “all of Andalusia”
-
-Two or three days a week in the office is a commute, not a map of eight provinces. From Espartinas, **Seville** is realistic. Málaga is a long twice-or-thrice-weekly drive. Granada, Córdoba, Cádiz, Almería, Jaén, Huelva are not a hybrid pattern you can keep. Search “hybrid Andalusia” as **hybrid Seville**, plus the rare Málaga ad you would actually travel for.
+An in-house learning seat needs a company with enough people to need onboarding and a learning platform. That is a **tiny slice** of the **0.4%** with 100+ staff, plus a few consultancies and online universities. It is still only in this search when the advert is fully remote.
 
 ### Ads that exist (few, real, not a pipeline)
 
@@ -314,20 +310,20 @@ InfoJobs 2025: Andalusia had **15%** of Spanish vacancies in the **education and
 
 Live examples around 2026 (illustrations, not a promise they are still open):
 
-| What | Where | Hybrid? | Catch |
-|------|--------|---------|--------|
-| Instructional Designer, Atexis (Alten) Content Factory | Seville | Hybrid **or** fully remote from elsewhere in Spain | Wants **French B2**, English C1, ~4 years ID, Storyline, a portfolio. French is not on [cv.md](cv.md). |
-| Moodle + digital content specialist | Seville | Not stated as hybrid in the posting seen | Agency/client Moodle work, not in-house L&D Manager |
-| Instructional / digital contents | Málaga (UTAMED, online university) | Listed as telework on one board | University content production, not a corporate L&D desk |
-| E-learning layout (*maquetador*) | Málaga centre | **On site** | Substitute contract, *convenio* for non-formal training — cheap technician work. Walk. |
+| What | Where | Catch |
+|------|--------|--------|
+| Instructional Designer, Atexis (Alten) Content Factory | Seville | Wants **French B2**, English C1, ~4 years instructional design, Storyline, a portfolio. French is not on [cv.md](cv.md). Does not qualify. |
+| Moodle + digital content specialist | Seville | Agency or client Moodle work, not an in-house L&D Manager seat |
+| Instructional / digital contents | Málaga (UTAMED, online university) | Listed as telework on one board. University content production, not a corporate L&D desk. Málaga is outside Seville, Córdoba, and Huelva. |
+| E-learning layout (*maquetador*) | Málaga centre | On site. Substitute contract, *convenio* for non-formal training. Below the career. Walk. |
 
 The Seville aerospace pocket is the one local cluster that actually buys instructional design: Airbus Defence and Space at San Pablo, the International Training Centre, suppliers such as Atexis. That is technical training for aircraft, often with language and security constraints. It is not “L&D for any Andalusian company.”
 
 ### The odds, in plain language
 
-- **Finding a suitable hybrid ID / LXD / Digital Learning Manager seat in reach of Espartinas:** **low, not zero.** A handful of ads in a year, not a queue. Most will be Seville production/consultancy or university content, not a bank’s in-house L&D team.
-- **Finding that seat at a small Andalusian firm:** **near zero.** They do not have an LMS or an L&D manager. They send people on a FUNDAE course.
-- **Using Andalusia hybrid as the main plan:** **poor.** The main plan is still remote EU (and Spanish firms that hire remote). Local hybrid is a bonus if Atexis-type work appears **and** you can meet the language bar.
+- **A qualifying employer in Seville, Córdoba, or Huelva:** none found on 4 October 2026. ATEXIS is in Seville and posts the work, and it fails the language bar.
+- **A small Andalusian firm:** they do not have a learning platform or an L&D manager. They send people on a FUNDAE course.
+- **The plan:** fully remote EU, including Spanish firms that hire fully remote.
 
-Pay, if one does appear: Spain bands in **05** and **06**. A Seville hybrid ID at a consultancy is more likely the specialist / designer band than the €50–65k manager band. An on-site *maquetador* on the training *convenio* is below the career. Do not take it to “be local.”
+Pay for a remote Spanish designer seat: Spain bands in **05** and **06**. An on-site *maquetador* on the training *convenio* is below the career. Do not take it to “be local.”
 

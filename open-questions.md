@@ -9,6 +9,7 @@ Source of truth: [cv-source-original.md](cv-source-original.md) (2026 Word CV).
 - [ ] Phone number for CV and letter
 - [ ] Portfolio URL (Wix, once live)
 - [ ] LinkedIn URL
+- [ ] Spanish level for interviews. Native English is on the CV. Do not claim French, German, or Dutch. Spain-based employers may interview in Spanish.
 - [x] LMS — locked 22 Sep 2026:
   - **Academy ops:** Edmodo from 2015 until Edmodo closed; **Google Classroom** from then to present.
   - **Live online:** Zoom from 2019 until 2021, then Skype, now Teams (Keith, 28 Sep 2026). Zoom was chosen so teachers and adult learners could be trained quickly. On Covid-19 closure, teaching staff were trained in 3 hours; all classes continued with no missed session.
@@ -49,7 +50,7 @@ Source of truth: [cv-source-original.md](cv-source-original.md) (2026 Word CV).
 ## Time
 
 - [ ] Hours per week for this course vs Report-O-Matic marketing
-- [ ] Preferred first application week (not before Week 6 unless a role is purely programme-management)
+- [x] Preferred first application week — December 2026, and only after the Rise and Storyline modules are on the live site (Keith, 4 Oct 2026). Setup of accounts and alerts may happen before that. Volume applications may not.
 
 ## 90-day onboarding outline (24 Sep 2026)
 

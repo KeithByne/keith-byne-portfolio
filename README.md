@@ -59,7 +59,9 @@ Be blunt. If an idea will look like a gimmick, ESL classroom residue, unearned t
 | [public/work/cv/keith-byne-cv.html](public/work/cv/keith-byne-cv.html) | Portfolio CV layout, locked 3 Oct 2026. Two pages. Change the words when asked. Do not move the page break, the four boxes, the header, the photo, or the type sizes. |
 | [cover-letter.md](cover-letter.md) | Introduction letter. Swap the tokens per application. |
 | [outreach-plan.md](outreach-plan.md) | After the portfolio: how to be seen, and how to approach named people. |
-| [how-industry-works.md](how-industry-works.md) | Europe: remote vs hybrid, employed vs freelance, pay bands, and how to package. |
+| [interview-plan.md](interview-plan.md) | December interview campaign: stages, accounts, presence, and employer watch list. |
+| [interview-log.md](interview-log.md) | One row per application or note. Empty until December. |
+| [how-industry-works.md](how-industry-works.md) | Europe: fully remote employment, pay bands, and how to package. |
 | [cv-skills-log.md](cv-skills-log.md) | Which course module unlocks which CV line. |
 | Formatted docs (local) | [http://127.0.0.1:3458/](http://127.0.0.1:3458/) — clickable menu. Open all windows with `node tmp/docs-preview/open-all.js`. |
 | [portfolio-plan.md](portfolio-plan.md) | Overview, glossary, and staged build order. Read this first. |

@@ -146,6 +146,13 @@ const docs = [
     src: "outreach-plan.md",
   },
   {
+    id: "interviews",
+    menu: "Interviews",
+    title: "December interview plan",
+    blurb: "Stages, accounts, presence, and a watch list of real employers.",
+    src: "interview-plan.md",
+  },
+  {
     id: "industry",
     menu: "How they hire",
     title: "How this industry works in Europe",

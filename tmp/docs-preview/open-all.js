@@ -24,6 +24,7 @@ const pages = [
   "/cv.html",
   "/tools.html",
   "/outreach.html",
+  "/interviews.html",
   "/industry.html",
   "/skills.html",
 ];
