@@ -804,12 +804,29 @@ h1 em {
 
 .aims {
   display: grid;
-  grid-template-columns: minmax(0, 1.05fr) minmax(16rem, 23rem);
-  gap: 2.5rem 3rem;
-  align-items: start;
+  grid-template-columns: minmax(0, 1.35fr) minmax(14rem, 20rem);
+  gap: 1.5rem 2.4rem;
+  align-items: center;
+  padding-top: 1.15rem;
+  padding-bottom: 0.85rem;
+}
+
+.aims .eyebrow { margin-bottom: 0.45rem; }
+
+.aims h1 {
+  font-size: clamp(2rem, 4vw, 3.15rem);
+  margin-bottom: 0.7rem;
 }
 
 .aims .prose { max-width: none; }
+
+.aims .prose p {
+  line-height: 1.45;
+  margin: 0.38rem 0;
+}
+
+.aims .prose p:first-child { margin-top: 0; }
+.aims .prose p:last-child { margin-bottom: 0; }
 
 .aims-copy,
 .aims-map {
@@ -878,6 +895,43 @@ h1 em {
   .site-header { flex-wrap: wrap; }
   .hero { padding-top: 2.5rem; }
   .studio-process img { aspect-ratio: 16 / 9; }
+}
+
+@media (min-width: 900px) and (min-height: 640px) {
+  body:has(main.aims) {
+    height: 100dvh;
+    overflow: hidden;
+  }
+  body:has(main.aims) .wrap {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  body:has(main.aims) .site-header,
+  body:has(main.aims) .site-footer {
+    flex: none;
+  }
+  body:has(main.aims) main.aims {
+    flex: 1;
+    min-height: 0;
+  }
+  body:has(main.aims) .aims-copy {
+    overflow: hidden;
+  }
+  body:has(main.aims) .aims-map {
+    height: 100%;
+    max-height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin: 0;
+  }
+  body:has(main.aims) .aims-map svg {
+    width: auto;
+    height: 100%;
+    max-width: 100%;
+    max-height: 100%;
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {
