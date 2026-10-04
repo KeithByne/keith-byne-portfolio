@@ -834,13 +834,40 @@ h1 em {
 }
 
 .aims-map {
+  position: relative;
   margin: 0.2rem 0 0;
+  aspect-ratio: 640 / 1272;
+}
+
+.aims-map img,
+.aims-map svg {
+  width: 100%;
+  height: 100%;
+  display: block;
 }
 
 .aims-map svg {
-  width: 100%;
-  height: auto;
-  display: block;
+  position: absolute;
+  inset: 0;
+}
+
+.aims-star {
+  position: absolute;
+  z-index: 1;
+  width: 0.7%;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background: #e8eaf2;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 0 3px 1px rgba(232, 236, 255, 0.8);
+  animation: aims-twinkle var(--dur, 2.8s) ease-in-out infinite;
+  animation-delay: var(--delay, 0s);
+  pointer-events: none;
+}
+
+@keyframes aims-twinkle {
+  0%, 100% { opacity: 0.2; transform: translate(-50%, -50%) scale(0.7); }
+  50% { opacity: 1; transform: translate(-50%, -50%) scale(1); }
 }
 
 .roles { list-style: none; padding: 0; margin: 0; }
@@ -926,8 +953,14 @@ h1 em {
     justify-content: flex-end;
     margin: 0;
   }
-  body:has(main.aims) .aims-map svg {
+  body:has(main.aims) .aims-map {
     width: auto;
+    aspect-ratio: 640 / 1272;
+    max-width: 100%;
+  }
+  body:has(main.aims) .aims-map img,
+  body:has(main.aims) .aims-map svg {
+    width: 100%;
     height: 100%;
     max-width: 100%;
     max-height: 100%;
@@ -944,6 +977,7 @@ h1 em {
     animation: none;
   }
   .aims-pulses { display: none; }
+  .aims-star { animation: none; opacity: 1; }
 }
 
 /* 1999 preview matte lives on .case-shots-cv */
