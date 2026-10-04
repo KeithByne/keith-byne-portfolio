@@ -889,6 +889,7 @@ h1 em {
   .case-shot-zoom {
     animation: none;
   }
+  .aims-pulses { display: none; }
 }
 
 /* 1999 preview matte lives on .case-shots-cv */
