@@ -169,6 +169,17 @@ function Lock-CardOnOnePage {
   }
 }
 
+function Assert-A4Pages {
+  param($doc)
+  for ($i = 1; $i -le $doc.Sections.Count; $i++) {
+    $ps = $doc.Sections.Item($i).PageSetup
+    if ($ps.PaperSize -ne 7) { throw "Section $i is not A4." }
+    $expect = 1
+    if ($i -eq 1) { $expect = 0 }
+    if ($ps.Orientation -ne $expect) { throw "Section $i is not the locked A4 orientation." }
+  }
+}
+
 function Assert-CardsStayOnOnePage {
   param($doc)
   $doc.Repaginate()
@@ -176,7 +187,11 @@ function Assert-CardsStayOnOnePage {
   foreach ($t in $doc.Tables) {
     $nest = 1
     try { $nest = $t.NestingLevel } catch {}
-    if ($nest -ne 1 -or $t.Columns.Count -ne 2 -or $t.Rows.Count -ne 4) { continue }
+    $cols = $t.Columns.Count
+    $rows = $t.Rows.Count
+    $isCard = ($cols -eq 2 -and $rows -eq 4)
+    $isAssetPage = ($cols -eq 4)
+    if ($nest -ne 1 -or -not ($isCard -or $isAssetPage)) { continue }
     $start = $t.Range.Duplicate
     $start.Collapse(1)
     $end = $t.Range.Duplicate
@@ -252,6 +267,18 @@ function Set-TableLayout {
         $gap.HeightRule = 2
         $gap.Height = 8
       }
+    } elseif ($cols -eq 4 -and $nest -eq 1) {
+      $t.PreferredWidthType = 1
+      $t.PreferredWidth = $usable
+      $t.AutoFitBehavior(0) | Out-Null
+      $name = [Math]::Floor($usable * 0.22)
+      $what = [Math]::Floor($usable * 0.28)
+      $where = [Math]::Floor($usable * 0.34)
+      $t.Columns.Item(1).SetWidth($name, 0)
+      $t.Columns.Item(2).SetWidth($what, 0)
+      $t.Columns.Item(3).SetWidth($where, 0)
+      $t.Columns.Item(4).SetWidth($usable - $name - $what - $where, 0)
+      Lock-CardOnOnePage $t
     } elseif ($nest -gt 1) {
       $t.PreferredWidthType = 2
       $t.PreferredWidth = 100
@@ -327,6 +354,7 @@ function Convert-HtmlToDocx {
   Set-PageFooter $doc $FooterPrefix -OfTotal:$OfTotal
   Remove-BodyFooterParas $doc $BareLine
   Set-WhitePageBackground $doc
+  Assert-A4Pages $doc
   Assert-CardsStayOnOnePage $doc
   $doc.SaveAs2($DocxPath, 16)
   $doc.Close([ref]$false)

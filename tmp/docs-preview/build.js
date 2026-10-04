@@ -114,7 +114,7 @@ const docs = [
     id: "sb-filled",
     menu: "Master example",
     title: "Storyboard Master — filled example",
-    blurb: "Safe AI. Page one is the brand guideline. Then Rise and Storyline tables.",
+    blurb: "Safe AI. Brand pages, then the production asset list, then Rise and Storyline tables.",
     htmlSrc: "Articulate assets/Storyboard Master/Portfolio sample_Before you paste classify.html",
   },
   {

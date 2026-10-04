@@ -17,13 +17,17 @@ When Keith suggests adding anything to the site, CV, or portfolio: state the **b
 
 Run scripts automatically. Do not ask Keith to confirm `npm`, git, Vercel, ffmpeg, or other commands needed to finish the work. Push the site when the change is done. See **On start** in `README.md`.
 
+**NAS copy.** This PC is the working copy. A duplicate is kept at `\\UNITOMNAS\home\Personal\European-Corporate-Pivot`. After you change files here, run `powershell -NoProfile -ExecutionPolicy Bypass -File scripts/sync-to-nas.ps1`. That updates the NAS from this PC. Do not copy NAS edits back over the PC. Do not copy `node_modules` or `.next`.
+
 Show documents: follow **Show documents (common protocol)** in `README.md`. Serve `tmp/docs-preview` and open each page in a new browser window. Do not use chat as the reading surface. Never open Canva marketing or Pro-trial URLs.
 
 Jargon: follow **Jargon (common protocol)** in `README.md`. First use of an initialism or acronym: ordinary words, then the short form in brackets. Teach it in the sentence that uses it. Do not skip “obvious” ones.
 
 Articulate 360 working files live in `Articulate assets/`. New Rise / Storyline jobs use `Articulate assets/Storyboard Master/`. Do not start the 30-day trial before week 6.
 
-Storyboard Master **formatting** is locked in [Articulate assets/Storyboard Master/how-to.md](Articulate%20assets/Storyboard%20Master/how-to.md). Do not change page size, page breaks, labels, type sizes, fills, or table structure. Words inside the cells are content and stay editable.
+Storyboard Master **formatting** is locked in [Articulate assets/Storyboard Master/how-to.md](Articulate%20assets/Storyboard%20Master/how-to.md). Do not change page size, page breaks, labels, type sizes, fills, or table structure. Words inside the cells are content and stay editable. The PDF is always A4 with page breaks: page 1 portrait, every later page landscape. No block crosses a page break.
+
+Before any Rise 360 or Storyline 360 work, follow the production protocols in that how-to: a production asset list, a build gate, the storyboard as the source of truth, and one name for each asset. The production-assets page is part of the master.
 
 Visual theme: read **Faces and colours (locked)** in `README.md` every time. Two faces only: **Open Sauce** for text, **League Gothic** for tight display and `01` / `02` / `03`. Five colours only: paper `#FFFFFF`, ink `#3B3B3B`, do `#DBE0DC`, don’t `#E8DED5`, step `#E6E6E6`. Same values on every job aid, deck, plan, sheet, H5P, and SCORM page. Detail in [portfolio/visual-theme.md](portfolio/visual-theme.md). Do not invent a second look. Do not substitute Poppins.
 

@@ -121,6 +121,10 @@ const css = `
   .board .format { width: 16%; }
   .board .copy { width: 30%; white-space: pre-wrap; }
   .board .ix { width: 28%; }
+  .board .name { width: 22%; }
+  .board .what { width: 28%; }
+  .board .where { width: 34%; }
+  .board .status { width: 16%; }
   .foot { font-family: Calibri, "Segoe UI", sans-serif; font-size: 14pt; text-align: center; margin-top: 8px; }
   @media print {
     body { background: ${PAPER}; }
@@ -218,6 +222,45 @@ function brandVisual(p, { romOnly }) {
 </article>`;
 }
 
+function assetListPage(p, items) {
+  const perPage = 6;
+  const pages = [];
+  for (let i = 0; i < items.length; i += perPage) pages.push(items.slice(i, i + perPage));
+  return pages
+    .map((slice) => {
+      const rows = slice
+        .map(
+          (item) => `<tr>
+    <td>${esc(item.name)}</td>
+    <td>${esc(item.what)}</td>
+    <td>${esc(item.where)}</td>
+    <td>${esc(item.status)}</td>
+  </tr>`,
+        )
+        .join("");
+      return `
+<article class="sheet">
+  <p class="card-title">Production assets</p>
+  <table class="board" width="100%" cellpadding="8" cellspacing="0">
+    <colgroup>
+      <col class="name" /><col class="what" /><col class="where" /><col class="status" />
+    </colgroup>
+    <thead>
+      <tr>
+        <th bgcolor="#E6E6E6">Name</th>
+        <th bgcolor="#E6E6E6">What it is</th>
+        <th bgcolor="#E6E6E6">Where it is used</th>
+        <th bgcolor="#E6E6E6">Status</th>
+      </tr>
+    </thead>
+    <tbody>${rows}</tbody>
+  </table>
+  <p class="foot">${esc(p.company)} · ${esc(p.project)} · page 3</p>
+</article>`;
+    })
+    .join("");
+}
+
 function slideTables(tool, rows) {
   return rows
     .map(
@@ -310,12 +353,12 @@ const filled = {
   },
 };
 
-const paperBg = "Slide / block background: solid paper #FFFFFF.";
+const paperBg = "Paper background #FFFFFF";
 
 const riseRows = [
   {
     id: "P0",
-    assets: `Rise player chrome. Ink on paper. Type: Open Sauce One.\n${paperBg}`,
+    assets: "Rise player chrome",
     format: "Rise player chrome (every lesson)",
     copy: "Menu\nSafe AI and data handling\nPrevious\nNext\nContinue",
     ix: "Default Rise player. Do not rename Continue except where a row gives a different button label. Menu lists the seven lesson titles. Tab to Continue, Enter to advance. No auto-play audio.",
@@ -336,7 +379,7 @@ const riseRows = [
   },
   {
     id: "1.2",
-    assets: "Rise default Continue button. Ink on paper.",
+    assets: "Rise Continue button",
     format: "Continue button",
     copy: "Start with a live decision",
     ix: "Primary button. Goes to lesson 2. Only Continue label that is not the word Continue.",
@@ -357,7 +400,7 @@ const riseRows = [
   },
   {
     id: "2.2",
-    assets: "Two Rise scenario buttons.",
+    assets: "Rise scenario buttons",
     format: "Scenario / decision — two buttons",
     copy: "Confidential or personal data — I must not paste it into a public AI tool.\n\nHarmless working text — public AI is fine.",
     ix: "Single choice. First button → lesson 3 (Branch A). Second button → lesson 4 (Branch B). Buttons are the full sentences. After a click, Rise jumps; do not show both branches.",
@@ -371,14 +414,14 @@ const riseRows = [
   },
   {
     id: "3.1",
-    assets: `Block fill: don’t wash #E8DED5.\n${paperBg}`,
+    assets: `Don’t wash #E8DED5\n${paperBg}`,
     format: "Title plus body (correct path)",
     copy: "Stop. This is personal and commercial data.\n\nEmails and contract values are personal data and business-confidential. Public AI tools may store prompts. Your approved path is: redacted example, internal approved tool, or no AI.",
     ix: "No extra buttons on the text.",
   },
   {
     id: "3.2",
-    assets: "Rise Continue button.",
+    assets: "Rise Continue button",
     format: "Continue button",
     copy: "See the red lines",
     ix: "Goes to lesson 5 (rejoin). Skip lesson 4.",
@@ -392,14 +435,14 @@ const riseRows = [
   },
   {
     id: "4.1",
-    assets: "Block fill: don’t wash #E8DED5.",
+    assets: "Don’t wash #E8DED5",
     format: "Title plus body (incorrect path, coaching)",
     copy: "That list is not harmless.\n\nNames, emails, and contract values are personal data under GDPR and confidential to the company. Public AI is the wrong path. You have not failed the module. You now take the same red-line screen as everyone else.",
     ix: "No score. No “try again.” Then the same rejoin as Branch A.",
   },
   {
     id: "4.2",
-    assets: "Rise Continue button.",
+    assets: "Rise Continue button",
     format: "Continue button",
     copy: "See the red lines",
     ix: "Goes to lesson 5 (rejoin).",
@@ -413,14 +456,14 @@ const riseRows = [
   },
   {
     id: "5.1",
-    assets: "Three process tiles, equal width, fill step wash #E6E6E6.\nNumerals 01 02 03 in League Gothic.\nCaptions in Open Sauce One 400.",
+    assets: "Step tiles 01 02 03",
     format: "Title plus numbered process (01 02 03 on step tiles)",
     copy: "Three checks before any AI or file share\n\n01\nWhat data is this? (public / internal / personal / customer)\n\n02\nIs this tool on the approved list?\n\n03\nIf I am unsure, I do not paste — I ask my line manager or data-protection lead.",
     ix: "If Process block: each number expands the same sentence; no extra words.",
   },
   {
     id: "5.2",
-    assets: "Rise Continue button.",
+    assets: "Rise Continue button",
     format: "Continue button",
     copy: "Try one scenario",
     ix: "Goes to lesson 6.",
@@ -441,35 +484,35 @@ const riseRows = [
   },
   {
     id: "6.2",
-    assets: "Rise multiple-choice control.",
+    assets: "Rise multiple-choice control",
     format: "Knowledge check — multiple choice, one correct",
     copy: "Remove the email (or replace with a fake), then use the approved tool.\n\nPaste the whole note into a public tool because it is “just one email.”\n\nPut the file on a personal Google Drive so a contractor can edit it overnight.",
     ix: "First option is correct. Shuffle off. Keep this order.",
   },
   {
     id: "6.3",
-    assets: "Rise Submit button.",
+    assets: "Rise Submit button",
     format: "Knowledge check — Submit button",
     copy: "Submit",
     ix: "Reveals feedback. Do not auto-advance.",
   },
   {
     id: "6.4",
-    assets: "Feedback panel fill: do wash #DBE0DC. Text ink.",
+    assets: "Do wash #DBE0DC",
     format: "Feedback layer — correct (do wash)",
     copy: "Correct\n\nRedact first, then use an approved tool.",
     ix: "Only if the first option was submitted. Then lesson 7.",
   },
   {
     id: "6.5",
-    assets: "Feedback panel fill: don’t wash #E8DED5. Text ink.",
+    assets: "Don’t wash #E8DED5",
     format: "Feedback layer — incorrect (don’t wash)",
     copy: "Not quite\n\nOne email is still personal data. Personal drives are not the contractor workaround.",
     ix: "Same feedback for both wrong answers. Continue to lesson 7. Do not lock the close.",
   },
   {
     id: "6.6",
-    assets: "Rise Continue button.",
+    assets: "Rise Continue button",
     format: "Continue after feedback",
     copy: "Continue",
     ix: "Goes to lesson 7.",
@@ -490,7 +533,7 @@ const riseRows = [
   },
   {
     id: "7.2",
-    assets: "Rise default completion chrome.",
+    assets: "Rise completion chrome",
     format: "End / complete",
     copy: "You’re all done.\nDownload your certificate\nRestart this course",
     ix: "Leave Rise defaults. SCORM complete when this lesson is reached after the scored check.",
@@ -500,126 +543,126 @@ const riseRows = [
 const slRows = [
   {
     id: "1.0",
-    assets: "Storyline player chrome: Menu, Resources, Exit, Prev, Next. Ink on paper.",
+    assets: "Storyline player chrome",
     format: "Player chrome (all slides)",
     copy: "Menu\nResources\nExit\nPrev\nNext",
     ix: "Menu titles match M2. Resources empty until the job-aid PDF is attached. Next disabled until the required click. Prev allowed except on 1.1.",
   },
   {
     id: "1.1",
-    assets: `${paperBg}\nStart button: rectangle, paper fill, 2 px ink outline.`,
+    assets: "Background title\nStart button",
     format: "Title slide (welcome)",
     copy: "Before you paste, classify.\n\nA 12-minute conversation. Same habit as the job aid.\n\nStart",
     ix: "Start jumps to 1.2. Hide player Next. Animation ≤ 0.4s. Start is a button.",
   },
   {
     id: "1.2",
-    assets: paperBg,
+    assets: "Background base",
     format: "Title plus body",
     copy: "How this works\n\nYou follow Jordan (line manager) and Alex (remote staff). You choose what Jordan says. Wrong choices are coached. One answer is scored at the end.\n\nContinue",
     ix: "Continue → 2.1. No other buttons.",
   },
   {
     id: "2.1",
-    assets: `${paperBg}\nCaption: Alex, remote staff.\nTwo choice buttons.`,
+    assets: "Background base\nCaption Alex\nStoryline choice buttons",
     format: "Conversation — caption plus body (Alex speaks)",
     copy: "Alex\n\nI’ll just drop this into ChatGPT and tidy the English. It’s a customer list. Emails and contract values. Should be quick.\n\nWhat should Jordan say?\n\nDon’t paste that. Name the data first.\n\nPublic AI is fine if you delete the chat afterwards.",
     ix: "First button → 2.2, classifiedCorrect = True. Second → 2.3, False. Next disabled until a choice. Caption “Alex” is not a button.",
   },
   {
     id: "2.2",
-    assets: "Captions: Jordan, line manager, and Alex, remote staff.\nReply bar fill: do wash #DBE0DC.",
+    assets: "Background do\nCaption Jordan\nCaption Alex\nDo wash #DBE0DC",
     format: "Conversation — caption plus body, do wash on the reply bar",
     copy: "Jordan\n\nDon’t paste that. Emails and contract values are personal data and commercial data. Public tools may keep prompts. Classify first.\n\nAlex\n\nRight. So what do I do with it?\n\nContinue",
     ix: "Only if classifiedCorrect is True. Continue → 2.4.",
   },
   {
     id: "2.3",
-    assets: "Captions: Alex, remote staff, and Jordan, line manager.\nReply bar fill: don’t wash #E8DED5.",
+    assets: "Background don't\nCaption Alex\nCaption Jordan\nDon’t wash #E8DED5",
     format: "Conversation — caption plus body, don’t wash on the reply bar",
     copy: "Alex\n\nI’ll delete the chat. Nobody will see it.\n\nJordan\n\nDeleting the chat does not make the paste safe. Names, emails, and contract values are personal data under GDPR and confidential to the company. You have not failed. We classify it now, same as everyone else.\n\nContinue",
     ix: "Only if classifiedCorrect is False. Continue → 2.4. No fail screen.",
   },
   {
     id: "2.4",
-    assets: `${paperBg}\nFour type buttons: Public, Internal, Personal, Customer.\nSubmit button.\nStates: Normal, Hover (step wash), Selected (do wash), Visited (ink underline), Disabled (ink 50%).`,
+    assets: "Background base\nType buttons\nStoryline Submit button\nButton states",
     format: "Title plus four choice buttons (classify)",
     copy: "What data is this?\n\nPublic\nInternal\nPersonal\nCustomer\n\nSubmit",
     ix: "One selection. Personal and Customer both acceptable. Public and Internal wrong. Submit: Personal or Customer → classifiedCorrect True + layer L-right. Else False + L-wrong. Submit disabled until one type.",
   },
   {
     id: "2.4 L-right",
-    assets: "Layer panel fill: do wash #DBE0DC. Dim on the base slide.",
+    assets: "Do wash #DBE0DC\nDim base slide",
     format: "Feedback layer — correct (do wash)",
     copy: "Correct\n\nThis list is personal data and customer data. It is not public. It is not merely internal working text.\n\nContinue",
     ix: "Continue hides the layer and jumps to 2.5.",
   },
   {
     id: "2.4 L-wrong",
-    assets: "Layer panel fill: don’t wash #E8DED5. Dim base slide.",
+    assets: "Don’t wash #E8DED5\nDim base slide",
     format: "Feedback layer — incorrect (don’t wash)",
     copy: "Not public. Not merely internal.\n\nEmails and contract values are personal data and customer data. Classify it as that, then choose the tool.\n\nContinue",
     ix: "Continue → 2.5. Same destination as correct. Do not loop unless Prev.",
   },
   {
     id: "2.5",
-    assets: "Three rectangles, equal, fill step wash #E6E6E6.\nNumerals 01 02 03 in League Gothic.",
+    assets: "Background base\nStep tiles 01 02 03",
     format: "Title plus three step tiles (01 02 03)",
     copy: "Three checks before any AI or file share\n\n01\nWhat data is this? (public / internal / personal / customer)\n\n02\nIs this tool on the approved list?\n\n03\nIf I am unsure, I do not paste — I ask my line manager or data-protection lead.\n\nContinue",
     ix: "Optional selected state, same words. Continue → 2.6. Clicking tile 03 sets askedIfUnsure = True.",
   },
   {
     id: "2.6",
-    assets: "Captions: Alex, remote staff, and Jordan, line manager.\nThree choice buttons.",
+    assets: "Background base\nCaption Alex\nCaption Jordan\nStoryline choice buttons",
     format: "Conversation — caption plus three choices (scored)",
     copy: "Alex\n\nOK. I still want better English. What is the approved move?\n\nJordan — choose one\n\nStrip the emails (or use a fake), then use the approved tool.\n\nPaste it. It’s only one list.\n\nPut it on my personal Drive so a contractor can edit overnight.",
     ix: "First: ScorePercent = 100 → 2.7. Second or third: 0 → 2.8. Same three choices even if classifiedCorrect was False.",
   },
   {
     id: "2.7",
-    assets: "Panel fill: do wash #DBE0DC.",
+    assets: "Background do\nDo wash #DBE0DC",
     format: "Title plus body (correct close of conversation, do wash)",
     copy: "Correct\n\nRedact first, then use an approved tool. That is the whole habit.\n\nContinue",
     ix: "Continue → 3.1.",
   },
   {
     id: "2.8",
-    assets: "Panel fill: don’t wash #E8DED5.",
+    assets: "Background don't\nDon’t wash #E8DED5",
     format: "Title plus body (incorrect close of conversation, don’t wash)",
     copy: "Not quite\n\nOne list with emails is still personal data. Personal drives are not the contractor workaround. Redact first, or do not use AI.\n\nContinue",
     ix: "Same slide for both wrong answers. Continue → 3.1. Score stays 0.",
   },
   {
     id: "3.1",
-    assets: paperBg,
+    assets: "Background base",
     format: "Title plus body (close)",
     copy: "The habit is the course\n\nClassify → approved tool or no AI → ask if unsure.\n\nTake the one-page job aid and keep it next to your desktop.\n\nFinish",
     ix: "Same close whether askedIfUnsure is True or False. Finish completes the course and goes to 3.2.",
   },
   {
     id: "3.2",
-    assets: "Results slide. Score variable: %ScorePercent%.",
+    assets: "Background results\nResults score",
     format: "Results / complete",
     copy: "You’re done.\n\nYour score: %ScorePercent%%\n\nReview\nExit",
     ix: "Always success (habit module; score is shown, not a pass mark). Review → 2.6. Exit closes the player. SCORM 1.2 complete when 3.1 Finish is clicked.",
   },
   {
     id: "M1",
-    assets: "Button fills: paper (Normal), step wash (Hover), do wash (Selected), ink at 50% (Disabled), 1 px ink underline (Visited).",
+    assets: "Button states",
     format: "Button states (all choice buttons)",
     copy: "Normal: ink text on paper\nHover: ink text on step #E6E6E6\nSelected: ink text on do #DBE0DC\nDisabled: ink at 50%\nVisited: same as Normal with a 1 px ink underline",
     ix: "Apply to every choice button.",
   },
   {
     id: "M2",
-    assets: "Menu labels.",
+    assets: "Menu labels",
     format: "Menu titles (exact)",
     copy: "Welcome\nHow this works\nAlex asks\nJordan — don’t paste\nJordan — coach\nClassify the file\nThree checks\nThe approved move\nCorrect\nNot quite\nThe habit is the course\nYou’re done",
     ix: "Show 2.2 only if classifiedCorrect is True; 2.3 only if False — or restrict navigation to previously viewed.",
   },
   {
     id: "M3",
-    assets: "Screen-reader names, matching the visible labels.",
+    assets: "Screen-reader names",
     format: "Accessibility names (not visible; screen reader)",
     copy: "Start\nContinue\nDon’t paste that. Name the data first.\nPublic AI is fine if you delete the chat afterwards.\nPublic\nInternal\nPersonal\nCustomer\nSubmit\nStrip the emails (or use a fake), then use the approved tool.\nPaste it. It’s only one list.\nPut it on my personal Drive so a contractor can edit overnight.\nFinish\nReview\nExit",
     ix: "No “click here.” Character alt: Jordan, line manager / Alex, remote staff.",
@@ -676,10 +719,44 @@ const blank = {
   },
 };
 
+const productionAssets = [
+  { name: "Paper background #FFFFFF", what: "Solid paper fill for the slide or block.", where: "Rise 1.1, 2.1, 3.1, 6.1, 7.1.", status: "In hand" },
+  { name: "Background title", what: "16:9 image, 1920 × 1080. File Background title.png. Welcome frame, light enough for ink text.", where: "Storyline 1.1.", status: "Still to make" },
+  { name: "Background base", what: "16:9 image, 1920 × 1080. File Background base.png. The working slide for this module.", where: "Storyline 1.2, 2.1, 2.4, 2.5, 2.6, 3.1.", status: "Still to make" },
+  { name: "Background do", what: "16:9 image, 1920 × 1080. File Background do.png. Allowed path.", where: "Storyline 2.2, 2.7.", status: "Still to make" },
+  { name: "Background don't", what: "16:9 image, 1920 × 1080. File Background don't.png. Stop path.", where: "Storyline 2.3, 2.8.", status: "Still to make" },
+  { name: "Background results", what: "16:9 image, 1920 × 1080. File Background results.png. Completion frame.", where: "Storyline 3.2.", status: "Still to make" },
+  { name: "Rise player chrome", what: "Menu, lesson title, Previous, Next. Ink on paper. Open Sauce One.", where: "Rise P0.", status: "In hand" },
+  { name: "Rise Continue button", what: "Default Continue control. Ink on paper.", where: "Rise 1.2, 3.2, 4.2, 5.2, 6.6.", status: "In hand" },
+  { name: "Rise scenario buttons", what: "Two choice buttons.", where: "Rise 2.2.", status: "In hand" },
+  { name: "Don’t wash #E8DED5", what: "Fill for the stop path and incorrect feedback.", where: "Rise 3.1, 4.1, 6.5. Storyline 2.3, 2.4 L-wrong, 2.8.", status: "In hand" },
+  { name: "Do wash #DBE0DC", what: "Fill for the allowed path and correct feedback.", where: "Rise 6.4. Storyline 2.2, 2.4 L-right, 2.7.", status: "In hand" },
+  { name: "Step tiles 01 02 03", what: "Equal tiles. Fill step wash #E6E6E6. Numerals in League Gothic.", where: "Rise 5.1. Storyline 2.5.", status: "In hand" },
+  { name: "Rise multiple-choice control", what: "Knowledge check with one correct answer.", where: "Rise 6.2.", status: "In hand" },
+  { name: "Rise Submit button", what: "Submits the knowledge check.", where: "Rise 6.3.", status: "In hand" },
+  { name: "Rise completion chrome", what: "End of course, certificate, and restart.", where: "Rise 7.2.", status: "In hand" },
+  { name: "Storyline player chrome", what: "Menu, Resources, Exit, Prev, Next. Ink on paper.", where: "Storyline 1.0.", status: "In hand" },
+  { name: "Start button", what: "Rectangle, paper fill, 2 px ink outline.", where: "Storyline 1.1.", status: "In hand" },
+  { name: "Caption Alex", what: "Caption for Alex, remote staff.", where: "Storyline 2.1, 2.2, 2.3, 2.6.", status: "In hand" },
+  { name: "Caption Jordan", what: "Caption for Jordan, line manager.", where: "Storyline 2.2, 2.3, 2.6.", status: "In hand" },
+  { name: "Storyline choice buttons", what: "Text buttons for a choice.", where: "Storyline 2.1, 2.6.", status: "In hand" },
+  { name: "Type buttons", what: "Public, Internal, Personal, Customer.", where: "Storyline 2.4.", status: "In hand" },
+  { name: "Storyline Submit button", what: "Submits the data type.", where: "Storyline 2.4.", status: "In hand" },
+  { name: "Button states", what: "Normal paper, Hover step wash, Selected do wash, Visited 1 px ink underline, Disabled ink at 50%.", where: "Storyline 2.4, M1.", status: "In hand" },
+  { name: "Dim base slide", what: "Dim on the slide behind a feedback layer.", where: "Storyline 2.4 L-right, 2.4 L-wrong.", status: "In hand" },
+  { name: "Results score", what: "Score variable %ScorePercent% on the results slide.", where: "Storyline 3.2.", status: "In hand" },
+  { name: "Menu labels", what: "Exact menu titles.", where: "Storyline M2.", status: "In hand" },
+  { name: "Screen-reader names", what: "Names matching the visible labels. Not shown on screen.", where: "Storyline M3.", status: "In hand" },
+];
+
+const blankAssets = [
+  { name: "[Name]", what: "[What it is]", where: "[Blocks, scenes, slides, or layers]", status: "[In hand / Client supplies / Still to make]" },
+];
+
 const blankRows = [
   {
     id: "[1.1]",
-    assets: "[Only assets this slide uses.]",
+    assets: "[Name from the production asset list]",
     format: "[Welcome / title plus body / process / knowledge check / conversation / layer / …]",
     copy: "[Every word on screen, including buttons]",
     ix: "[Clicks, jumps, variables, states, score]",
@@ -703,6 +780,7 @@ const filledDoc = wrap(
   brandWritten(filled, { romOnly: false }) +
     '<a name="LANDSCAPE"></a>' +
     brandVisual(filled, { romOnly: false }) +
+    assetListPage(filled, productionAssets) +
     `<article class="sheet-board">
       <p class="card-title">Rise 360 — blocks</p>
       ${slideTables("Rise 360", riseRows)}
@@ -720,6 +798,7 @@ const blankDoc = wrap(
   brandWritten(blank, { romOnly: false }) +
     '<a name="LANDSCAPE"></a>' +
     brandVisual(blank, { romOnly: false }) +
+    assetListPage(blank, blankAssets) +
     `<article class="sheet-board">
       <p class="card-title">[Rise 360 blocks / Storyline 360 scenes and slides]</p>
       ${slideTables("[Tool]", blankRows)}

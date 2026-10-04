@@ -86,6 +86,10 @@
   .board .format { width: 16%; }
   .board .copy { width: 30%; white-space: pre-wrap; }
   .board .ix { width: 28%; }
+  .board .name { width: 22%; }
+  .board .what { width: 28%; }
+  .board .where { width: 34%; }
+  .board .status { width: 16%; }
   .foot { font-family: Calibri, "Segoe UI", sans-serif; font-size: 14pt; text-align: center; margin-top: 8px; }
   @media print {
     body { background: #FFFFFF; }
@@ -181,6 +185,29 @@
     </tr>
   </table>
   <p class="foot">[Company name] · [Project name] · page 2</p>
+</article><br clear="all" style="page-break-before:always" />
+<article class="sheet">
+  <p class="card-title">Production assets</p>
+  <table class="board" width="100%" cellpadding="8" cellspacing="0">
+    <colgroup>
+      <col class="name" /><col class="what" /><col class="where" /><col class="status" />
+    </colgroup>
+    <thead>
+      <tr>
+        <th bgcolor="#E6E6E6">Name</th>
+        <th bgcolor="#E6E6E6">What it is</th>
+        <th bgcolor="#E6E6E6">Where it is used</th>
+        <th bgcolor="#E6E6E6">Status</th>
+      </tr>
+    </thead>
+    <tbody><tr>
+    <td>[Name]</td>
+    <td>[What it is]</td>
+    <td>[Blocks, scenes, slides, or layers]</td>
+    <td>[In hand / Client supplies / Still to make]</td>
+  </tr></tbody>
+  </table>
+  <p class="foot">[Company name] · [Project name] · page 3</p>
 </article><br clear="all" style="page-break-before:always" /><article class="sheet-board">
       <p class="card-title">[Rise 360 blocks / Storyline 360 scenes and slides]</p>
       
@@ -188,7 +215,7 @@
 <p class="card-title">[Tool] · [1.1]</p>
 <table class="card" width="100%" cellpadding="8" cellspacing="0">
   <colgroup><col class="label" /><col /></colgroup>
-  <tr><th bgcolor="#E6E6E6">Assets</th><td>[Only assets this slide uses.]</td></tr>
+  <tr><th bgcolor="#E6E6E6">Assets</th><td>[Name from the production asset list]</td></tr>
   <tr><th bgcolor="#E6E6E6">Format</th><td>[Welcome / title plus body / process / knowledge check / conversation / layer / …]</td></tr>
   <tr><th bgcolor="#E6E6E6">Screen Copy</th><td class="copy">[Every word on screen, including buttons]</td></tr>
   <tr><th bgcolor="#E6E6E6">Interactions</th><td>[Clicks, jumps, variables, states, score]</td></tr>
