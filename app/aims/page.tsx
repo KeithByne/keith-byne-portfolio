@@ -8,7 +8,7 @@ export default function AimsPage() {
         <h1>Work Year Round.</h1>
         <div className="prose">
         <p>
-          I am looking for year-round employment in instructional design.
+          I am looking for year-round 100% remote employment in instructional design.
         </p>
         <p>
           Since COVID, summer courses in Spain and summer programmes across
