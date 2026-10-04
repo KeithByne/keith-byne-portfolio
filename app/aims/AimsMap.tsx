@@ -2,12 +2,18 @@ export function AimsMap() {
   return (
     <figure className="aims-map">
       <svg
-        viewBox="0 0 790.3 916.1"
+        viewBox="0 0 500 760"
         role="img"
         aria-label="Routes from the British Isles, northern Europe, and France arriving in Seville"
       >
-        <g transform="translate(145.17 78.05) rotate(-25 250 380)">
+        <defs>
+          <clipPath id="aims-frame">
+            <rect x="4" y="4" width="492" height="752" />
+          </clipPath>
+        </defs>
         <rect width="500" height="760" fill="#0b1024" />
+        <g clipPath="url(#aims-frame)">
+        <g transform="rotate(-25 250 380)">
         <g fill="none" stroke="#6fbf86" strokeWidth="1.7" strokeLinejoin="round" strokeLinecap="round">
           <path d="M72.3 331.4 L55.7 334.2 L41.6 350 L39.9 377.3 L45.8 387.3 L58.2 385.9 L72.3 374.4 L74.8 358.6 L78.1 341.4 L74.8 332.8 Z" />
           <path d="M99 279.9 L90.7 300 L95.7 328.8 L97.3 369 L94 400.5 L123.9 394.8 L147 391.9 L150.3 383.3 L151.2 364.6 L135.4 337.4 L121.3 314.4 L122.2 291.4 L110.6 279.9 Z" />
@@ -36,8 +42,9 @@ export function AimsMap() {
         </g>
         <circle cx="79.5" cy="666" r="16" fill="none" stroke="#8b9cff" strokeWidth="1.2" />
         <text x="102" y="670" fill="#e8ecff" fontFamily="var(--font-sans), sans-serif" fontSize="16">Seville</text>
-        <rect x="2" y="2" width="496" height="756" fill="none" stroke="#6fbf86" strokeWidth="4" />
         </g>
+        </g>
+        <rect x="2" y="2" width="496" height="756" fill="none" stroke="#6fbf86" strokeWidth="4" />
       </svg>
     </figure>
   );
