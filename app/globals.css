@@ -826,7 +826,7 @@ h1 em {
 }
 
 .aims .prose p:first-child { margin-top: 0; }
-.aims .prose p:last-child { margin-bottom: 0; }
+.aims .prose p:last-child { margin-bottom: 1.45em; }
 
 .aims-copy,
 .aims-map {
@@ -952,6 +952,7 @@ h1 em {
     align-items: center;
     justify-content: flex-end;
     margin: 0;
+    transform: translateY(-15px);
   }
   body:has(main.aims) .aims-map {
     width: auto;
