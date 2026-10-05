@@ -1,3 +1,4 @@
+import { redRoutes } from "./parallel";
 import { routes } from "./scene";
 
 const stars = [
@@ -34,10 +35,22 @@ export function AimsMap() {
             </feMerge>
           </filter>
         </defs>
+        <g className="aims-red" fill="none" stroke="#ff3b3b" strokeWidth="2.25" strokeLinecap="round" strokeLinejoin="round">
+          {redRoutes.map((route) => (
+            <path key={route.d} d={route.d} />
+          ))}
+        </g>
         <g className="aims-pulses" filter="url(#route-glow)" fill="none" stroke="#d5deff" strokeWidth="2.5" strokeLinecap="round" strokeDasharray="8 108">
           {routes.map((route) => (
             <path key={route.d} d={route.d}>
               <animate attributeName="stroke-dashoffset" from={route.from} to={route.to} dur="2.8s" repeatCount="indefinite" />
+            </path>
+          ))}
+        </g>
+        <g className="aims-pulses" filter="url(#route-glow)" fill="none" stroke="#ffd0d0" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" strokeDasharray="8 108">
+          {redRoutes.map((route) => (
+            <path key={route.d} d={route.d}>
+              <animate attributeName="stroke-dashoffset" from={route.to} to={route.from} dur="2.8s" repeatCount="indefinite" />
             </path>
           ))}
         </g>
