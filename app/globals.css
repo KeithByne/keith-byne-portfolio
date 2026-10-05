@@ -944,6 +944,7 @@ h1 em {
   }
   body:has(main.aims) .aims-copy {
     overflow: hidden;
+    transform: translateY(calc(-2 * 1.45em));
   }
   body:has(main.aims) .aims-map {
     height: 100%;
@@ -952,7 +953,7 @@ h1 em {
     align-items: center;
     justify-content: flex-end;
     margin: 0;
-    transform: translateY(-15px);
+    transform: translateY(-30px);
   }
   body:has(main.aims) .aims-map {
     width: auto;
