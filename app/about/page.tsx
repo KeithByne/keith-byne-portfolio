@@ -3,7 +3,7 @@ import Link from "next/link";
 export default function AboutPage() {
   const shots = [
     {
-      src: "/portraits/turtleneck.png",
+      src: "/portraits/turtleneck.png?v=6",
       alt: "Keith Byne, black turtleneck, looking slightly off camera",
     },
     {

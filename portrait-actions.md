@@ -4,9 +4,7 @@ Record of what was decided and what is live. Written 2 Oct 2026 so this chat can
 
 ## Rules he set
 
-Change only the hair unless he says otherwise. Leave expression, skin tone, glasses, beard, clothes, pose, lighting, and background alone.
-
-His hair is cropped short, close to the scalp, combed forward, with a receding hairline, a high forehead, and temples cut back. Combed-back or wig-like silver caps were rejected.
+His hair is cropped short, close to the scalp, combed forward, with a receding hairline, a high forehead, and temples cut back. He is not bald. Combed-back or wig-like silver caps were rejected.
 
 If he says use his photo, use that file. A generated picture made darker is not his photo.
 
@@ -18,19 +16,18 @@ LinkedIn and CV portraits were deleted at his request. Do not restore them.
 
 | Page | File | What it is |
 |------|------|------------|
-| Home | `public/portraits/front.jpg` | Healed studio portrait. 224,246 bytes. Same pixels as the About turtleneck. Alt: short white hair, black turtleneck, looking slightly off camera. |
-| About, first | `public/portraits/turtleneck.png` | The same healed portrait. |
+| Home | `public/portraits/front.jpg` | Hybrid studio portrait, 6 Nov 2026. Short white hair, receding temples, slightly longer chin beard, black turtleneck, low light. Cache `?v=6`. |
+| About, first | `public/portraits/turtleneck.png` | The same hybrid. Cache `?v=6`. |
+| CV HTML and PDF | `public/work/cv/front.jpg` | The same hybrid. |
 | About, second | `public/portraits/headshot.png` | His Paint.NET edit, pasted in as supplied. 2 Oct 2026. |
 | About, third | `public/portraits/lecture-theatre.jpg` | His curly-hair photo, scaled so the eyes and face size match the front-page portrait. 2 Oct 2026. |
 | About, fourth | `public/portraits/informal.jpg` | Hand at his mouth. Head scaled to the same size as the front-page portrait. 2 Oct 2026. |
 
-Home and About were pushed. The healed portrait went up in commit `7a02d02`. His photo replaced the generated Cursor shot on About in commit `bb598e6`.
-
 ## Source files
 
-- Live healed portrait: `C:\Users\keith\Desktop\front-portrait-skin.jpg` (also the bytes in `front.jpg` and `turtleneck.png`). He corrected the hairline himself, then one pass naturalised only the scar along that hairline.
+- Current hybrid: `tmp/portrait-hybrid/keith-hybrid-turtleneck.jpg` (from `assets/keith-hybrid-turtleneck-v3.jpg`). Recent photo + old turtleneck lighting. He accepted this after rejecting a bald first pass.
 - His hairline edit, left untouched: `C:\Users\keith\Desktop\front-portrait-attempt.jpg`. Do not overwrite it.
-- The informal photo on About is his dark close-up. The Cursor screen was not inserted. The frame is his face and his hand, so a screen would cover him.
+- The informal photo on About is his dark close-up.
 
 ## On disk, not on Home or About
 
@@ -39,8 +36,8 @@ Home and About were pushed. The healed portrait went up in commit `7a02d02`. His
 
 ## What he rejected
 
-Generated hair that was combed back, or that copied an earlier portrait whenever that full portrait was used as a reference. Face-only crops still leaked the old temple hair.
+A hybrid that made him bald. He has short white hair on top; temples recede; he is not bald.
 
-A rebuilt turtleneck that copied the old hair. He took `front-portrait-attempt.jpg` and fixed the hairline himself. The healed skin file is the one he said to use.
+Generated hair that was combed back, or that copied an earlier portrait whenever that full portrait was used as a reference.
 
-The generated darker Cursor picture. He asked for his photo. If a Cursor screen can sit in that photo without covering him, it can be added. It could not. The real photo is what is on About.
+The generated darker Cursor picture. He asked for his photo. If a Cursor screen can sit in that photo without covering him, it can be added. It could not. The real photo is what is on About in the informal slot.
